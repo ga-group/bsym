@@ -7,7 +7,7 @@ BEGIN {
 	print "@prefix bsym: <http://bsym.bloomberg.com/sym/> .";
 	print "@prefix bps: <http://bsym.bloomberg.com/pricing_source/> .";
 	print "@prefix figi-gii: <http://www.omg.org/spec/FIGI/GlobalInstrumentIdentifiers/> .";
-	print "@prefix ga: <http://schema.ga-group.nl/symbology#> .";
+	print "@prefix gas: <http://schema.ga-group.nl/symbology#> .";
 	print;
 
 	mstbl["Comdty"] = "CommodityMarketSector";
@@ -23,11 +23,11 @@ BEGIN {
 }
 (NR > 1 && $8 != $9) {
 	print "bsym:" $8, "a", "figi-gii:GlobalIdentifier ;";
-	print "", "ga:sector", "figi-gii:" mstbl[$7] " ;";
+	print "", "gas:sector", "figi-gii:" mstbl[$7] " ;";
 	gsub(/"/, "\\\"", $1);
 	print "", "foaf:name", "\"" $1 "\" ;";
-	print "", "ga:listedOn", "bps:" $3 " ;";
-	print "", "ga:listedAs", "\"" $2 "\" .";
+	print "", "gas:listedOn", "bps:" $3 " ;";
+	print "", "gas:listedAs", "\"" $2 "\" .";
 }
 ($8 == $9) {
 	print "bsym:" $9, "a", "figi-gii:CompositeGlobalIdentifier .";
