@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#">
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+    <!ENTITY dct "http://purl.org/dc/terms/">
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#">
+    <!ENTITY figi-gii "http://www.omg.org/spec/FIGI/GlobalInstrumentIdentifiers/">
+    <!ENTITY gas "http://schema.ga-group.nl/symbology#">
+]>
+
+<rdf:RDF xml:base="http://schema.ga-group.nl/symbology#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:figi-gii="http://www.omg.org/spec/FIGI/GlobalInstrumentIdentifiers/"
+  xmlns:gas="http://schema.ga-group.nl/symbology#">
+
+  <owl:Ontology rdf:about="http://schema.ga-group.nl/symbology#">
+    <rdfs:label>Ontology for symbology</rdfs:label>
+
+    <dct:license rdf:datatype="&xsd;string">The MIT License:  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+      The copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+      THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE
+      AND NONINFRINGEMENT.  IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</dct:license>
+    <dct:license rdf:datatype="&xsd;anyURI">http://opensource.org/licenses/mit-license.php</dct:license>
+
+    <owl:versionIRI rdf:resource="http://schema.ga-group.nl/0.1/symbology#"/>
+    <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+  </owl:Ontology>
+  
+  <!--
+  //////////////////////////////////////////////////////////////////////
+  //
+  // Object Properties
+  //
+  //////////////////////////////////////////////////////////////////////
+  -->
+
+  <owl:ObjectProperty rdf:about="&gas;sector">
+    <rdfs:label>sector</rdfs:label>
+    <skos:definition rdf:datatype="&xsd;string">maps a financial instrument identifier to a market sector</skos:definition>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="&gas;listedOn">
+    <rdfs:label>listed on</rdfs:label>
+    <skos:definition rdf:datatype="&xsd;string">relates a financial instrument (identified by its identifier) to an exchange or a pricing source</skos:definition>
+    <rdfs:domain rdf:resource="&figi-gii;FinancialInstrumentIdentifier"/>
+    <rdfs:range rdf:resource="&figi-gii;Code"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="&gas;listedAs">
+    <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+    <rdfs:label>listed as</rdfs:label>
+    <skos:definition rdf:datatype="&xsd;string">relates a financial instrument (identified by its identifier) to a ticker symbol or another Identifier</skos:definition>
+    <rdfs:domain rdf:resource="&figi-gii;FinancialInstrumentIdentifier"/>
+    <rdfs:range rdf:resource="&figi-gii;Identifier"/>
+  </owl:ObjectProperty>
+
+  <!--
+  //////////////////////////////////////////////////////////////////////
+  //
+  // Datatype Properties
+  //
+  //////////////////////////////////////////////////////////////////////
+  -->
+
+  <owl:DatatypeProperty rdf:about="&gas;listedSince">
+    <rdfs:label>listed since</rdfs:label>
+    <skos:definition rdf:datatype="&xsd;string">indicates since when a financial instrument (identified by its identifier) has been listed</skos:definition>
+    <rdfs:domain rdf:resource="&figi-gii;FinancialInstrumentIdentifier"/>
+    <rdfs:range rdf:resource="&xsd;dateTime"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="&gas;listedTill">
+    <rdfs:label>listed till</rdfs:label>
+    <skos:definition rdf:datatype="&xsd;string">indicates till when a financial instrument (identified by its identifier) had been listed</skos:definition>
+
+
+
+
+
+
+
+
+
+    <rdfs:domain rdf:resource="&figi-gii;FinancialInstrumentIdentifier"/>
+    <rdfs:range rdf:resource="&xsd;dateTime"/>
+  </owl:DatatypeProperty>
+
+</rdf:RDF>
