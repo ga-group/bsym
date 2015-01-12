@@ -82,15 +82,6 @@
   <owl:DatatypeProperty rdf:about="&gas;listedTill">
     <rdfs:label>listed till</rdfs:label>
     <skos:definition rdf:datatype="&xsd;string">indicates till when a financial instrument (identified by its identifier) had been listed</skos:definition>
-
-
-
-
-
-
-
-
-
     <rdfs:domain rdf:resource="&figi-gii;FinancialInstrumentIdentifier"/>
     <rdfs:range rdf:resource="&xsd;dateTime"/>
   </owl:DatatypeProperty>
