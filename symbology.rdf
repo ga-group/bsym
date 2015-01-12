@@ -64,6 +64,13 @@
     <rdfs:range rdf:resource="&figi-gii;Identifier"/>
   </owl:ObjectProperty>
 
+  <owl:ObjectProperty rdf:about="&gas;symbolOf">
+    <rdfs:label>symbol of</rdfs:label>
+    <skos:definition rdf:datatype="&xsd;string">relates an identifier to its data vendor</skos:definition>
+    <rdfs:domain rdf:resource="&figi-gii;Identifier"/>
+    <rdfs:range rdf:resource="&figi-gii;Symbology"/>
+  </owl:ObjectProperty>
+
   <!--
   //////////////////////////////////////////////////////////////////////
   //
@@ -85,5 +92,31 @@
     <rdfs:domain rdf:resource="&figi-gii;FinancialInstrumentIdentifier"/>
     <rdfs:range rdf:resource="&xsd;dateTime"/>
   </owl:DatatypeProperty>
+
+  <!--
+  //////////////////////////////////////////////////////////////////////
+  //
+  // Classes
+  //
+  //////////////////////////////////////////////////////////////////////
+  -->
+
+  <owl:Class rdf:about="&gas;DataVendor">
+    <rdfs:label>data vendor</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&figi-gii;isIdentifiedBy"/>
+        <owl:onClass rdf:resource="&figi-gii;Symbology"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <skos:definition>A financial data vendor provides data to financial firms, traders, and investors. The data distributed is collected from sources such as a stock exchange feeds, brokers and dealer desks or regulatory filings (e.g. an SEC filing)</skos:definition>
+    <dct:source>http://en.wikipedia.org/wiki/Financial_data_vendor</dct:source>
+  </owl:Class>
+
+  <owl:Class rdf:about="&gas;Symbology">
+    <rdfs:label>symbology</rdfs:label>
+    <skos:definition>A collection of symbols</skos:definition>
+  </owl:Class>
 
 </rdf:RDF>
