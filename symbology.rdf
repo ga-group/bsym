@@ -57,7 +57,6 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:about="&gas;listedAs">
-    <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
     <rdfs:label>listed as</rdfs:label>
     <skos:definition rdf:datatype="&xsd;string">relates a financial instrument (identified by its identifier) to a ticker symbol or another Identifier</skos:definition>
     <rdfs:domain rdf:resource="&figi-gii;FinancialInstrumentIdentifier"/>
