@@ -1,5 +1,12 @@
 #!/usr/bin/awk -f
 
+function ttlesc(str)
+{
+	gsub(/\\/, "\\\\", str);
+	gsub(/"/, "\\\"", str);
+	return str;
+}
+
 BEGIN {
 	FS = "|";
 	OFS = "\t";
@@ -24,10 +31,11 @@ BEGIN {
 (FNR > 1 && $8 != $9) {
 	print "bsym:" $8, "a", "figi-gii:GlobalIdentifier ;";
 	print "", "gas:sector", "figi-gii:" mstbl[$7] " ;";
-	gsub(/"/, "\\\"", $1);
-	print "", "foaf:name", "\"" $1 "\" ;";
-	print "", "gas:listedOn", "bps:" $3 " ;";
-	print "", "gas:listedAs", "\"" $2 "\" .";
+	print "", "foaf:name", "\"" ttlesc($1) "\" ;";
+	if ($3) {
+		print "", "gas:listedOn", "bps:" $3 " ;";
+	}
+	print "", "gas:listedAs", "\"" ttlesc($2) "\" .";
 }
 ($8 && $8 == $9) {
 	print "bsym:" $9, "a", "figi-gii:CompositeGlobalIdentifier .";
