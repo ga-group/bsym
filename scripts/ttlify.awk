@@ -21,7 +21,7 @@ BEGIN {
 	mstbl["Muni"] = "MunicipalBondMarketSector";
 	mstbl["Pfd"] = "PreferredStockMarketSector";
 }
-(NR > 1 && $8 != $9) {
+(FNR > 1 && $8 != $9) {
 	print "bsym:" $8, "a", "figi-gii:GlobalIdentifier ;";
 	print "", "gas:sector", "figi-gii:" mstbl[$7] " ;";
 	gsub(/"/, "\\\"", $1);

@@ -10,7 +10,7 @@ BEGIN {
 	print "@prefix mic: <http://fadyart.com/markets#> .";
 	print;
 }
-(NR > 1) {
+(FNR > 1) {
 	print "bps:" $2, "a", "figi-gii:PricingSource ;";
 	gsub(/"/, "\\\"", $3);
 	print "", "foaf:name", "\"" $3 "\" .";
