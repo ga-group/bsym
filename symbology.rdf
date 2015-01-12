@@ -35,7 +35,7 @@
     <owl:versionIRI rdf:resource="http://schema.ga-group.nl/0.1/symbology#"/>
     <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
   </owl:Ontology>
-  
+
   <!--
   //////////////////////////////////////////////////////////////////////
   //
@@ -51,7 +51,7 @@
 
   <owl:ObjectProperty rdf:about="&gas;listedOn">
     <rdfs:label>listed on</rdfs:label>
-    <skos:definition rdf:datatype="&xsd;string">relates a financial instrument (identified by its identifier) to an exchange or a pricing source</skos:definition>
+    <skos:definition rdf:datatype="&xsd;string">relates a financial instrument to an exchange, a pricing source, or a data provider</skos:definition>
     <rdfs:domain rdf:resource="&figi-gii;FinancialInstrumentIdentifier"/>
     <rdfs:range rdf:resource="&figi-gii;Code"/>
   </owl:ObjectProperty>
