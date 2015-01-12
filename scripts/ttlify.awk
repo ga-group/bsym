@@ -29,6 +29,6 @@ BEGIN {
 	print "", "gas:listedOn", "bps:" $3 " ;";
 	print "", "gas:listedAs", "\"" $2 "\" .";
 }
-($8 == $9) {
+($8 && $8 == $9) {
 	print "bsym:" $9, "a", "figi-gii:CompositeGlobalIdentifier .";
 }
