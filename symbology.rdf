@@ -92,6 +92,18 @@
     <rdfs:range rdf:resource="&xsd;dateTime"/>
   </owl:DatatypeProperty>
 
+  <owl:DatatypeProperty rdf:about="&gas;validSince">
+    <rdfs:label>valid since</rdfs:label>
+    <skos:definition rdf:datatype="&xsd;string">generic valid time</skos:definition>
+    <rdfs:range rdf:resource="&xsd;dateTime"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="&gas;validTill">
+    <rdfs:label>valid till</rdfs:label>
+    <skos:definition rdf:datatype="&xsd;string">generic valid time</skos:definition>
+    <rdfs:range rdf:resource="&xsd;dateTime"/>
+  </owl:DatatypeProperty>
+
   <!--
   //////////////////////////////////////////////////////////////////////
   //
