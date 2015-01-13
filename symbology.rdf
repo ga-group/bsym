@@ -72,6 +72,7 @@
 
   <owl:ObjectProperty rdf:about="&gas;composedOf">
     <rdfs:label>composed of</rdfs:label>
+    <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
     <owl:inverseOf rdf:resource="&gas;componentOf"/>
     <skos:definition rdf:datatype="&xsd;string">relates a composite identifer to its (security+exchange level) identifiers</skos:definition>
     <rdfs:domain rdf:resource="&figi-gii;CompositeGlobalIdentifier"/>
@@ -80,6 +81,7 @@
 
   <owl:ObjectProperty rdf:about="&gas;componentOf">
     <rdfs:label>component of</rdfs:label>
+    <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
     <owl:inverseOf rdf:resource="&gas;composedOf"/>
     <skos:definition rdf:datatype="&xsd;string">relates an identifer to its composite identifiers</skos:definition>
     <rdfs:domain rdf:resource="&figi-gii;GlobalIdentifier"/>
@@ -88,6 +90,7 @@
 
   <owl:ObjectProperty rdf:about="&gas;supersededBy">
     <rdfs:label>superseded by</rdfs:label>
+    <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
     <owl:inverseOf rdf:resource="&gas;precededBy"/>
     <skos:definition rdf:datatype="&xsd;string">indicates the supersession of an identifier; pair with validTill predicate to record timestamp</skos:definition>
     <rdfs:domain rdf:resource="&figi-gii;Identifier"/>
@@ -96,6 +99,7 @@
 
   <owl:ObjectProperty rdf:about="&gas;precededBy">
     <rdfs:label>preceded by</rdfs:label>
+    <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
     <owl:inverseOf rdf:resource="&gas;supersededBy"/>
     <skos:definition rdf:datatype="&xsd;string">indicates previous instances of an identifier; pair with validFrom predicate to record timestamp</skos:definition>
     <rdfs:domain rdf:resource="&figi-gii;Identifier"/>
