@@ -104,6 +104,20 @@
     <rdfs:range rdf:resource="&xsd;dateTime"/>
   </owl:DatatypeProperty>
 
+  <owl:DatatypeProperty rdf:about="&gas;secu">
+    <rdfs:label>ariva secu number</rdfs:label>
+    <skos:definition rdf:datatype="&xsd;string">relates an identifier to ariva's secu number</skos:definition>
+    <rdfs:domain rdf:resource="&figi-gii;ShareClassGlobalIdentifier"/>
+    <rdfs:range rdf:resource="&xsd;nonNegativeInteger"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="&gas;conid">
+    <rdfs:label>interactive brokers contract identifier</rdfs:label>
+    <skos:definition rdf:datatype="&xsd;string">relates an identifier to IB's conid number</skos:definition>
+    <rdfs:domain rdf:resource="&figi-gii;ShareClassGlobalIdentifier"/>
+    <rdfs:range rdf:resource="&xsd;nonNegativeInteger"/>
+  </owl:DatatypeProperty>
+
   <!--
   //////////////////////////////////////////////////////////////////////
   //
