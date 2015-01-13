@@ -36,6 +36,9 @@ BEGIN {
 		print "bsym:" $9, "a", "figi-gii:CompositeGlobalIdentifier .";
 	} else {
 		print "bsym:" $8, "a", "figi-gii:GlobalIdentifier ;";
+		if ($9) {
+			print "", "gas:componentOf", "bsym:" $9 " ;";
+		}
 	}
 	print "", "gas:sector", "figi-gii:" mstbl[$7] " ;";
 	print "", "foaf:name", "\"" ttlesc($1) "\" ;";
