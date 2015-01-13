@@ -70,6 +70,22 @@
     <rdfs:range rdf:resource="&figi-gii;Symbology"/>
   </owl:ObjectProperty>
 
+  <owl:ObjectProperty rdf:about="&gas;composedOf">
+    <rdfs:label>composed of</rdfs:label>
+    <owl:inverseOf rdf:resource="&gas;componentOf"/>
+    <skos:definition rdf:datatype="&xsd;string">relates a composite identifer to its (security+exchange level) identifiers</skos:definition>
+    <rdfs:domain rdf:resource="&figi-gii;CompositeGlobalIdentifier"/>
+    <rdfs:range rdf:resource="&figi-gii;GlobalIdentifier"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="&gas;componentOf">
+    <rdfs:label>component of</rdfs:label>
+    <owl:inverseOf rdf:resource="&gas;composedOf"/>
+    <skos:definition rdf:datatype="&xsd;string">relates an identifer to its composite identifiers</skos:definition>
+    <rdfs:domain rdf:resource="&figi-gii;GlobalIdentifier"/>
+    <rdfs:range rdf:resource="&figi-gii;CompositeGlobalIdentifier"/>
+  </owl:ObjectProperty>
+
   <!--
   //////////////////////////////////////////////////////////////////////
   //
