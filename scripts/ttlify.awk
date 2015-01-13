@@ -33,7 +33,7 @@ BEGIN {
 		next;
 	}
 	if ($8 == $9) {
-		print "bsym:" $9, "a", "figi-gii:CompositeGlobalIdentifier .";
+		print "bsym:" $9, "a", "figi-gii:CompositeGlobalIdentifier ;";
 	} else {
 		print "bsym:" $8, "a", "figi-gii:GlobalIdentifier ;";
 		if ($9) {
