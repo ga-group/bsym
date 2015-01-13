@@ -86,6 +86,22 @@
     <rdfs:range rdf:resource="&figi-gii;CompositeGlobalIdentifier"/>
   </owl:ObjectProperty>
 
+  <owl:ObjectProperty rdf:about="&gas;supersededBy">
+    <rdfs:label>superseded by</rdfs:label>
+    <owl:inverseOf rdf:resource="&gas;precededBy"/>
+    <skos:definition rdf:datatype="&xsd;string">indicates the supersession of an identifier; pair with validTill predicate to record timestamp</skos:definition>
+    <rdfs:domain rdf:resource="&figi-gii;Identifier"/>
+    <rdfs:range rdf:resource="&figi-gii;Identifier"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="&gas;precededBy">
+    <rdfs:label>preceded by</rdfs:label>
+    <owl:inverseOf rdf:resource="&gas;supersededBy"/>
+    <skos:definition rdf:datatype="&xsd;string">indicates previous instances of an identifier; pair with validFrom predicate to record timestamp</skos:definition>
+    <rdfs:domain rdf:resource="&figi-gii;Identifier"/>
+    <rdfs:range rdf:resource="&figi-gii;Identifier"/>
+  </owl:ObjectProperty>
+
   <!--
   //////////////////////////////////////////////////////////////////////
   //
