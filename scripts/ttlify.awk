@@ -28,15 +28,19 @@ BEGIN {
 	mstbl["Muni"] = "MunicipalBondMarketSector";
 	mstbl["Pfd"] = "PreferredStockMarketSector";
 }
-(FNR > 1 && $8 != $9) {
-	print "bsym:" $8, "a", "figi-gii:GlobalIdentifier ;";
+(FNR > 1) {
+	if (!$8) {
+		next;
+	}
+	if ($8 == $9) {
+		print "bsym:" $9, "a", "figi-gii:CompositeGlobalIdentifier .";
+	} else {
+		print "bsym:" $8, "a", "figi-gii:GlobalIdentifier ;";
+	}
 	print "", "gas:sector", "figi-gii:" mstbl[$7] " ;";
 	print "", "foaf:name", "\"" ttlesc($1) "\" ;";
 	if ($3) {
 		print "", "gas:listedOn", "bps:" $3 " ;";
 	}
 	print "", "gas:listedAs", "\"" ttlesc($2) "\" .";
-}
-($8 && $8 == $9) {
-	print "bsym:" $9, "a", "figi-gii:CompositeGlobalIdentifier .";
 }
