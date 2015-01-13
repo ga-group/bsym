@@ -67,7 +67,7 @@
     <rdfs:label>symbol of</rdfs:label>
     <skos:definition rdf:datatype="&xsd;string">relates an identifier to its data vendor</skos:definition>
     <rdfs:domain rdf:resource="&figi-gii;Identifier"/>
-    <rdfs:range rdf:resource="&figi-gii;Symbology"/>
+    <rdfs:range rdf:resource="&gas;Symbology"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:about="&gas;composedOf">
@@ -167,7 +167,7 @@
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&figi-gii;isIdentifiedBy"/>
-        <owl:onClass rdf:resource="&figi-gii;Symbology"/>
+        <owl:onClass rdf:resource="&gas;Symbology"/>
         <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
