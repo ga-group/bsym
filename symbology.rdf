@@ -154,6 +154,20 @@
     <rdfs:range rdf:resource="&xsd;nonNegativeInteger"/>
   </owl:DatatypeProperty>
 
+  <owl:DatatypeProperty rdf:about="&gas;contractSize">
+    <rdfs:label>contract size</rdfs:label>
+    <skos:definition rdf:datatype="&xsd;string">The deliverable quantity of commodities or financial instruments underlying futures and option contracts that are traded on an exchange. The contract size is standardized for such futures and options contracts, and varies depending on the commodity or instrument that is traded. The contract size also determines the dollar value of a unit move in the underlying commodity or instrument.</skos:definition>
+    <dct:source>http://www.investopedia.com/terms/c/contractsize.asp</dct:source>
+    <rdfs:range rdf:resource="&xsd;nonNegativeInteger"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="&gas;strikePrice">
+    <rdfs:label>strike price</rdfs:label>
+    <skos:definition rdf:datatype="&xsd;string">The price at which a specific derivative contract can be exercised. Strike prices is mostly used to describe stock and index options, in which strike prices are fixed in the contract. For call options, the strike price is where the security can be bought (up to the expiration date), while for put options the strike price is the price at which shares can be sold.</skos:definition>
+    <dct:source>http://www.investopedia.com/terms/s/strikeprice.asp</dct:source>
+    <rdfs:range rdf:resource="&xsd;decimal"/>
+  </owl:DatatypeProperty>
+
   <!--
   //////////////////////////////////////////////////////////////////////
   //
