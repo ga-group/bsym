@@ -106,6 +106,13 @@
     <rdfs:range rdf:resource="&figi-gii;Identifier"/>
   </owl:ObjectProperty>
 
+  <owl:ObjectProperty rdf:about="&gas;coversSector">
+    <rdfs:label>covers</rdfs:label>
+    <skos:definition rdf:datatype="&xsd;string">relates a pricing source to market sectors</skos:definition>
+    <rdfs:domain rdf:resource="&figi-gii;PricingSource"/>
+    <rdfs:range rdf:resource="&figi-gii;MarketSector"/>
+  </owl:ObjectProperty>
+
   <!--
   //////////////////////////////////////////////////////////////////////
   //
