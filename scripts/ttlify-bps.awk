@@ -8,6 +8,7 @@ BEGIN {
 	print "@prefix figi-gii: <http://www.omg.org/spec/FIGI/GlobalInstrumentIdentifiers/> .";
 	print "@prefix owl: <http://www.w3.org/2002/07/owl#> .";
 	print "@prefix mic: <http://fadyart.com/markets#> .";
+	print "@prefix skos: <http://www.w3.org/2004/02/skos/core#> .";
 	print;
 }
 (FNR > 1) {
