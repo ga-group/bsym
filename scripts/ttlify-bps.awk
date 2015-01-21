@@ -28,7 +28,7 @@ BEGIN {
 	patsplit($1, sec, "[^, \t]+");
 	for (i in sec) {
 		if ((x = mstbl[sec[i]])) {
-			print "", "gas:coversSector", x " ;";
+			print "", "gas:coversSector", "figi-gii:" x " ;";
 		}
 	}
 
