@@ -45,5 +45,6 @@ BEGIN {
 	if ($3) {
 		print "", "gas:listedOn", "bps:" $3 " ;";
 	}
-	print "", "gas:listedAs", "\"" ttlesc($2) "\" .";
+	print "", "gas:listedAs", "\"" ttlesc($2) "\" ;";
+	print "", "gas:symbolOf", "bsym: .";
 }
