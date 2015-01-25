@@ -880,6 +880,8 @@ bps:UO	a	figi-gii:PricingSource ;
 	skos:related	mic:XCBO .
 bps:UP	a	figi-gii:PricingSource ;
 	skos:related	mic:ARCX .
+bps:UQ	a	figi-gii:PricingSource ;
+	skos:related	mic:XNAS .
 bps:UR	a	figi-gii:PricingSource ;
 	skos:related	mic:XNCM .
 bps:USE	a	figi-gii:PricingSource ;
