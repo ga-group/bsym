@@ -10,6 +10,22 @@ function ttlesc(str)
 BEGIN {
 	FS = "|";
 	OFS = "\t";
+
+	for (i = 0; i < ARGC; i++) {
+		if (ARGV[i] == "--help") {
+			print "Usage: ttlify-new.awk [--since DATE] [--till DATE] FILE...";
+			exit(0);
+		} else if (ARGV[i] == "--since") {
+			SINCE = ARGV[i + 1];
+			delete ARGV[i];
+			delete ARGV[i + 1];
+		} else if (ARGV[i] == "--till") {
+			TILL = ARGV[i + 1];
+			delete ARGV[i];
+			delete ARGV[i + 1];
+		}
+	}
+
 	print "@prefix foaf: <http://xmlns.com/foaf/0.1/> .";
 	print "@prefix bsym: <http://bsym.bloomberg.com/sym/> .";
 	print "@prefix bps: <http://bsym.bloomberg.com/pricing_source/> .";
@@ -31,6 +47,10 @@ BEGIN {
 (FNR > 1) {
 	if (!$8) {
 		next;
+	} else if (TILL) {
+		s = ($8 == $9) ? $9 : $8;
+		print "bsym:" s, "gas:listedTill", "\"" TILL "\"^^xsd:date .";
+		next;
 	}
 	if ($8 == $9) {
 		print "bsym:" $9, "a", "figi-gii:CompositeGlobalIdentifier ;";
@@ -46,5 +66,8 @@ BEGIN {
 		print "", "gas:listedOn", "bps:" $3 " ;";
 	}
 	print "", "gas:listedAs", "\"" ttlesc($2) "\" ;";
-	print "", "gas:symbolOf", "bsym: .";
+	if (SINCE) {
+		print "", "gas:listedSince", "\"" SINCE "\"^^xsd:date ;"
+	}
+	print "", "gas:symbolOf", "bsym: , <http://www.bloomberg.com/> .";
 }
