@@ -11,6 +11,7 @@ BEGIN {
 	FS = "|";
 	OFS = "\t";
 
+	REAL_ARGC = ARGC;
 	for (i = 0; i < ARGC; i++) {
 		if (ARGV[i] == "--help") {
 			print "Usage: ttlify-new.awk [--since DATE] [--till DATE] FILE...";
@@ -19,11 +20,17 @@ BEGIN {
 			SINCE = ARGV[i + 1];
 			delete ARGV[i];
 			delete ARGV[i + 1];
+			REAL_ARGC -= 2;
 		} else if (ARGV[i] == "--till") {
 			TILL = ARGV[i + 1];
 			delete ARGV[i];
 			delete ARGV[i + 1];
+			REAL_ARGC -= 2;
 		}
+	}
+	if (REAL_ARGC <= 1) {
+		ARGV[1] = "-";
+		ARGC = 2;
 	}
 
 	print "@prefix foaf: <http://xmlns.com/foaf/0.1/> .";
