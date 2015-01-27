@@ -38,6 +38,7 @@ BEGIN {
 	print "@prefix bps: <http://bsym.bloomberg.com/pricing_source/> .";
 	print "@prefix figi-gii: <http://www.omg.org/spec/FIGI/GlobalInstrumentIdentifiers/> .";
 	print "@prefix gas: <http://schema.ga-group.nl/symbology#> .";
+	print "@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .";
 	print;
 
 	mstbl["Comdty"] = "CommodityMarketSector";
