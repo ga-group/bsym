@@ -147,6 +147,27 @@
     <rdfs:range rdf:resource="&xsd;dateTime"/>
   </owl:DatatypeProperty>
 
+  <owl:DatatypeProperty rdf:about="&gas;isin">
+    <rdfs:label>isin</rdfs:label>
+    <skos:definition rdf:datatype="&xsd;string">relates an identifier to an ISO 6166 International Securities Identification Number</skos:definition>
+    <rdfs:domain rdf:resource="&figi-gii;ShareClassGlobalIdentifier"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="&gas;isix">
+    <rdfs:label>isix</rdfs:label>
+    <skos:definition rdf:datatype="&xsd;string">relates an identifier to XETRA's ISIX number</skos:definition>
+    <rdfs:domain rdf:resource="&figi-gii;GlobalIdentifier"/>
+    <rdfs:range rdf:resource="&xsd;nonNegativeInteger"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="&gas;wkn">
+    <rdfs:label>wkn</rdfs:label>
+    <skos:definition rdf:datatype="&xsd;string">relates an identifier to its Wertpapierkennummer</skos:definition>
+    <rdfs:domain rdf:resource="&figi-gii;ShareClassGlobalIdentifier"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
   <owl:DatatypeProperty rdf:about="&gas;secu">
     <rdfs:label>ariva secu number</rdfs:label>
     <skos:definition rdf:datatype="&xsd;string">relates an identifier to ariva's secu number</skos:definition>
