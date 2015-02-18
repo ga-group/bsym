@@ -890,6 +890,8 @@ bps:UT	a	figi-gii:PricingSource ;
 	skos:related	mic:XNIM .
 bps:UU	a	figi-gii:PricingSource ;
 	skos:related	mic:XOTC .
+bps:UW	a	figi-gii:PricingSource ;
+	skos:related	mic:XNGS .
 bps:UX	a	figi-gii:PricingSource ;
 	skos:related	mic:XPSX .
 bps:UY	a	figi-gii:PricingSource ;
