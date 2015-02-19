@@ -688,6 +688,8 @@ bps:PNX	a	figi-gii:PricingSource ;
 	skos:related	mic:XPOW .
 bps:PP	a	figi-gii:PricingSource ;
 	skos:related	mic:XPTY .
+bps:PQ	a	figi-gii:PricingSource ;
+	skos:related	mic:PINX .
 bps:PRG	a	figi-gii:PricingSource ;
 	skos:related	mic:XPRA .
 bps:PS	a	figi-gii:PricingSource ;
