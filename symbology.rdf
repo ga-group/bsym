@@ -63,6 +63,20 @@
     <rdfs:range rdf:resource="&figi-gii;Identifier"/>
   </owl:ObjectProperty>
 
+  <owl:ObjectProperty rdf:about="&gas;tradedOn">
+    <rdfs:label>listed on</rdfs:label>
+    <skos:definition rdf:datatype="&xsd;string">relates a financial instrument to an exchange, a pricing source, or a data provider</skos:definition>
+    <rdfs:domain rdf:resource="&figi-gii;FinancialInstrumentIdentifier"/>
+    <rdfs:range rdf:resource="&figi-gii;Code"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="&gas;tradedAs">
+    <rdfs:label>listed as</rdfs:label>
+    <skos:definition rdf:datatype="&xsd;string">relates a financial instrument (identified by its identifier) to a ticker symbol or another Identifier</skos:definition>
+    <rdfs:domain rdf:resource="&figi-gii;FinancialInstrumentIdentifier"/>
+    <rdfs:range rdf:resource="&figi-gii;Identifier"/>
+  </owl:ObjectProperty>
+
   <owl:ObjectProperty rdf:about="&gas;symbolOf">
     <rdfs:label>symbol of</rdfs:label>
     <skos:definition rdf:datatype="&xsd;string">relates an identifier to its data vendor</skos:definition>
