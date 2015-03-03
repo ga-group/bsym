@@ -50,5 +50,5 @@ BEGIN {
 	print "", "skos:broader", "isin:" $1 " ;";
 	print "", "gas:symbolOf", "bsym: , <http://www.bloomberg.com/> .";
 
-	print "isin:" $1, "a", "figi-gii:ShareClassGlobalIdentifier .";
+	print "isin:" $1, "a", "gas:ISIN .";
 }
