@@ -44,7 +44,7 @@ BEGIN {
 	print "", "gas:sector", "figi-gii:" mstbl[$6] " ;";
 	print "", "foaf:name", "\"" ttlesc($8) "\" ;";
 	if ($5) {
-		print "", "gas:listedOn", "bps:" $3 " ;";
+		print "", "gas:listedOn", "bps:" $5 " ;";
 	}
 	print "", "gas:listedAs", "\"" ttlesc($4) "\" ;";
 	print "", "skos:broader", "isin:" $1 " ;";
