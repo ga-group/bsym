@@ -64,7 +64,7 @@ httpSessionId=
 scriptSessionId=${SESSID}
 " \
 	| sed 's@^[^{]*@@; s@[^}]*$@@; /^$/d' \
-	| sed 's@\([[:alnum:]]*\):@"\1":@g' \
+	| sed 's@\([[:alnum:]]*\):@"\1":@g; s@\\''@''@g' \
 	| if test "${ttl}" = "true"; then
 		jq -r '.data[] | "<http://bsym.bloomberg.com/sym/" +.ID135+"> <http://www.w3.org/2004/02/skos/core#broader> <http://www.isin.org/isin-preview/?isin='${sym}'> ."'
 	else
