@@ -203,6 +203,20 @@
     <rdfs:range rdf:resource="&xsd;decimal"/>
   </owl:DatatypeProperty>
 
+  <owl:DatatypeProperty rdf:about="&gas;expiryDate">
+    <rdfs:label>expiry date</rdfs:label>
+    <skos:definition rdf:datatype="&xsd;string">The last day that an options or futures contract is valid. When an investor buys an option, the contract gives them the right but not the obligation to buy or sell an asset at a predetermined price, called a strike price, within a given time period, which is on or before the expiration date. If the investor chooses not to exercise that right, the option expires and becomes worthless and the investor loses the money paid to buy the option.</skos:definition>
+    <dct:source>http://www.investopedia.com/terms/e/expirationdate.asp</dct:source>
+    <rdfs:range rdf:resource="&xsd;date"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="&gas;maturityDate">
+    <rdfs:label>maturity date</rdfs:label>
+    <skos:definition rdf:datatype="&xsd;string">The date on which the principal amount of a note, draft, acceptance bond or other debt instrument becomes due and is repaid to the investor and interest payments stop. It is also the termination or due date on which an installment loan must be paid in full.</skos:definition>
+    <dct:source>http://www.investopedia.com/terms/m/maturitydate.asp</dct:source>
+    <rdfs:range rdf:resource="&xsd;date"/>
+  </owl:DatatypeProperty>
+
   <!--
   //////////////////////////////////////////////////////////////////////
   //
