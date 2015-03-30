@@ -127,6 +127,12 @@
     <rdfs:range rdf:resource="&figi-gii;MarketSector"/>
   </owl:ObjectProperty>
 
+  <owl:ObjectProperty rdf:about="&gas;issuedBy">
+    <rdfs:label>issued by</rdfs:label>
+    <skos:definition rdf:datatype="&xsd;string">relates a security to its issuer</skos:definition>
+    <rdfs:domain rdf:resource="&figi-gii;Identifier"/>
+  </owl:ObjectProperty>
+
   <!--
   //////////////////////////////////////////////////////////////////////
   //
