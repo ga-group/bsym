@@ -77,6 +77,20 @@
     <rdfs:range rdf:resource="&figi-gii;Identifier"/>
   </owl:ObjectProperty>
 
+  <owl:ObjectProperty rdf:about="&gas;clearedOn">
+    <rdfs:label>cleared on</rdfs:label>
+    <skos:definition rdf:datatype="&xsd;string">relates a financial instrument to an exchange, a pricing source, or a data provider; in contrast to the original place of listing (listedOn) or the actual places of trading (tradedOn) this property captures the clearing place</skos:definition>
+    <rdfs:domain rdf:resource="&figi-gii;FinancialInstrumentIdentifier"/>
+    <rdfs:range rdf:resource="&figi-gii;Code"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="&gas;clearedAs">
+    <rdfs:label>cleared as</rdfs:label>
+    <skos:definition rdf:datatype="&xsd;string">relates a financial instrument (identified by its identifier) to a ticker symbol or another Identifier; in contrast to the identifier on the original place of listing (listedAs) or the identifier used for trading (tradedAs) this property captures the actual identifier used for clearing</skos:definition>
+    <rdfs:domain rdf:resource="&figi-gii;FinancialInstrumentIdentifier"/>
+    <rdfs:range rdf:resource="&figi-gii;Identifier"/>
+  </owl:ObjectProperty>
+
   <owl:ObjectProperty rdf:about="&gas;symbolOf">
     <rdfs:label>symbol of</rdfs:label>
     <skos:definition rdf:datatype="&xsd;string">relates an identifier to its data vendor</skos:definition>
