@@ -147,6 +147,13 @@
     <rdfs:domain rdf:resource="&figi-gii;Identifier"/>
   </owl:ObjectProperty>
 
+  <owl:ObjectProperty rdf:about="&gas;securityType">
+    <rdfs:label>security type</rdfs:label>
+    <skos:definition rdf:datatype="&xsd;string">relates a security to a security type</skos:definition>
+    <rdfs:domain rdf:resource="&figi-gii;Identifier"/>
+    <rdfs:range rdf:resource="&figi-gii;SecurityType"/>
+  </owl:ObjectProperty>
+
   <!--
   //////////////////////////////////////////////////////////////////////
   //
