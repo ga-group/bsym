@@ -298,6 +298,7 @@ data_first:
 		}
 		print_data(ctx, tok + i + 1U, 2U * tok[i].size);
 		i += 1U + 2U * tok[i].size;
+		ctx->iitem++;
 	}
 	if (i < (INDEX_T)r && !ctx->nitem) {
 		const char *cp = ctx->buf + tok[i].start;
@@ -324,11 +325,13 @@ repl(struct ctx_s ctx[static 1U], const char *sid)
 	ctx->iitem = ctx->nitem = 0U;
 	ctx->sid = sid;
 
-	if (fetch1(ctx) < 0) {
-		return 1;
-	} else if (print1(ctx) < 0) {
-		return 1;
-	}
+	do {
+		if (fetch1(ctx) < 0) {
+			return 1;
+		} else if (print1(ctx) < 0) {
+			return 1;
+		}
+	} while (ctx->iitem < ctx->nitem);
 	return 0;
 }
 
