@@ -1,3 +1,5 @@
 tmp/
 download*/
 archive*/
+*.yucc
+bsym-isin-scrape
