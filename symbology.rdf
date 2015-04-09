@@ -63,6 +63,12 @@
     <rdfs:range rdf:resource="&figi-gii;Identifier"/>
   </owl:ObjectProperty>
 
+  <owl:ObjectProperty rdf:about="&gas;listedIn">
+    <rdfs:label>listed in</rdfs:label>
+    <skos:definition rdf:datatype="&xsd;string">relates a financial instrument (identified by its identifier) to its currency (or other fungible units)</skos:definition>
+    <rdfs:domain rdf:resource="&figi-gii;FinancialInstrumentIdentifier"/>
+  </owl:ObjectProperty>
+
   <owl:ObjectProperty rdf:about="&gas;tradedOn">
     <rdfs:label>traded on</rdfs:label>
     <skos:definition rdf:datatype="&xsd;string">relates a financial instrument to an exchange, a pricing source, or a data provider; in contrast to the original place of listing (listedOn) this property captures additional exchanges</skos:definition>
@@ -77,6 +83,12 @@
     <rdfs:range rdf:resource="&figi-gii;Identifier"/>
   </owl:ObjectProperty>
 
+  <owl:ObjectProperty rdf:about="&gas;tradedIn">
+    <rdfs:label>traded in</rdfs:label>
+    <skos:definition rdf:datatype="&xsd;string">relates a financial instrument (identified by its identifier) to its currency (or other fungible units); in contrast to the currency on the original place of listing (listedIn) this property captures the currency used for trading</skos:definition>
+    <rdfs:domain rdf:resource="&figi-gii;FinancialInstrumentIdentifier"/>
+  </owl:ObjectProperty>
+
   <owl:ObjectProperty rdf:about="&gas;clearedOn">
     <rdfs:label>cleared on</rdfs:label>
     <skos:definition rdf:datatype="&xsd;string">relates a financial instrument to an exchange, a pricing source, or a data provider; in contrast to the original place of listing (listedOn) or the actual places of trading (tradedOn) this property captures the clearing place</skos:definition>
@@ -89,6 +101,12 @@
     <skos:definition rdf:datatype="&xsd;string">relates a financial instrument (identified by its identifier) to a ticker symbol or another Identifier; in contrast to the identifier on the original place of listing (listedAs) or the identifier used for trading (tradedAs) this property captures the actual identifier used for clearing</skos:definition>
     <rdfs:domain rdf:resource="&figi-gii;FinancialInstrumentIdentifier"/>
     <rdfs:range rdf:resource="&figi-gii;Identifier"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="&gas;clearedIn">
+    <rdfs:label>cleared in</rdfs:label>
+    <skos:definition rdf:datatype="&xsd;string">relates a financial instrument (identified by its identifier) to its currency (or other fungible units); in contrast to the currency on the original place of listing (listedIn) or used for trading (tradedIn) this property captures the currency used for clearing</skos:definition>
+    <rdfs:domain rdf:resource="&figi-gii;FinancialInstrumentIdentifier"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:about="&gas;symbolOf">
