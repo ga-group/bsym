@@ -101,6 +101,7 @@ static jsmnerr_t jsmn_parse_string(jsmn_parser *parser, const char *js,
 				/* Allowed escaped symbols */
 				case '\"': case '/' : case '\\' : case 'b' :
 				case 'f' : case 'r' : case 'n'  : case 't' :
+				case '\'':
 					break;
 				/* Allows escaped symbol \uXXXX */
 				case 'u':
