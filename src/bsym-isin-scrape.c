@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <curl/curl.h>
+#include <assert.h>
 #include "jsmn.h"
 
 #define BASE	"http://bsym.bloomberg.com/sym/"
@@ -121,6 +122,8 @@ recv_cb(void *data, size_t size, size_t nmemb, void *clo)
 		/* rewind to last `}' */
 		for (; ep > data && ep[-1] != '}'; ep--);
 	}
+
+	assert(ep >= sp);
 
 	/* resize? */
 	if (ctx->bix + (ep - sp) > ctx->bsz) {
