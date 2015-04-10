@@ -181,6 +181,50 @@ scriptSessionId=%.*s\n\
 	return rc;
 }
 
+static size_t
+tokcpy(char *restrict buf, const char *src, jsmntok_t tok)
+{
+	const char *cp = src + tok.start;
+	size_t cz = tok.end - tok.start;
+	char *restrict xp;
+
+	if (!memchr(cp, '\\', cz)) {
+		memcpy(buf, cp, cz);
+		return cz;
+	}
+	/* otherwise de-escape */
+	for (xp = buf; cz; cz--, xp++) {
+		if ((*xp = *cp++) == '\\') {
+			if (!--cz) {
+				break;
+			}
+			switch (*cp++) {
+			default:
+				*xp = cp[-1];
+				break;
+
+			case 'b':
+				*xp = '\b';
+				break;
+			case 'f':
+				*xp = '\f';
+				break;
+			case 'r':
+				*xp = '\r';
+				break;
+			case 'n':
+				*xp = '\n';
+				break;
+			case 't':
+				/* degrade to space */
+				*xp = ' ';
+				break;
+			}
+		}
+	}
+	return xp - buf;
+}
+
 static int
 print_data(struct ctx_s ctx[static 1U], jsmntok_t *tok, size_t ntok)
 {
@@ -234,12 +278,9 @@ print_data(struct ctx_s ctx[static 1U], jsmntok_t *tok, size_t ntok)
 
 	for (size_t j = 0U; j < NTOKEN; j++) {
 		const size_t i = offs[j];
-		const char *cp = ctx->buf + tok[i].start;
-		const size_t cz = tok[i].end - tok[i].start;
 
 		buf[bix++] = '\t';
-		memcpy(buf + bix, cp, cz);
-		bix += cz;
+		bix += tokcpy(buf + bix, ctx->buf, tok[i]);
 	}
 
 	buf[bix++] = '\n';
