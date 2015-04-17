@@ -4,3 +4,4 @@ Scrape Bloomberg's bsym service for ISIN.
 If omitted take input from stdin.
 
   --agent=STRING        Use agent string STRING instead of baiduspider.
+  --raw                 Return raw API result.

@@ -25,6 +25,7 @@ struct ctx_s {
 };
 
 static char *agent = "Mozilla/5.0 (compatible; bsym-scrape/0.1)";
+static size_t(*recv_f)(void*, size_t, size_t, void*);
 
 static size_t
 sess_cb(void *data, size_t size, size_t nmemb, void *clo)
@@ -90,6 +91,14 @@ scriptSessionId=\n\
 }
 
 static size_t
+rraw_cb(void *data, size_t size, size_t nmemb, void *clo)
+{
+	size_t rz = size * nmemb;
+	fwrite(data, size, nmemb, stdout);
+	return rz;
+}
+
+static size_t
 recv_cb(void *data, size_t size, size_t nmemb, void *clo)
 {
 	size_t rz = size * nmemb;
@@ -147,8 +156,11 @@ fetch1(struct ctx_s ctx[static 1U])
 
 	curl_easy_setopt(ctx->hdl, CURLOPT_URL, BASE SRCH);
 	curl_easy_setopt(ctx->hdl, CURLOPT_USERAGENT, agent);
-	curl_easy_setopt(ctx->hdl, CURLOPT_WRITEFUNCTION, recv_cb);
-	curl_easy_setopt(ctx->hdl, CURLOPT_WRITEDATA, ctx);
+
+	if (recv_f) {
+		curl_easy_setopt(ctx->hdl, CURLOPT_WRITEFUNCTION, recv_f);
+		curl_easy_setopt(ctx->hdl, CURLOPT_WRITEDATA, ctx);
+	}
 
 	uz = snprintf(_url, sizeof(_url), "\
 callCount=1\n\
@@ -372,6 +384,8 @@ repl(struct ctx_s ctx[static 1U], const char *sid)
 	do {
 		if (fetch1(ctx) < 0) {
 			return 1;
+		} else if (recv_f == NULL) {
+			;
 		} else if (print1(ctx) < 0) {
 			return 1;
 		}
@@ -400,6 +414,10 @@ main(int argc, char *argv[])
 
 	if (argi->agent_arg) {
 		agent = argi->agent_arg;
+	}
+
+	if (!argi->raw_flag) {
+		recv_f = recv_cb;
 	}
 
 	/* get ourself a session id */
