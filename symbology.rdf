@@ -294,4 +294,10 @@
     <skos:definition>An International Securities Identification Number (ISIN) uniquely identifies a security. Its structure is defined in ISO 6166. Securities for which ISINs are issued include bonds, commercial paper, stocks and warrants. The ISIN code is a 12-character alpha-numerical code that does not contain information characterizing financial instruments but serves for uniform identification of a security at trading and settlement.Securities to which ISINs can be issued include debt securities, shares, options, derivatives and futures. The ISIN identifies the security, not the exchange (if any) on which it trades; it is not a ticker symbol. For instance, Daimler AG stock trades through almost 30 trading platforms and exchanges worldwide, and is priced in five different currencies; it has the same ISIN on each, though not the same ticker symbol. ISIN cannot specify a particular trading location in this case, and another identifier, typically MIC (Market Identification Code) or the three-letter exchange code, will have to be specified in addition to the ISIN. The Currency of the trade will also be required to uniquely identify the instrument using this method.</skos:definition>
   </owl:Class>
 
+  <owl:Class rdf:about="&gas;WKN">
+    <rdfs:label>isin</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&figi-gii;CompositeGlobalIdentifier"/>
+    <skos:definition>The Wertpapierkennnummer, (WKN, WPKN, WPK or simply Wert), is a German securities identification code. Six digits or capital letters (excluding I and O), no check digit.</skos:definition>
+  </owl:Class>
+
 </rdf:RDF>
