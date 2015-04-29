@@ -101,6 +101,10 @@ rraw_cb(void *data, size_t size, size_t nmemb, void *clo)
 static size_t
 recv_cb(void *data, size_t size, size_t nmemb, void *clo)
 {
+	static enum {
+		ST_UNK,
+		ST_TRX,
+	} st;
 	size_t rz = size * nmemb;
 	struct ctx_s *ctx = clo;
 	const char *sp;
@@ -109,27 +113,40 @@ recv_cb(void *data, size_t size, size_t nmemb, void *clo)
 #define EODATA	");"
 
 	/* try and find our beacons */
-	if ((sp = memmem(data, rz, BODATA, strlenof(BODATA))) == NULL) {
-		/* didn't find it, better copy it all */
-		sp = data;
+	sp = memmem(data, rz, BODATA, strlenof(BODATA));
+	ep = memmem(data, rz, EODATA, strlenof(EODATA));
 
-		if (ctx->bix == 0U) {
-			/* no need, is there? */
-			return rz;
+	switch (st) {
+	case ST_UNK:
+		if (sp == NULL) {
+			goto out;
 		}
-	} else {
 		/* reset buffer index */
 		ctx->bix = 0U;
 		/* fast-forward to actual data `(' */
 		for (const char *const tp = (char*)data + rz;
 		     sp < tp && *sp != '{'; sp++);
-	}
-	if ((ep = memmem(data, rz, EODATA, strlenof(EODATA))) == NULL) {
-		/* just copy it all */
-		ep = (char*)data + rz;
-	} else {
-		/* rewind to last `}' */
+		/* we're inside a transaction */
+		st = ST_TRX;
+		goto check_ep;
+	case ST_TRX:
+		if (sp != NULL) {
+			/* huh?  another one in the middle? */
+			goto out;
+		}
+		/* otherwise copy from beginning */
+		sp = data;
+	check_ep:
+		if (ep < sp/*includes ep == NULL*/) {
+			/* copy it all */
+			ep = (char*)data + rz;
+			break;
+		}
+		/* or else rewind to last `}' */
 		for (; ep > data && ep[-1] != '}'; ep--);
+		/* we're out of the transaction */
+		st = ST_UNK;
+		break;
 	}
 
 	assert(ep >= sp);
@@ -142,6 +159,7 @@ recv_cb(void *data, size_t size, size_t nmemb, void *clo)
 	/* copy */
 	memcpy(ctx->buf + ctx->bix, sp, ep - sp);
 	ctx->bix += ep - sp;
+out:
 	return rz;
 }
 
