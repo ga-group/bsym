@@ -17,5 +17,18 @@ while test "$#" -ge 2; do
 	join -t'	' -j1 \
 		<(bsdcat "${SUB}" | awk 'BEGIN{FS="|"; OFS="\t"}{print NR, $1, $2, $3}' | sort -t'	') \
 		<(bsdcat "${RES}" | grep -vF '|N.A.' | tr '|' '\t' | sort -t'	') \
-		| cut -f2-
+		| awk 'BEGIN {
+	FS = OFS = "\t";
+}
+{
+	bbgid = $8;
+	bbcid = $9;
+	ticker = $6;
+	prcsrc = $7;
+	sector = $12;
+	sectyp = $11;
+	secdes = $5;
+
+	print $2, $3, $4, bbgid, bbcid, ticker, prcsrc, sector, sectyp, secdes;
+}'
 done
