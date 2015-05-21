@@ -305,6 +305,13 @@
     <rdfs:range rdf:resource="&xsd;time"/>
   </owl:DatatypeProperty>
 
+  <owl:DatatypeProperty rdf:about="&gas;issueDate">
+    <rdfs:label>issue date</rdfs:label>
+    <skos:definition rdf:datatype="&xsd;string">Date instrument was issued. For Fixed Income IOIs for new issues, specifies the issue date.</skos:definition>
+    <dct:source>http://www.fixtradingcommunity.org/pg/resources/fiximate</dct:source>
+    <rdfs:range rdf:resource="&xsd;date"/>
+  </owl:DatatypeProperty>
+
   <!--
   //////////////////////////////////////////////////////////////////////
   //
