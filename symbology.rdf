@@ -182,6 +182,19 @@
     <skos:definition rdf:datatype="&xsd;string">For derivatives whose strikes are measured in physical units, this specifies its unit of measure.</skos:definition>
   </owl:ObjectProperty>
 
+  <owl:ObjectProperty rdf:about="&gas;underlyingInstrument">
+    <rdfs:label>underlying instrument</rdfs:label>
+    <skos:definition rdf:datatype="&xsd;string">Instrument to deliver, or upon which the valuation at final settlement is based.</skos:definition>
+    <rdfs:domain rdf:resource="&figi-gii;FinancialInstrumentIdentifier"/>
+    <rdfs:range rdf:resource="&figi-gii;FinancialInstrumentIdentifier"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="&gas;underlyingProduct">
+    <rdfs:label>underlying produce</rdfs:label>
+    <skos:definition rdf:datatype="&xsd;string">Product to deliver, or upon which the valuation at final settlement is based.</skos:definition>
+    <rdfs:domain rdf:resource="&figi-gii;FinancialInstrumentIdentifier"/>
+  </owl:ObjectProperty>
+
   <!--
   //////////////////////////////////////////////////////////////////////
   //
