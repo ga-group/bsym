@@ -172,6 +172,16 @@
     <rdfs:range rdf:resource="&figi-gii;SecurityType"/>
   </owl:ObjectProperty>
 
+  <owl:ObjectProperty rdf:about="&gas;strikeCurrency">
+    <rdfs:label>strike currency</rdfs:label>
+    <skos:definition rdf:datatype="&xsd;string">The currency in which the strike price is denoted.</skos:definition>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="&gas;strikeUnitOfMeasure">
+    <rdfs:label>strike UOM</rdfs:label>
+    <skos:definition rdf:datatype="&xsd;string">For derivatives whose strikes are measured in physical units, this specifies its unit of measure.</skos:definition>
+  </owl:ObjectProperty>
+
   <!--
   //////////////////////////////////////////////////////////////////////
   //
@@ -245,6 +255,12 @@
     <rdfs:label>strike price</rdfs:label>
     <skos:definition rdf:datatype="&xsd;string">The price at which a specific derivative contract can be exercised. Strike prices is mostly used to describe stock and index options, in which strike prices are fixed in the contract. For call options, the strike price is where the security can be bought (up to the expiration date), while for put options the strike price is the price at which shares can be sold.</skos:definition>
     <dct:source>http://www.investopedia.com/terms/s/strikeprice.asp</dct:source>
+    <rdfs:range rdf:resource="&xsd;decimal"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="&gas;strikeValue">
+    <rdfs:label>strike price</rdfs:label>
+    <skos:definition rdf:datatype="&xsd;string">The number of units at which a specific derivative contract can be exercised.</skos:definition>
     <rdfs:range rdf:resource="&xsd;decimal"/>
   </owl:DatatypeProperty>
 
