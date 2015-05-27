@@ -293,7 +293,7 @@
 
   <owl:DatatypeProperty rdf:about="&gas;maturityMonthYear">
     <rdfs:label>maturity month-year</rdfs:label>
-    <skos:definition rdf:datatype="&xsd;string">Specifies the month and year of maturity. Applicable for standardized derivatives which are typically only referenced by month and year (e.g. S&P futures). Note MaturityDate (a full date) can also be specified.</skos:definition>
+    <skos:definition rdf:datatype="&xsd;string">Specifies the month and year of maturity. Applicable for standardized derivatives which are typically only referenced by month and year (e.g. S&amp;P futures). Note MaturityDate (a full date) can also be specified.</skos:definition>
     <dct:source>http://www.fixtradingcommunity.org/pg/resources/fiximate</dct:source>
     <rdfs:range rdf:resource="&xsd;gYearMonth"/>
   </owl:DatatypeProperty>
