@@ -1,0 +1,314 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix figi-gii: <http://www.omg.org/spec/FIGI/GlobalInstrumentIdentifiers/> .
+@prefix gas: <http://schema.ga-group.nl/symbology#> .
+
+<http://schema.ga-group.nl/symbology#>
+    dct:license """The MIT License:  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+      The copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+      THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.""", "http://opensource.org/licenses/mit-license.php"^^xsd:anyURI ;
+    a owl:Ontology ;
+    rdfs:label "Ontology for symbology" ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> ;
+    owl:versionIRI <http://schema.ga-group.nl/0.1/symbology#> .
+
+
+## Classes
+gas:DataVendor
+    dct:source "http://en.wikipedia.org/wiki/Financial_data_vendor" ;
+    a owl:Class ;
+    rdfs:label "data vendor" ;
+    rdfs:subClassOf [
+        a owl:Restriction ;
+        owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+        owl:onClass gas:Symbology ;
+        owl:onProperty figi-gii:isIdentifiedBy
+    ] ;
+    skos:definition """A financial data vendor provides data to financial firms, traders, and investors.
+The data distributed is collected from sources such as a stock exchange feeds, brokers and dealer desks or regulatory filings (e.g. an SEC filing)""" .
+
+gas:ISIN
+    a owl:Class ;
+    rdfs:label "isin" ;
+    rdfs:subClassOf figi-gii:ShareClassGlobalIdentifier ;
+    skos:definition """An International Securities Identification Number (ISIN) uniquely identifies a security. Its structure is defined in ISO 6166.
+
+Securities for which ISINs are issued include bonds, commercial paper, stocks and warrants. The ISIN code is a 12-character alpha-numerical code that does not contain information characterizing financial instruments but serves for uniform identification of a security at trading and settlement.Securities to which ISINs can be issued include debt securities, shares, options, derivatives and futures.
+
+The ISIN identifies the security, not the exchange (if any) on which it trades; it is not a ticker symbol. For instance, Daimler AG stock trades through almost 30 trading platforms and exchanges worldwide, and is priced in five different currencies; it has the same ISIN on each, though not the same ticker symbol. ISIN cannot specify a particular trading location in this case, and another identifier, typically MIC (Market Identification Code) or the three-letter exchange code, will have to be specified in addition to the ISIN. The Currency of the trade will also be required to uniquely identify the instrument using this method.""" .
+
+gas:Symbology
+    a owl:Class ;
+    rdfs:label "symbology" ;
+    skos:definition "A collection of symbols" .
+
+gas:WKN
+    a owl:Class ;
+    rdfs:label "isin" ;
+    rdfs:subClassOf figi-gii:CompositeGlobalIdentifier ;
+    skos:definition "The Wertpapierkennnummer, (WKN, WPKN, WPK or simply Wert), is a German securities identification code. Six digits or capital letters (excluding I and O), no check digit." .
+
+
+## Properties
+gas:clearedAs
+    a owl:ObjectProperty ;
+    rdfs:domain figi-gii:FinancialInstrumentIdentifier ;
+    rdfs:label "cleared as" ;
+    rdfs:range figi-gii:Identifier ;
+    skos:definition "relates a financial instrument (identified by its identifier) to a ticker symbol or another Identifier; in contrast to the identifier on the original place of listing (listedAs) or the identifier used for trading (tradedAs) this property captures the actual identifier used for clearing" .
+
+gas:clearedIn
+    a owl:ObjectProperty ;
+    rdfs:domain figi-gii:FinancialInstrumentIdentifier ;
+    rdfs:label "cleared in" ;
+    skos:definition "relates a financial instrument (identified by its identifier) to its currency (or other fungible units); in contrast to the currency on the original place of listing (listedIn) or used for trading (tradedIn) this property captures the currency used for clearing" .
+
+gas:clearedOn
+    a owl:ObjectProperty ;
+    rdfs:domain figi-gii:FinancialInstrumentIdentifier ;
+    rdfs:label "cleared on" ;
+    rdfs:range figi-gii:Code ;
+    skos:definition "relates a financial instrument to an exchange, a pricing source, or a data provider; in contrast to the original place of listing (listedOn) or the actual places of trading (tradedOn) this property captures the clearing place" .
+
+gas:componentOf
+    a owl:IrreflexiveProperty, owl:ObjectProperty ;
+    rdfs:domain figi-gii:GlobalIdentifier ;
+    rdfs:label "component of" ;
+    rdfs:range figi-gii:CompositeGlobalIdentifier ;
+    owl:inverseOf gas:composedOf ;
+    skos:definition "relates an identifer to its composite identifiers" .
+
+gas:composedOf
+    a owl:IrreflexiveProperty, owl:ObjectProperty ;
+    rdfs:domain figi-gii:CompositeGlobalIdentifier ;
+    rdfs:label "composed of" ;
+    rdfs:range figi-gii:GlobalIdentifier ;
+    owl:inverseOf gas:componentOf ;
+    skos:definition "relates a composite identifer to its (security+exchange level) identifiers" .
+
+gas:conid
+    a owl:DatatypeProperty ;
+    rdfs:domain figi-gii:ShareClassGlobalIdentifier ;
+    rdfs:label "interactive brokers contract identifier" ;
+    rdfs:range xsd:nonNegativeInteger ;
+    skos:definition "relates an identifier to IB's conid number" .
+
+gas:contractSize
+    dct:source "http://www.investopedia.com/terms/c/contractsize.asp" ;
+    a owl:DatatypeProperty ;
+    rdfs:label "contract size" ;
+    rdfs:range xsd:nonNegativeInteger ;
+    skos:definition "The deliverable quantity of commodities or financial instruments underlying futures and option contracts that are traded on an exchange. The contract size is standardized for such futures and options contracts, and varies depending on the commodity or instrument that is traded. The contract size also determines the dollar value of a unit move in the underlying commodity or instrument." .
+
+gas:coversSector
+    a owl:ObjectProperty ;
+    rdfs:domain figi-gii:PricingSource ;
+    rdfs:label "covers" ;
+    rdfs:range figi-gii:MarketSector ;
+    skos:definition "relates a pricing source to market sectors" .
+
+gas:expiryDate
+    dct:source "http://www.investopedia.com/terms/e/expirationdate.asp" ;
+    a owl:DatatypeProperty ;
+    rdfs:label "expiry date" ;
+    rdfs:range xsd:date ;
+    skos:definition "The last day that an options or futures contract is valid. When an investor buys an option, the contract gives them the right but not the obligation to buy or sell an asset at a predetermined price, called a strike price, within a given time period, which is on or before the expiration date. If the investor chooses not to exercise that right, the option expires and becomes worthless and the investor loses the money paid to buy the option." .
+
+gas:isix
+    a owl:DatatypeProperty ;
+    rdfs:domain figi-gii:GlobalIdentifier ;
+    rdfs:label "isix" ;
+    rdfs:range xsd:nonNegativeInteger ;
+    skos:definition "relates an identifier to XETRA's ISIX number" .
+
+gas:issueDate
+    dct:source "http://www.fixtradingcommunity.org/pg/resources/fiximate" ;
+    a owl:DatatypeProperty ;
+    rdfs:label "issue date" ;
+    rdfs:range xsd:date ;
+    skos:definition "Date instrument was issued. For Fixed Income IOIs for new issues, specifies the issue date." .
+
+gas:issuedBy
+    a owl:ObjectProperty ;
+    rdfs:domain figi-gii:Identifier ;
+    rdfs:label "issued by" ;
+    skos:definition "relates a security to its issuer" .
+
+gas:listedAs
+    a owl:ObjectProperty ;
+    rdfs:domain figi-gii:FinancialInstrumentIdentifier ;
+    rdfs:label "listed as" ;
+    rdfs:range figi-gii:Identifier ;
+    skos:definition "relates a financial instrument (identified by its identifier) to a ticker symbol or another Identifier" .
+
+gas:listedIn
+    a owl:ObjectProperty ;
+    rdfs:domain figi-gii:FinancialInstrumentIdentifier ;
+    rdfs:label "listed in" ;
+    skos:definition "relates a financial instrument (identified by its identifier) to its currency (or other fungible units)" .
+
+gas:listedOn
+    a owl:ObjectProperty ;
+    rdfs:domain figi-gii:FinancialInstrumentIdentifier ;
+    rdfs:label "listed on" ;
+    rdfs:range figi-gii:Code ;
+    skos:definition "relates a financial instrument to an exchange, a pricing source, or a data provider" .
+
+gas:listedSince
+    a owl:DatatypeProperty ;
+    rdfs:domain figi-gii:FinancialInstrumentIdentifier ;
+    rdfs:label "listed since" ;
+    rdfs:range xsd:dateTime ;
+    skos:definition "indicates since when a financial instrument (identified by its identifier) has been listed" .
+
+gas:listedTill
+    a owl:DatatypeProperty ;
+    rdfs:domain figi-gii:FinancialInstrumentIdentifier ;
+    rdfs:label "listed till" ;
+    rdfs:range xsd:dateTime ;
+    skos:definition "indicates till when a financial instrument (identified by its identifier) had been listed" .
+
+gas:maturityDate
+    dct:source "http://www.investopedia.com/terms/m/maturitydate.asp" ;
+    a owl:DatatypeProperty ;
+    rdfs:label "maturity date" ;
+    rdfs:range xsd:date ;
+    skos:definition "The date on which the principal amount of a note, draft, acceptance bond or other debt instrument becomes due and is repaid to the investor and interest payments stop. It is also the termination or due date on which an installment loan must be paid in full." .
+
+gas:maturityMonthYear
+    dct:source "http://www.fixtradingcommunity.org/pg/resources/fiximate" ;
+    a owl:DatatypeProperty ;
+    rdfs:label "maturity month-year" ;
+    rdfs:range xsd:gYearMonth ;
+    skos:definition "Specifies the month and year of maturity. Applicable for standardized derivatives which are typically only referenced by month and year (e.g. S&P futures). Note MaturityDate (a full date) can also be specified." .
+
+gas:maturityTime
+    dct:source "http://www.fixtradingcommunity.org/pg/resources/fiximate" ;
+    a owl:DatatypeProperty ;
+    rdfs:label "maturity time" ;
+    rdfs:range xsd:time ;
+    skos:definition "For NDFs this represents the fixing time of the contract. It is optional to specify the fixing time." .
+
+gas:precededBy
+    a owl:IrreflexiveProperty, owl:ObjectProperty ;
+    rdfs:domain figi-gii:Identifier ;
+    rdfs:label "preceded by" ;
+    rdfs:range figi-gii:Identifier ;
+    owl:inverseOf gas:supersededBy ;
+    skos:definition "indicates previous instances of an identifier; pair with validFrom predicate to record timestamp" .
+
+gas:sector
+    a owl:ObjectProperty ;
+    rdfs:label "sector" ;
+    skos:definition "maps a financial instrument identifier to a market sector" .
+
+gas:secu
+    a owl:DatatypeProperty ;
+    rdfs:domain figi-gii:ShareClassGlobalIdentifier ;
+    rdfs:label "ariva secu number" ;
+    rdfs:range xsd:nonNegativeInteger ;
+    skos:definition "relates an identifier to ariva's secu number" .
+
+gas:securityType
+    a owl:ObjectProperty ;
+    rdfs:domain figi-gii:Identifier ;
+    rdfs:label "security type" ;
+    rdfs:range figi-gii:SecurityType ;
+    skos:definition "relates a security to a security type" .
+
+gas:strikeCurrency
+    a owl:ObjectProperty ;
+    rdfs:label "strike currency" ;
+    skos:definition "The currency in which the strike price is denoted." .
+
+gas:strikePrice
+    dct:source "http://www.investopedia.com/terms/s/strikeprice.asp" ;
+    a owl:DatatypeProperty ;
+    rdfs:label "strike price" ;
+    rdfs:range xsd:decimal ;
+    skos:definition "The price at which a specific derivative contract can be exercised. Strike prices is mostly used to describe stock and index options, in which strike prices are fixed in the contract. For call options, the strike price is where the security can be bought (up to the expiration date), while for put options the strike price is the price at which shares can be sold." .
+
+gas:strikeUnitOfMeasure
+    a owl:ObjectProperty ;
+    rdfs:label "strike UOM" ;
+    skos:definition "For derivatives whose strikes are measured in physical units, this specifies its unit of measure." .
+
+gas:strikeValue
+    a owl:DatatypeProperty ;
+    rdfs:label "strike price" ;
+    rdfs:range xsd:decimal ;
+    skos:definition "The number of units at which a specific derivative contract can be exercised." .
+
+gas:supersededBy
+    a owl:IrreflexiveProperty, owl:ObjectProperty ;
+    rdfs:domain figi-gii:Identifier ;
+    rdfs:label "superseded by" ;
+    rdfs:range figi-gii:Identifier ;
+    owl:inverseOf gas:precededBy ;
+    skos:definition "indicates the supersession of an identifier; pair with validTill predicate to record timestamp" .
+
+gas:symbolOf
+    a owl:ObjectProperty ;
+    rdfs:domain figi-gii:Identifier ;
+    rdfs:label "symbol of" ;
+    rdfs:range gas:Symbology ;
+    skos:definition "relates an identifier to its data vendor" .
+
+gas:tradedAs
+    a owl:ObjectProperty ;
+    rdfs:domain figi-gii:FinancialInstrumentIdentifier ;
+    rdfs:label "traded as" ;
+    rdfs:range figi-gii:Identifier ;
+    skos:definition "relates a financial instrument (identified by its identifier) to a ticker symbol or another Identifier; in contrast to the identifier on the original place of listing (listedAs) this property captures the actual identifier used for trading" .
+
+gas:tradedIn
+    a owl:ObjectProperty ;
+    rdfs:domain figi-gii:FinancialInstrumentIdentifier ;
+    rdfs:label "traded in" ;
+    skos:definition "relates a financial instrument (identified by its identifier) to its currency (or other fungible units); in contrast to the currency on the original place of listing (listedIn) this property captures the currency used for trading" .
+
+gas:tradedOn
+    a owl:ObjectProperty ;
+    rdfs:domain figi-gii:FinancialInstrumentIdentifier ;
+    rdfs:label "traded on" ;
+    rdfs:range figi-gii:Code ;
+    skos:definition "relates a financial instrument to an exchange, a pricing source, or a data provider; in contrast to the original place of listing (listedOn) this property captures additional exchanges" .
+
+gas:underlyingInstrument
+    a owl:ObjectProperty ;
+    rdfs:domain figi-gii:FinancialInstrumentIdentifier ;
+    rdfs:label "underlying instrument" ;
+    rdfs:range figi-gii:FinancialInstrumentIdentifier ;
+    skos:definition "Instrument to deliver, or upon which the valuation at final settlement is based." .
+
+gas:underlyingProduct
+    a owl:ObjectProperty ;
+    rdfs:domain figi-gii:FinancialInstrumentIdentifier ;
+    rdfs:label "underlying produce" ;
+    skos:definition "Product to deliver, or upon which the valuation at final settlement is based." .
+
+gas:validSince
+    a owl:DatatypeProperty ;
+    rdfs:label "valid since" ;
+    rdfs:range xsd:dateTime ;
+    skos:definition "generic valid time" .
+
+gas:validTill
+    a owl:DatatypeProperty ;
+    rdfs:label "valid till" ;
+    rdfs:range xsd:dateTime ;
+    skos:definition "generic valid time" .
+
+gas:wkn
+    a owl:DatatypeProperty ;
+    rdfs:domain figi-gii:ShareClassGlobalIdentifier ;
+    rdfs:label "wkn" ;
+    rdfs:range xsd:string ;
+    skos:definition "relates an identifier to its Wertpapierkennummer" .
+
