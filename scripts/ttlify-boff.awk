@@ -449,9 +449,17 @@ BEGIN {
 	mkts = $9;
 	tick = $10;
 	name = $11;
-	comp = $13;
+	if ($7 != tick " " mkts && length($7) > length(tick)) {
+		## maybe that's the better tick?
+		tick = $7;
+	}
+	if (mkts == "Equity" && $13 ~ /BBG........./) {
+		comp = $13;
+	}
 	exch = $19;
-	shcl = $20;
+	if (mkts == "Equity" && $20 ~ /BBG........./) {
+		shcl = $20;
+	}
 
 	if ($2 < 0) {
 		print "bsym:" $4, "gas:listedTill", "\"" date "\"^^xsd:date .";
