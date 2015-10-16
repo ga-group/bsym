@@ -54,6 +54,12 @@ gas:WKN
     rdfs:subClassOf figi-gii:CompositeGlobalIdentifier ;
     skos:definition "The Wertpapierkennnummer, (WKN, WPKN, WPK or simply Wert), is a German securities identification code. Six digits or capital letters (excluding I and O), no check digit." .
 
+gas:FIGI
+    a owl:Class ;
+    rdfs:label "figi" ;
+    rdfs:subClassOf figi-gii:GlobalIdentifier ;
+    skos:definition "A 12 digit alpha-numeric, randomly generated ID covering active and inactive securities. In total there will be more than 852 billion potential combinations available. The first 3 characters begin with 'BBG', positions 4-11 are alpha-numeric (less vowels) and the last digit is a check digit, which is calculated based on the Modulus 10 Double Add Double Formula." .
+
 
 ## Properties
 gas:clearedAs
