@@ -443,7 +443,7 @@ BEGIN {
 		date = DATE;
 	}
 }
-(NF > 1) {
+(NF >= 11 && $10 && $11) {
 	figi = $4;
 	ftyp = $8;
 	mkts = $9;
