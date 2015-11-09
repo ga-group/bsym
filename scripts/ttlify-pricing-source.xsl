@@ -19,6 +19,7 @@
 @prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .
 
 </xsl:text>
+    <xsl:apply-templates/>
   </xsl:template>
 
   <xsl:template match="owl:NamedIndividual">
