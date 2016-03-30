@@ -34,7 +34,7 @@ BEGIN {
 		ARGC = 2;
 	}
 
-	print "@prefix bsym: <http://bsym.bloomberg.com/sym/> .";
+	print "@prefix bsym: <http://openfigi.com/id/> .";
 	print "@prefix bps: <http://bsym.bloomberg.com/pricing_source/> .";
 	print;
 
@@ -2575,6 +2575,6 @@ BEGIN {
 	}
 	if (comp && figi != comp) {
 		print "bsym:" comp, "a", "figi-gii:CompositeGlobalIdentifier ;";
-		print "", "gas:symbolOf", "bsym: , <http://www.bloomberg.com/> .";
+		print "", "gas:symbolOf", "<http://openfigi.com/> .";
 	}
 }

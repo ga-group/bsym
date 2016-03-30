@@ -34,7 +34,7 @@ BEGIN {
 	}
 
 	print "@prefix foaf: <http://xmlns.com/foaf/0.1/> .";
-	print "@prefix bsym: <http://bsym.bloomberg.com/sym/> .";
+	print "@prefix bsym: <http://openfigi.com/id/> .";
 	print "@prefix bps: <http://bsym.bloomberg.com/pricing_source/> .";
 	print "@prefix figi-gii: <http://www.omg.org/spec/FIGI/GlobalInstrumentIdentifiers/> .";
 	print "@prefix figi-typ: <http://www.omg.org/spec/FIGI/SecurityTypes/> .";
