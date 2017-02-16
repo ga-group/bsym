@@ -2571,7 +2571,7 @@ BEGIN {
 	print "", "gas:symbolOf", "bsym: , <http://www.bloomberg.com/> .";
 	if (shcl && figi != shcl) {
 		print "bsym:" shcl, "a", "figi-gii:ShareClassGlobalIdentifier ;";
-		print "", "gas:symbolOf", "bsym: , <http://www.bloomberg.com/> .";
+		print "", "gas:symbolOf", "<http://openfigi.com/> , <http://www.bloomberg.com/> .";
 	}
 	if (comp && figi != comp) {
 		print "bsym:" comp, "a", "figi-gii:CompositeGlobalIdentifier ;";
