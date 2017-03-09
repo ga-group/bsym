@@ -56,6 +56,13 @@ gas:FIGI
 
 
 ## Properties
+gas:cfi
+    a owl:ObjectProperty;
+    rdfs:domain figi-gii:FinancialInstrumentIdentifier ;
+    rdfs:label "cfi" ;
+    rdfs:range xsd:string ;
+    skos:definition "classifies the instrument identified according to ISO 10962" .
+
 gas:clearedAs
     a owl:ObjectProperty ;
     rdfs:domain figi-gii:FinancialInstrumentIdentifier ;
