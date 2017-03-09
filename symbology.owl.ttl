@@ -48,12 +48,6 @@ gas:Symbology
     rdfs:label "symbology" ;
     skos:definition "A collection of symbols" .
 
-gas:WKN
-    a owl:Class ;
-    rdfs:label "isin" ;
-    rdfs:subClassOf figi-gii:CompositeGlobalIdentifier ;
-    skos:definition "The Wertpapierkennnummer, (WKN, WPKN, WPK or simply Wert), is a German securities identification code. Six digits or capital letters (excluding I and O), no check digit." .
-
 gas:FIGI
     a owl:Class ;
     rdfs:label "figi" ;
