@@ -2507,7 +2507,7 @@ BEGIN {
 		date = DATE;
 	}
 }
-(NF >= 11 && $10 && $11) {
+(NF >= 11 && $10 && $11 && $4) {
 	figi = $4;
 	mkts = $9;
 	tick = $10;
@@ -2568,10 +2568,10 @@ BEGIN {
 	if (DIFF) {
 		print "", "gas:listedSince", "\"" date "\"^^xsd:date ;"
 	}
-	print "", "gas:symbolOf", "<http://openfigi.com/> , <http://www.bloomberg.com/> .";
+	print "", "gas:symbolOf", "<http://openfigi.com/> .";
 	if (shcl && figi != shcl) {
 		print "bsym:" shcl, "a", "figi-gii:ShareClassGlobalIdentifier ;";
-		print "", "gas:symbolOf", "<http://openfigi.com/> , <http://www.bloomberg.com/> .";
+		print "", "gas:symbolOf", "<http://openfigi.com/> .";
 	}
 	if (comp && figi != comp) {
 		print "bsym:" comp, "a", "figi-gii:CompositeGlobalIdentifier ;";
