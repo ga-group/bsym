@@ -1,7 +1,7 @@
 CC ?= cc
 CFLAGS ?= -std=c99
 WARNFLAGS ?= -Wall -Wextra
-YUCK ?= yuck
+YUCK ?= ../build-aux/yuck
 
 all: bsym-isin-scrape
 
