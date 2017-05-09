@@ -182,7 +182,7 @@ explode(FILE *whence)
 		/* and obviously remember the filename too */
 		memcpy(last[which], prfx, nfn + 1U);
 		/* output current file name for educational purposes */
-		fwrite(prfx, sizeof(*prfx), nfn, stdout);
+		puts(prfx);
 
 	wr:
 		/* bang the line */
