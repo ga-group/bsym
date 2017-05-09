@@ -50,6 +50,11 @@
 # define countof(x)	(sizeof(x) / sizeof(*x))
 #endif	/* !countof */
 
+struct grnam_s {
+	const char *n;
+	size_t m;
+};
+
 static __attribute__((format(printf, 1, 2))) void
 error(const char *fmt, ...)
 {
@@ -69,6 +74,29 @@ error(const char *fmt, ...)
 
 static char prfx[1024U];
 static size_t prfz;
+
+#define MAX_GN	(256U)
+
+static struct grnam_s
+snarf_graph(const char *line, size_t llen)
+{
+	const char *fp, *ep;
+	size_t n;
+
+	if (UNLIKELY(!llen)) {
+		return (struct grnam_s){};
+	}
+	/* find the last <...> */
+	for (ep = line + llen - 1; ep > line && ep[-1] != '>'; ep--);
+	for (fp = ep - 1; fp >= line && *fp != '<'; fp--);
+
+	if (UNLIKELY(fp < line || ep <= line)) {
+		return (struct grnam_s){};
+	} else if (UNLIKELY(ep - fp >= MAX_GN)) {
+		ep = fp + MAX_GN;
+	}
+	return (struct grnam_s){fp, ep - fp};
+}
 
 static size_t
 mtrcpy(char *restrict tgt, const char *src, size_t len)
@@ -91,34 +119,20 @@ mtrcpy(char *restrict tgt, const char *src, size_t len)
 	return j;
 }
 
-static ssize_t
-mkfn(const char *line, size_t llen)
+static size_t
+mkfn(struct grnam_s g)
 {
-	const char *fp, *ep;
+	const char *fp = g.n + 1, *ep = g.n + g.m - 1;
 	size_t n;
 
-	if (UNLIKELY(!llen)) {
-		return -1;
-	}
-	/* find the last <...> */
-	for (ep = line + llen - 1; ep >= line && *ep != '>'; ep--);
-	for (fp = ep - 1; fp > line && fp[-1] != '<'; fp--);
-
-	if (UNLIKELY(fp <= line || ep <= line)) {
-		return -1;
-	} else if (UNLIKELY(ep - fp >= countof(prfx))) {
-		ep = fp + countof(prfx) - 1;
-	}
-
 	/* assume URNs and fast-forward past : or :// */
-	for (const char *x = memchr(fp, ':', ep - fp); x;) {
+	for (const char *x = memchr(g.n, ':', g.m); x;) {
 		fp = x + 1U;
 		break;
 	}
 	/* otherwise copy to PRFX */
-	if (UNLIKELY(!(n = mtrcpy(prfx + prfz, fp, ep - fp)))) {
-		return -1;
-	}
+	n = mtrcpy(prfx + prfz, fp, ep - fp);
+
 	/* append .nq */
 	prfx[prfz + n++] = '.';
 	prfx[prfz + n++] = 'n';
@@ -131,10 +145,10 @@ mkfn(const char *line, size_t llen)
 static int
 explode(FILE *whence)
 {
-#define NMRU	(16U)
+#define NMRU	(256U)
 	static size_t tick;
 	/* cache of most recently used filenames */
-	static char last[countof(prfx)][NMRU];
+	static char last[MAX_GN][NMRU];
 	static size_t when[NMRU];
 	static int fd[NMRU];
 	size_t fnaz;
@@ -144,17 +158,18 @@ explode(FILE *whence)
 
 	while ((nrd = getline(&line, &llen, whence)) >= 0) {
 		const int ofl = O_RDWR | O_APPEND | O_CREAT;
+		struct grnam_s g;
 		ssize_t nfn;
 		size_t which;
 
-		if (UNLIKELY((nfn = mkfn(line, nrd)) < 0)) {
+		/* snarf off graph name */
+		if (UNLIKELY(!(g = snarf_graph(line, nrd)).m)) {
 			errno = 0, error("cannot deduce filename from quad");
 			continue;
 		}
-
 		/* see if we've got this one */
 		for (which = 0U; which < NMRU; which++) {
-			if (!memcmp(last[which], prfx, nfn + 1U/*\nul*/)) {
+			if (!memcmp(last[which], g.n, g.m)) {
 				goto wr;
 			}
 		}
@@ -170,6 +185,11 @@ explode(FILE *whence)
 			/* close the one before */
 			close(fd[which]);
 		}
+		/* and make a filename */
+		if (UNLIKELY((nfn = mkfn(g)) < 0)) {
+			errno = 0, error("cannot deduce filename from quad");
+			continue;
+		}
 		if (UNLIKELY((fd[which] = open(prfx, ofl, 0644)) < 0)) {
 			/* oh no */
 			error("cannot open file `%s'", prfx);
@@ -180,7 +200,7 @@ explode(FILE *whence)
 		/* make sure we know when this was last used */
 		when[which] = tick;
 		/* and obviously remember the filename too */
-		memcpy(last[which], prfx, nfn + 1U);
+		memcpy(last[which], g.n, g.m);
 		/* output current file name for educational purposes */
 		puts(prfx);
 
