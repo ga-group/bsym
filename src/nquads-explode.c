@@ -150,7 +150,7 @@ explode(FILE *whence)
 	/* cache of most recently used filenames */
 	static char last[MAX_GN][NMRU];
 	static size_t when[NMRU];
-	static int fd[NMRU];
+	static FILE *fp[NMRU];
 	size_t fnaz;
 	char *line = NULL;
 	size_t llen = 0;
@@ -183,14 +183,14 @@ explode(FILE *whence)
 		/* one of them will be minimal */
 		if (LIKELY(when[which])) {
 			/* close the one before */
-			close(fd[which]);
+			fclose(fp[which]);
 		}
 		/* and make a filename */
 		if (UNLIKELY((nfn = mkfn(g)) < 0)) {
 			errno = 0, error("cannot deduce filename from quad");
 			continue;
 		}
-		if (UNLIKELY((fd[which] = open(prfx, ofl, 0644)) < 0)) {
+		if (UNLIKELY((fp[which] = fopen(prfx, "a")) == NULL)) {
 			/* oh no */
 			error("cannot open file `%s'", prfx);
 			when[which] = 0U;
@@ -206,12 +206,14 @@ explode(FILE *whence)
 
 	wr:
 		/* bang the line */
-		write(fd[which], line, nrd);
+		fwrite(line, sizeof(*line), nrd, fp[which]);
 	}
 
 	/* leave no files open */
 	for (size_t i = 0U; i < NMRU; i++) {
-		close(fd[i]);
+		if (LIKELY(when[i])) {
+			fclose(fp[i]);
+		}
 	}
 	memset(last, 0, sizeof(last));
 	memset(when, 0, sizeof(when));
