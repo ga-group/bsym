@@ -131,7 +131,7 @@ mkfn(const char *line, size_t llen)
 static int
 explode(FILE *whence)
 {
-#define NMRU	(8U)
+#define NMRU	(16U)
 	static size_t tick;
 	/* cache of most recently used filenames */
 	static char last[countof(prfx)][NMRU];
@@ -181,6 +181,8 @@ explode(FILE *whence)
 		when[which] = tick;
 		/* and obviously remember the filename too */
 		memcpy(last[which], prfx, nfn + 1U);
+		/* output current file name for educational purposes */
+		fwrite(prfx, sizeof(*prfx), nfn, stdout);
 
 	wr:
 		/* bang the line */
