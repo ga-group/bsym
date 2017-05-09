@@ -1,0 +1,5 @@
+Usage: nquads-explode [< NQ_FILE]
+
+Explode NQ_FILE stream into files named after the graph.
+
+  --prefix=STR          Use STR as filename prefix.
