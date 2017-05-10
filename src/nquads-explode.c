@@ -188,14 +188,16 @@ explode(FILE *whence)
 		/* and make a filename */
 		if (UNLIKELY((nfn = mkfn(g)) < 0)) {
 			errno = 0, error("cannot deduce filename from quad");
+			fp[which] = NULL;
+		clo:
+			when[which] = 0U;
+			memset(last[which], 0, countof(prfx));
 			continue;
 		}
 		if (UNLIKELY((fp[which] = fopen(prfx, "a")) == NULL)) {
 			/* oh no */
 			error("cannot open file `%s'", prfx);
-			when[which] = 0U;
-			memset(last[which], 0, countof(prfx));
-			continue;
+			goto clo;
 		}
 		/* make sure we know when this was last used */
 		when[which] = tick;
