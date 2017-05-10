@@ -119,7 +119,7 @@ mtrcpy(char *restrict tgt, const char *src, size_t len)
 	return j;
 }
 
-static size_t
+static struct grnam_s
 mkfn(struct grnam_s g)
 {
 	const char *fp = g.n + 1, *ep = g.n + g.m - 1;
@@ -139,7 +139,7 @@ mkfn(struct grnam_s g)
 	prfx[prfz + n++] = 'q';
 
 	prfx[prfz + n + 0U] = '\0';
-	return n;
+	return (struct grnam_s){prfx, prfz + n};
 }
 
 static int
@@ -158,7 +158,7 @@ explode(FILE *whence)
 
 	while ((nrd = getline(&line, &llen, whence)) >= 0) {
 		const int ofl = O_RDWR | O_APPEND | O_CREAT;
-		struct grnam_s g;
+		struct grnam_s f, g;
 		ssize_t nfn;
 		size_t which;
 
@@ -186,7 +186,7 @@ explode(FILE *whence)
 			fclose(fp[which]);
 		}
 		/* and make a filename */
-		if (UNLIKELY((nfn = mkfn(g)) < 0)) {
+		if (UNLIKELY(!(f = mkfn(g)).m)) {
 			errno = 0, error("cannot deduce filename from quad");
 			fp[which] = NULL;
 		clo:
@@ -194,9 +194,9 @@ explode(FILE *whence)
 			memset(last[which], 0, countof(prfx));
 			continue;
 		}
-		if (UNLIKELY((fp[which] = fopen(prfx, "a")) == NULL)) {
+		if (UNLIKELY((fp[which] = fopen(f.n, "a")) == NULL)) {
 			/* oh no */
-			error("cannot open file `%s'", prfx);
+			error("cannot open file `%s'", f.n);
 			goto clo;
 		}
 		/* make sure we know when this was last used */
@@ -204,7 +204,7 @@ explode(FILE *whence)
 		/* and obviously remember the filename too */
 		memcpy(last[which], g.n, g.m);
 		/* output current file name for educational purposes */
-		puts(prfx);
+		puts(f.n);
 
 	wr:
 		/* bang the line */
