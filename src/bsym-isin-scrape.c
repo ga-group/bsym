@@ -417,10 +417,10 @@ repl(struct ctx_s ctx[static 1U], const char *sid)
 int
 main(int argc, char *argv[])
 {
+	static struct ctx_s ctx[1U];
 	yuck_t argi[1U];
 	size_t i;
 	int rc = 0;
-	struct ctx_s ctx[1U];
 
 	if (yuck_parse(argi, argc, argv) < 0) {
 		rc = 1;
