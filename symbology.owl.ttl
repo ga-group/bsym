@@ -287,6 +287,20 @@ gas:tradedOn
     rdfs:range figi-gii:Code ;
     skos:definition "relates a financial instrument to an exchange, a pricing source, or a data provider; in contrast to the original place of listing (listedOn) this property captures additional exchanges" .
 
+gas:tradedSince
+    a owl:DatatypeProperty ;
+    rdfs:domain figi-gii:FinancialInstrumentIdentifier ;
+    rdfs:label "traded since" ;
+    rdfs:range xsd:dateTime ;
+    skos:definition "indicates since when a financial instrument (identified by its identifier) has been open for trading" .
+
+gas:tradedTill
+    a owl:DatatypeProperty ;
+    rdfs:domain figi-gii:FinancialInstrumentIdentifier ;
+    rdfs:label "traded till" ;
+    rdfs:range xsd:dateTime ;
+    skos:definition "indicates till when a financial instrument (identified by its identifier) had been open for trading" .
+
 gas:underlyingInstrument
     a owl:ObjectProperty ;
     rdfs:domain figi-gii:FinancialInstrumentIdentifier ;
