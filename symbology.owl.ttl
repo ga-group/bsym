@@ -120,6 +120,12 @@ gas:coversSector
     rdfs:range figi-gii:MarketSector ;
     skos:definition "relates a pricing source to market sectors" .
 
+gas:dividendsPaidIn
+    a owl:ObjectProperty ;
+    rdfs:domain figi-gii:FinancialInstrumentIdentifier ;
+    rdfs:label "dividends paid in" ;
+    skos:definition "for non-composite identifiers specifies which currency dividends are paid in." .
+
 gas:expiryDate
     dct:source "http://www.investopedia.com/terms/e/expirationdate.asp" ;
     a owl:DatatypeProperty ;
