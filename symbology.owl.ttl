@@ -63,6 +63,12 @@ gas:cfi
     rdfs:range xsd:string ;
     skos:definition "classifies the instrument identified according to ISO 10962" .
 
+gas:classification
+    a owl:ObjectProperty;
+    rdfs:domain figi-gii:FinancialInstrumentIdentifier ;
+    rdfs:label "classification" ;
+    skos:definition "classifies the instrument, the classification system to use is explicitly unspecified" .
+
 gas:clearedAs
     a owl:ObjectProperty ;
     rdfs:domain figi-gii:FinancialInstrumentIdentifier ;
