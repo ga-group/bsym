@@ -54,6 +54,11 @@ gas:FIGI
     rdfs:subClassOf figi-gii:GlobalIdentifier ;
     skos:definition "A 12 digit alpha-numeric, randomly generated ID covering active and inactive securities. In total there will be more than 852 billion potential combinations available. The first 3 characters begin with 'BBG', positions 4-11 are alpha-numeric (less vowels) and the last digit is a check digit, which is calculated based on the Modulus 10 Double Add Double Formula." .
 
+gas:Classification
+    a owl:Class ;
+    rdfs:label "classification" ;
+    skos:definition "A classification is a grouping of instruments that collectively reflects a certain property of its members, e.g. for equity instruments the industry where most of the annual turnover is generated." .
+
 
 ## Properties
 gas:cfi
@@ -63,10 +68,11 @@ gas:cfi
     rdfs:range xsd:string ;
     skos:definition "classifies the instrument identified according to ISO 10962" .
 
-gas:classification
+gas:classifiedAs
     a owl:ObjectProperty;
     rdfs:domain figi-gii:FinancialInstrumentIdentifier ;
     rdfs:label "classification" ;
+    rdfs:range gas:Classification ;
     skos:definition "classifies the instrument, the classification system to use is explicitly unspecified" .
 
 gas:clearedAs
