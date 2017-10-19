@@ -35,6 +35,12 @@ gics.ttl: scripts/ttlify-gics-xls.awk
 		| $< -v "lang=@zh" ; \
 	} \
 	| sort | uniq \
-	| sed 's/@.*  "/  "/; s/@@@/@en/' \
-	| cdiff -w \
+	| sed 's/"  */"/; s/  *"/"/; s/@[-@a-zA-Z]*"/  "/; s/@@@/@en/' \
+	| scripts/statementify.awk -e 'BEGIN {\
+	print "@prefix gas: <http://schema.ga-group.nl/symbology#> ."; \
+	print "@prefix foaf: <http://xmlns.com/foaf/0.1/> ."; \
+	print "@prefix skos: <http://www.w3.org/2004/02/skos/core#> ."; \
+	print "@prefix gics: <http://schema.ga-group.nl/meta/classification/GICS/>  ."; \
+	print ""; \
+	}' \
 	> $@

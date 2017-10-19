@@ -1,11 +1,6 @@
 #!/usr/bin/awk -f
 
 BEGIN {
-	print "@prefix gas: <http://schema.ga-group.nl/symbology#> .";
-	print "@prefix foaf: <http://xmlns.com/foaf/0.1/> .";
-	print "@prefix skos: <http://www.w3.org/2004/02/skos/core#> .";
-	print "@prefix gics: <http://schema.ga-group.nl/meta/classification/GICS/>  .";
-	print "";
 	FS = "\t";
 	OFS = "  ";
 }
