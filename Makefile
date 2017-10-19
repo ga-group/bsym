@@ -12,7 +12,7 @@ all clean:
 gics.ttl: scripts/ttlify-gics-xls.awk
 	{ \
 		xls2txt archive/GICS\ Structure\ effective\ Sep\ 1,\ 2016.xls \
-		| $< -v "lang=@en" ; \
+		| $< -v "lang=@@@" ; \
 		xls2txt archive/GICS\ Structure\ 2016\ -\ French.xls \
 		| $< -v "lang=@fr" ; \
 		xls2txt archive/GICS\ Structure\ 2016\ -\ German.xls \
@@ -35,4 +35,6 @@ gics.ttl: scripts/ttlify-gics-xls.awk
 		| $< -v "lang=@zh" ; \
 	} \
 	| sort | uniq \
+	| sed 's/@.*  "/  "/; s/@@@/@en/' \
+	| cdiff -w \
 	> $@
