@@ -157,7 +157,7 @@ gas:issueDate
     a owl:DatatypeProperty ;
     rdfs:label "issue date" ;
     rdfs:range xsd:date ;
-    skos:definition "Date instrument was issued. For Fixed Income IOIs for new issues, specifies the issue date." .
+    skos:definition "Date instrument was issued. For Fixed Income IOIs for new issues, specifies the issue date.  For equity instruments every issuance of additional shares is tracked with this property, the first of which being the IPO date." .
 
 gas:issuedBy
     a owl:ObjectProperty ;
