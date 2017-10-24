@@ -1,0 +1,6034 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix figi-gii: <http://www.omg.org/spec/FIGI/GlobalInstrumentIdentifiers/> .
+@prefix gas: <http://schema.ga-group.nl/symbology#> .
+@prefix cfi: <http://schema.ga-group.nl/meta/classification/CFI/> .
+
+<http://schema.ga-group.nl/meta/classification/CFI/>
+    dct:license """The MIT License:  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+      The copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+      THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.""", "http://opensource.org/licenses/mit-license.php"^^xsd:anyURI ;
+    dct:source "http://www.iotafinance.com/en/Classification-of-Financial-Instrument-codes-CFI-ISO-10962.html"^^xsd:anyURI ;
+    a owl:Ontology ;
+    rdfs:label "Ontology of CFI codes" ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> ;
+    owl:versionIRI <http://schema.ga-group.nl/meta/classification/CFI/2015/> .
+
+## Classes
+cfi:XXXXXX
+  a owl:Class ;
+  rdfs:label "no information specified" ;
+  rdfs:subClassOf gas:Classification .
+
+## Instances
+cfi:EXXXXX
+  a owl:Class ;
+  rdfs:label "Equities" ;
+  rdfs:subClassOf cfi:XXXXXX .
+
+cfi:CXXXXX
+  a owl:Class ;
+  rdfs:label "Collective investment vehicles" ;
+  rdfs:subClassOf cfi:XXXXXX .
+
+cfi:DXXXXX
+  a owl:Class ;
+  rdfs:label "Debt" ;
+  rdfs:subClassOf cfi:XXXXXX .
+
+cfi:RXXXXX
+  a owl:Class ;
+  rdfs:label "Entitlements (rights)" ;
+  rdfs:subClassOf cfi:XXXXXX .
+
+cfi:OXXXXX
+  a owl:Class ;
+  rdfs:label "Listed options" ;
+  rdfs:subClassOf cfi:XXXXXX .
+
+cfi:FXXXXX
+  a owl:Class ;
+  rdfs:label "Futures" ;
+  rdfs:subClassOf cfi:XXXXXX .
+
+cfi:SXXXXX
+  a owl:Class ;
+  rdfs:label "Swaps" ;
+  rdfs:subClassOf cfi:XXXXXX .
+
+cfi:HXXXXX
+  a owl:Class ;
+  rdfs:label "Non-listed and complex listed options" ;
+  rdfs:subClassOf cfi:XXXXXX .
+
+cfi:IXXXXX
+  a owl:Class ;
+  rdfs:label "Spot" ;
+  rdfs:subClassOf cfi:XXXXXX .
+
+cfi:JXXXXX
+  a owl:Class ;
+  rdfs:label "Forwards" ;
+  rdfs:subClassOf cfi:XXXXXX .
+
+cfi:KXXXXX
+  a owl:Class ;
+  rdfs:label "Strategies" ;
+  rdfs:subClassOf cfi:XXXXXX .
+
+cfi:LXXXXX
+  a owl:Class ;
+  rdfs:label "Financing" ;
+  rdfs:subClassOf cfi:XXXXXX .
+
+cfi:TXXXXX
+  a owl:Class ;
+  rdfs:label "Referential instruments" ;
+  rdfs:subClassOf cfi:XXXXXX .
+
+cfi:MXXXXX
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:XXXXXX .
+
+
+cfi:ESXXXX
+  a owl:Class ;
+  rdfs:label "Common/ordinary shares" ;
+  rdfs:subClassOf cfi:EXXXXX .
+
+cfi:EPXXXX
+  a owl:Class ;
+  rdfs:label "Preferred/preference shares" ;
+  rdfs:subClassOf cfi:EXXXXX .
+
+cfi:ECXXXX
+  a owl:Class ;
+  rdfs:label "Common/ordinary convertible shares" ;
+  rdfs:subClassOf cfi:EXXXXX .
+
+cfi:EFXXXX
+  a owl:Class ;
+  rdfs:label "Preferred/preference convertible shares" ;
+  rdfs:subClassOf cfi:EXXXXX .
+
+cfi:ELXXXX
+  a owl:Class ;
+  rdfs:label "Limited partnership units" ;
+  rdfs:subClassOf cfi:EXXXXX .
+
+cfi:EDXXXX
+  a owl:Class ;
+  rdfs:label "Depository receipts on equities" ;
+  rdfs:subClassOf cfi:EXXXXX .
+
+cfi:EYXXXX
+  a owl:Class ;
+  rdfs:label "Structured instruments (participation)" ;
+  rdfs:subClassOf cfi:EXXXXX .
+
+cfi:EMXXXX
+  a owl:Class ;
+  rdfs:label "Others (Miscellaneous)" ;
+  rdfs:subClassOf cfi:EXXXXX .
+
+cfi:CIXXXX
+  a owl:Class ;
+  rdfs:label "Standard (vanilla) investment funds/mutual funds" ;
+  rdfs:subClassOf cfi:CXXXXX .
+
+cfi:CHXXXX
+  a owl:Class ;
+  rdfs:label "Hedge funds" ;
+  rdfs:subClassOf cfi:CXXXXX .
+
+cfi:CBXXXX
+  a owl:Class ;
+  rdfs:label "Real estate investment trusts (REIT)" ;
+  rdfs:subClassOf cfi:CXXXXX .
+
+cfi:CEXXXX
+  a owl:Class ;
+  rdfs:label "Exchange traded funds (ETF)" ;
+  rdfs:subClassOf cfi:CXXXXX .
+
+cfi:CSXXXX
+  a owl:Class ;
+  rdfs:label "Pension funds" ;
+  rdfs:subClassOf cfi:CXXXXX .
+
+cfi:CFXXXX
+  a owl:Class ;
+  rdfs:label "Fund of funds" ;
+  rdfs:subClassOf cfi:CXXXXX .
+
+cfi:CPXXXX
+  a owl:Class ;
+  rdfs:label "Private equity funds" ;
+  rdfs:subClassOf cfi:CXXXXX .
+
+cfi:CMXXXX
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:CXXXXX .
+
+cfi:DBXXXX
+  a owl:Class ;
+  rdfs:label "Bonds" ;
+  rdfs:subClassOf cfi:DXXXXX .
+
+cfi:DCXXXX
+  a owl:Class ;
+  rdfs:label "Convertible bonds" ;
+  rdfs:subClassOf cfi:DXXXXX .
+
+cfi:DWXXXX
+  a owl:Class ;
+  rdfs:label "Bonds with warrants attached" ;
+  rdfs:subClassOf cfi:DXXXXX .
+
+cfi:DTXXXX
+  a owl:Class ;
+  rdfs:label "Medium term notes" ;
+  rdfs:subClassOf cfi:DXXXXX .
+
+cfi:DYXXXX
+  a owl:Class ;
+  rdfs:label "Money market instruments" ;
+  rdfs:subClassOf cfi:DXXXXX .
+
+cfi:DSXXXX
+  a owl:Class ;
+  rdfs:label "Structured instruments (capital protection)" ;
+  rdfs:subClassOf cfi:DXXXXX .
+
+cfi:DEXXXX
+  a owl:Class ;
+  rdfs:label "Structured instruments (without capital protection)" ;
+  rdfs:subClassOf cfi:DXXXXX .
+
+cfi:DGXXXX
+  a owl:Class ;
+  rdfs:label "Mortgage-backed securities" ;
+  rdfs:subClassOf cfi:DXXXXX .
+
+cfi:DAXXXX
+  a owl:Class ;
+  rdfs:label "Asset-backed securities" ;
+  rdfs:subClassOf cfi:DXXXXX .
+
+cfi:DNXXXX
+  a owl:Class ;
+  rdfs:label "Municipal bonds" ;
+  rdfs:subClassOf cfi:DXXXXX .
+
+cfi:DDXXXX
+  a owl:Class ;
+  rdfs:label "Depository receipts on debt instruments" ;
+  rdfs:subClassOf cfi:DXXXXX .
+
+cfi:DMXXXX
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:DXXXXX .
+
+cfi:RAXXXX
+  a owl:Class ;
+  rdfs:label "Allotment (bonus) rights" ;
+  rdfs:subClassOf cfi:RXXXXX .
+
+cfi:RSXXXX
+  a owl:Class ;
+  rdfs:label "Subscription rights" ;
+  rdfs:subClassOf cfi:RXXXXX .
+
+cfi:RPXXXX
+  a owl:Class ;
+  rdfs:label "Purchase rights" ;
+  rdfs:subClassOf cfi:RXXXXX .
+
+cfi:RWXXXX
+  a owl:Class ;
+  rdfs:label "Warrants" ;
+  rdfs:subClassOf cfi:RXXXXX .
+
+cfi:RFXXXX
+  a owl:Class ;
+  rdfs:label "Mini-future certificates/constant leverage certificates" ;
+  rdfs:subClassOf cfi:RXXXXX .
+
+cfi:RDXXXX
+  a owl:Class ;
+  rdfs:label "Depository receipts on entitlements" ;
+  rdfs:subClassOf cfi:RXXXXX .
+
+cfi:RMXXXX
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:RXXXXX .
+
+cfi:OCXXXX
+  a owl:Class ;
+  rdfs:label "Call options" ;
+  rdfs:subClassOf cfi:OXXXXX .
+
+cfi:OPXXXX
+  a owl:Class ;
+  rdfs:label "Put options" ;
+  rdfs:subClassOf cfi:OXXXXX .
+
+cfi:OMXXXX
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:OXXXXX .
+
+cfi:FFXXXX
+  a owl:Class ;
+  rdfs:label "Financial futures" ;
+  rdfs:subClassOf cfi:FXXXXX .
+
+cfi:FCXXXX
+  a owl:Class ;
+  rdfs:label "Commodity futures" ;
+  rdfs:subClassOf cfi:FXXXXX .
+
+cfi:SRXXXX
+  a owl:Class ;
+  rdfs:label "Rates" ;
+  rdfs:subClassOf cfi:SXXXXX .
+
+cfi:STXXXX
+  a owl:Class ;
+  rdfs:label "Commodities" ;
+  rdfs:subClassOf cfi:SXXXXX .
+
+cfi:SEXXXX
+  a owl:Class ;
+  rdfs:label "Equity" ;
+  rdfs:subClassOf cfi:SXXXXX .
+
+cfi:SCXXXX
+  a owl:Class ;
+  rdfs:label "Credit" ;
+  rdfs:subClassOf cfi:SXXXXX .
+
+cfi:SFXXXX
+  a owl:Class ;
+  rdfs:label "Foreign exchange" ;
+  rdfs:subClassOf cfi:SXXXXX .
+
+cfi:SMXXXX
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:SXXXXX .
+
+cfi:HRXXXX
+  a owl:Class ;
+  rdfs:label "Rates" ;
+  rdfs:subClassOf cfi:HXXXXX .
+
+cfi:HTXXXX
+  a owl:Class ;
+  rdfs:label "Commodities" ;
+  rdfs:subClassOf cfi:HXXXXX .
+
+cfi:HEXXXX
+  a owl:Class ;
+  rdfs:label "Equity" ;
+  rdfs:subClassOf cfi:HXXXXX .
+
+cfi:HCXXXX
+  a owl:Class ;
+  rdfs:label "Credit" ;
+  rdfs:subClassOf cfi:HXXXXX .
+
+cfi:HFXXXX
+  a owl:Class ;
+  rdfs:label "Foreign exchange" ;
+  rdfs:subClassOf cfi:HXXXXX .
+
+cfi:HMXXXX
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:HXXXXX .
+
+cfi:IFXXXX
+  a owl:Class ;
+  rdfs:label "Foreign exchange" ;
+  rdfs:subClassOf cfi:IXXXXX .
+
+cfi:ITXXXX
+  a owl:Class ;
+  rdfs:label "Commodities" ;
+  rdfs:subClassOf cfi:IXXXXX .
+
+cfi:JEXXXX
+  a owl:Class ;
+  rdfs:label "Equity" ;
+  rdfs:subClassOf cfi:JXXXXX .
+
+cfi:JFXXXX
+  a owl:Class ;
+  rdfs:label "Foreign exchange" ;
+  rdfs:subClassOf cfi:JXXXXX .
+
+cfi:JCXXXX
+  a owl:Class ;
+  rdfs:label "Credit" ;
+  rdfs:subClassOf cfi:JXXXXX .
+
+cfi:JRXXXX
+  a owl:Class ;
+  rdfs:label "Rates" ;
+  rdfs:subClassOf cfi:JXXXXX .
+
+cfi:JTXXXX
+  a owl:Class ;
+  rdfs:label "Commodities" ;
+  rdfs:subClassOf cfi:JXXXXX .
+
+cfi:KRXXXX
+  a owl:Class ;
+  rdfs:label "Rates" ;
+  rdfs:subClassOf cfi:KXXXXX .
+
+cfi:KTXXXX
+  a owl:Class ;
+  rdfs:label "Commodities" ;
+  rdfs:subClassOf cfi:KXXXXX .
+
+cfi:KEXXXX
+  a owl:Class ;
+  rdfs:label "Equity" ;
+  rdfs:subClassOf cfi:KXXXXX .
+
+cfi:KCXXXX
+  a owl:Class ;
+  rdfs:label "Credit" ;
+  rdfs:subClassOf cfi:KXXXXX .
+
+cfi:KFXXXX
+  a owl:Class ;
+  rdfs:label "Foreign exchange" ;
+  rdfs:subClassOf cfi:KXXXXX .
+
+cfi:KYXXXX
+  a owl:Class ;
+  rdfs:label "Mixed assets" ;
+  rdfs:subClassOf cfi:KXXXXX .
+
+cfi:KMXXXX
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:KXXXXX .
+
+cfi:LLXXXX
+  a owl:Class ;
+  rdfs:label "Loan-lease" ;
+  rdfs:subClassOf cfi:LXXXXX .
+
+cfi:LRXXXX
+  a owl:Class ;
+  rdfs:label "Repurchase agreements" ;
+  rdfs:subClassOf cfi:LXXXXX .
+
+cfi:LSXXXX
+  a owl:Class ;
+  rdfs:label "Securities lending" ;
+  rdfs:subClassOf cfi:LXXXXX .
+
+cfi:TCXXXX
+  a owl:Class ;
+  rdfs:label "Currencies" ;
+  rdfs:subClassOf cfi:TXXXXX .
+
+cfi:TTXXXX
+  a owl:Class ;
+  rdfs:label "Commodities" ;
+  rdfs:subClassOf cfi:TXXXXX .
+
+cfi:TRXXXX
+  a owl:Class ;
+  rdfs:label "Interest rates" ;
+  rdfs:subClassOf cfi:TXXXXX .
+
+cfi:TIXXXX
+  a owl:Class ;
+  rdfs:label "Indices" ;
+  rdfs:subClassOf cfi:TXXXXX .
+
+cfi:TBXXXX
+  a owl:Class ;
+  rdfs:label "Baskets" ;
+  rdfs:subClassOf cfi:TXXXXX .
+
+cfi:TDXXXX
+  a owl:Class ;
+  rdfs:label "Stock dividends" ;
+  rdfs:subClassOf cfi:TXXXXX .
+
+cfi:TMXXXX
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:TXXXXX .
+
+cfi:MCXXXX
+  a owl:Class ;
+  rdfs:label "Combined instruments" ;
+  rdfs:subClassOf cfi:MXXXXX .
+
+cfi:MMXXXX
+  a owl:Class ;
+  rdfs:label "Other assets" ;
+  rdfs:subClassOf cfi:MXXXXX .
+
+cfi:ESVXXX
+  a owl:Class ;
+  rdfs:label "Common/ordinary shares, Voting" ;
+  rdfs:subClassOf cfi:ESXXXX .
+
+cfi:ESNXXX
+  a owl:Class ;
+  rdfs:label "Common/ordinary shares, Non-voting" ;
+  rdfs:subClassOf cfi:ESXXXX .
+
+cfi:ESRXXX
+  a owl:Class ;
+  rdfs:label "Common/ordinary shares, Restricted voting" ;
+  rdfs:subClassOf cfi:ESXXXX .
+
+cfi:ESEXXX
+  a owl:Class ;
+  rdfs:label "Common/ordinary shares, Enhanced voting" ;
+  rdfs:subClassOf cfi:ESXXXX .
+
+cfi:ESXTXX
+  a owl:Class ;
+  rdfs:label "Common/ordinary shares, Restrictions" ;
+  rdfs:subClassOf cfi:ESXXXX .
+
+cfi:ESXUXX
+  a owl:Class ;
+  rdfs:label "Common/ordinary shares, Free" ;
+  rdfs:subClassOf cfi:ESXXXX .
+
+cfi:ESXXFX
+  a owl:Class ;
+  rdfs:label "Common/ordinary shares, Fully paid" ;
+  rdfs:subClassOf cfi:ESXXXX .
+
+cfi:ESXXOX
+  a owl:Class ;
+  rdfs:label "Common/ordinary shares, Nil paid" ;
+  rdfs:subClassOf cfi:ESXXXX .
+
+cfi:ESXXPX
+  a owl:Class ;
+  rdfs:label "Common/ordinary shares, Partly paid" ;
+  rdfs:subClassOf cfi:ESXXXX .
+
+cfi:ESXXXB
+  a owl:Class ;
+  rdfs:label "Common/ordinary shares, Bearer" ;
+  rdfs:subClassOf cfi:ESXXXX .
+
+cfi:ESXXXR
+  a owl:Class ;
+  rdfs:label "Common/ordinary shares, Registered" ;
+  rdfs:subClassOf cfi:ESXXXX .
+
+cfi:ESXXXN
+  a owl:Class ;
+  rdfs:label "Common/ordinary shares, Bearer/registered" ;
+  rdfs:subClassOf cfi:ESXXXX .
+
+cfi:ESXXXM
+  a owl:Class ;
+  rdfs:label "Common/ordinary shares, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:ESXXXX .
+
+cfi:EPVXXX
+  a owl:Class ;
+  rdfs:label "Preferred/preference shares, Voting" ;
+  rdfs:subClassOf cfi:EPXXXX .
+
+cfi:EPNXXX
+  a owl:Class ;
+  rdfs:label "Preferred/preference shares, Non-voting" ;
+  rdfs:subClassOf cfi:EPXXXX .
+
+cfi:EPRXXX
+  a owl:Class ;
+  rdfs:label "Preferred/preference shares, Restricted voting" ;
+  rdfs:subClassOf cfi:EPXXXX .
+
+cfi:EPEXXX
+  a owl:Class ;
+  rdfs:label "Preferred/preference shares, Enhanced voting" ;
+  rdfs:subClassOf cfi:EPXXXX .
+
+cfi:EPXRXX
+  a owl:Class ;
+  rdfs:label "Preferred/preference shares, Redeemable" ;
+  rdfs:subClassOf cfi:EPXXXX .
+
+cfi:EPXEXX
+  a owl:Class ;
+  rdfs:label "Preferred/preference shares, Extendible" ;
+  rdfs:subClassOf cfi:EPXXXX .
+
+cfi:EPXTXX
+  a owl:Class ;
+  rdfs:label "Preferred/preference shares, Redeemable/extendible" ;
+  rdfs:subClassOf cfi:EPXXXX .
+
+cfi:EPXGXX
+  a owl:Class ;
+  rdfs:label "Preferred/preference shares, Exchangeable" ;
+  rdfs:subClassOf cfi:EPXXXX .
+
+cfi:EPXAXX
+  a owl:Class ;
+  rdfs:label "Preferred/preference shares, Redeemable/exchangeable/extendible" ;
+  rdfs:subClassOf cfi:EPXXXX .
+
+cfi:EPXCXX
+  a owl:Class ;
+  rdfs:label "Preferred/preference shares, Redeemable/exchangeable" ;
+  rdfs:subClassOf cfi:EPXXXX .
+
+cfi:EPXNXX
+  a owl:Class ;
+  rdfs:label "Preferred/preference shares, Perpetual" ;
+  rdfs:subClassOf cfi:EPXXXX .
+
+cfi:EPXXFX
+  a owl:Class ;
+  rdfs:label "Preferred/preference shares, Fixed rate income" ;
+  rdfs:subClassOf cfi:EPXXXX .
+
+cfi:EPXXCX
+  a owl:Class ;
+  rdfs:label "Preferred/preference shares, Cumulative, fixed rate income" ;
+  rdfs:subClassOf cfi:EPXXXX .
+
+cfi:EPXXPX
+  a owl:Class ;
+  rdfs:label "Preferred/preference shares, Participating income" ;
+  rdfs:subClassOf cfi:EPXXXX .
+
+cfi:EPXXQX
+  a owl:Class ;
+  rdfs:label "Preferred/preference shares, Cumulative, participating income" ;
+  rdfs:subClassOf cfi:EPXXXX .
+
+cfi:EPXXAX
+  a owl:Class ;
+  rdfs:label "Preferred/preference shares, Adjustable/variable rate income" ;
+  rdfs:subClassOf cfi:EPXXXX .
+
+cfi:EPXXNX
+  a owl:Class ;
+  rdfs:label "Preferred/preference shares, Normal rate income" ;
+  rdfs:subClassOf cfi:EPXXXX .
+
+cfi:EPXXUX
+  a owl:Class ;
+  rdfs:label "Preferred/preference shares, Auction rate income" ;
+  rdfs:subClassOf cfi:EPXXXX .
+
+cfi:EPXXDX
+  a owl:Class ;
+  rdfs:label "Preferred/preference shares, Dividends" ;
+  rdfs:subClassOf cfi:EPXXXX .
+
+cfi:EPXXXB
+  a owl:Class ;
+  rdfs:label "Preferred/preference shares, Bearer" ;
+  rdfs:subClassOf cfi:EPXXXX .
+
+cfi:EPXXXR
+  a owl:Class ;
+  rdfs:label "Preferred/preference shares, Registered" ;
+  rdfs:subClassOf cfi:EPXXXX .
+
+cfi:EPXXXN
+  a owl:Class ;
+  rdfs:label "Preferred/preference shares, Bearer/registered" ;
+  rdfs:subClassOf cfi:EPXXXX .
+
+cfi:EPXXXM
+  a owl:Class ;
+  rdfs:label "Preferred/preference shares, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:EPXXXX .
+
+cfi:ECVXXX
+  a owl:Class ;
+  rdfs:label "Common/ordinary convertible shares, Voting" ;
+  rdfs:subClassOf cfi:ECXXXX .
+
+cfi:ECNXXX
+  a owl:Class ;
+  rdfs:label "Common/ordinary convertible shares, Non-voting" ;
+  rdfs:subClassOf cfi:ECXXXX .
+
+cfi:ECRXXX
+  a owl:Class ;
+  rdfs:label "Common/ordinary convertible shares, Restricted voting" ;
+  rdfs:subClassOf cfi:ECXXXX .
+
+cfi:ECEXXX
+  a owl:Class ;
+  rdfs:label "Common/ordinary convertible shares, Enhanced voting" ;
+  rdfs:subClassOf cfi:ECXXXX .
+
+cfi:ECXRXX
+  a owl:Class ;
+  rdfs:label "Common/ordinary convertible shares, Restrictions" ;
+  rdfs:subClassOf cfi:ECXXXX .
+
+cfi:ECXUXX
+  a owl:Class ;
+  rdfs:label "Common/ordinary convertible shares, Free" ;
+  rdfs:subClassOf cfi:ECXXXX .
+
+cfi:ECXXFX
+  a owl:Class ;
+  rdfs:label "Common/ordinary convertible shares, Fully paid" ;
+  rdfs:subClassOf cfi:ECXXXX .
+
+cfi:ECXXOX
+  a owl:Class ;
+  rdfs:label "Common/ordinary convertible shares, Nil paid" ;
+  rdfs:subClassOf cfi:ECXXXX .
+
+cfi:ECXXPX
+  a owl:Class ;
+  rdfs:label "Common/ordinary convertible shares, Partly paid" ;
+  rdfs:subClassOf cfi:ECXXXX .
+
+cfi:ECXXXB
+  a owl:Class ;
+  rdfs:label "Common/ordinary convertible shares, Bearer" ;
+  rdfs:subClassOf cfi:ECXXXX .
+
+cfi:ECXXXR
+  a owl:Class ;
+  rdfs:label "Common/ordinary convertible shares, Registered" ;
+  rdfs:subClassOf cfi:ECXXXX .
+
+cfi:ECXXXN
+  a owl:Class ;
+  rdfs:label "Common/ordinary convertible shares, Bearer/registered" ;
+  rdfs:subClassOf cfi:ECXXXX .
+
+cfi:ECXXXM
+  a owl:Class ;
+  rdfs:label "Common/ordinary convertible shares, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:ECXXXX .
+
+cfi:EFVXXX
+  a owl:Class ;
+  rdfs:label "Preferred/preference convertible shares, Voting" ;
+  rdfs:subClassOf cfi:EFXXXX .
+
+cfi:EFNXXX
+  a owl:Class ;
+  rdfs:label "Preferred/preference convertible shares, Non-voting" ;
+  rdfs:subClassOf cfi:EFXXXX .
+
+cfi:EFRXXX
+  a owl:Class ;
+  rdfs:label "Preferred/preference convertible shares, Restricted voting" ;
+  rdfs:subClassOf cfi:EFXXXX .
+
+cfi:EFEXXX
+  a owl:Class ;
+  rdfs:label "Preferred/preference convertible shares, Enhanced voting" ;
+  rdfs:subClassOf cfi:EFXXXX .
+
+cfi:EFXRXX
+  a owl:Class ;
+  rdfs:label "Preferred/preference convertible shares, Redeemable" ;
+  rdfs:subClassOf cfi:EFXXXX .
+
+cfi:EFXEXX
+  a owl:Class ;
+  rdfs:label "Preferred/preference convertible shares, Extendible" ;
+  rdfs:subClassOf cfi:EFXXXX .
+
+cfi:EFXTXX
+  a owl:Class ;
+  rdfs:label "Preferred/preference convertible shares, Redeemable/extendible" ;
+  rdfs:subClassOf cfi:EFXXXX .
+
+cfi:EFXGXX
+  a owl:Class ;
+  rdfs:label "Preferred/preference convertible shares, Exchangeable" ;
+  rdfs:subClassOf cfi:EFXXXX .
+
+cfi:EFXAXX
+  a owl:Class ;
+  rdfs:label "Preferred/preference convertible shares, Redeemable/exchangeable/Extendible" ;
+  rdfs:subClassOf cfi:EFXXXX .
+
+cfi:EFXCXX
+  a owl:Class ;
+  rdfs:label "Preferred/preference convertible shares, Redeemable/exchangeable" ;
+  rdfs:subClassOf cfi:EFXXXX .
+
+cfi:EFXNXX
+  a owl:Class ;
+  rdfs:label "Preferred/preference convertible shares, Perpetual" ;
+  rdfs:subClassOf cfi:EFXXXX .
+
+cfi:EFXXFX
+  a owl:Class ;
+  rdfs:label "Preferred/preference convertible shares, Fixed rate income" ;
+  rdfs:subClassOf cfi:EFXXXX .
+
+cfi:EFXXCX
+  a owl:Class ;
+  rdfs:label "Preferred/preference convertible shares, Cumulative, fixed rate income" ;
+  rdfs:subClassOf cfi:EFXXXX .
+
+cfi:EFXXPX
+  a owl:Class ;
+  rdfs:label "Preferred/preference convertible shares, Participating income" ;
+  rdfs:subClassOf cfi:EFXXXX .
+
+cfi:EFXXQX
+  a owl:Class ;
+  rdfs:label "Preferred/preference convertible shares, Cumulative, participating income" ;
+  rdfs:subClassOf cfi:EFXXXX .
+
+cfi:EFXXAX
+  a owl:Class ;
+  rdfs:label "Preferred/preference convertible shares, Adjustable/variable rate income" ;
+  rdfs:subClassOf cfi:EFXXXX .
+
+cfi:EFXXNX
+  a owl:Class ;
+  rdfs:label "Preferred/preference convertible shares, Normal rate income" ;
+  rdfs:subClassOf cfi:EFXXXX .
+
+cfi:EFXXUX
+  a owl:Class ;
+  rdfs:label "Preferred/preference convertible shares, Auction rate income" ;
+  rdfs:subClassOf cfi:EFXXXX .
+
+cfi:EFXXDX
+  a owl:Class ;
+  rdfs:label "Preferred/preference convertible shares, Dividends" ;
+  rdfs:subClassOf cfi:EFXXXX .
+
+cfi:EFXXXB
+  a owl:Class ;
+  rdfs:label "Preferred/preference convertible shares, Bearer" ;
+  rdfs:subClassOf cfi:EFXXXX .
+
+cfi:EFXXXR
+  a owl:Class ;
+  rdfs:label "Preferred/preference convertible shares, Registered" ;
+  rdfs:subClassOf cfi:EFXXXX .
+
+cfi:EFXXXN
+  a owl:Class ;
+  rdfs:label "Preferred/preference convertible shares, Bearer/registered" ;
+  rdfs:subClassOf cfi:EFXXXX .
+
+cfi:EFXXXM
+  a owl:Class ;
+  rdfs:label "Preferred/preference convertible shares, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:EFXXXX .
+
+cfi:ELVXXX
+  a owl:Class ;
+  rdfs:label "Limited partnership units, Voting" ;
+  rdfs:subClassOf cfi:ELXXXX .
+
+cfi:ELNXXX
+  a owl:Class ;
+  rdfs:label "Limited partnership units, Non-voting" ;
+  rdfs:subClassOf cfi:ELXXXX .
+
+cfi:ELRXXX
+  a owl:Class ;
+  rdfs:label "Limited partnership units, Restricted voting" ;
+  rdfs:subClassOf cfi:ELXXXX .
+
+cfi:ELEXXX
+  a owl:Class ;
+  rdfs:label "Limited partnership units, Enhanced voting" ;
+  rdfs:subClassOf cfi:ELXXXX .
+
+cfi:ELXTXX
+  a owl:Class ;
+  rdfs:label "Limited partnership units, Restrictions" ;
+  rdfs:subClassOf cfi:ELXXXX .
+
+cfi:ELXUXX
+  a owl:Class ;
+  rdfs:label "Limited partnership units, Free" ;
+  rdfs:subClassOf cfi:ELXXXX .
+
+cfi:ELXXFX
+  a owl:Class ;
+  rdfs:label "Limited partnership units, Fully paid" ;
+  rdfs:subClassOf cfi:ELXXXX .
+
+cfi:ELXXOX
+  a owl:Class ;
+  rdfs:label "Limited partnership units, Nil paid" ;
+  rdfs:subClassOf cfi:ELXXXX .
+
+cfi:ELXXPX
+  a owl:Class ;
+  rdfs:label "Limited partnership units, Partly paid" ;
+  rdfs:subClassOf cfi:ELXXXX .
+
+cfi:ELXXXB
+  a owl:Class ;
+  rdfs:label "Limited partnership units, Bearer" ;
+  rdfs:subClassOf cfi:ELXXXX .
+
+cfi:ELXXXR
+  a owl:Class ;
+  rdfs:label "Limited partnership units, Registered" ;
+  rdfs:subClassOf cfi:ELXXXX .
+
+cfi:ELXXXN
+  a owl:Class ;
+  rdfs:label "Limited partnership units, Bearer/registered" ;
+  rdfs:subClassOf cfi:ELXXXX .
+
+cfi:ELXXXM
+  a owl:Class ;
+  rdfs:label "Limited partnership units, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:ELXXXX .
+
+cfi:EDSXXX
+  a owl:Class ;
+  rdfs:label "Depository receipts on equities, Common/ordinary shares" ;
+  rdfs:subClassOf cfi:EDXXXX .
+
+cfi:EDPXXX
+  a owl:Class ;
+  rdfs:label "Depository receipts on equities, Preferred/preference shares" ;
+  rdfs:subClassOf cfi:EDXXXX .
+
+cfi:EDCXXX
+  a owl:Class ;
+  rdfs:label "Depository receipts on equities, Common/ordinary convertible shares" ;
+  rdfs:subClassOf cfi:EDXXXX .
+
+cfi:EDFXXX
+  a owl:Class ;
+  rdfs:label "Depository receipts on equities, Preferred/preference convertible shares" ;
+  rdfs:subClassOf cfi:EDXXXX .
+
+cfi:EDLXXX
+  a owl:Class ;
+  rdfs:label "Depository receipts on equities, Limited partnership units" ;
+  rdfs:subClassOf cfi:EDXXXX .
+
+cfi:EDMXXX
+  a owl:Class ;
+  rdfs:label "Depository receipts on equities, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:EDXXXX .
+
+cfi:EDXRXX
+  a owl:Class ;
+  rdfs:label "Depository receipts on equities, Redeemable" ;
+  rdfs:subClassOf cfi:EDXXXX .
+
+cfi:EDXNXX
+  a owl:Class ;
+  rdfs:label "Depository receipts on equities, Perpetual" ;
+  rdfs:subClassOf cfi:EDXXXX .
+
+cfi:EDXBXX
+  a owl:Class ;
+  rdfs:label "Depository receipts on equities, Convertible" ;
+  rdfs:subClassOf cfi:EDXXXX .
+
+cfi:EDXDXX
+  a owl:Class ;
+  rdfs:label "Depository receipts on equities, Convertible/redeemable" ;
+  rdfs:subClassOf cfi:EDXXXX .
+
+cfi:EDXXFX
+  a owl:Class ;
+  rdfs:label "Depository receipts on equities, Fixed rate income" ;
+  rdfs:subClassOf cfi:EDXXXX .
+
+cfi:EDXXCX
+  a owl:Class ;
+  rdfs:label "Depository receipts on equities, Cumulative, fixed rate income" ;
+  rdfs:subClassOf cfi:EDXXXX .
+
+cfi:EDXXPX
+  a owl:Class ;
+  rdfs:label "Depository receipts on equities, Participating income" ;
+  rdfs:subClassOf cfi:EDXXXX .
+
+cfi:EDXXQX
+  a owl:Class ;
+  rdfs:label "Depository receipts on equities, Cumulative, participating income" ;
+  rdfs:subClassOf cfi:EDXXXX .
+
+cfi:EDXXAX
+  a owl:Class ;
+  rdfs:label "Depository receipts on equities, Adjustable/variable rate income" ;
+  rdfs:subClassOf cfi:EDXXXX .
+
+cfi:EDXXNX
+  a owl:Class ;
+  rdfs:label "Depository receipts on equities, Normal rate income" ;
+  rdfs:subClassOf cfi:EDXXXX .
+
+cfi:EDXXUX
+  a owl:Class ;
+  rdfs:label "Depository receipts on equities, Auction rate income" ;
+  rdfs:subClassOf cfi:EDXXXX .
+
+cfi:EDXXDX
+  a owl:Class ;
+  rdfs:label "Depository receipts on equities, Dividends" ;
+  rdfs:subClassOf cfi:EDXXXX .
+
+cfi:EDXXXB
+  a owl:Class ;
+  rdfs:label "Depository receipts on equities, Bearer" ;
+  rdfs:subClassOf cfi:EDXXXX .
+
+cfi:EDXXXR
+  a owl:Class ;
+  rdfs:label "Depository receipts on equities, Registered" ;
+  rdfs:subClassOf cfi:EDXXXX .
+
+cfi:EDXXXN
+  a owl:Class ;
+  rdfs:label "Depository receipts on equities, Bearer/registered" ;
+  rdfs:subClassOf cfi:EDXXXX .
+
+cfi:EDXXXM
+  a owl:Class ;
+  rdfs:label "Depository receipts on equities, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:EDXXXX .
+
+cfi:EYAXXX
+  a owl:Class ;
+  rdfs:label "Structured instruments (participation), Tracker certificate" ;
+  rdfs:subClassOf cfi:EYXXXX .
+
+cfi:EYBXXX
+  a owl:Class ;
+  rdfs:label "Structured instruments (participation), Outperforming certificate" ;
+  rdfs:subClassOf cfi:EYXXXX .
+
+cfi:EYCXXX
+  a owl:Class ;
+  rdfs:label "Structured instruments (participation), Bonus certificate" ;
+  rdfs:subClassOf cfi:EYXXXX .
+
+cfi:EYDXXX
+  a owl:Class ;
+  rdfs:label "Structured instruments (participation), Outperformance bonus certificate" ;
+  rdfs:subClassOf cfi:EYXXXX .
+
+cfi:EYEXXX
+  a owl:Class ;
+  rdfs:label "Structured instruments (participation), Twin-win-certificate" ;
+  rdfs:subClassOf cfi:EYXXXX .
+
+cfi:EYMXXX
+  a owl:Class ;
+  rdfs:label "Structured instruments (participation), Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:EYXXXX .
+
+cfi:EYXDXX
+  a owl:Class ;
+  rdfs:label "Structured instruments (participation), Dividend payments" ;
+  rdfs:subClassOf cfi:EYXXXX .
+
+cfi:EYXYXX
+  a owl:Class ;
+  rdfs:label "Structured instruments (participation), No payments" ;
+  rdfs:subClassOf cfi:EYXXXX .
+
+cfi:EYXMXX
+  a owl:Class ;
+  rdfs:label "Structured instruments (participation), Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:EYXXXX .
+
+cfi:EYXXFX
+  a owl:Class ;
+  rdfs:label "Structured instruments (participation), Cash repayment" ;
+  rdfs:subClassOf cfi:EYXXXX .
+
+cfi:EYXXVX
+  a owl:Class ;
+  rdfs:label "Structured instruments (participation), Physical repayment" ;
+  rdfs:subClassOf cfi:EYXXXX .
+
+cfi:EYXXEX
+  a owl:Class ;
+  rdfs:label "Structured instruments (participation), Elect at settlement" ;
+  rdfs:subClassOf cfi:EYXXXX .
+
+cfi:EYXXMX
+  a owl:Class ;
+  rdfs:label "Structured instruments (participation), Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:EYXXXX .
+
+cfi:EYXXXB
+  a owl:Class ;
+  rdfs:label "Structured instruments (participation), Baskets" ;
+  rdfs:subClassOf cfi:EYXXXX .
+
+cfi:EYXXXS
+  a owl:Class ;
+  rdfs:label "Structured instruments (participation), Equities" ;
+  rdfs:subClassOf cfi:EYXXXX .
+
+cfi:EYXXXD
+  a owl:Class ;
+  rdfs:label "Structured instruments (participation), Debt instruments" ;
+  rdfs:subClassOf cfi:EYXXXX .
+
+cfi:EYXXXG
+  a owl:Class ;
+  rdfs:label "Structured instruments (participation), Derivatives" ;
+  rdfs:subClassOf cfi:EYXXXX .
+
+cfi:EYXXXT
+  a owl:Class ;
+  rdfs:label "Structured instruments (participation), Commodities" ;
+  rdfs:subClassOf cfi:EYXXXX .
+
+cfi:EYXXXC
+  a owl:Class ;
+  rdfs:label "Structured instruments (participation), Currencies" ;
+  rdfs:subClassOf cfi:EYXXXX .
+
+cfi:EYXXXI
+  a owl:Class ;
+  rdfs:label "Structured instruments (participation), Indices" ;
+  rdfs:subClassOf cfi:EYXXXX .
+
+cfi:EYXXXN
+  a owl:Class ;
+  rdfs:label "Structured instruments (participation), Interest rates" ;
+  rdfs:subClassOf cfi:EYXXXX .
+
+cfi:EYXXXM
+  a owl:Class ;
+  rdfs:label "Structured instruments (participation), Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:EYXXXX .
+
+cfi:EMXXXB
+  a owl:Class ;
+  rdfs:label "Others (Miscellaneous), Bearer" ;
+  rdfs:subClassOf cfi:EMXXXX .
+
+cfi:EMXXXR
+  a owl:Class ;
+  rdfs:label "Others (Miscellaneous), Registered" ;
+  rdfs:subClassOf cfi:EMXXXX .
+
+cfi:EMXXXN
+  a owl:Class ;
+  rdfs:label "Others (Miscellaneous), Bearer/registered" ;
+  rdfs:subClassOf cfi:EMXXXX .
+
+cfi:EMXXXM
+  a owl:Class ;
+  rdfs:label "Others (Miscellaneous), Others (Miscellaneous)" ;
+  rdfs:subClassOf cfi:EMXXXX .
+
+cfi:CICXXX
+  a owl:Class ;
+  rdfs:label "Standard (vanilla) investment funds/mutual funds, Closed-end" ;
+  rdfs:subClassOf cfi:CIXXXX .
+
+cfi:CIOXXX
+  a owl:Class ;
+  rdfs:label "Standard (vanilla) investment funds/mutual funds, Open-end" ;
+  rdfs:subClassOf cfi:CIXXXX .
+
+cfi:CIMXXX
+  a owl:Class ;
+  rdfs:label "Standard (vanilla) investment funds/mutual funds, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:CIXXXX .
+
+cfi:CIXIXX
+  a owl:Class ;
+  rdfs:label "Standard (vanilla) investment funds/mutual funds, Income funds" ;
+  rdfs:subClassOf cfi:CIXXXX .
+
+cfi:CIXGXX
+  a owl:Class ;
+  rdfs:label "Standard (vanilla) investment funds/mutual funds, Accumulative funds" ;
+  rdfs:subClassOf cfi:CIXXXX .
+
+cfi:CIXJXX
+  a owl:Class ;
+  rdfs:label "Standard (vanilla) investment funds/mutual funds, Mixed funds" ;
+  rdfs:subClassOf cfi:CIXXXX .
+
+cfi:CIXXRX
+  a owl:Class ;
+  rdfs:label "Standard (vanilla) investment funds/mutual funds, Real estate" ;
+  rdfs:subClassOf cfi:CIXXXX .
+
+cfi:CIXXBX
+  a owl:Class ;
+  rdfs:label "Standard (vanilla) investment funds/mutual funds, Debt instruments" ;
+  rdfs:subClassOf cfi:CIXXXX .
+
+cfi:CIXXEX
+  a owl:Class ;
+  rdfs:label "Standard (vanilla) investment funds/mutual funds, Equities" ;
+  rdfs:subClassOf cfi:CIXXXX .
+
+cfi:CIXXVX
+  a owl:Class ;
+  rdfs:label "Standard (vanilla) investment funds/mutual funds, Convertible securities" ;
+  rdfs:subClassOf cfi:CIXXXX .
+
+cfi:CIXXLX
+  a owl:Class ;
+  rdfs:label "Standard (vanilla) investment funds/mutual funds, Mixed" ;
+  rdfs:subClassOf cfi:CIXXXX .
+
+cfi:CIXXCX
+  a owl:Class ;
+  rdfs:label "Standard (vanilla) investment funds/mutual funds, Commodities" ;
+  rdfs:subClassOf cfi:CIXXXX .
+
+cfi:CIXXDX
+  a owl:Class ;
+  rdfs:label "Standard (vanilla) investment funds/mutual funds, Derivatives" ;
+  rdfs:subClassOf cfi:CIXXXX .
+
+cfi:CIXXFX
+  a owl:Class ;
+  rdfs:label "Standard (vanilla) investment funds/mutual funds, Referential instruments" ;
+  rdfs:subClassOf cfi:CIXXXX .
+
+cfi:CIXXKX
+  a owl:Class ;
+  rdfs:label "Standard (vanilla) investment funds/mutual funds, Credits" ;
+  rdfs:subClassOf cfi:CIXXXX .
+
+cfi:CIXXMX
+  a owl:Class ;
+  rdfs:label "Standard (vanilla) investment funds/mutual funds, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:CIXXXX .
+
+cfi:CIXXXS
+  a owl:Class ;
+  rdfs:label "Standard (vanilla) investment funds/mutual funds, Shares" ;
+  rdfs:subClassOf cfi:CIXXXX .
+
+cfi:CIXXXQ
+  a owl:Class ;
+  rdfs:label "Standard (vanilla) investment funds/mutual funds, Shares for QI" ;
+  rdfs:subClassOf cfi:CIXXXX .
+
+cfi:CIXXXU
+  a owl:Class ;
+  rdfs:label "Standard (vanilla) investment funds/mutual funds, Units" ;
+  rdfs:subClassOf cfi:CIXXXX .
+
+cfi:CIXXXY
+  a owl:Class ;
+  rdfs:label "Standard (vanilla) investment funds/mutual funds, Units for QI" ;
+  rdfs:subClassOf cfi:CIXXXX .
+
+cfi:CHDXXX
+  a owl:Class ;
+  rdfs:label "Hedge funds, Directional" ;
+  rdfs:subClassOf cfi:CHXXXX .
+
+cfi:CHRXXX
+  a owl:Class ;
+  rdfs:label "Hedge funds, Relative value" ;
+  rdfs:subClassOf cfi:CHXXXX .
+
+cfi:CHSXXX
+  a owl:Class ;
+  rdfs:label "Hedge funds, Security selection" ;
+  rdfs:subClassOf cfi:CHXXXX .
+
+cfi:CHEXXX
+  a owl:Class ;
+  rdfs:label "Hedge funds, Event-driven" ;
+  rdfs:subClassOf cfi:CHXXXX .
+
+cfi:CHAXXX
+  a owl:Class ;
+  rdfs:label "Hedge funds, Arbitrage" ;
+  rdfs:subClassOf cfi:CHXXXX .
+
+cfi:CHNXXX
+  a owl:Class ;
+  rdfs:label "Hedge funds, Multi-strategy" ;
+  rdfs:subClassOf cfi:CHXXXX .
+
+cfi:CHLXXX
+  a owl:Class ;
+  rdfs:label "Hedge funds, Asset-based lending" ;
+  rdfs:subClassOf cfi:CHXXXX .
+
+cfi:CHMXXX
+  a owl:Class ;
+  rdfs:label "Hedge funds, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:CHXXXX .
+
+cfi:CBCXXX
+  a owl:Class ;
+  rdfs:label "Real estate investment trusts (REIT), Closed-end" ;
+  rdfs:subClassOf cfi:CBXXXX .
+
+cfi:CBOXXX
+  a owl:Class ;
+  rdfs:label "Real estate investment trusts (REIT), Open-end" ;
+  rdfs:subClassOf cfi:CBXXXX .
+
+cfi:CBMXXX
+  a owl:Class ;
+  rdfs:label "Real estate investment trusts (REIT), Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:CBXXXX .
+
+cfi:CBXIXX
+  a owl:Class ;
+  rdfs:label "Real estate investment trusts (REIT), Income funds" ;
+  rdfs:subClassOf cfi:CBXXXX .
+
+cfi:CBXGXX
+  a owl:Class ;
+  rdfs:label "Real estate investment trusts (REIT), Accumulation funds" ;
+  rdfs:subClassOf cfi:CBXXXX .
+
+cfi:CBXJXX
+  a owl:Class ;
+  rdfs:label "Real estate investment trusts (REIT), Mixed funds" ;
+  rdfs:subClassOf cfi:CBXXXX .
+
+cfi:CBXXXS
+  a owl:Class ;
+  rdfs:label "Real estate investment trusts (REIT), Shares" ;
+  rdfs:subClassOf cfi:CBXXXX .
+
+cfi:CBXXXQ
+  a owl:Class ;
+  rdfs:label "Real estate investment trusts (REIT), Shares for QI" ;
+  rdfs:subClassOf cfi:CBXXXX .
+
+cfi:CBXXXU
+  a owl:Class ;
+  rdfs:label "Real estate investment trusts (REIT), Units" ;
+  rdfs:subClassOf cfi:CBXXXX .
+
+cfi:CBXXXY
+  a owl:Class ;
+  rdfs:label "Real estate investment trusts (REIT), Units for QI" ;
+  rdfs:subClassOf cfi:CBXXXX .
+
+cfi:CECXXX
+  a owl:Class ;
+  rdfs:label "Exchange traded funds (ETF), Closed-end" ;
+  rdfs:subClassOf cfi:CEXXXX .
+
+cfi:CEOXXX
+  a owl:Class ;
+  rdfs:label "Exchange traded funds (ETF), Open-end" ;
+  rdfs:subClassOf cfi:CEXXXX .
+
+cfi:CEMXXX
+  a owl:Class ;
+  rdfs:label "Exchange traded funds (ETF), Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:CEXXXX .
+
+cfi:CEXIXX
+  a owl:Class ;
+  rdfs:label "Exchange traded funds (ETF), Income funds" ;
+  rdfs:subClassOf cfi:CEXXXX .
+
+cfi:CEXGXX
+  a owl:Class ;
+  rdfs:label "Exchange traded funds (ETF), Accumulation funds" ;
+  rdfs:subClassOf cfi:CEXXXX .
+
+cfi:CEXJXX
+  a owl:Class ;
+  rdfs:label "Exchange traded funds (ETF), Mixed funds" ;
+  rdfs:subClassOf cfi:CEXXXX .
+
+cfi:CEXXRX
+  a owl:Class ;
+  rdfs:label "Exchange traded funds (ETF), Real estate" ;
+  rdfs:subClassOf cfi:CEXXXX .
+
+cfi:CEXXBX
+  a owl:Class ;
+  rdfs:label "Exchange traded funds (ETF), Debt instruments" ;
+  rdfs:subClassOf cfi:CEXXXX .
+
+cfi:CEXXEX
+  a owl:Class ;
+  rdfs:label "Exchange traded funds (ETF), Equities" ;
+  rdfs:subClassOf cfi:CEXXXX .
+
+cfi:CEXXVX
+  a owl:Class ;
+  rdfs:label "Exchange traded funds (ETF), Convertible securities" ;
+  rdfs:subClassOf cfi:CEXXXX .
+
+cfi:CEXXLX
+  a owl:Class ;
+  rdfs:label "Exchange traded funds (ETF), Mixed" ;
+  rdfs:subClassOf cfi:CEXXXX .
+
+cfi:CEXXCX
+  a owl:Class ;
+  rdfs:label "Exchange traded funds (ETF), Commodities" ;
+  rdfs:subClassOf cfi:CEXXXX .
+
+cfi:CEXXDX
+  a owl:Class ;
+  rdfs:label "Exchange traded funds (ETF), Derivatives" ;
+  rdfs:subClassOf cfi:CEXXXX .
+
+cfi:CEXXFX
+  a owl:Class ;
+  rdfs:label "Exchange traded funds (ETF), Referential instruments" ;
+  rdfs:subClassOf cfi:CEXXXX .
+
+cfi:CEXXKX
+  a owl:Class ;
+  rdfs:label "Exchange traded funds (ETF), Credits" ;
+  rdfs:subClassOf cfi:CEXXXX .
+
+cfi:CEXXMX
+  a owl:Class ;
+  rdfs:label "Exchange traded funds (ETF), Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:CEXXXX .
+
+cfi:CEXXXS
+  a owl:Class ;
+  rdfs:label "Exchange traded funds (ETF), Shares" ;
+  rdfs:subClassOf cfi:CEXXXX .
+
+cfi:CEXXXU
+  a owl:Class ;
+  rdfs:label "Exchange traded funds (ETF), Units" ;
+  rdfs:subClassOf cfi:CEXXXX .
+
+cfi:CSCXXX
+  a owl:Class ;
+  rdfs:label "Pension funds, Closed-end" ;
+  rdfs:subClassOf cfi:CSXXXX .
+
+cfi:CSOXXX
+  a owl:Class ;
+  rdfs:label "Pension funds, Open-end" ;
+  rdfs:subClassOf cfi:CSXXXX .
+
+cfi:CSMXXX
+  a owl:Class ;
+  rdfs:label "Pension funds, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:CSXXXX .
+
+cfi:CSXBXX
+  a owl:Class ;
+  rdfs:label "Pension funds, Balanced/conservative" ;
+  rdfs:subClassOf cfi:CSXXXX .
+
+cfi:CSXGXX
+  a owl:Class ;
+  rdfs:label "Pension funds, Growth" ;
+  rdfs:subClassOf cfi:CSXXXX .
+
+cfi:CSXLXX
+  a owl:Class ;
+  rdfs:label "Pension funds, Life style" ;
+  rdfs:subClassOf cfi:CSXXXX .
+
+cfi:CSXMXX
+  a owl:Class ;
+  rdfs:label "Pension funds, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:CSXXXX .
+
+cfi:CSXXRX
+  a owl:Class ;
+  rdfs:label "Pension funds, Defined benefit" ;
+  rdfs:subClassOf cfi:CSXXXX .
+
+cfi:CSXXBX
+  a owl:Class ;
+  rdfs:label "Pension funds, Defined contribution" ;
+  rdfs:subClassOf cfi:CSXXXX .
+
+cfi:CSXXMX
+  a owl:Class ;
+  rdfs:label "Pension funds, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:CSXXXX .
+
+cfi:CSXXXS
+  a owl:Class ;
+  rdfs:label "Pension funds, Shares" ;
+  rdfs:subClassOf cfi:CSXXXX .
+
+cfi:CSXXXU
+  a owl:Class ;
+  rdfs:label "Pension funds, Units" ;
+  rdfs:subClassOf cfi:CSXXXX .
+
+cfi:CFCXXX
+  a owl:Class ;
+  rdfs:label "Fund of funds, Closed-end" ;
+  rdfs:subClassOf cfi:CFXXXX .
+
+cfi:CFOXXX
+  a owl:Class ;
+  rdfs:label "Fund of funds, Open-end" ;
+  rdfs:subClassOf cfi:CFXXXX .
+
+cfi:CFMXXX
+  a owl:Class ;
+  rdfs:label "Fund of funds, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:CFXXXX .
+
+cfi:CFXIXX
+  a owl:Class ;
+  rdfs:label "Fund of funds, Income funds" ;
+  rdfs:subClassOf cfi:CFXXXX .
+
+cfi:CFXGXX
+  a owl:Class ;
+  rdfs:label "Fund of funds, Accumulation funds" ;
+  rdfs:subClassOf cfi:CFXXXX .
+
+cfi:CFXJXX
+  a owl:Class ;
+  rdfs:label "Fund of funds, Mixed funds" ;
+  rdfs:subClassOf cfi:CFXXXX .
+
+cfi:CFXXIX
+  a owl:Class ;
+  rdfs:label "Fund of funds, Standard (vanilla)" ;
+  rdfs:subClassOf cfi:CFXXXX .
+
+cfi:CFXXHX
+  a owl:Class ;
+  rdfs:label "Fund of funds, Hedge funds" ;
+  rdfs:subClassOf cfi:CFXXXX .
+
+cfi:CFXXBX
+  a owl:Class ;
+  rdfs:label "Fund of funds, REIT" ;
+  rdfs:subClassOf cfi:CFXXXX .
+
+cfi:CFXXEX
+  a owl:Class ;
+  rdfs:label "Fund of funds, ETF" ;
+  rdfs:subClassOf cfi:CFXXXX .
+
+cfi:CFXXPX
+  a owl:Class ;
+  rdfs:label "Fund of funds, Private equity funds" ;
+  rdfs:subClassOf cfi:CFXXXX .
+
+cfi:CFXXMX
+  a owl:Class ;
+  rdfs:label "Fund of funds, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:CFXXXX .
+
+cfi:CFXXXS
+  a owl:Class ;
+  rdfs:label "Fund of funds, Shares" ;
+  rdfs:subClassOf cfi:CFXXXX .
+
+cfi:CFXXXQ
+  a owl:Class ;
+  rdfs:label "Fund of funds, Shares for QI" ;
+  rdfs:subClassOf cfi:CFXXXX .
+
+cfi:CFXXXU
+  a owl:Class ;
+  rdfs:label "Fund of funds, Units" ;
+  rdfs:subClassOf cfi:CFXXXX .
+
+cfi:CFXXXY
+  a owl:Class ;
+  rdfs:label "Fund of funds, Units for QI" ;
+  rdfs:subClassOf cfi:CFXXXX .
+
+cfi:CPCXXX
+  a owl:Class ;
+  rdfs:label "Private equity funds, Closed-end" ;
+  rdfs:subClassOf cfi:CPXXXX .
+
+cfi:CPOXXX
+  a owl:Class ;
+  rdfs:label "Private equity funds, Open-end" ;
+  rdfs:subClassOf cfi:CPXXXX .
+
+cfi:CPMXXX
+  a owl:Class ;
+  rdfs:label "Private equity funds, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:CPXXXX .
+
+cfi:CPXIXX
+  a owl:Class ;
+  rdfs:label "Private equity funds, Income funds" ;
+  rdfs:subClassOf cfi:CPXXXX .
+
+cfi:CPXGXX
+  a owl:Class ;
+  rdfs:label "Private equity funds, Accumulation funds" ;
+  rdfs:subClassOf cfi:CPXXXX .
+
+cfi:CPXJXX
+  a owl:Class ;
+  rdfs:label "Private equity funds, Mixed funds" ;
+  rdfs:subClassOf cfi:CPXXXX .
+
+cfi:CPXXRX
+  a owl:Class ;
+  rdfs:label "Private equity funds, Real Estate" ;
+  rdfs:subClassOf cfi:CPXXXX .
+
+cfi:CPXXBX
+  a owl:Class ;
+  rdfs:label "Private equity funds, Debt instruments" ;
+  rdfs:subClassOf cfi:CPXXXX .
+
+cfi:CPXXEX
+  a owl:Class ;
+  rdfs:label "Private equity funds, Equities" ;
+  rdfs:subClassOf cfi:CPXXXX .
+
+cfi:CPXXVX
+  a owl:Class ;
+  rdfs:label "Private equity funds, Convertible securities" ;
+  rdfs:subClassOf cfi:CPXXXX .
+
+cfi:CPXXLX
+  a owl:Class ;
+  rdfs:label "Private equity funds, Mixed" ;
+  rdfs:subClassOf cfi:CPXXXX .
+
+cfi:CPXXCX
+  a owl:Class ;
+  rdfs:label "Private equity funds, Commodities" ;
+  rdfs:subClassOf cfi:CPXXXX .
+
+cfi:CPXXDX
+  a owl:Class ;
+  rdfs:label "Private equity funds, Derivatives" ;
+  rdfs:subClassOf cfi:CPXXXX .
+
+cfi:CPXXFX
+  a owl:Class ;
+  rdfs:label "Private equity funds, Referential instruments" ;
+  rdfs:subClassOf cfi:CPXXXX .
+
+cfi:CPXXKX
+  a owl:Class ;
+  rdfs:label "Private equity funds, Credits" ;
+  rdfs:subClassOf cfi:CPXXXX .
+
+cfi:CPXXMX
+  a owl:Class ;
+  rdfs:label "Private equity funds, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:CPXXXX .
+
+cfi:CPXXXS
+  a owl:Class ;
+  rdfs:label "Private equity funds, Shares" ;
+  rdfs:subClassOf cfi:CPXXXX .
+
+cfi:CPXXXQ
+  a owl:Class ;
+  rdfs:label "Private equity funds, Shares for QI" ;
+  rdfs:subClassOf cfi:CPXXXX .
+
+cfi:CPXXXU
+  a owl:Class ;
+  rdfs:label "Private equity funds, Units" ;
+  rdfs:subClassOf cfi:CPXXXX .
+
+cfi:CPXXXY
+  a owl:Class ;
+  rdfs:label "Private equity funds, Units for QI" ;
+  rdfs:subClassOf cfi:CPXXXX .
+
+cfi:CMXXXS
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous), Shares" ;
+  rdfs:subClassOf cfi:CMXXXX .
+
+cfi:CMXXXQ
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous), Shares for QI" ;
+  rdfs:subClassOf cfi:CMXXXX .
+
+cfi:CMXXXU
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous), Units" ;
+  rdfs:subClassOf cfi:CMXXXX .
+
+cfi:CMXXXY
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous), Units for QI" ;
+  rdfs:subClassOf cfi:CMXXXX .
+
+cfi:DBFXXX
+  a owl:Class ;
+  rdfs:label "Bonds, Fixed rate" ;
+  rdfs:subClassOf cfi:DBXXXX .
+
+cfi:DBZXXX
+  a owl:Class ;
+  rdfs:label "Bonds, Zero rate/discounted" ;
+  rdfs:subClassOf cfi:DBXXXX .
+
+cfi:DBVXXX
+  a owl:Class ;
+  rdfs:label "Bonds, Variable" ;
+  rdfs:subClassOf cfi:DBXXXX .
+
+cfi:DBCXXX
+  a owl:Class ;
+  rdfs:label "Bonds, Cash payment" ;
+  rdfs:subClassOf cfi:DBXXXX .
+
+cfi:DBKXXX
+  a owl:Class ;
+  rdfs:label "Bonds, Payment in kind" ;
+  rdfs:subClassOf cfi:DBXXXX .
+
+cfi:DBXTXX
+  a owl:Class ;
+  rdfs:label "Bonds, Government/state guarantee" ;
+  rdfs:subClassOf cfi:DBXXXX .
+
+cfi:DBXGXX
+  a owl:Class ;
+  rdfs:label "Bonds, Joint guarantee" ;
+  rdfs:subClassOf cfi:DBXXXX .
+
+cfi:DBXSXX
+  a owl:Class ;
+  rdfs:label "Bonds, Secured" ;
+  rdfs:subClassOf cfi:DBXXXX .
+
+cfi:DBXUXX
+  a owl:Class ;
+  rdfs:label "Bonds, Unsecured" ;
+  rdfs:subClassOf cfi:DBXXXX .
+
+cfi:DBXPXX
+  a owl:Class ;
+  rdfs:label "Bonds, Negative pledge" ;
+  rdfs:subClassOf cfi:DBXXXX .
+
+cfi:DBXNXX
+  a owl:Class ;
+  rdfs:label "Bonds, Senior" ;
+  rdfs:subClassOf cfi:DBXXXX .
+
+cfi:DBXOXX
+  a owl:Class ;
+  rdfs:label "Bonds, Senior subordinated" ;
+  rdfs:subClassOf cfi:DBXXXX .
+
+cfi:DBXQXX
+  a owl:Class ;
+  rdfs:label "Bonds, Junior" ;
+  rdfs:subClassOf cfi:DBXXXX .
+
+cfi:DBXJXX
+  a owl:Class ;
+  rdfs:label "Bonds, Junior subordinated" ;
+  rdfs:subClassOf cfi:DBXXXX .
+
+cfi:DBXCXX
+  a owl:Class ;
+  rdfs:label "Bonds, Supranational" ;
+  rdfs:subClassOf cfi:DBXXXX .
+
+cfi:DBXXFX
+  a owl:Class ;
+  rdfs:label "Bonds, Fixed maturity" ;
+  rdfs:subClassOf cfi:DBXXXX .
+
+cfi:DBXXGX
+  a owl:Class ;
+  rdfs:label "Bonds, Fixed maturity with call feature" ;
+  rdfs:subClassOf cfi:DBXXXX .
+
+cfi:DBXXCX
+  a owl:Class ;
+  rdfs:label "Bonds, Fixed maturity with put feature" ;
+  rdfs:subClassOf cfi:DBXXXX .
+
+cfi:DBXXDX
+  a owl:Class ;
+  rdfs:label "Bonds, Fixed maturity with put and call" ;
+  rdfs:subClassOf cfi:DBXXXX .
+
+cfi:DBXXAX
+  a owl:Class ;
+  rdfs:label "Bonds, Amortization plan" ;
+  rdfs:subClassOf cfi:DBXXXX .
+
+cfi:DBXXBX
+  a owl:Class ;
+  rdfs:label "Bonds, Amortization plan with call feature" ;
+  rdfs:subClassOf cfi:DBXXXX .
+
+cfi:DBXXTX
+  a owl:Class ;
+  rdfs:label "Bonds, Amortization plan with put feature" ;
+  rdfs:subClassOf cfi:DBXXXX .
+
+cfi:DBXXLX
+  a owl:Class ;
+  rdfs:label "Bonds, Amortization plan with put and call" ;
+  rdfs:subClassOf cfi:DBXXXX .
+
+cfi:DBXXPX
+  a owl:Class ;
+  rdfs:label "Bonds, Perpetual" ;
+  rdfs:subClassOf cfi:DBXXXX .
+
+cfi:DBXXQX
+  a owl:Class ;
+  rdfs:label "Bonds, Perpetual with call feature" ;
+  rdfs:subClassOf cfi:DBXXXX .
+
+cfi:DBXXRX
+  a owl:Class ;
+  rdfs:label "Bonds, Perpetual with put feature" ;
+  rdfs:subClassOf cfi:DBXXXX .
+
+cfi:DBXXXB
+  a owl:Class ;
+  rdfs:label "Bonds, Bearer" ;
+  rdfs:subClassOf cfi:DBXXXX .
+
+cfi:DBXXXR
+  a owl:Class ;
+  rdfs:label "Bonds, Registered" ;
+  rdfs:subClassOf cfi:DBXXXX .
+
+cfi:DBXXXN
+  a owl:Class ;
+  rdfs:label "Bonds, Bearer/registered" ;
+  rdfs:subClassOf cfi:DBXXXX .
+
+cfi:DBXXXM
+  a owl:Class ;
+  rdfs:label "Bonds, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:DBXXXX .
+
+cfi:DCFXXX
+  a owl:Class ;
+  rdfs:label "Convertible bonds, Fixed rate" ;
+  rdfs:subClassOf cfi:DCXXXX .
+
+cfi:DCZXXX
+  a owl:Class ;
+  rdfs:label "Convertible bonds, Zero rate/discounted" ;
+  rdfs:subClassOf cfi:DCXXXX .
+
+cfi:DCVXXX
+  a owl:Class ;
+  rdfs:label "Convertible bonds, Variable" ;
+  rdfs:subClassOf cfi:DCXXXX .
+
+cfi:DCKXXX
+  a owl:Class ;
+  rdfs:label "Convertible bonds, Payment in kind" ;
+  rdfs:subClassOf cfi:DCXXXX .
+
+cfi:DCXTXX
+  a owl:Class ;
+  rdfs:label "Convertible bonds, Government/state guarantee" ;
+  rdfs:subClassOf cfi:DCXXXX .
+
+cfi:DCXGXX
+  a owl:Class ;
+  rdfs:label "Convertible bonds, Joint guarantee" ;
+  rdfs:subClassOf cfi:DCXXXX .
+
+cfi:DCXSXX
+  a owl:Class ;
+  rdfs:label "Convertible bonds, Secured" ;
+  rdfs:subClassOf cfi:DCXXXX .
+
+cfi:DCXUXX
+  a owl:Class ;
+  rdfs:label "Convertible bonds, Unsecured/unguaranteed" ;
+  rdfs:subClassOf cfi:DCXXXX .
+
+cfi:DCXPXX
+  a owl:Class ;
+  rdfs:label "Convertible bonds, Negative pledge" ;
+  rdfs:subClassOf cfi:DCXXXX .
+
+cfi:DCXNXX
+  a owl:Class ;
+  rdfs:label "Convertible bonds, Senior" ;
+  rdfs:subClassOf cfi:DCXXXX .
+
+cfi:DCXOXX
+  a owl:Class ;
+  rdfs:label "Convertible bonds, Senior subordinated" ;
+  rdfs:subClassOf cfi:DCXXXX .
+
+cfi:DCXQXX
+  a owl:Class ;
+  rdfs:label "Convertible bonds, Junior" ;
+  rdfs:subClassOf cfi:DCXXXX .
+
+cfi:DCXJXX
+  a owl:Class ;
+  rdfs:label "Convertible bonds, Junior subordinated" ;
+  rdfs:subClassOf cfi:DCXXXX .
+
+cfi:DCXCXX
+  a owl:Class ;
+  rdfs:label "Convertible bonds, Supranational" ;
+  rdfs:subClassOf cfi:DCXXXX .
+
+cfi:DCXXFX
+  a owl:Class ;
+  rdfs:label "Convertible bonds, Fixed maturity" ;
+  rdfs:subClassOf cfi:DCXXXX .
+
+cfi:DCXXGX
+  a owl:Class ;
+  rdfs:label "Convertible bonds, Fixed maturity with call feature" ;
+  rdfs:subClassOf cfi:DCXXXX .
+
+cfi:DCXXCX
+  a owl:Class ;
+  rdfs:label "Convertible bonds, Fixed maturity with put feature" ;
+  rdfs:subClassOf cfi:DCXXXX .
+
+cfi:DCXXDX
+  a owl:Class ;
+  rdfs:label "Convertible bonds, Fixed maturity with put and call" ;
+  rdfs:subClassOf cfi:DCXXXX .
+
+cfi:DCXXAX
+  a owl:Class ;
+  rdfs:label "Convertible bonds, Amortization plan" ;
+  rdfs:subClassOf cfi:DCXXXX .
+
+cfi:DCXXBX
+  a owl:Class ;
+  rdfs:label "Convertible bonds, Amortization plan with call feature" ;
+  rdfs:subClassOf cfi:DCXXXX .
+
+cfi:DCXXTX
+  a owl:Class ;
+  rdfs:label "Convertible bonds, Amortization plan with put feature" ;
+  rdfs:subClassOf cfi:DCXXXX .
+
+cfi:DCXXLX
+  a owl:Class ;
+  rdfs:label "Convertible bonds, Amortization plan with put and call" ;
+  rdfs:subClassOf cfi:DCXXXX .
+
+cfi:DCXXPX
+  a owl:Class ;
+  rdfs:label "Convertible bonds, Perpetual" ;
+  rdfs:subClassOf cfi:DCXXXX .
+
+cfi:DCXXQX
+  a owl:Class ;
+  rdfs:label "Convertible bonds, Perpetual with call feature" ;
+  rdfs:subClassOf cfi:DCXXXX .
+
+cfi:DCXXRX
+  a owl:Class ;
+  rdfs:label "Convertible bonds, Perpetual with put feature" ;
+  rdfs:subClassOf cfi:DCXXXX .
+
+cfi:DCXXEX
+  a owl:Class ;
+  rdfs:label "Convertible bonds, Extendible" ;
+  rdfs:subClassOf cfi:DCXXXX .
+
+cfi:DCXXXB
+  a owl:Class ;
+  rdfs:label "Convertible bonds, Bearer" ;
+  rdfs:subClassOf cfi:DCXXXX .
+
+cfi:DCXXXR
+  a owl:Class ;
+  rdfs:label "Convertible bonds, Registered" ;
+  rdfs:subClassOf cfi:DCXXXX .
+
+cfi:DCXXXN
+  a owl:Class ;
+  rdfs:label "Convertible bonds, Bearer/registered" ;
+  rdfs:subClassOf cfi:DCXXXX .
+
+cfi:DCXXXM
+  a owl:Class ;
+  rdfs:label "Convertible bonds, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:DCXXXX .
+
+cfi:DWFXXX
+  a owl:Class ;
+  rdfs:label "Bonds with warrants attached, Fixed rate" ;
+  rdfs:subClassOf cfi:DWXXXX .
+
+cfi:DWZXXX
+  a owl:Class ;
+  rdfs:label "Bonds with warrants attached, Zero rate/discounted" ;
+  rdfs:subClassOf cfi:DWXXXX .
+
+cfi:DWVXXX
+  a owl:Class ;
+  rdfs:label "Bonds with warrants attached, Variable" ;
+  rdfs:subClassOf cfi:DWXXXX .
+
+cfi:DWKXXX
+  a owl:Class ;
+  rdfs:label "Bonds with warrants attached, Payment in kind" ;
+  rdfs:subClassOf cfi:DWXXXX .
+
+cfi:DWXTXX
+  a owl:Class ;
+  rdfs:label "Bonds with warrants attached, Government/state guarantee" ;
+  rdfs:subClassOf cfi:DWXXXX .
+
+cfi:DWXGXX
+  a owl:Class ;
+  rdfs:label "Bonds with warrants attached, Joint guarantee" ;
+  rdfs:subClassOf cfi:DWXXXX .
+
+cfi:DWXSXX
+  a owl:Class ;
+  rdfs:label "Bonds with warrants attached, Secured" ;
+  rdfs:subClassOf cfi:DWXXXX .
+
+cfi:DWXUXX
+  a owl:Class ;
+  rdfs:label "Bonds with warrants attached, Unsecured/unguaranteed" ;
+  rdfs:subClassOf cfi:DWXXXX .
+
+cfi:DWXPXX
+  a owl:Class ;
+  rdfs:label "Bonds with warrants attached, Negative pledge" ;
+  rdfs:subClassOf cfi:DWXXXX .
+
+cfi:DWXNXX
+  a owl:Class ;
+  rdfs:label "Bonds with warrants attached, Senior" ;
+  rdfs:subClassOf cfi:DWXXXX .
+
+cfi:DWXOXX
+  a owl:Class ;
+  rdfs:label "Bonds with warrants attached, Senior subordinated" ;
+  rdfs:subClassOf cfi:DWXXXX .
+
+cfi:DWXQXX
+  a owl:Class ;
+  rdfs:label "Bonds with warrants attached, Junior" ;
+  rdfs:subClassOf cfi:DWXXXX .
+
+cfi:DWXJXX
+  a owl:Class ;
+  rdfs:label "Bonds with warrants attached, Junior subordinated" ;
+  rdfs:subClassOf cfi:DWXXXX .
+
+cfi:DWXCXX
+  a owl:Class ;
+  rdfs:label "Bonds with warrants attached, Supranational" ;
+  rdfs:subClassOf cfi:DWXXXX .
+
+cfi:DWXXFX
+  a owl:Class ;
+  rdfs:label "Bonds with warrants attached, Fixed maturity" ;
+  rdfs:subClassOf cfi:DWXXXX .
+
+cfi:DWXXGX
+  a owl:Class ;
+  rdfs:label "Bonds with warrants attached, Fixed maturity with call feature" ;
+  rdfs:subClassOf cfi:DWXXXX .
+
+cfi:DWXXCX
+  a owl:Class ;
+  rdfs:label "Bonds with warrants attached, Fixed maturity with put feature" ;
+  rdfs:subClassOf cfi:DWXXXX .
+
+cfi:DWXXDX
+  a owl:Class ;
+  rdfs:label "Bonds with warrants attached, Fixed maturity with put and call" ;
+  rdfs:subClassOf cfi:DWXXXX .
+
+cfi:DWXXAX
+  a owl:Class ;
+  rdfs:label "Bonds with warrants attached, Amortization plan" ;
+  rdfs:subClassOf cfi:DWXXXX .
+
+cfi:DWXXBX
+  a owl:Class ;
+  rdfs:label "Bonds with warrants attached, Amortization plan with call feature" ;
+  rdfs:subClassOf cfi:DWXXXX .
+
+cfi:DWXXTX
+  a owl:Class ;
+  rdfs:label "Bonds with warrants attached, Amortization plan with put feature" ;
+  rdfs:subClassOf cfi:DWXXXX .
+
+cfi:DWXXLX
+  a owl:Class ;
+  rdfs:label "Bonds with warrants attached, Amortization plan with put and call" ;
+  rdfs:subClassOf cfi:DWXXXX .
+
+cfi:DWXXPX
+  a owl:Class ;
+  rdfs:label "Bonds with warrants attached, Perpetual" ;
+  rdfs:subClassOf cfi:DWXXXX .
+
+cfi:DWXXQX
+  a owl:Class ;
+  rdfs:label "Bonds with warrants attached, Perpetual with call feature" ;
+  rdfs:subClassOf cfi:DWXXXX .
+
+cfi:DWXXRX
+  a owl:Class ;
+  rdfs:label "Bonds with warrants attached, Perpetual with put feature" ;
+  rdfs:subClassOf cfi:DWXXXX .
+
+cfi:DWXXEX
+  a owl:Class ;
+  rdfs:label "Bonds with warrants attached, Extendible" ;
+  rdfs:subClassOf cfi:DWXXXX .
+
+cfi:DWXXXB
+  a owl:Class ;
+  rdfs:label "Bonds with warrants attached, Bearer" ;
+  rdfs:subClassOf cfi:DWXXXX .
+
+cfi:DWXXXR
+  a owl:Class ;
+  rdfs:label "Bonds with warrants attached, Registered" ;
+  rdfs:subClassOf cfi:DWXXXX .
+
+cfi:DWXXXN
+  a owl:Class ;
+  rdfs:label "Bonds with warrants attached, Bearer/registered" ;
+  rdfs:subClassOf cfi:DWXXXX .
+
+cfi:DWXXXM
+  a owl:Class ;
+  rdfs:label "Bonds with warrants attached, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:DWXXXX .
+
+cfi:DTFXXX
+  a owl:Class ;
+  rdfs:label "Medium term notes, Fixed rate" ;
+  rdfs:subClassOf cfi:DTXXXX .
+
+cfi:DTZXXX
+  a owl:Class ;
+  rdfs:label "Medium term notes, Zero rate/discounted" ;
+  rdfs:subClassOf cfi:DTXXXX .
+
+cfi:DTVXXX
+  a owl:Class ;
+  rdfs:label "Medium term notes, Variable" ;
+  rdfs:subClassOf cfi:DTXXXX .
+
+cfi:DTKXXX
+  a owl:Class ;
+  rdfs:label "Medium term notes, Payment in kind" ;
+  rdfs:subClassOf cfi:DTXXXX .
+
+cfi:DTXTXX
+  a owl:Class ;
+  rdfs:label "Medium term notes, Government/state guarantee" ;
+  rdfs:subClassOf cfi:DTXXXX .
+
+cfi:DTXGXX
+  a owl:Class ;
+  rdfs:label "Medium term notes, Joint guarantee" ;
+  rdfs:subClassOf cfi:DTXXXX .
+
+cfi:DTXSXX
+  a owl:Class ;
+  rdfs:label "Medium term notes, Secured" ;
+  rdfs:subClassOf cfi:DTXXXX .
+
+cfi:DTXUXX
+  a owl:Class ;
+  rdfs:label "Medium term notes, Unsecured/unguaranteed" ;
+  rdfs:subClassOf cfi:DTXXXX .
+
+cfi:DTXPXX
+  a owl:Class ;
+  rdfs:label "Medium term notes, Negative pledge" ;
+  rdfs:subClassOf cfi:DTXXXX .
+
+cfi:DTXNXX
+  a owl:Class ;
+  rdfs:label "Medium term notes, Senior" ;
+  rdfs:subClassOf cfi:DTXXXX .
+
+cfi:DTXOXX
+  a owl:Class ;
+  rdfs:label "Medium term notes, Senior subordinated" ;
+  rdfs:subClassOf cfi:DTXXXX .
+
+cfi:DTXQXX
+  a owl:Class ;
+  rdfs:label "Medium term notes, Junior" ;
+  rdfs:subClassOf cfi:DTXXXX .
+
+cfi:DTXJXX
+  a owl:Class ;
+  rdfs:label "Medium term notes, Junior subordinated" ;
+  rdfs:subClassOf cfi:DTXXXX .
+
+cfi:DTXCXX
+  a owl:Class ;
+  rdfs:label "Medium term notes, Supranational" ;
+  rdfs:subClassOf cfi:DTXXXX .
+
+cfi:DTXXFX
+  a owl:Class ;
+  rdfs:label "Medium term notes, Fixed maturity" ;
+  rdfs:subClassOf cfi:DTXXXX .
+
+cfi:DTXXGX
+  a owl:Class ;
+  rdfs:label "Medium term notes, Fixed maturity with call feature" ;
+  rdfs:subClassOf cfi:DTXXXX .
+
+cfi:DTXXCX
+  a owl:Class ;
+  rdfs:label "Medium term notes, Fixed maturity with put feature" ;
+  rdfs:subClassOf cfi:DTXXXX .
+
+cfi:DTXXDX
+  a owl:Class ;
+  rdfs:label "Medium term notes, Fixed maturity with put and call" ;
+  rdfs:subClassOf cfi:DTXXXX .
+
+cfi:DTXXAX
+  a owl:Class ;
+  rdfs:label "Medium term notes, Amortization plan" ;
+  rdfs:subClassOf cfi:DTXXXX .
+
+cfi:DTXXBX
+  a owl:Class ;
+  rdfs:label "Medium term notes, Amortization plan with call feature" ;
+  rdfs:subClassOf cfi:DTXXXX .
+
+cfi:DTXXTX
+  a owl:Class ;
+  rdfs:label "Medium term notes, Amortization plan with put feature" ;
+  rdfs:subClassOf cfi:DTXXXX .
+
+cfi:DTXXLX
+  a owl:Class ;
+  rdfs:label "Medium term notes, Amortization plan with put and call" ;
+  rdfs:subClassOf cfi:DTXXXX .
+
+cfi:DTXXPX
+  a owl:Class ;
+  rdfs:label "Medium term notes, Perpetual" ;
+  rdfs:subClassOf cfi:DTXXXX .
+
+cfi:DTXXQX
+  a owl:Class ;
+  rdfs:label "Medium term notes, Perpetual with call feature" ;
+  rdfs:subClassOf cfi:DTXXXX .
+
+cfi:DTXXRX
+  a owl:Class ;
+  rdfs:label "Medium term notes, Perpetual with put feature" ;
+  rdfs:subClassOf cfi:DTXXXX .
+
+cfi:DTXXEX
+  a owl:Class ;
+  rdfs:label "Medium term notes, Extendible" ;
+  rdfs:subClassOf cfi:DTXXXX .
+
+cfi:DTXXXB
+  a owl:Class ;
+  rdfs:label "Medium term notes, Bearer" ;
+  rdfs:subClassOf cfi:DTXXXX .
+
+cfi:DTXXXR
+  a owl:Class ;
+  rdfs:label "Medium term notes, Registered" ;
+  rdfs:subClassOf cfi:DTXXXX .
+
+cfi:DTXXXN
+  a owl:Class ;
+  rdfs:label "Medium term notes, Bearer/registered" ;
+  rdfs:subClassOf cfi:DTXXXX .
+
+cfi:DTXXXM
+  a owl:Class ;
+  rdfs:label "Medium term notes, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:DTXXXX .
+
+cfi:DYFXXX
+  a owl:Class ;
+  rdfs:label "Money market instruments, Fixed rate" ;
+  rdfs:subClassOf cfi:DYXXXX .
+
+cfi:DYZXXX
+  a owl:Class ;
+  rdfs:label "Money market instruments, Zero rate/discounted" ;
+  rdfs:subClassOf cfi:DYXXXX .
+
+cfi:DYVXXX
+  a owl:Class ;
+  rdfs:label "Money market instruments, Variable" ;
+  rdfs:subClassOf cfi:DYXXXX .
+
+cfi:DYKXXX
+  a owl:Class ;
+  rdfs:label "Money market instruments, Payment in kind" ;
+  rdfs:subClassOf cfi:DYXXXX .
+
+cfi:DYXTXX
+  a owl:Class ;
+  rdfs:label "Money market instruments, Government/state guarantee" ;
+  rdfs:subClassOf cfi:DYXXXX .
+
+cfi:DYXGXX
+  a owl:Class ;
+  rdfs:label "Money market instruments, Joint guarantee" ;
+  rdfs:subClassOf cfi:DYXXXX .
+
+cfi:DYXSXX
+  a owl:Class ;
+  rdfs:label "Money market instruments, Secured" ;
+  rdfs:subClassOf cfi:DYXXXX .
+
+cfi:DYXUXX
+  a owl:Class ;
+  rdfs:label "Money market instruments, Unsecured/unguaranteed" ;
+  rdfs:subClassOf cfi:DYXXXX .
+
+cfi:DYXPXX
+  a owl:Class ;
+  rdfs:label "Money market instruments, Negative pledge" ;
+  rdfs:subClassOf cfi:DYXXXX .
+
+cfi:DYXNXX
+  a owl:Class ;
+  rdfs:label "Money market instruments, Senior" ;
+  rdfs:subClassOf cfi:DYXXXX .
+
+cfi:DYXOXX
+  a owl:Class ;
+  rdfs:label "Money market instruments, Senior subordinated" ;
+  rdfs:subClassOf cfi:DYXXXX .
+
+cfi:DYXQXX
+  a owl:Class ;
+  rdfs:label "Money market instruments, Junior" ;
+  rdfs:subClassOf cfi:DYXXXX .
+
+cfi:DYXJXX
+  a owl:Class ;
+  rdfs:label "Money market instruments, Junior subordinated" ;
+  rdfs:subClassOf cfi:DYXXXX .
+
+cfi:DYXCXX
+  a owl:Class ;
+  rdfs:label "Money market instruments, Supranational" ;
+  rdfs:subClassOf cfi:DYXXXX .
+
+cfi:DYXXXB
+  a owl:Class ;
+  rdfs:label "Money market instruments, Bearer" ;
+  rdfs:subClassOf cfi:DYXXXX .
+
+cfi:DYXXXR
+  a owl:Class ;
+  rdfs:label "Money market instruments, Registered" ;
+  rdfs:subClassOf cfi:DYXXXX .
+
+cfi:DYXXXN
+  a owl:Class ;
+  rdfs:label "Money market instruments, Bearer/registered" ;
+  rdfs:subClassOf cfi:DYXXXX .
+
+cfi:DYXXXM
+  a owl:Class ;
+  rdfs:label "Money market instruments, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:DYXXXX .
+
+cfi:DSAXXX
+  a owl:Class ;
+  rdfs:label "Structured instruments (capital protection), Capital protection certificate with participation" ;
+  rdfs:subClassOf cfi:DSXXXX .
+
+cfi:DSBXXX
+  a owl:Class ;
+  rdfs:label "Structured instruments (capital protection), Capital protection convertible certificate" ;
+  rdfs:subClassOf cfi:DSXXXX .
+
+cfi:DSCXXX
+  a owl:Class ;
+  rdfs:label "Structured instruments (capital protection), Barrier capital protection certificate" ;
+  rdfs:subClassOf cfi:DSXXXX .
+
+cfi:DSDXXX
+  a owl:Class ;
+  rdfs:label "Structured instruments (capital protection), Capital protection certificate with coupons" ;
+  rdfs:subClassOf cfi:DSXXXX .
+
+cfi:DSMXXX
+  a owl:Class ;
+  rdfs:label "Structured instruments (capital protection), Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:DSXXXX .
+
+cfi:DSXFXX
+  a owl:Class ;
+  rdfs:label "Structured instruments (capital protection), Fixed interest payments" ;
+  rdfs:subClassOf cfi:DSXXXX .
+
+cfi:DSXDXX
+  a owl:Class ;
+  rdfs:label "Structured instruments (capital protection), Dividend payments" ;
+  rdfs:subClassOf cfi:DSXXXX .
+
+cfi:DSXVXX
+  a owl:Class ;
+  rdfs:label "Structured instruments (capital protection), Variable interest payments" ;
+  rdfs:subClassOf cfi:DSXXXX .
+
+cfi:DSXYXX
+  a owl:Class ;
+  rdfs:label "Structured instruments (capital protection), No payments" ;
+  rdfs:subClassOf cfi:DSXXXX .
+
+cfi:DSXMXX
+  a owl:Class ;
+  rdfs:label "Structured instruments (capital protection), Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:DSXXXX .
+
+cfi:DSXXFX
+  a owl:Class ;
+  rdfs:label "Structured instruments (capital protection), Fixed cash repayment (only protected capital level)" ;
+  rdfs:subClassOf cfi:DSXXXX .
+
+cfi:DSXXVX
+  a owl:Class ;
+  rdfs:label "Structured instruments (capital protection), Variable cash repayment" ;
+  rdfs:subClassOf cfi:DSXXXX .
+
+cfi:DSXXMX
+  a owl:Class ;
+  rdfs:label "Structured instruments (capital protection), Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:DSXXXX .
+
+cfi:DSXXXB
+  a owl:Class ;
+  rdfs:label "Structured instruments (capital protection), Baskets" ;
+  rdfs:subClassOf cfi:DSXXXX .
+
+cfi:DSXXXS
+  a owl:Class ;
+  rdfs:label "Structured instruments (capital protection), Equities" ;
+  rdfs:subClassOf cfi:DSXXXX .
+
+cfi:DSXXXD
+  a owl:Class ;
+  rdfs:label "Structured instruments (capital protection), Debt instruments" ;
+  rdfs:subClassOf cfi:DSXXXX .
+
+cfi:DSXXXT
+  a owl:Class ;
+  rdfs:label "Structured instruments (capital protection), Commodities" ;
+  rdfs:subClassOf cfi:DSXXXX .
+
+cfi:DSXXXC
+  a owl:Class ;
+  rdfs:label "Structured instruments (capital protection), Currencies (specified exchange rate)" ;
+  rdfs:subClassOf cfi:DSXXXX .
+
+cfi:DSXXXI
+  a owl:Class ;
+  rdfs:label "Structured instruments (capital protection), Indices (the performance of an index)" ;
+  rdfs:subClassOf cfi:DSXXXX .
+
+cfi:DSXXXN
+  a owl:Class ;
+  rdfs:label "Structured instruments (capital protection), Interest rates" ;
+  rdfs:subClassOf cfi:DSXXXX .
+
+cfi:DSXXXM
+  a owl:Class ;
+  rdfs:label "Structured instruments (capital protection), Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:DSXXXX .
+
+cfi:DEAXXX
+  a owl:Class ;
+  rdfs:label "Structured instruments (without capital protection), Discount certificate" ;
+  rdfs:subClassOf cfi:DEXXXX .
+
+cfi:DEBXXX
+  a owl:Class ;
+  rdfs:label "Structured instruments (without capital protection), Barrier discount certificate" ;
+  rdfs:subClassOf cfi:DEXXXX .
+
+cfi:DECXXX
+  a owl:Class ;
+  rdfs:label "Structured instruments (without capital protection), Reverse convertible" ;
+  rdfs:subClassOf cfi:DEXXXX .
+
+cfi:DEDXXX
+  a owl:Class ;
+  rdfs:label "Structured instruments (without capital protection), Barrier reverse convertible" ;
+  rdfs:subClassOf cfi:DEXXXX .
+
+cfi:DEEXXX
+  a owl:Class ;
+  rdfs:label "Structured instruments (without capital protection), Express certificate" ;
+  rdfs:subClassOf cfi:DEXXXX .
+
+cfi:DEMXXX
+  a owl:Class ;
+  rdfs:label "Structured instruments (without capital protection), Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:DEXXXX .
+
+cfi:DEXFXX
+  a owl:Class ;
+  rdfs:label "Structured instruments (without capital protection), Fixed interest payments" ;
+  rdfs:subClassOf cfi:DEXXXX .
+
+cfi:DEXDXX
+  a owl:Class ;
+  rdfs:label "Structured instruments (without capital protection), Dividend payments" ;
+  rdfs:subClassOf cfi:DEXXXX .
+
+cfi:DEXVXX
+  a owl:Class ;
+  rdfs:label "Structured instruments (without capital protection), Variable interest payments" ;
+  rdfs:subClassOf cfi:DEXXXX .
+
+cfi:DEXYXX
+  a owl:Class ;
+  rdfs:label "Structured instruments (without capital protection), No payments" ;
+  rdfs:subClassOf cfi:DEXXXX .
+
+cfi:DEXMXX
+  a owl:Class ;
+  rdfs:label "Structured instruments (without capital protection), Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:DEXXXX .
+
+cfi:DEXXRX
+  a owl:Class ;
+  rdfs:label "Structured instruments (without capital protection), Repayment in cash" ;
+  rdfs:subClassOf cfi:DEXXXX .
+
+cfi:DEXXSX
+  a owl:Class ;
+  rdfs:label "Structured instruments (without capital protection), Repayment in assets" ;
+  rdfs:subClassOf cfi:DEXXXX .
+
+cfi:DEXXCX
+  a owl:Class ;
+  rdfs:label "Structured instruments (without capital protection), Repayment in assets and cash" ;
+  rdfs:subClassOf cfi:DEXXXX .
+
+cfi:DEXXTX
+  a owl:Class ;
+  rdfs:label "Structured instruments (without capital protection), Repayment in assets or cash" ;
+  rdfs:subClassOf cfi:DEXXXX .
+
+cfi:DEXXMX
+  a owl:Class ;
+  rdfs:label "Structured instruments (without capital protection), Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:DEXXXX .
+
+cfi:DEXXXB
+  a owl:Class ;
+  rdfs:label "Structured instruments (without capital protection), Baskets" ;
+  rdfs:subClassOf cfi:DEXXXX .
+
+cfi:DEXXXS
+  a owl:Class ;
+  rdfs:label "Structured instruments (without capital protection), Equities" ;
+  rdfs:subClassOf cfi:DEXXXX .
+
+cfi:DEXXXD
+  a owl:Class ;
+  rdfs:label "Structured instruments (without capital protection), Debt instruments" ;
+  rdfs:subClassOf cfi:DEXXXX .
+
+cfi:DEXXXT
+  a owl:Class ;
+  rdfs:label "Structured instruments (without capital protection), Commodities" ;
+  rdfs:subClassOf cfi:DEXXXX .
+
+cfi:DEXXXC
+  a owl:Class ;
+  rdfs:label "Structured instruments (without capital protection), Currencies (specified exchange rate)" ;
+  rdfs:subClassOf cfi:DEXXXX .
+
+cfi:DEXXXI
+  a owl:Class ;
+  rdfs:label "Structured instruments (without capital protection), Indices (the performance of an index)" ;
+  rdfs:subClassOf cfi:DEXXXX .
+
+cfi:DEXXXN
+  a owl:Class ;
+  rdfs:label "Structured instruments (without capital protection), Interest rates" ;
+  rdfs:subClassOf cfi:DEXXXX .
+
+cfi:DEXXXM
+  a owl:Class ;
+  rdfs:label "Structured instruments (without capital protection), Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:DEXXXX .
+
+cfi:DGFXXX
+  a owl:Class ;
+  rdfs:label "Mortgage-backed securities, Fixed rate" ;
+  rdfs:subClassOf cfi:DGXXXX .
+
+cfi:DGZXXX
+  a owl:Class ;
+  rdfs:label "Mortgage-backed securities, Zero rate/discounted" ;
+  rdfs:subClassOf cfi:DGXXXX .
+
+cfi:DGVXXX
+  a owl:Class ;
+  rdfs:label "Mortgage-backed securities, Variable" ;
+  rdfs:subClassOf cfi:DGXXXX .
+
+cfi:DGXTXX
+  a owl:Class ;
+  rdfs:label "Mortgage-backed securities, Government/state guarantee" ;
+  rdfs:subClassOf cfi:DGXXXX .
+
+cfi:DGXGXX
+  a owl:Class ;
+  rdfs:label "Mortgage-backed securities, Joint guarantee" ;
+  rdfs:subClassOf cfi:DGXXXX .
+
+cfi:DGXSXX
+  a owl:Class ;
+  rdfs:label "Mortgage-backed securities, Secured" ;
+  rdfs:subClassOf cfi:DGXXXX .
+
+cfi:DGXUXX
+  a owl:Class ;
+  rdfs:label "Mortgage-backed securities, Unsecured/unguaranteed" ;
+  rdfs:subClassOf cfi:DGXXXX .
+
+cfi:DGXPXX
+  a owl:Class ;
+  rdfs:label "Mortgage-backed securities, Negative pledge" ;
+  rdfs:subClassOf cfi:DGXXXX .
+
+cfi:DGXNXX
+  a owl:Class ;
+  rdfs:label "Mortgage-backed securities, Senior" ;
+  rdfs:subClassOf cfi:DGXXXX .
+
+cfi:DGXOXX
+  a owl:Class ;
+  rdfs:label "Mortgage-backed securities, Senior subordinated" ;
+  rdfs:subClassOf cfi:DGXXXX .
+
+cfi:DGXQXX
+  a owl:Class ;
+  rdfs:label "Mortgage-backed securities, Junior" ;
+  rdfs:subClassOf cfi:DGXXXX .
+
+cfi:DGXJXX
+  a owl:Class ;
+  rdfs:label "Mortgage-backed securities, Junior subordinated" ;
+  rdfs:subClassOf cfi:DGXXXX .
+
+cfi:DGXCXX
+  a owl:Class ;
+  rdfs:label "Mortgage-backed securities, Supranational" ;
+  rdfs:subClassOf cfi:DGXXXX .
+
+cfi:DGXXFX
+  a owl:Class ;
+  rdfs:label "Mortgage-backed securities, Fixed maturity" ;
+  rdfs:subClassOf cfi:DGXXXX .
+
+cfi:DGXXGX
+  a owl:Class ;
+  rdfs:label "Mortgage-backed securities, Fixed maturity with call feature" ;
+  rdfs:subClassOf cfi:DGXXXX .
+
+cfi:DGXXCX
+  a owl:Class ;
+  rdfs:label "Mortgage-backed securities, Fixed maturity with put feature" ;
+  rdfs:subClassOf cfi:DGXXXX .
+
+cfi:DGXXDX
+  a owl:Class ;
+  rdfs:label "Mortgage-backed securities, Fixed maturity with put and call" ;
+  rdfs:subClassOf cfi:DGXXXX .
+
+cfi:DGXXAX
+  a owl:Class ;
+  rdfs:label "Mortgage-backed securities, Amortization plan" ;
+  rdfs:subClassOf cfi:DGXXXX .
+
+cfi:DGXXBX
+  a owl:Class ;
+  rdfs:label "Mortgage-backed securities, Amortization plan with call feature" ;
+  rdfs:subClassOf cfi:DGXXXX .
+
+cfi:DGXXTX
+  a owl:Class ;
+  rdfs:label "Mortgage-backed securities, Amortization plan with put feature" ;
+  rdfs:subClassOf cfi:DGXXXX .
+
+cfi:DGXXLX
+  a owl:Class ;
+  rdfs:label "Mortgage-backed securities, Amortization plan with put and call" ;
+  rdfs:subClassOf cfi:DGXXXX .
+
+cfi:DGXXPX
+  a owl:Class ;
+  rdfs:label "Mortgage-backed securities, Perpetual" ;
+  rdfs:subClassOf cfi:DGXXXX .
+
+cfi:DGXXQX
+  a owl:Class ;
+  rdfs:label "Mortgage-backed securities, Perpetual with call feature" ;
+  rdfs:subClassOf cfi:DGXXXX .
+
+cfi:DGXXRX
+  a owl:Class ;
+  rdfs:label "Mortgage-backed securities, Perpetual with put feature" ;
+  rdfs:subClassOf cfi:DGXXXX .
+
+cfi:DGXXEX
+  a owl:Class ;
+  rdfs:label "Mortgage-backed securities, Extendible" ;
+  rdfs:subClassOf cfi:DGXXXX .
+
+cfi:DGXXXB
+  a owl:Class ;
+  rdfs:label "Mortgage-backed securities, Bearer" ;
+  rdfs:subClassOf cfi:DGXXXX .
+
+cfi:DGXXXR
+  a owl:Class ;
+  rdfs:label "Mortgage-backed securities, Registered" ;
+  rdfs:subClassOf cfi:DGXXXX .
+
+cfi:DGXXXN
+  a owl:Class ;
+  rdfs:label "Mortgage-backed securities, Bearer/registered" ;
+  rdfs:subClassOf cfi:DGXXXX .
+
+cfi:DGXXXM
+  a owl:Class ;
+  rdfs:label "Mortgage-backed securities, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:DGXXXX .
+
+cfi:DAFXXX
+  a owl:Class ;
+  rdfs:label "Asset-backed securities, Fixed rate" ;
+  rdfs:subClassOf cfi:DAXXXX .
+
+cfi:DAZXXX
+  a owl:Class ;
+  rdfs:label "Asset-backed securities, Zero rate/discounted" ;
+  rdfs:subClassOf cfi:DAXXXX .
+
+cfi:DAVXXX
+  a owl:Class ;
+  rdfs:label "Asset-backed securities, Variable" ;
+  rdfs:subClassOf cfi:DAXXXX .
+
+cfi:DAXTXX
+  a owl:Class ;
+  rdfs:label "Asset-backed securities, Government/state guarantee" ;
+  rdfs:subClassOf cfi:DAXXXX .
+
+cfi:DAXGXX
+  a owl:Class ;
+  rdfs:label "Asset-backed securities, Joint guarantee" ;
+  rdfs:subClassOf cfi:DAXXXX .
+
+cfi:DAXSXX
+  a owl:Class ;
+  rdfs:label "Asset-backed securities, Secured" ;
+  rdfs:subClassOf cfi:DAXXXX .
+
+cfi:DAXUXX
+  a owl:Class ;
+  rdfs:label "Asset-backed securities, Unsecured/unguaranteed" ;
+  rdfs:subClassOf cfi:DAXXXX .
+
+cfi:DAXPXX
+  a owl:Class ;
+  rdfs:label "Asset-backed securities, Negative pledge" ;
+  rdfs:subClassOf cfi:DAXXXX .
+
+cfi:DAXNXX
+  a owl:Class ;
+  rdfs:label "Asset-backed securities, Senior" ;
+  rdfs:subClassOf cfi:DAXXXX .
+
+cfi:DAXOXX
+  a owl:Class ;
+  rdfs:label "Asset-backed securities, Senior subordinated" ;
+  rdfs:subClassOf cfi:DAXXXX .
+
+cfi:DAXQXX
+  a owl:Class ;
+  rdfs:label "Asset-backed securities, Junior" ;
+  rdfs:subClassOf cfi:DAXXXX .
+
+cfi:DAXJXX
+  a owl:Class ;
+  rdfs:label "Asset-backed securities, Junior subordinated" ;
+  rdfs:subClassOf cfi:DAXXXX .
+
+cfi:DAXCXX
+  a owl:Class ;
+  rdfs:label "Asset-backed securities, Supranational" ;
+  rdfs:subClassOf cfi:DAXXXX .
+
+cfi:DAXXFX
+  a owl:Class ;
+  rdfs:label "Asset-backed securities, Fixed maturity" ;
+  rdfs:subClassOf cfi:DAXXXX .
+
+cfi:DAXXGX
+  a owl:Class ;
+  rdfs:label "Asset-backed securities, Fixed maturity with call feature" ;
+  rdfs:subClassOf cfi:DAXXXX .
+
+cfi:DAXXCX
+  a owl:Class ;
+  rdfs:label "Asset-backed securities, Fixed maturity with put feature" ;
+  rdfs:subClassOf cfi:DAXXXX .
+
+cfi:DAXXDX
+  a owl:Class ;
+  rdfs:label "Asset-backed securities, Fixed maturity with put and call" ;
+  rdfs:subClassOf cfi:DAXXXX .
+
+cfi:DAXXAX
+  a owl:Class ;
+  rdfs:label "Asset-backed securities, Amortization plan" ;
+  rdfs:subClassOf cfi:DAXXXX .
+
+cfi:DAXXBX
+  a owl:Class ;
+  rdfs:label "Asset-backed securities, Amortization plan with call feature" ;
+  rdfs:subClassOf cfi:DAXXXX .
+
+cfi:DAXXTX
+  a owl:Class ;
+  rdfs:label "Asset-backed securities, Amortization plan with put feature" ;
+  rdfs:subClassOf cfi:DAXXXX .
+
+cfi:DAXXLX
+  a owl:Class ;
+  rdfs:label "Asset-backed securities, Amortization plan with put and call" ;
+  rdfs:subClassOf cfi:DAXXXX .
+
+cfi:DAXXPX
+  a owl:Class ;
+  rdfs:label "Asset-backed securities, Perpetual" ;
+  rdfs:subClassOf cfi:DAXXXX .
+
+cfi:DAXXQX
+  a owl:Class ;
+  rdfs:label "Asset-backed securities, Perpetual with call feature" ;
+  rdfs:subClassOf cfi:DAXXXX .
+
+cfi:DAXXRX
+  a owl:Class ;
+  rdfs:label "Asset-backed securities, Perpetual with put feature" ;
+  rdfs:subClassOf cfi:DAXXXX .
+
+cfi:DAXXEX
+  a owl:Class ;
+  rdfs:label "Asset-backed securities, Extendible" ;
+  rdfs:subClassOf cfi:DAXXXX .
+
+cfi:DAXXXB
+  a owl:Class ;
+  rdfs:label "Asset-backed securities, Bearer" ;
+  rdfs:subClassOf cfi:DAXXXX .
+
+cfi:DAXXXR
+  a owl:Class ;
+  rdfs:label "Asset-backed securities, Registered" ;
+  rdfs:subClassOf cfi:DAXXXX .
+
+cfi:DAXXXN
+  a owl:Class ;
+  rdfs:label "Asset-backed securities, Bearer/registered" ;
+  rdfs:subClassOf cfi:DAXXXX .
+
+cfi:DAXXXM
+  a owl:Class ;
+  rdfs:label "Asset-backed securities, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:DAXXXX .
+
+cfi:DNFXXX
+  a owl:Class ;
+  rdfs:label "Municipal bonds, Fixed rate" ;
+  rdfs:subClassOf cfi:DNXXXX .
+
+cfi:DNZXXX
+  a owl:Class ;
+  rdfs:label "Municipal bonds, Zero rate/discounted" ;
+  rdfs:subClassOf cfi:DNXXXX .
+
+cfi:DNVXXX
+  a owl:Class ;
+  rdfs:label "Municipal bonds, Variable" ;
+  rdfs:subClassOf cfi:DNXXXX .
+
+cfi:DNXTXX
+  a owl:Class ;
+  rdfs:label "Municipal bonds, Government/state guarantee" ;
+  rdfs:subClassOf cfi:DNXXXX .
+
+cfi:DNXGXX
+  a owl:Class ;
+  rdfs:label "Municipal bonds, Joint guarantee" ;
+  rdfs:subClassOf cfi:DNXXXX .
+
+cfi:DNXSXX
+  a owl:Class ;
+  rdfs:label "Municipal bonds, Secured" ;
+  rdfs:subClassOf cfi:DNXXXX .
+
+cfi:DNXUXX
+  a owl:Class ;
+  rdfs:label "Municipal bonds, Unsecured/unguaranteed" ;
+  rdfs:subClassOf cfi:DNXXXX .
+
+cfi:DNXPXX
+  a owl:Class ;
+  rdfs:label "Municipal bonds, Negative pledge" ;
+  rdfs:subClassOf cfi:DNXXXX .
+
+cfi:DNXNXX
+  a owl:Class ;
+  rdfs:label "Municipal bonds, Senior" ;
+  rdfs:subClassOf cfi:DNXXXX .
+
+cfi:DNXOXX
+  a owl:Class ;
+  rdfs:label "Municipal bonds, Senior subordinated" ;
+  rdfs:subClassOf cfi:DNXXXX .
+
+cfi:DNXQXX
+  a owl:Class ;
+  rdfs:label "Municipal bonds, Junior" ;
+  rdfs:subClassOf cfi:DNXXXX .
+
+cfi:DNXJXX
+  a owl:Class ;
+  rdfs:label "Municipal bonds, Junior subordinated" ;
+  rdfs:subClassOf cfi:DNXXXX .
+
+cfi:DNXCXX
+  a owl:Class ;
+  rdfs:label "Municipal bonds, Supranational" ;
+  rdfs:subClassOf cfi:DNXXXX .
+
+cfi:DNXXFX
+  a owl:Class ;
+  rdfs:label "Municipal bonds, Fixed maturity" ;
+  rdfs:subClassOf cfi:DNXXXX .
+
+cfi:DNXXGX
+  a owl:Class ;
+  rdfs:label "Municipal bonds, Fixed maturity with call feature" ;
+  rdfs:subClassOf cfi:DNXXXX .
+
+cfi:DNXXCX
+  a owl:Class ;
+  rdfs:label "Municipal bonds, Fixed maturity with put feature" ;
+  rdfs:subClassOf cfi:DNXXXX .
+
+cfi:DNXXDX
+  a owl:Class ;
+  rdfs:label "Municipal bonds, Fixed maturity with put and call" ;
+  rdfs:subClassOf cfi:DNXXXX .
+
+cfi:DNXXAX
+  a owl:Class ;
+  rdfs:label "Municipal bonds, Amortization plan" ;
+  rdfs:subClassOf cfi:DNXXXX .
+
+cfi:DNXXBX
+  a owl:Class ;
+  rdfs:label "Municipal bonds, Amortization plan with call feature" ;
+  rdfs:subClassOf cfi:DNXXXX .
+
+cfi:DNXXTX
+  a owl:Class ;
+  rdfs:label "Municipal bonds, Amortization plan with put feature" ;
+  rdfs:subClassOf cfi:DNXXXX .
+
+cfi:DNXXLX
+  a owl:Class ;
+  rdfs:label "Municipal bonds, Amortization plan with put and call" ;
+  rdfs:subClassOf cfi:DNXXXX .
+
+cfi:DNXXPX
+  a owl:Class ;
+  rdfs:label "Municipal bonds, Perpetual" ;
+  rdfs:subClassOf cfi:DNXXXX .
+
+cfi:DNXXQX
+  a owl:Class ;
+  rdfs:label "Municipal bonds, Perpetual with call feature" ;
+  rdfs:subClassOf cfi:DNXXXX .
+
+cfi:DNXXRX
+  a owl:Class ;
+  rdfs:label "Municipal bonds, Perpetual with put feature" ;
+  rdfs:subClassOf cfi:DNXXXX .
+
+cfi:DNXXEX
+  a owl:Class ;
+  rdfs:label "Municipal bonds, Extendible" ;
+  rdfs:subClassOf cfi:DNXXXX .
+
+cfi:DNXXXB
+  a owl:Class ;
+  rdfs:label "Municipal bonds, Bearer" ;
+  rdfs:subClassOf cfi:DNXXXX .
+
+cfi:DNXXXR
+  a owl:Class ;
+  rdfs:label "Municipal bonds, Registered" ;
+  rdfs:subClassOf cfi:DNXXXX .
+
+cfi:DNXXXN
+  a owl:Class ;
+  rdfs:label "Municipal bonds, Bearer/registered" ;
+  rdfs:subClassOf cfi:DNXXXX .
+
+cfi:DNXXXM
+  a owl:Class ;
+  rdfs:label "Municipal bonds, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:DNXXXX .
+
+cfi:DDBXXX
+  a owl:Class ;
+  rdfs:label "Depository receipts on debt instruments, Bonds" ;
+  rdfs:subClassOf cfi:DDXXXX .
+
+cfi:DDCXXX
+  a owl:Class ;
+  rdfs:label "Depository receipts on debt instruments, Convertible bonds" ;
+  rdfs:subClassOf cfi:DDXXXX .
+
+cfi:DDWXXX
+  a owl:Class ;
+  rdfs:label "Depository receipts on debt instruments, Bonds with warrants attached" ;
+  rdfs:subClassOf cfi:DDXXXX .
+
+cfi:DDTXXX
+  a owl:Class ;
+  rdfs:label "Depository receipts on debt instruments, Medium-term notes" ;
+  rdfs:subClassOf cfi:DDXXXX .
+
+cfi:DDYXXX
+  a owl:Class ;
+  rdfs:label "Depository receipts on debt instruments, Money market instruments" ;
+  rdfs:subClassOf cfi:DDXXXX .
+
+cfi:DDGXXX
+  a owl:Class ;
+  rdfs:label "Depository receipts on debt instruments, Mortgage-backed securities" ;
+  rdfs:subClassOf cfi:DDXXXX .
+
+cfi:DDAXXX
+  a owl:Class ;
+  rdfs:label "Depository receipts on debt instruments, Asset-backed securities" ;
+  rdfs:subClassOf cfi:DDXXXX .
+
+cfi:DDNXXX
+  a owl:Class ;
+  rdfs:label "Depository receipts on debt instruments, Municipal bonds" ;
+  rdfs:subClassOf cfi:DDXXXX .
+
+cfi:DDMXXX
+  a owl:Class ;
+  rdfs:label "Depository receipts on debt instruments, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:DDXXXX .
+
+cfi:DDXFXX
+  a owl:Class ;
+  rdfs:label "Depository receipts on debt instruments, Fixed rate" ;
+  rdfs:subClassOf cfi:DDXXXX .
+
+cfi:DDXZXX
+  a owl:Class ;
+  rdfs:label "Depository receipts on debt instruments, Zero rate/discounted" ;
+  rdfs:subClassOf cfi:DDXXXX .
+
+cfi:DDXVXX
+  a owl:Class ;
+  rdfs:label "Depository receipts on debt instruments, Variable" ;
+  rdfs:subClassOf cfi:DDXXXX .
+
+cfi:DDXCXX
+  a owl:Class ;
+  rdfs:label "Depository receipts on debt instruments, Cash payment" ;
+  rdfs:subClassOf cfi:DDXXXX .
+
+cfi:DDXXTX
+  a owl:Class ;
+  rdfs:label "Depository receipts on debt instruments, Government/state guarantee" ;
+  rdfs:subClassOf cfi:DDXXXX .
+
+cfi:DDXXGX
+  a owl:Class ;
+  rdfs:label "Depository receipts on debt instruments, Joint guarantee" ;
+  rdfs:subClassOf cfi:DDXXXX .
+
+cfi:DDXXSX
+  a owl:Class ;
+  rdfs:label "Depository receipts on debt instruments, Secured" ;
+  rdfs:subClassOf cfi:DDXXXX .
+
+cfi:DDXXUX
+  a owl:Class ;
+  rdfs:label "Depository receipts on debt instruments, Unsecured/unguaranteed" ;
+  rdfs:subClassOf cfi:DDXXXX .
+
+cfi:DDXXPX
+  a owl:Class ;
+  rdfs:label "Depository receipts on debt instruments, Negative pledge" ;
+  rdfs:subClassOf cfi:DDXXXX .
+
+cfi:DDXXNX
+  a owl:Class ;
+  rdfs:label "Depository receipts on debt instruments, Senior" ;
+  rdfs:subClassOf cfi:DDXXXX .
+
+cfi:DDXXOX
+  a owl:Class ;
+  rdfs:label "Depository receipts on debt instruments, Senior subordinated" ;
+  rdfs:subClassOf cfi:DDXXXX .
+
+cfi:DDXXQX
+  a owl:Class ;
+  rdfs:label "Depository receipts on debt instruments, Junior" ;
+  rdfs:subClassOf cfi:DDXXXX .
+
+cfi:DDXXJX
+  a owl:Class ;
+  rdfs:label "Depository receipts on debt instruments, Junior subordinated" ;
+  rdfs:subClassOf cfi:DDXXXX .
+
+cfi:DDXXCX
+  a owl:Class ;
+  rdfs:label "Depository receipts on debt instruments, Supranational" ;
+  rdfs:subClassOf cfi:DDXXXX .
+
+cfi:DDXXXF
+  a owl:Class ;
+  rdfs:label "Depository receipts on debt instruments, Fixed maturity" ;
+  rdfs:subClassOf cfi:DDXXXX .
+
+cfi:DDXXXG
+  a owl:Class ;
+  rdfs:label "Depository receipts on debt instruments, Fixed maturity with call feature" ;
+  rdfs:subClassOf cfi:DDXXXX .
+
+cfi:DDXXXC
+  a owl:Class ;
+  rdfs:label "Depository receipts on debt instruments, Fixed maturity with put feature" ;
+  rdfs:subClassOf cfi:DDXXXX .
+
+cfi:DDXXXD
+  a owl:Class ;
+  rdfs:label "Depository receipts on debt instruments, Fixed maturity with put and call" ;
+  rdfs:subClassOf cfi:DDXXXX .
+
+cfi:DDXXXA
+  a owl:Class ;
+  rdfs:label "Depository receipts on debt instruments, Amortization plan" ;
+  rdfs:subClassOf cfi:DDXXXX .
+
+cfi:DDXXXB
+  a owl:Class ;
+  rdfs:label "Depository receipts on debt instruments, Amortization plan with call feature" ;
+  rdfs:subClassOf cfi:DDXXXX .
+
+cfi:DDXXXT
+  a owl:Class ;
+  rdfs:label "Depository receipts on debt instruments, Amortization plan with put feature" ;
+  rdfs:subClassOf cfi:DDXXXX .
+
+cfi:DDXXXL
+  a owl:Class ;
+  rdfs:label "Depository receipts on debt instruments, Amortization plan with put and call" ;
+  rdfs:subClassOf cfi:DDXXXX .
+
+cfi:DDXXXP
+  a owl:Class ;
+  rdfs:label "Depository receipts on debt instruments, Perpetual" ;
+  rdfs:subClassOf cfi:DDXXXX .
+
+cfi:DDXXXQ
+  a owl:Class ;
+  rdfs:label "Depository receipts on debt instruments, Perpetual with call feature" ;
+  rdfs:subClassOf cfi:DDXXXX .
+
+cfi:DDXXXR
+  a owl:Class ;
+  rdfs:label "Depository receipts on debt instruments, Perpetual with put feature" ;
+  rdfs:subClassOf cfi:DDXXXX .
+
+cfi:DDXXXE
+  a owl:Class ;
+  rdfs:label "Depository receipts on debt instruments, Extendible" ;
+  rdfs:subClassOf cfi:DDXXXX .
+
+cfi:DMBXXX
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous), Bank loan" ;
+  rdfs:subClassOf cfi:DMXXXX .
+
+cfi:DMPXXX
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous), Promissory note" ;
+  rdfs:subClassOf cfi:DMXXXX .
+
+cfi:DMMXXX
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous), Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:DMXXXX .
+
+cfi:DMXXXB
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous), Bearer" ;
+  rdfs:subClassOf cfi:DMXXXX .
+
+cfi:DMXXXR
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous), Registered" ;
+  rdfs:subClassOf cfi:DMXXXX .
+
+cfi:DMXXXN
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous), Bearer/registered" ;
+  rdfs:subClassOf cfi:DMXXXX .
+
+cfi:DMXXXM
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous), Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:DMXXXX .
+
+cfi:RAXXXB
+  a owl:Class ;
+  rdfs:label "Allotment (bonus) rights, Bearer" ;
+  rdfs:subClassOf cfi:RAXXXX .
+
+cfi:RAXXXR
+  a owl:Class ;
+  rdfs:label "Allotment (bonus) rights, Registered" ;
+  rdfs:subClassOf cfi:RAXXXX .
+
+cfi:RAXXXN
+  a owl:Class ;
+  rdfs:label "Allotment (bonus) rights, Bearer/registered" ;
+  rdfs:subClassOf cfi:RAXXXX .
+
+cfi:RAXXXM
+  a owl:Class ;
+  rdfs:label "Allotment (bonus) rights, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:RAXXXX .
+
+cfi:RSSXXX
+  a owl:Class ;
+  rdfs:label "Subscription rights, Common/ordinary shares" ;
+  rdfs:subClassOf cfi:RSXXXX .
+
+cfi:RSPXXX
+  a owl:Class ;
+  rdfs:label "Subscription rights, Preferred/preference shares" ;
+  rdfs:subClassOf cfi:RSXXXX .
+
+cfi:RSCXXX
+  a owl:Class ;
+  rdfs:label "Subscription rights, Common/ordinary convertible shares" ;
+  rdfs:subClassOf cfi:RSXXXX .
+
+cfi:RSFXXX
+  a owl:Class ;
+  rdfs:label "Subscription rights, Preferred/preference convertible shares" ;
+  rdfs:subClassOf cfi:RSXXXX .
+
+cfi:RSBXXX
+  a owl:Class ;
+  rdfs:label "Subscription rights, Bonds" ;
+  rdfs:subClassOf cfi:RSXXXX .
+
+cfi:RSIXXX
+  a owl:Class ;
+  rdfs:label "Subscription rights, Combined instruments" ;
+  rdfs:subClassOf cfi:RSXXXX .
+
+cfi:RSMXXX
+  a owl:Class ;
+  rdfs:label "Subscription rights, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:RSXXXX .
+
+cfi:RSXXXB
+  a owl:Class ;
+  rdfs:label "Subscription rights, Bearer" ;
+  rdfs:subClassOf cfi:RSXXXX .
+
+cfi:RSXXXR
+  a owl:Class ;
+  rdfs:label "Subscription rights, Registered" ;
+  rdfs:subClassOf cfi:RSXXXX .
+
+cfi:RSXXXN
+  a owl:Class ;
+  rdfs:label "Subscription rights, Bearer/registered" ;
+  rdfs:subClassOf cfi:RSXXXX .
+
+cfi:RSXXXM
+  a owl:Class ;
+  rdfs:label "Subscription rights, Other (miscellaneous)" ;
+  rdfs:subClassOf cfi:RSXXXX .
+
+cfi:RPSXXX
+  a owl:Class ;
+  rdfs:label "Purchase rights, Common/ordinary shares" ;
+  rdfs:subClassOf cfi:RPXXXX .
+
+cfi:RPPXXX
+  a owl:Class ;
+  rdfs:label "Purchase rights, Preferred/preference shares" ;
+  rdfs:subClassOf cfi:RPXXXX .
+
+cfi:RPCXXX
+  a owl:Class ;
+  rdfs:label "Purchase rights, Common/ordinary convertible shares" ;
+  rdfs:subClassOf cfi:RPXXXX .
+
+cfi:RPFXXX
+  a owl:Class ;
+  rdfs:label "Purchase rights, Preferred/preference convertible shares" ;
+  rdfs:subClassOf cfi:RPXXXX .
+
+cfi:RPBXXX
+  a owl:Class ;
+  rdfs:label "Purchase rights, Bonds" ;
+  rdfs:subClassOf cfi:RPXXXX .
+
+cfi:RPIXXX
+  a owl:Class ;
+  rdfs:label "Purchase rights, Combined instruments" ;
+  rdfs:subClassOf cfi:RPXXXX .
+
+cfi:RPMXXX
+  a owl:Class ;
+  rdfs:label "Purchase rights, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:RPXXXX .
+
+cfi:RPXXXB
+  a owl:Class ;
+  rdfs:label "Purchase rights, Bearer" ;
+  rdfs:subClassOf cfi:RPXXXX .
+
+cfi:RPXXXR
+  a owl:Class ;
+  rdfs:label "Purchase rights, Registered" ;
+  rdfs:subClassOf cfi:RPXXXX .
+
+cfi:RPXXXN
+  a owl:Class ;
+  rdfs:label "Purchase rights, Bearer/registered" ;
+  rdfs:subClassOf cfi:RPXXXX .
+
+cfi:RPXXXM
+  a owl:Class ;
+  rdfs:label "Purchase rights, Other (miscellaneous)" ;
+  rdfs:subClassOf cfi:RPXXXX .
+
+cfi:RWBXXX
+  a owl:Class ;
+  rdfs:label "Warrants, Baskets" ;
+  rdfs:subClassOf cfi:RWXXXX .
+
+cfi:RWSXXX
+  a owl:Class ;
+  rdfs:label "Warrants, Equities" ;
+  rdfs:subClassOf cfi:RWXXXX .
+
+cfi:RWDXXX
+  a owl:Class ;
+  rdfs:label "Warrants, Debt instruments/interest rates" ;
+  rdfs:subClassOf cfi:RWXXXX .
+
+cfi:RWTXXX
+  a owl:Class ;
+  rdfs:label "Warrants, Commodities" ;
+  rdfs:subClassOf cfi:RWXXXX .
+
+cfi:RWCXXX
+  a owl:Class ;
+  rdfs:label "Warrants, Currencies" ;
+  rdfs:subClassOf cfi:RWXXXX .
+
+cfi:RWIXXX
+  a owl:Class ;
+  rdfs:label "Warrants, Indices" ;
+  rdfs:subClassOf cfi:RWXXXX .
+
+cfi:RWMXXX
+  a owl:Class ;
+  rdfs:label "Warrants, Other (miscellaneous)" ;
+  rdfs:subClassOf cfi:RWXXXX .
+
+cfi:RWXTXX
+  a owl:Class ;
+  rdfs:label "Warrants, Traditional warrants" ;
+  rdfs:subClassOf cfi:RWXXXX .
+
+cfi:RWXNXX
+  a owl:Class ;
+  rdfs:label "Warrants, Naked warrants" ;
+  rdfs:subClassOf cfi:RWXXXX .
+
+cfi:RWXCXX
+  a owl:Class ;
+  rdfs:label "Warrants, Covered warrants" ;
+  rdfs:subClassOf cfi:RWXXXX .
+
+cfi:RWXXCX
+  a owl:Class ;
+  rdfs:label "Warrants, Call" ;
+  rdfs:subClassOf cfi:RWXXXX .
+
+cfi:RWXXPX
+  a owl:Class ;
+  rdfs:label "Warrants, Put" ;
+  rdfs:subClassOf cfi:RWXXXX .
+
+cfi:RWXXBX
+  a owl:Class ;
+  rdfs:label "Warrants, Call and Put" ;
+  rdfs:subClassOf cfi:RWXXXX .
+
+cfi:RWXXXA
+  a owl:Class ;
+  rdfs:label "Warrants, American" ;
+  rdfs:subClassOf cfi:RWXXXX .
+
+cfi:RWXXXE
+  a owl:Class ;
+  rdfs:label "Warrants, European" ;
+  rdfs:subClassOf cfi:RWXXXX .
+
+cfi:RWXXXB
+  a owl:Class ;
+  rdfs:label "Warrants, Bermudan" ;
+  rdfs:subClassOf cfi:RWXXXX .
+
+cfi:RWXXXM
+  a owl:Class ;
+  rdfs:label "Warrants, Other (miscellaneous)" ;
+  rdfs:subClassOf cfi:RWXXXX .
+
+cfi:RFBXXX
+  a owl:Class ;
+  rdfs:label "Mini-future certificates/constant leverage certificates, Baskets" ;
+  rdfs:subClassOf cfi:RFXXXX .
+
+cfi:RFSXXX
+  a owl:Class ;
+  rdfs:label "Mini-future certificates/constant leverage certificates, Equities" ;
+  rdfs:subClassOf cfi:RFXXXX .
+
+cfi:RFDXXX
+  a owl:Class ;
+  rdfs:label "Mini-future certificates/constant leverage certificates, Debt instruments/interest rates" ;
+  rdfs:subClassOf cfi:RFXXXX .
+
+cfi:RFTXXX
+  a owl:Class ;
+  rdfs:label "Mini-future certificates/constant leverage certificates, Commodities" ;
+  rdfs:subClassOf cfi:RFXXXX .
+
+cfi:RFCXXX
+  a owl:Class ;
+  rdfs:label "Mini-future certificates/constant leverage certificates, Currencies" ;
+  rdfs:subClassOf cfi:RFXXXX .
+
+cfi:RFIXXX
+  a owl:Class ;
+  rdfs:label "Mini-future certificates/constant leverage certificates, Indices" ;
+  rdfs:subClassOf cfi:RFXXXX .
+
+cfi:RFMXXX
+  a owl:Class ;
+  rdfs:label "Mini-future certificates/constant leverage certificates, Other (miscellaneous)" ;
+  rdfs:subClassOf cfi:RFXXXX .
+
+cfi:RFXTXX
+  a owl:Class ;
+  rdfs:label "Mini-future certificates/constant leverage certificates, Barrier underlying based" ;
+  rdfs:subClassOf cfi:RFXXXX .
+
+cfi:RFXNXX
+  a owl:Class ;
+  rdfs:label "Mini-future certificates/constant leverage certificates, Barrier instrument based" ;
+  rdfs:subClassOf cfi:RFXXXX .
+
+cfi:RFXMXX
+  a owl:Class ;
+  rdfs:label "Mini-future certificates/constant leverage certificates, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:RFXXXX .
+
+cfi:RFXXCX
+  a owl:Class ;
+  rdfs:label "Mini-future certificates/constant leverage certificates, Long" ;
+  rdfs:subClassOf cfi:RFXXXX .
+
+cfi:RFXXPX
+  a owl:Class ;
+  rdfs:label "Mini-future certificates/constant leverage certificates, Short" ;
+  rdfs:subClassOf cfi:RFXXXX .
+
+cfi:RFXXMX
+  a owl:Class ;
+  rdfs:label "Mini-future certificates/constant leverage certificates, Other (miscellaneous)" ;
+  rdfs:subClassOf cfi:RFXXXX .
+
+cfi:RFXXXA
+  a owl:Class ;
+  rdfs:label "Mini-future certificates/constant leverage certificates, American" ;
+  rdfs:subClassOf cfi:RFXXXX .
+
+cfi:RFXXXE
+  a owl:Class ;
+  rdfs:label "Mini-future certificates/constant leverage certificates, European" ;
+  rdfs:subClassOf cfi:RFXXXX .
+
+cfi:RFXXXB
+  a owl:Class ;
+  rdfs:label "Mini-future certificates/constant leverage certificates, Bermudan" ;
+  rdfs:subClassOf cfi:RFXXXX .
+
+cfi:RFXXXM
+  a owl:Class ;
+  rdfs:label "Mini-future certificates/constant leverage certificates, Other (miscellaneous)" ;
+  rdfs:subClassOf cfi:RFXXXX .
+
+cfi:RDAXXX
+  a owl:Class ;
+  rdfs:label "Depository receipts on entitlements, Allotment (bonus) rights" ;
+  rdfs:subClassOf cfi:RDXXXX .
+
+cfi:RDSXXX
+  a owl:Class ;
+  rdfs:label "Depository receipts on entitlements, Subscription rights" ;
+  rdfs:subClassOf cfi:RDXXXX .
+
+cfi:RDPXXX
+  a owl:Class ;
+  rdfs:label "Depository receipts on entitlements, Purchase rights" ;
+  rdfs:subClassOf cfi:RDXXXX .
+
+cfi:RDWXXX
+  a owl:Class ;
+  rdfs:label "Depository receipts on entitlements, Warrants" ;
+  rdfs:subClassOf cfi:RDXXXX .
+
+cfi:RDMXXX
+  a owl:Class ;
+  rdfs:label "Depository receipts on entitlements, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:RDXXXX .
+
+cfi:RDXXXB
+  a owl:Class ;
+  rdfs:label "Depository receipts on entitlements, Bearer" ;
+  rdfs:subClassOf cfi:RDXXXX .
+
+cfi:RDXXXR
+  a owl:Class ;
+  rdfs:label "Depository receipts on entitlements, Registered" ;
+  rdfs:subClassOf cfi:RDXXXX .
+
+cfi:RDXXXN
+  a owl:Class ;
+  rdfs:label "Depository receipts on entitlements, Bearer/registered" ;
+  rdfs:subClassOf cfi:RDXXXX .
+
+cfi:RDXXXM
+  a owl:Class ;
+  rdfs:label "Depository receipts on entitlements, Other (miscellaneous)" ;
+  rdfs:subClassOf cfi:RDXXXX .
+
+cfi:OCAXXX
+  a owl:Class ;
+  rdfs:label "Call options, American" ;
+  rdfs:subClassOf cfi:OCXXXX .
+
+cfi:OCEXXX
+  a owl:Class ;
+  rdfs:label "Call options, European" ;
+  rdfs:subClassOf cfi:OCXXXX .
+
+cfi:OCBXXX
+  a owl:Class ;
+  rdfs:label "Call options, Bermudan" ;
+  rdfs:subClassOf cfi:OCXXXX .
+
+cfi:OCXBXX
+  a owl:Class ;
+  rdfs:label "Call options, Baskets" ;
+  rdfs:subClassOf cfi:OCXXXX .
+
+cfi:OCXSXX
+  a owl:Class ;
+  rdfs:label "Call options, Stock-equities" ;
+  rdfs:subClassOf cfi:OCXXXX .
+
+cfi:OCXDXX
+  a owl:Class ;
+  rdfs:label "Call options, Debt instruments" ;
+  rdfs:subClassOf cfi:OCXXXX .
+
+cfi:OCXTXX
+  a owl:Class ;
+  rdfs:label "Call options, Commodities" ;
+  rdfs:subClassOf cfi:OCXXXX .
+
+cfi:OCXCXX
+  a owl:Class ;
+  rdfs:label "Call options, Currencies" ;
+  rdfs:subClassOf cfi:OCXXXX .
+
+cfi:OCXIXX
+  a owl:Class ;
+  rdfs:label "Call options, Indices" ;
+  rdfs:subClassOf cfi:OCXXXX .
+
+cfi:OCXOXX
+  a owl:Class ;
+  rdfs:label "Call options, Options" ;
+  rdfs:subClassOf cfi:OCXXXX .
+
+cfi:OCXFXX
+  a owl:Class ;
+  rdfs:label "Call options, Futures" ;
+  rdfs:subClassOf cfi:OCXXXX .
+
+cfi:OCXWXX
+  a owl:Class ;
+  rdfs:label "Call options, Swaps" ;
+  rdfs:subClassOf cfi:OCXXXX .
+
+cfi:OCXNXX
+  a owl:Class ;
+  rdfs:label "Call options, Interest rates" ;
+  rdfs:subClassOf cfi:OCXXXX .
+
+cfi:OCXMXX
+  a owl:Class ;
+  rdfs:label "Call options, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:OCXXXX .
+
+cfi:OCXXPX
+  a owl:Class ;
+  rdfs:label "Call options, Physical" ;
+  rdfs:subClassOf cfi:OCXXXX .
+
+cfi:OCXXCX
+  a owl:Class ;
+  rdfs:label "Call options, Cash" ;
+  rdfs:subClassOf cfi:OCXXXX .
+
+cfi:OCXXNX
+  a owl:Class ;
+  rdfs:label "Call options, Non-deliverable" ;
+  rdfs:subClassOf cfi:OCXXXX .
+
+cfi:OCXXEX
+  a owl:Class ;
+  rdfs:label "Call options, Elect at exercise" ;
+  rdfs:subClassOf cfi:OCXXXX .
+
+cfi:OCXXXS
+  a owl:Class ;
+  rdfs:label "Call options, Standardized" ;
+  rdfs:subClassOf cfi:OCXXXX .
+
+cfi:OCXXXN
+  a owl:Class ;
+  rdfs:label "Call options, Non-standardized" ;
+  rdfs:subClassOf cfi:OCXXXX .
+
+cfi:OPAXXX
+  a owl:Class ;
+  rdfs:label "Put options, American" ;
+  rdfs:subClassOf cfi:OPXXXX .
+
+cfi:OPEXXX
+  a owl:Class ;
+  rdfs:label "Put options, European" ;
+  rdfs:subClassOf cfi:OPXXXX .
+
+cfi:OPBXXX
+  a owl:Class ;
+  rdfs:label "Put options, Bermudan" ;
+  rdfs:subClassOf cfi:OPXXXX .
+
+cfi:OPXBXX
+  a owl:Class ;
+  rdfs:label "Put options, Baskets" ;
+  rdfs:subClassOf cfi:OPXXXX .
+
+cfi:OPXSXX
+  a owl:Class ;
+  rdfs:label "Put options, Stock-equities" ;
+  rdfs:subClassOf cfi:OPXXXX .
+
+cfi:OPXDXX
+  a owl:Class ;
+  rdfs:label "Put options, Debt instruments" ;
+  rdfs:subClassOf cfi:OPXXXX .
+
+cfi:OPXTXX
+  a owl:Class ;
+  rdfs:label "Put options, Commodities" ;
+  rdfs:subClassOf cfi:OPXXXX .
+
+cfi:OPXCXX
+  a owl:Class ;
+  rdfs:label "Put options, Currencies" ;
+  rdfs:subClassOf cfi:OPXXXX .
+
+cfi:OPXIXX
+  a owl:Class ;
+  rdfs:label "Put options, Indices" ;
+  rdfs:subClassOf cfi:OPXXXX .
+
+cfi:OPXOXX
+  a owl:Class ;
+  rdfs:label "Put options, Options" ;
+  rdfs:subClassOf cfi:OPXXXX .
+
+cfi:OPXFXX
+  a owl:Class ;
+  rdfs:label "Put options, Futures" ;
+  rdfs:subClassOf cfi:OPXXXX .
+
+cfi:OPXWXX
+  a owl:Class ;
+  rdfs:label "Put options, Swaps" ;
+  rdfs:subClassOf cfi:OPXXXX .
+
+cfi:OPXNXX
+  a owl:Class ;
+  rdfs:label "Put options, Interest rates" ;
+  rdfs:subClassOf cfi:OPXXXX .
+
+cfi:OPXMXX
+  a owl:Class ;
+  rdfs:label "Put options, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:OPXXXX .
+
+cfi:OPXXPX
+  a owl:Class ;
+  rdfs:label "Put options, Physical" ;
+  rdfs:subClassOf cfi:OPXXXX .
+
+cfi:OPXXCX
+  a owl:Class ;
+  rdfs:label "Put options, Cash" ;
+  rdfs:subClassOf cfi:OPXXXX .
+
+cfi:OPXXNX
+  a owl:Class ;
+  rdfs:label "Put options, Non-deliverable" ;
+  rdfs:subClassOf cfi:OPXXXX .
+
+cfi:OPXXEX
+  a owl:Class ;
+  rdfs:label "Put options, Elect at exercise" ;
+  rdfs:subClassOf cfi:OPXXXX .
+
+cfi:OPXXXS
+  a owl:Class ;
+  rdfs:label "Put options, Standardized" ;
+  rdfs:subClassOf cfi:OPXXXX .
+
+cfi:OPXXXN
+  a owl:Class ;
+  rdfs:label "Put options, Non-standardized" ;
+  rdfs:subClassOf cfi:OPXXXX .
+
+cfi:FFBXXX
+  a owl:Class ;
+  rdfs:label "Financial futures, Baskets" ;
+  rdfs:subClassOf cfi:FFXXXX .
+
+cfi:FFSXXX
+  a owl:Class ;
+  rdfs:label "Financial futures, Stock-equities" ;
+  rdfs:subClassOf cfi:FFXXXX .
+
+cfi:FFDXXX
+  a owl:Class ;
+  rdfs:label "Financial futures, Debt instruments" ;
+  rdfs:subClassOf cfi:FFXXXX .
+
+cfi:FFCXXX
+  a owl:Class ;
+  rdfs:label "Financial futures, Currencies" ;
+  rdfs:subClassOf cfi:FFXXXX .
+
+cfi:FFIXXX
+  a owl:Class ;
+  rdfs:label "Financial futures, Indices" ;
+  rdfs:subClassOf cfi:FFXXXX .
+
+cfi:FFOXXX
+  a owl:Class ;
+  rdfs:label "Financial futures, Options" ;
+  rdfs:subClassOf cfi:FFXXXX .
+
+cfi:FFFXXX
+  a owl:Class ;
+  rdfs:label "Financial futures, Futures" ;
+  rdfs:subClassOf cfi:FFXXXX .
+
+cfi:FFWXXX
+  a owl:Class ;
+  rdfs:label "Financial futures, Swaps" ;
+  rdfs:subClassOf cfi:FFXXXX .
+
+cfi:FFNXXX
+  a owl:Class ;
+  rdfs:label "Financial futures, Interest rates" ;
+  rdfs:subClassOf cfi:FFXXXX .
+
+cfi:FFVXXX
+  a owl:Class ;
+  rdfs:label "Financial futures, Stock dividend" ;
+  rdfs:subClassOf cfi:FFXXXX .
+
+cfi:FFMXXX
+  a owl:Class ;
+  rdfs:label "Financial futures, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:FFXXXX .
+
+cfi:FFXPXX
+  a owl:Class ;
+  rdfs:label "Financial futures, Physical" ;
+  rdfs:subClassOf cfi:FFXXXX .
+
+cfi:FFXCXX
+  a owl:Class ;
+  rdfs:label "Financial futures, Cash" ;
+  rdfs:subClassOf cfi:FFXXXX .
+
+cfi:FFXNXX
+  a owl:Class ;
+  rdfs:label "Financial futures, Non-deliverable" ;
+  rdfs:subClassOf cfi:FFXXXX .
+
+cfi:FFXXSX
+  a owl:Class ;
+  rdfs:label "Financial futures, Standardized" ;
+  rdfs:subClassOf cfi:FFXXXX .
+
+cfi:FFXXNX
+  a owl:Class ;
+  rdfs:label "Financial futures, Non-standardized" ;
+  rdfs:subClassOf cfi:FFXXXX .
+
+cfi:FCEXXX
+  a owl:Class ;
+  rdfs:label "Commodity futures, Extraction resources" ;
+  rdfs:subClassOf cfi:FCXXXX .
+
+cfi:FCAXXX
+  a owl:Class ;
+  rdfs:label "Commodity futures, Agriculture" ;
+  rdfs:subClassOf cfi:FCXXXX .
+
+cfi:FCIXXX
+  a owl:Class ;
+  rdfs:label "Commodity futures, Industrial products" ;
+  rdfs:subClassOf cfi:FCXXXX .
+
+cfi:FCSXXX
+  a owl:Class ;
+  rdfs:label "Commodity futures, Services" ;
+  rdfs:subClassOf cfi:FCXXXX .
+
+cfi:FCNXXX
+  a owl:Class ;
+  rdfs:label "Commodity futures, Environmental" ;
+  rdfs:subClassOf cfi:FCXXXX .
+
+cfi:FCPXXX
+  a owl:Class ;
+  rdfs:label "Commodity futures, Polypropylene products" ;
+  rdfs:subClassOf cfi:FCXXXX .
+
+cfi:FCHXXX
+  a owl:Class ;
+  rdfs:label "Commodity futures, Generated resources" ;
+  rdfs:subClassOf cfi:FCXXXX .
+
+cfi:FCMXXX
+  a owl:Class ;
+  rdfs:label "Commodity futures, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:FCXXXX .
+
+cfi:FCXPXX
+  a owl:Class ;
+  rdfs:label "Commodity futures, Physical" ;
+  rdfs:subClassOf cfi:FCXXXX .
+
+cfi:FCXCXX
+  a owl:Class ;
+  rdfs:label "Commodity futures, Cash" ;
+  rdfs:subClassOf cfi:FCXXXX .
+
+cfi:FCXNXX
+  a owl:Class ;
+  rdfs:label "Commodity futures, Non-deliverable" ;
+  rdfs:subClassOf cfi:FCXXXX .
+
+cfi:FCXXSX
+  a owl:Class ;
+  rdfs:label "Commodity futures, Standardized" ;
+  rdfs:subClassOf cfi:FCXXXX .
+
+cfi:FCXXNX
+  a owl:Class ;
+  rdfs:label "Commodity futures, Non-standardized" ;
+  rdfs:subClassOf cfi:FCXXXX .
+
+cfi:SRAXXX
+  a owl:Class ;
+  rdfs:label "Rates, Basis swap" ;
+  rdfs:subClassOf cfi:SRXXXX .
+
+cfi:SRCXXX
+  a owl:Class ;
+  rdfs:label "Rates, Fixed-floating" ;
+  rdfs:subClassOf cfi:SRXXXX .
+
+cfi:SRDXXX
+  a owl:Class ;
+  rdfs:label "Rates, Fixed-fixed" ;
+  rdfs:subClassOf cfi:SRXXXX .
+
+cfi:SRGXXX
+  a owl:Class ;
+  rdfs:label "Rates, Inflation rate index" ;
+  rdfs:subClassOf cfi:SRXXXX .
+
+cfi:SRHXXX
+  a owl:Class ;
+  rdfs:label "Rates, Overnight index swap (OIS)" ;
+  rdfs:subClassOf cfi:SRXXXX .
+
+cfi:SRZXXX
+  a owl:Class ;
+  rdfs:label "Rates, Zero coupon" ;
+  rdfs:subClassOf cfi:SRXXXX .
+
+cfi:SRMXXX
+  a owl:Class ;
+  rdfs:label "Rates, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:SRXXXX .
+
+cfi:SRXCXX
+  a owl:Class ;
+  rdfs:label "Rates, Constant" ;
+  rdfs:subClassOf cfi:SRXXXX .
+
+cfi:SRXDXX
+  a owl:Class ;
+  rdfs:label "Rates, Accreting" ;
+  rdfs:subClassOf cfi:SRXXXX .
+
+cfi:SRXIXX
+  a owl:Class ;
+  rdfs:label "Rates, Amortizing" ;
+  rdfs:subClassOf cfi:SRXXXX .
+
+cfi:SRXYXX
+  a owl:Class ;
+  rdfs:label "Rates, Custom" ;
+  rdfs:subClassOf cfi:SRXXXX .
+
+cfi:SRXXSX
+  a owl:Class ;
+  rdfs:label "Rates, Single-currency" ;
+  rdfs:subClassOf cfi:SRXXXX .
+
+cfi:SRXXCX
+  a owl:Class ;
+  rdfs:label "Rates, Cross-currency" ;
+  rdfs:subClassOf cfi:SRXXXX .
+
+cfi:SRXXXC
+  a owl:Class ;
+  rdfs:label "Rates, Cash" ;
+  rdfs:subClassOf cfi:SRXXXX .
+
+cfi:SRXXXP
+  a owl:Class ;
+  rdfs:label "Rates, Physical" ;
+  rdfs:subClassOf cfi:SRXXXX .
+
+cfi:STJXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Energy" ;
+  rdfs:subClassOf cfi:STXXXX .
+
+cfi:STKXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Metals" ;
+  rdfs:subClassOf cfi:STXXXX .
+
+cfi:STAXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Agriculture" ;
+  rdfs:subClassOf cfi:STXXXX .
+
+cfi:STNXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Environmental" ;
+  rdfs:subClassOf cfi:STXXXX .
+
+cfi:STGXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Freight" ;
+  rdfs:subClassOf cfi:STXXXX .
+
+cfi:STPXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Polypropylene products" ;
+  rdfs:subClassOf cfi:STXXXX .
+
+cfi:STSXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Fertilizer" ;
+  rdfs:subClassOf cfi:STXXXX .
+
+cfi:STTXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Paper" ;
+  rdfs:subClassOf cfi:STXXXX .
+
+cfi:STIXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Index" ;
+  rdfs:subClassOf cfi:STXXXX .
+
+cfi:STQXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Multi-commodity" ;
+  rdfs:subClassOf cfi:STXXXX .
+
+cfi:STMXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:STXXXX .
+
+cfi:STXPXX
+  a owl:Class ;
+  rdfs:label "Commodities, Price" ;
+  rdfs:subClassOf cfi:STXXXX .
+
+cfi:STXDXX
+  a owl:Class ;
+  rdfs:label "Commodities, Dividend" ;
+  rdfs:subClassOf cfi:STXXXX .
+
+cfi:STXVXX
+  a owl:Class ;
+  rdfs:label "Commodities, Variance" ;
+  rdfs:subClassOf cfi:STXXXX .
+
+cfi:STXLXX
+  a owl:Class ;
+  rdfs:label "Commodities, Volatility" ;
+  rdfs:subClassOf cfi:STXXXX .
+
+cfi:STXTXX
+  a owl:Class ;
+  rdfs:label "Commodities, Total return" ;
+  rdfs:subClassOf cfi:STXXXX .
+
+cfi:STXCXX
+  a owl:Class ;
+  rdfs:label "Commodities, Contract for difference" ;
+  rdfs:subClassOf cfi:STXXXX .
+
+cfi:STXMXX
+  a owl:Class ;
+  rdfs:label "Commodities, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:STXXXX .
+
+cfi:STXXXC
+  a owl:Class ;
+  rdfs:label "Commodities, Cash" ;
+  rdfs:subClassOf cfi:STXXXX .
+
+cfi:STXXXP
+  a owl:Class ;
+  rdfs:label "Commodities, Physical" ;
+  rdfs:subClassOf cfi:STXXXX .
+
+cfi:STXXXE
+  a owl:Class ;
+  rdfs:label "Commodities, Elect at settlement" ;
+  rdfs:subClassOf cfi:STXXXX .
+
+cfi:SESXXX
+  a owl:Class ;
+  rdfs:label "Equity, Single stock" ;
+  rdfs:subClassOf cfi:SEXXXX .
+
+cfi:SEIXXX
+  a owl:Class ;
+  rdfs:label "Equity, Index" ;
+  rdfs:subClassOf cfi:SEXXXX .
+
+cfi:SEBXXX
+  a owl:Class ;
+  rdfs:label "Equity, Basket" ;
+  rdfs:subClassOf cfi:SEXXXX .
+
+cfi:SEMXXX
+  a owl:Class ;
+  rdfs:label "Equity, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:SEXXXX .
+
+cfi:SEXPXX
+  a owl:Class ;
+  rdfs:label "Equity, Price" ;
+  rdfs:subClassOf cfi:SEXXXX .
+
+cfi:SEXDXX
+  a owl:Class ;
+  rdfs:label "Equity, Dividend" ;
+  rdfs:subClassOf cfi:SEXXXX .
+
+cfi:SEXVXX
+  a owl:Class ;
+  rdfs:label "Equity, Variance" ;
+  rdfs:subClassOf cfi:SEXXXX .
+
+cfi:SEXLXX
+  a owl:Class ;
+  rdfs:label "Equity, Volatility" ;
+  rdfs:subClassOf cfi:SEXXXX .
+
+cfi:SEXTXX
+  a owl:Class ;
+  rdfs:label "Equity, Total return" ;
+  rdfs:subClassOf cfi:SEXXXX .
+
+cfi:SEXCXX
+  a owl:Class ;
+  rdfs:label "Equity, Contract for difference" ;
+  rdfs:subClassOf cfi:SEXXXX .
+
+cfi:SEXMXX
+  a owl:Class ;
+  rdfs:label "Equity, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:SEXXXX .
+
+cfi:SEXXXC
+  a owl:Class ;
+  rdfs:label "Equity, Cash" ;
+  rdfs:subClassOf cfi:SEXXXX .
+
+cfi:SEXXXP
+  a owl:Class ;
+  rdfs:label "Equity, Physical" ;
+  rdfs:subClassOf cfi:SEXXXX .
+
+cfi:SEXXXE
+  a owl:Class ;
+  rdfs:label "Equity, Elect at settlement" ;
+  rdfs:subClassOf cfi:SEXXXX .
+
+cfi:SCUXXX
+  a owl:Class ;
+  rdfs:label "Credit, Single name" ;
+  rdfs:subClassOf cfi:SCXXXX .
+
+cfi:SCVXXX
+  a owl:Class ;
+  rdfs:label "Credit, Index tranche" ;
+  rdfs:subClassOf cfi:SCXXXX .
+
+cfi:SCIXXX
+  a owl:Class ;
+  rdfs:label "Credit, Index" ;
+  rdfs:subClassOf cfi:SCXXXX .
+
+cfi:SCBXXX
+  a owl:Class ;
+  rdfs:label "Credit, Basket" ;
+  rdfs:subClassOf cfi:SCXXXX .
+
+cfi:SCMXXX
+  a owl:Class ;
+  rdfs:label "Credit, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:SCXXXX .
+
+cfi:SCXCXX
+  a owl:Class ;
+  rdfs:label "Credit, Credit default" ;
+  rdfs:subClassOf cfi:SCXXXX .
+
+cfi:SCXTXX
+  a owl:Class ;
+  rdfs:label "Credit, Total return" ;
+  rdfs:subClassOf cfi:SCXXXX .
+
+cfi:SCXMXX
+  a owl:Class ;
+  rdfs:label "Credit, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:SCXXXX .
+
+cfi:SCXXCX
+  a owl:Class ;
+  rdfs:label "Credit, Corporate" ;
+  rdfs:subClassOf cfi:SCXXXX .
+
+cfi:SCXXSX
+  a owl:Class ;
+  rdfs:label "Credit, Sovereign" ;
+  rdfs:subClassOf cfi:SCXXXX .
+
+cfi:SCXXLX
+  a owl:Class ;
+  rdfs:label "Credit, Local" ;
+  rdfs:subClassOf cfi:SCXXXX .
+
+cfi:SCXXXC
+  a owl:Class ;
+  rdfs:label "Credit, Cash" ;
+  rdfs:subClassOf cfi:SCXXXX .
+
+cfi:SCXXXP
+  a owl:Class ;
+  rdfs:label "Credit, Physical" ;
+  rdfs:subClassOf cfi:SCXXXX .
+
+cfi:SCXXXA
+  a owl:Class ;
+  rdfs:label "Credit, Auction" ;
+  rdfs:subClassOf cfi:SCXXXX .
+
+cfi:SFAXXX
+  a owl:Class ;
+  rdfs:label "Foreign exchange, Spot-forward swap" ;
+  rdfs:subClassOf cfi:SFXXXX .
+
+cfi:SFCXXX
+  a owl:Class ;
+  rdfs:label "Foreign exchange, Forward-forward swap" ;
+  rdfs:subClassOf cfi:SFXXXX .
+
+cfi:SFMXXX
+  a owl:Class ;
+  rdfs:label "Foreign exchange, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:SFXXXX .
+
+cfi:SFXXXP
+  a owl:Class ;
+  rdfs:label "Foreign exchange, Physical" ;
+  rdfs:subClassOf cfi:SFXXXX .
+
+cfi:SFXXXN
+  a owl:Class ;
+  rdfs:label "Foreign exchange, Non-deliverable" ;
+  rdfs:subClassOf cfi:SFXXXX .
+
+cfi:SMPXXX
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous), Commercial property (or property derivative)" ;
+  rdfs:subClassOf cfi:SMXXXX .
+
+cfi:SMMXXX
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous), Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:SMXXXX .
+
+cfi:SMXXXC
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous), Cash" ;
+  rdfs:subClassOf cfi:SMXXXX .
+
+cfi:SMXXXP
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous), Physical" ;
+  rdfs:subClassOf cfi:SMXXXX .
+
+cfi:HRAXXX
+  a owl:Class ;
+  rdfs:label "Rates, Basis swap" ;
+  rdfs:subClassOf cfi:HRXXXX .
+
+cfi:HRCXXX
+  a owl:Class ;
+  rdfs:label "Rates, Fixed-floating" ;
+  rdfs:subClassOf cfi:HRXXXX .
+
+cfi:HRDXXX
+  a owl:Class ;
+  rdfs:label "Rates, Fixed-fixed" ;
+  rdfs:subClassOf cfi:HRXXXX .
+
+cfi:HRGXXX
+  a owl:Class ;
+  rdfs:label "Rates, Inflation rate index" ;
+  rdfs:subClassOf cfi:HRXXXX .
+
+cfi:HRHXXX
+  a owl:Class ;
+  rdfs:label "Rates, Overnight index swap (OIS)" ;
+  rdfs:subClassOf cfi:HRXXXX .
+
+cfi:HROXXX
+  a owl:Class ;
+  rdfs:label "Rates, Options" ;
+  rdfs:subClassOf cfi:HRXXXX .
+
+cfi:HRRXXX
+  a owl:Class ;
+  rdfs:label "Rates, Forwards" ;
+  rdfs:subClassOf cfi:HRXXXX .
+
+cfi:HRFXXX
+  a owl:Class ;
+  rdfs:label "Rates, Futures" ;
+  rdfs:subClassOf cfi:HRXXXX .
+
+cfi:HRMXXX
+  a owl:Class ;
+  rdfs:label "Rates, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:HRXXXX .
+
+cfi:HRXAXX
+  a owl:Class ;
+  rdfs:label "Rates, European call" ;
+  rdfs:subClassOf cfi:HRXXXX .
+
+cfi:HRXBXX
+  a owl:Class ;
+  rdfs:label "Rates, American call" ;
+  rdfs:subClassOf cfi:HRXXXX .
+
+cfi:HRXCXX
+  a owl:Class ;
+  rdfs:label "Rates, Bermudan call" ;
+  rdfs:subClassOf cfi:HRXXXX .
+
+cfi:HRXDXX
+  a owl:Class ;
+  rdfs:label "Rates, European put" ;
+  rdfs:subClassOf cfi:HRXXXX .
+
+cfi:HRXEXX
+  a owl:Class ;
+  rdfs:label "Rates, American put" ;
+  rdfs:subClassOf cfi:HRXXXX .
+
+cfi:HRXFXX
+  a owl:Class ;
+  rdfs:label "Rates, Bermudan put" ;
+  rdfs:subClassOf cfi:HRXXXX .
+
+cfi:HRXGXX
+  a owl:Class ;
+  rdfs:label "Rates, European chooser" ;
+  rdfs:subClassOf cfi:HRXXXX .
+
+cfi:HRXHXX
+  a owl:Class ;
+  rdfs:label "Rates, American chooser" ;
+  rdfs:subClassOf cfi:HRXXXX .
+
+cfi:HRXIXX
+  a owl:Class ;
+  rdfs:label "Rates, Bermudan chooser" ;
+  rdfs:subClassOf cfi:HRXXXX .
+
+cfi:HRXXVX
+  a owl:Class ;
+  rdfs:label "Rates, Vanilla" ;
+  rdfs:subClassOf cfi:HRXXXX .
+
+cfi:HRXXAX
+  a owl:Class ;
+  rdfs:label "Rates, Asian" ;
+  rdfs:subClassOf cfi:HRXXXX .
+
+cfi:HRXXDX
+  a owl:Class ;
+  rdfs:label "Rates, Digital (binary)" ;
+  rdfs:subClassOf cfi:HRXXXX .
+
+cfi:HRXXBX
+  a owl:Class ;
+  rdfs:label "Rates, Barrier" ;
+  rdfs:subClassOf cfi:HRXXXX .
+
+cfi:HRXXGX
+  a owl:Class ;
+  rdfs:label "Rates, Digital barrier" ;
+  rdfs:subClassOf cfi:HRXXXX .
+
+cfi:HRXXLX
+  a owl:Class ;
+  rdfs:label "Rates, Lookback" ;
+  rdfs:subClassOf cfi:HRXXXX .
+
+cfi:HRXXPX
+  a owl:Class ;
+  rdfs:label "Rates, Other path dependent" ;
+  rdfs:subClassOf cfi:HRXXXX .
+
+cfi:HRXXMX
+  a owl:Class ;
+  rdfs:label "Rates, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:HRXXXX .
+
+cfi:HRXXXC
+  a owl:Class ;
+  rdfs:label "Rates, Cash" ;
+  rdfs:subClassOf cfi:HRXXXX .
+
+cfi:HRXXXP
+  a owl:Class ;
+  rdfs:label "Rates, Physical" ;
+  rdfs:subClassOf cfi:HRXXXX .
+
+cfi:HRXXXE
+  a owl:Class ;
+  rdfs:label "Rates, Elect at exercise" ;
+  rdfs:subClassOf cfi:HRXXXX .
+
+cfi:HTJXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Energy" ;
+  rdfs:subClassOf cfi:HTXXXX .
+
+cfi:HTKXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Metals" ;
+  rdfs:subClassOf cfi:HTXXXX .
+
+cfi:HTAXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Agriculture" ;
+  rdfs:subClassOf cfi:HTXXXX .
+
+cfi:HTNXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Environmental" ;
+  rdfs:subClassOf cfi:HTXXXX .
+
+cfi:HTGXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Freight" ;
+  rdfs:subClassOf cfi:HTXXXX .
+
+cfi:HTPXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Polypropylene products" ;
+  rdfs:subClassOf cfi:HTXXXX .
+
+cfi:HTSXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Fertilizer" ;
+  rdfs:subClassOf cfi:HTXXXX .
+
+cfi:HTTXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Paper" ;
+  rdfs:subClassOf cfi:HTXXXX .
+
+cfi:HTIXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Index" ;
+  rdfs:subClassOf cfi:HTXXXX .
+
+cfi:HTQXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Multi-commodity" ;
+  rdfs:subClassOf cfi:HTXXXX .
+
+cfi:HTOXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Options" ;
+  rdfs:subClassOf cfi:HTXXXX .
+
+cfi:HTRXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Forwards" ;
+  rdfs:subClassOf cfi:HTXXXX .
+
+cfi:HTFXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Futures" ;
+  rdfs:subClassOf cfi:HTXXXX .
+
+cfi:HTWXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Swaps" ;
+  rdfs:subClassOf cfi:HTXXXX .
+
+cfi:HTMXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:HTXXXX .
+
+cfi:HTXAXX
+  a owl:Class ;
+  rdfs:label "Commodities, European call" ;
+  rdfs:subClassOf cfi:HTXXXX .
+
+cfi:HTXBXX
+  a owl:Class ;
+  rdfs:label "Commodities, American call" ;
+  rdfs:subClassOf cfi:HTXXXX .
+
+cfi:HTXCXX
+  a owl:Class ;
+  rdfs:label "Commodities, Bermudan call" ;
+  rdfs:subClassOf cfi:HTXXXX .
+
+cfi:HTXDXX
+  a owl:Class ;
+  rdfs:label "Commodities, European put" ;
+  rdfs:subClassOf cfi:HTXXXX .
+
+cfi:HTXEXX
+  a owl:Class ;
+  rdfs:label "Commodities, American put" ;
+  rdfs:subClassOf cfi:HTXXXX .
+
+cfi:HTXFXX
+  a owl:Class ;
+  rdfs:label "Commodities, Bermudan put" ;
+  rdfs:subClassOf cfi:HTXXXX .
+
+cfi:HTXGXX
+  a owl:Class ;
+  rdfs:label "Commodities, European chooser" ;
+  rdfs:subClassOf cfi:HTXXXX .
+
+cfi:HTXHXX
+  a owl:Class ;
+  rdfs:label "Commodities, American chooser" ;
+  rdfs:subClassOf cfi:HTXXXX .
+
+cfi:HTXIXX
+  a owl:Class ;
+  rdfs:label "Commodities, Bermudan chooser" ;
+  rdfs:subClassOf cfi:HTXXXX .
+
+cfi:HTXXVX
+  a owl:Class ;
+  rdfs:label "Commodities, Vanilla" ;
+  rdfs:subClassOf cfi:HTXXXX .
+
+cfi:HTXXAX
+  a owl:Class ;
+  rdfs:label "Commodities, Asian" ;
+  rdfs:subClassOf cfi:HTXXXX .
+
+cfi:HTXXDX
+  a owl:Class ;
+  rdfs:label "Commodities, Digital (binary)" ;
+  rdfs:subClassOf cfi:HTXXXX .
+
+cfi:HTXXBX
+  a owl:Class ;
+  rdfs:label "Commodities, Barrier" ;
+  rdfs:subClassOf cfi:HTXXXX .
+
+cfi:HTXXGX
+  a owl:Class ;
+  rdfs:label "Commodities, Digital barrier" ;
+  rdfs:subClassOf cfi:HTXXXX .
+
+cfi:HTXXLX
+  a owl:Class ;
+  rdfs:label "Commodities, Lookback" ;
+  rdfs:subClassOf cfi:HTXXXX .
+
+cfi:HTXXPX
+  a owl:Class ;
+  rdfs:label "Commodities, Other path dependent" ;
+  rdfs:subClassOf cfi:HTXXXX .
+
+cfi:HTXXMX
+  a owl:Class ;
+  rdfs:label "Commodities, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:HTXXXX .
+
+cfi:HTXXXC
+  a owl:Class ;
+  rdfs:label "Commodities, Cash" ;
+  rdfs:subClassOf cfi:HTXXXX .
+
+cfi:HTXXXP
+  a owl:Class ;
+  rdfs:label "Commodities, Physical" ;
+  rdfs:subClassOf cfi:HTXXXX .
+
+cfi:HTXXXE
+  a owl:Class ;
+  rdfs:label "Commodities, Elect at exercise" ;
+  rdfs:subClassOf cfi:HTXXXX .
+
+cfi:HESXXX
+  a owl:Class ;
+  rdfs:label "Equity, Single stock" ;
+  rdfs:subClassOf cfi:HEXXXX .
+
+cfi:HEIXXX
+  a owl:Class ;
+  rdfs:label "Equity, Index" ;
+  rdfs:subClassOf cfi:HEXXXX .
+
+cfi:HEBXXX
+  a owl:Class ;
+  rdfs:label "Equity, Basket" ;
+  rdfs:subClassOf cfi:HEXXXX .
+
+cfi:HEOXXX
+  a owl:Class ;
+  rdfs:label "Equity, Options" ;
+  rdfs:subClassOf cfi:HEXXXX .
+
+cfi:HERXXX
+  a owl:Class ;
+  rdfs:label "Equity, Forwards" ;
+  rdfs:subClassOf cfi:HEXXXX .
+
+cfi:HEFXXX
+  a owl:Class ;
+  rdfs:label "Equity, Futures" ;
+  rdfs:subClassOf cfi:HEXXXX .
+
+cfi:HEMXXX
+  a owl:Class ;
+  rdfs:label "Equity, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:HEXXXX .
+
+cfi:HEXAXX
+  a owl:Class ;
+  rdfs:label "Equity, European call" ;
+  rdfs:subClassOf cfi:HEXXXX .
+
+cfi:HEXBXX
+  a owl:Class ;
+  rdfs:label "Equity, American call" ;
+  rdfs:subClassOf cfi:HEXXXX .
+
+cfi:HEXCXX
+  a owl:Class ;
+  rdfs:label "Equity, Bermudan call" ;
+  rdfs:subClassOf cfi:HEXXXX .
+
+cfi:HEXDXX
+  a owl:Class ;
+  rdfs:label "Equity, European put" ;
+  rdfs:subClassOf cfi:HEXXXX .
+
+cfi:HEXEXX
+  a owl:Class ;
+  rdfs:label "Equity, American put" ;
+  rdfs:subClassOf cfi:HEXXXX .
+
+cfi:HEXFXX
+  a owl:Class ;
+  rdfs:label "Equity, Bermudan put" ;
+  rdfs:subClassOf cfi:HEXXXX .
+
+cfi:HEXGXX
+  a owl:Class ;
+  rdfs:label "Equity, European chooser" ;
+  rdfs:subClassOf cfi:HEXXXX .
+
+cfi:HEXHXX
+  a owl:Class ;
+  rdfs:label "Equity, American chooser" ;
+  rdfs:subClassOf cfi:HEXXXX .
+
+cfi:HEXIXX
+  a owl:Class ;
+  rdfs:label "Equity, Bermudan chooser" ;
+  rdfs:subClassOf cfi:HEXXXX .
+
+cfi:HEXXVX
+  a owl:Class ;
+  rdfs:label "Equity, Vanilla" ;
+  rdfs:subClassOf cfi:HEXXXX .
+
+cfi:HEXXAX
+  a owl:Class ;
+  rdfs:label "Equity, Asian" ;
+  rdfs:subClassOf cfi:HEXXXX .
+
+cfi:HEXXDX
+  a owl:Class ;
+  rdfs:label "Equity, Digital (binary)" ;
+  rdfs:subClassOf cfi:HEXXXX .
+
+cfi:HEXXBX
+  a owl:Class ;
+  rdfs:label "Equity, Barrier" ;
+  rdfs:subClassOf cfi:HEXXXX .
+
+cfi:HEXXGX
+  a owl:Class ;
+  rdfs:label "Equity, Digital barrier" ;
+  rdfs:subClassOf cfi:HEXXXX .
+
+cfi:HEXXLX
+  a owl:Class ;
+  rdfs:label "Equity, Lookback" ;
+  rdfs:subClassOf cfi:HEXXXX .
+
+cfi:HEXXPX
+  a owl:Class ;
+  rdfs:label "Equity, Other path dependent" ;
+  rdfs:subClassOf cfi:HEXXXX .
+
+cfi:HEXXMX
+  a owl:Class ;
+  rdfs:label "Equity, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:HEXXXX .
+
+cfi:HEXXXC
+  a owl:Class ;
+  rdfs:label "Equity, Cash" ;
+  rdfs:subClassOf cfi:HEXXXX .
+
+cfi:HEXXXP
+  a owl:Class ;
+  rdfs:label "Equity, Physical" ;
+  rdfs:subClassOf cfi:HEXXXX .
+
+cfi:HEXXXE
+  a owl:Class ;
+  rdfs:label "Equity, Elect at exercise" ;
+  rdfs:subClassOf cfi:HEXXXX .
+
+cfi:HCUXXX
+  a owl:Class ;
+  rdfs:label "Credit, CDS on a single name" ;
+  rdfs:subClassOf cfi:HCXXXX .
+
+cfi:HCVXXX
+  a owl:Class ;
+  rdfs:label "Credit, CDS on an index tranche" ;
+  rdfs:subClassOf cfi:HCXXXX .
+
+cfi:HCIXXX
+  a owl:Class ;
+  rdfs:label "Credit, CDS on an index" ;
+  rdfs:subClassOf cfi:HCXXXX .
+
+cfi:HCWXXX
+  a owl:Class ;
+  rdfs:label "Credit, Swaps" ;
+  rdfs:subClassOf cfi:HCXXXX .
+
+cfi:HCMXXX
+  a owl:Class ;
+  rdfs:label "Credit, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:HCXXXX .
+
+cfi:HCXAXX
+  a owl:Class ;
+  rdfs:label "Credit, European call" ;
+  rdfs:subClassOf cfi:HCXXXX .
+
+cfi:HCXBXX
+  a owl:Class ;
+  rdfs:label "Credit, American call" ;
+  rdfs:subClassOf cfi:HCXXXX .
+
+cfi:HCXCXX
+  a owl:Class ;
+  rdfs:label "Credit, Bermudan call" ;
+  rdfs:subClassOf cfi:HCXXXX .
+
+cfi:HCXDXX
+  a owl:Class ;
+  rdfs:label "Credit, European put" ;
+  rdfs:subClassOf cfi:HCXXXX .
+
+cfi:HCXEXX
+  a owl:Class ;
+  rdfs:label "Credit, American put" ;
+  rdfs:subClassOf cfi:HCXXXX .
+
+cfi:HCXFXX
+  a owl:Class ;
+  rdfs:label "Credit, Bermudan put" ;
+  rdfs:subClassOf cfi:HCXXXX .
+
+cfi:HCXGXX
+  a owl:Class ;
+  rdfs:label "Credit, European chooser" ;
+  rdfs:subClassOf cfi:HCXXXX .
+
+cfi:HCXHXX
+  a owl:Class ;
+  rdfs:label "Credit, American chooser" ;
+  rdfs:subClassOf cfi:HCXXXX .
+
+cfi:HCXIXX
+  a owl:Class ;
+  rdfs:label "Credit, Bermudan chooser" ;
+  rdfs:subClassOf cfi:HCXXXX .
+
+cfi:HCXXVX
+  a owl:Class ;
+  rdfs:label "Credit, Vanilla" ;
+  rdfs:subClassOf cfi:HCXXXX .
+
+cfi:HCXXAX
+  a owl:Class ;
+  rdfs:label "Credit, Asian" ;
+  rdfs:subClassOf cfi:HCXXXX .
+
+cfi:HCXXDX
+  a owl:Class ;
+  rdfs:label "Credit, Digital (binary)" ;
+  rdfs:subClassOf cfi:HCXXXX .
+
+cfi:HCXXBX
+  a owl:Class ;
+  rdfs:label "Credit, Barrier" ;
+  rdfs:subClassOf cfi:HCXXXX .
+
+cfi:HCXXGX
+  a owl:Class ;
+  rdfs:label "Credit, Digital barrier" ;
+  rdfs:subClassOf cfi:HCXXXX .
+
+cfi:HCXXLX
+  a owl:Class ;
+  rdfs:label "Credit, Lookback" ;
+  rdfs:subClassOf cfi:HCXXXX .
+
+cfi:HCXXPX
+  a owl:Class ;
+  rdfs:label "Credit, Other path dependent" ;
+  rdfs:subClassOf cfi:HCXXXX .
+
+cfi:HCXXMX
+  a owl:Class ;
+  rdfs:label "Credit, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:HCXXXX .
+
+cfi:HCXXXC
+  a owl:Class ;
+  rdfs:label "Credit, Cash" ;
+  rdfs:subClassOf cfi:HCXXXX .
+
+cfi:HCXXXP
+  a owl:Class ;
+  rdfs:label "Credit, Physical" ;
+  rdfs:subClassOf cfi:HCXXXX .
+
+cfi:HCXXXE
+  a owl:Class ;
+  rdfs:label "Credit, Elect at exercise" ;
+  rdfs:subClassOf cfi:HCXXXX .
+
+cfi:HFRXXX
+  a owl:Class ;
+  rdfs:label "Foreign exchange, Forwards" ;
+  rdfs:subClassOf cfi:HFXXXX .
+
+cfi:HFFXXX
+  a owl:Class ;
+  rdfs:label "Foreign exchange, Futures" ;
+  rdfs:subClassOf cfi:HFXXXX .
+
+cfi:HFTXXX
+  a owl:Class ;
+  rdfs:label "Foreign exchange, Spot-forward swap" ;
+  rdfs:subClassOf cfi:HFXXXX .
+
+cfi:HFVXXX
+  a owl:Class ;
+  rdfs:label "Foreign exchange, Volatility" ;
+  rdfs:subClassOf cfi:HFXXXX .
+
+cfi:HFMXXX
+  a owl:Class ;
+  rdfs:label "Foreign exchange, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:HFXXXX .
+
+cfi:HFXAXX
+  a owl:Class ;
+  rdfs:label "Foreign exchange, European call" ;
+  rdfs:subClassOf cfi:HFXXXX .
+
+cfi:HFXBXX
+  a owl:Class ;
+  rdfs:label "Foreign exchange, American call" ;
+  rdfs:subClassOf cfi:HFXXXX .
+
+cfi:HFXCXX
+  a owl:Class ;
+  rdfs:label "Foreign exchange, Bermudan call" ;
+  rdfs:subClassOf cfi:HFXXXX .
+
+cfi:HFXDXX
+  a owl:Class ;
+  rdfs:label "Foreign exchange, European put" ;
+  rdfs:subClassOf cfi:HFXXXX .
+
+cfi:HFXEXX
+  a owl:Class ;
+  rdfs:label "Foreign exchange, American put" ;
+  rdfs:subClassOf cfi:HFXXXX .
+
+cfi:HFXFXX
+  a owl:Class ;
+  rdfs:label "Foreign exchange, Bermudan put" ;
+  rdfs:subClassOf cfi:HFXXXX .
+
+cfi:HFXGXX
+  a owl:Class ;
+  rdfs:label "Foreign exchange, European chooser" ;
+  rdfs:subClassOf cfi:HFXXXX .
+
+cfi:HFXHXX
+  a owl:Class ;
+  rdfs:label "Foreign exchange, American chooser" ;
+  rdfs:subClassOf cfi:HFXXXX .
+
+cfi:HFXIXX
+  a owl:Class ;
+  rdfs:label "Foreign exchange, Bermudan chooser" ;
+  rdfs:subClassOf cfi:HFXXXX .
+
+cfi:HFXXVX
+  a owl:Class ;
+  rdfs:label "Foreign exchange, Vanilla" ;
+  rdfs:subClassOf cfi:HFXXXX .
+
+cfi:HFXXAX
+  a owl:Class ;
+  rdfs:label "Foreign exchange, Asian" ;
+  rdfs:subClassOf cfi:HFXXXX .
+
+cfi:HFXXDX
+  a owl:Class ;
+  rdfs:label "Foreign exchange, Digital (binary)" ;
+  rdfs:subClassOf cfi:HFXXXX .
+
+cfi:HFXXBX
+  a owl:Class ;
+  rdfs:label "Foreign exchange, Barrier" ;
+  rdfs:subClassOf cfi:HFXXXX .
+
+cfi:HFXXGX
+  a owl:Class ;
+  rdfs:label "Foreign exchange, Digital barrier" ;
+  rdfs:subClassOf cfi:HFXXXX .
+
+cfi:HFXXLX
+  a owl:Class ;
+  rdfs:label "Foreign exchange, Lookback" ;
+  rdfs:subClassOf cfi:HFXXXX .
+
+cfi:HFXXPX
+  a owl:Class ;
+  rdfs:label "Foreign exchange, Other path dependent" ;
+  rdfs:subClassOf cfi:HFXXXX .
+
+cfi:HFXXMX
+  a owl:Class ;
+  rdfs:label "Foreign exchange, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:HFXXXX .
+
+cfi:HFXXXC
+  a owl:Class ;
+  rdfs:label "Foreign exchange, Cash" ;
+  rdfs:subClassOf cfi:HFXXXX .
+
+cfi:HFXXXP
+  a owl:Class ;
+  rdfs:label "Foreign exchange, Physical" ;
+  rdfs:subClassOf cfi:HFXXXX .
+
+cfi:HFXXXE
+  a owl:Class ;
+  rdfs:label "Foreign exchange, Elect at exercise" ;
+  rdfs:subClassOf cfi:HFXXXX .
+
+cfi:HFXXXN
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous), Non-deliverable" ;
+  rdfs:subClassOf cfi:HFXXXX .
+
+cfi:HMPXXX
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous), Commercial property (or property derivative)" ;
+  rdfs:subClassOf cfi:HMXXXX .
+
+cfi:HMMXXX
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous), Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:HMXXXX .
+
+cfi:HMXAXX
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous), European call" ;
+  rdfs:subClassOf cfi:HMXXXX .
+
+cfi:HMXBXX
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous), American call" ;
+  rdfs:subClassOf cfi:HMXXXX .
+
+cfi:HMXCXX
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous), Bermudan call" ;
+  rdfs:subClassOf cfi:HMXXXX .
+
+cfi:HMXDXX
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous), European put" ;
+  rdfs:subClassOf cfi:HMXXXX .
+
+cfi:HMXEXX
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous), American put" ;
+  rdfs:subClassOf cfi:HMXXXX .
+
+cfi:HMXFXX
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous), Bermudan put" ;
+  rdfs:subClassOf cfi:HMXXXX .
+
+cfi:HMXGXX
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous), European chooser" ;
+  rdfs:subClassOf cfi:HMXXXX .
+
+cfi:HMXHXX
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous), American chooser" ;
+  rdfs:subClassOf cfi:HMXXXX .
+
+cfi:HMXIXX
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous), Bermudan chooser" ;
+  rdfs:subClassOf cfi:HMXXXX .
+
+cfi:HMXXVX
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous), Vanilla" ;
+  rdfs:subClassOf cfi:HMXXXX .
+
+cfi:HMXXAX
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous), Asian" ;
+  rdfs:subClassOf cfi:HMXXXX .
+
+cfi:HMXXDX
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous), Digital (binary)" ;
+  rdfs:subClassOf cfi:HMXXXX .
+
+cfi:HMXXBX
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous), Barrier" ;
+  rdfs:subClassOf cfi:HMXXXX .
+
+cfi:HMXXGX
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous), Digital barrier" ;
+  rdfs:subClassOf cfi:HMXXXX .
+
+cfi:HMXXLX
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous), Lookback" ;
+  rdfs:subClassOf cfi:HMXXXX .
+
+cfi:HMXXPX
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous), Other path dependent" ;
+  rdfs:subClassOf cfi:HMXXXX .
+
+cfi:HMXXMX
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous), Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:HMXXXX .
+
+cfi:HMXXXC
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous), Cash" ;
+  rdfs:subClassOf cfi:HMXXXX .
+
+cfi:HMXXXP
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous), Physical" ;
+  rdfs:subClassOf cfi:HMXXXX .
+
+cfi:HMXXXE
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous), Elect at exercise" ;
+  rdfs:subClassOf cfi:HMXXXX .
+
+cfi:HMXXXN
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous), Non-deliverable" ;
+  rdfs:subClassOf cfi:HMXXXX .
+
+cfi:HMXXXA
+  a owl:Class ;
+  rdfs:label "Others (miscellaneous), Elect Auction" ;
+  rdfs:subClassOf cfi:HMXXXX .
+
+cfi:IFXXXP
+  a owl:Class ;
+  rdfs:label "Foreign exchange, Physical" ;
+  rdfs:subClassOf cfi:IFXXXX .
+
+cfi:ITAXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Agriculture" ;
+  rdfs:subClassOf cfi:ITXXXX .
+
+cfi:ITJXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Energy" ;
+  rdfs:subClassOf cfi:ITXXXX .
+
+cfi:ITKXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Metals" ;
+  rdfs:subClassOf cfi:ITXXXX .
+
+cfi:ITNXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Environmental" ;
+  rdfs:subClassOf cfi:ITXXXX .
+
+cfi:ITPXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Polypropylene products" ;
+  rdfs:subClassOf cfi:ITXXXX .
+
+cfi:ITSXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Fertilizer" ;
+  rdfs:subClassOf cfi:ITXXXX .
+
+cfi:ITTXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Paper" ;
+  rdfs:subClassOf cfi:ITXXXX .
+
+cfi:ITMXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:ITXXXX .
+
+cfi:JESXXX
+  a owl:Class ;
+  rdfs:label "Equity, Single stock" ;
+  rdfs:subClassOf cfi:JEXXXX .
+
+cfi:JEIXXX
+  a owl:Class ;
+  rdfs:label "Equity, Index" ;
+  rdfs:subClassOf cfi:JEXXXX .
+
+cfi:JEBXXX
+  a owl:Class ;
+  rdfs:label "Equity, Basket" ;
+  rdfs:subClassOf cfi:JEXXXX .
+
+cfi:JEOXXX
+  a owl:Class ;
+  rdfs:label "Equity, Options" ;
+  rdfs:subClassOf cfi:JEXXXX .
+
+cfi:JEFXXX
+  a owl:Class ;
+  rdfs:label "Equity, Futures" ;
+  rdfs:subClassOf cfi:JEXXXX .
+
+cfi:JEXXCX
+  a owl:Class ;
+  rdfs:label "Equity, Contract for difference" ;
+  rdfs:subClassOf cfi:JEXXXX .
+
+cfi:JEXXSX
+  a owl:Class ;
+  rdfs:label "Equity, Spread-bet" ;
+  rdfs:subClassOf cfi:JEXXXX .
+
+cfi:JEXXFX
+  a owl:Class ;
+  rdfs:label "Equity, Forward price of underlying instrument" ;
+  rdfs:subClassOf cfi:JEXXXX .
+
+cfi:JEXXXC
+  a owl:Class ;
+  rdfs:label "Equity, Cash" ;
+  rdfs:subClassOf cfi:JEXXXX .
+
+cfi:JEXXXP
+  a owl:Class ;
+  rdfs:label "Equity, Physical" ;
+  rdfs:subClassOf cfi:JEXXXX .
+
+cfi:JFTXXX
+  a owl:Class ;
+  rdfs:label "Foreign exchange, Spot" ;
+  rdfs:subClassOf cfi:JFXXXX .
+
+cfi:JFRXXX
+  a owl:Class ;
+  rdfs:label "Foreign exchange, Forward" ;
+  rdfs:subClassOf cfi:JFXXXX .
+
+cfi:JFOXXX
+  a owl:Class ;
+  rdfs:label "Foreign exchange, Options" ;
+  rdfs:subClassOf cfi:JFXXXX .
+
+cfi:JFFXXX
+  a owl:Class ;
+  rdfs:label "Foreign exchange, Futures" ;
+  rdfs:subClassOf cfi:JFXXXX .
+
+cfi:JFXXCX
+  a owl:Class ;
+  rdfs:label "Foreign exchange, Contract for difference" ;
+  rdfs:subClassOf cfi:JFXXXX .
+
+cfi:JFXXSX
+  a owl:Class ;
+  rdfs:label "Foreign exchange, Spread-bet" ;
+  rdfs:subClassOf cfi:JFXXXX .
+
+cfi:JFXXFX
+  a owl:Class ;
+  rdfs:label "Foreign exchange, Forward price of underlying instrument" ;
+  rdfs:subClassOf cfi:JFXXXX .
+
+cfi:JFXXXP
+  a owl:Class ;
+  rdfs:label "Foreign exchange, Physical" ;
+  rdfs:subClassOf cfi:JFXXXX .
+
+cfi:JFXXXC
+  a owl:Class ;
+  rdfs:label "Foreign exchange, Cash" ;
+  rdfs:subClassOf cfi:JFXXXX .
+
+cfi:JFXXXN
+  a owl:Class ;
+  rdfs:label "Foreign exchange, Non-deliverable" ;
+  rdfs:subClassOf cfi:JFXXXX .
+
+cfi:JCAXXX
+  a owl:Class ;
+  rdfs:label "Credit, Single name" ;
+  rdfs:subClassOf cfi:JCXXXX .
+
+cfi:JCIXXX
+  a owl:Class ;
+  rdfs:label "Credit, Index" ;
+  rdfs:subClassOf cfi:JCXXXX .
+
+cfi:JCBXXX
+  a owl:Class ;
+  rdfs:label "Credit, Basket" ;
+  rdfs:subClassOf cfi:JCXXXX .
+
+cfi:JCCXXX
+  a owl:Class ;
+  rdfs:label "Credit, CDS on a single name" ;
+  rdfs:subClassOf cfi:JCXXXX .
+
+cfi:JCDXXX
+  a owl:Class ;
+  rdfs:label "Credit, CDS on an index" ;
+  rdfs:subClassOf cfi:JCXXXX .
+
+cfi:JCGXXX
+  a owl:Class ;
+  rdfs:label "Credit, CDS on a basket" ;
+  rdfs:subClassOf cfi:JCXXXX .
+
+cfi:JCOXXX
+  a owl:Class ;
+  rdfs:label "Credit, Options" ;
+  rdfs:subClassOf cfi:JCXXXX .
+
+cfi:JCXXSX
+  a owl:Class ;
+  rdfs:label "Credit, Spread-bet" ;
+  rdfs:subClassOf cfi:JCXXXX .
+
+cfi:JCXXFX
+  a owl:Class ;
+  rdfs:label "Credit, Forward price of underlying instrument" ;
+  rdfs:subClassOf cfi:JCXXXX .
+
+cfi:JCXXXP
+  a owl:Class ;
+  rdfs:label "Credit, Physical" ;
+  rdfs:subClassOf cfi:JCXXXX .
+
+cfi:JCXXXC
+  a owl:Class ;
+  rdfs:label "Credit, Cash" ;
+  rdfs:subClassOf cfi:JCXXXX .
+
+cfi:JCXXXN
+  a owl:Class ;
+  rdfs:label "Credit, Non-deliverable" ;
+  rdfs:subClassOf cfi:JCXXXX .
+
+cfi:JRIXXX
+  a owl:Class ;
+  rdfs:label "Rates, Interest rates index" ;
+  rdfs:subClassOf cfi:JRXXXX .
+
+cfi:JROXXX
+  a owl:Class ;
+  rdfs:label "Rates, Options" ;
+  rdfs:subClassOf cfi:JRXXXX .
+
+cfi:JRMXXX
+  a owl:Class ;
+  rdfs:label "Rates, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:JRXXXX .
+
+cfi:JRXXSX
+  a owl:Class ;
+  rdfs:label "Rates, Spread-bet" ;
+  rdfs:subClassOf cfi:JRXXXX .
+
+cfi:JRXXFX
+  a owl:Class ;
+  rdfs:label "Rates, Forward price of underlying instrument" ;
+  rdfs:subClassOf cfi:JRXXXX .
+
+cfi:JRXXXP
+  a owl:Class ;
+  rdfs:label "Rates, Physical" ;
+  rdfs:subClassOf cfi:JRXXXX .
+
+cfi:JRXXXC
+  a owl:Class ;
+  rdfs:label "Rates, Cash" ;
+  rdfs:subClassOf cfi:JRXXXX .
+
+cfi:JRXXXN
+  a owl:Class ;
+  rdfs:label "Rates, Non-deliverable" ;
+  rdfs:subClassOf cfi:JRXXXX .
+
+cfi:JTAXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Agriculture" ;
+  rdfs:subClassOf cfi:JTXXXX .
+
+cfi:JTBXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Basket" ;
+  rdfs:subClassOf cfi:JTXXXX .
+
+cfi:JTGXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Freight" ;
+  rdfs:subClassOf cfi:JTXXXX .
+
+cfi:JTIXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Index" ;
+  rdfs:subClassOf cfi:JTXXXX .
+
+cfi:JTJXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Energy" ;
+  rdfs:subClassOf cfi:JTXXXX .
+
+cfi:JTKXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Metals" ;
+  rdfs:subClassOf cfi:JTXXXX .
+
+cfi:JTNXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Environmental" ;
+  rdfs:subClassOf cfi:JTXXXX .
+
+cfi:JTPXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Polypropylene products" ;
+  rdfs:subClassOf cfi:JTXXXX .
+
+cfi:JTSXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Fertilizer" ;
+  rdfs:subClassOf cfi:JTXXXX .
+
+cfi:JTTXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Paper" ;
+  rdfs:subClassOf cfi:JTXXXX .
+
+cfi:JTMXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:JTXXXX .
+
+cfi:JTXXCX
+  a owl:Class ;
+  rdfs:label "Commodities, Contract for difference" ;
+  rdfs:subClassOf cfi:JTXXXX .
+
+cfi:JTXXFX
+  a owl:Class ;
+  rdfs:label "Commodities, Forward price of underlying instrument" ;
+  rdfs:subClassOf cfi:JTXXXX .
+
+cfi:JTXXXP
+  a owl:Class ;
+  rdfs:label "Commodities, Physical" ;
+  rdfs:subClassOf cfi:JTXXXX .
+
+cfi:JTXXXC
+  a owl:Class ;
+  rdfs:label "Commodities, Cash" ;
+  rdfs:subClassOf cfi:JTXXXX .
+
+cfi:JTXXXN
+  a owl:Class ;
+  rdfs:label "Commodities, Non-deliverable" ;
+  rdfs:subClassOf cfi:JTXXXX .
+
+cfi:LLAXXX
+  a owl:Class ;
+  rdfs:label "Loan-lease, Agriculture" ;
+  rdfs:subClassOf cfi:LLXXXX .
+
+cfi:LLBXXX
+  a owl:Class ;
+  rdfs:label "Loan-lease, Basket" ;
+  rdfs:subClassOf cfi:LLXXXX .
+
+cfi:LLJXXX
+  a owl:Class ;
+  rdfs:label "Loan-lease, Energy" ;
+  rdfs:subClassOf cfi:LLXXXX .
+
+cfi:LLKXXX
+  a owl:Class ;
+  rdfs:label "Loan-lease, Metals" ;
+  rdfs:subClassOf cfi:LLXXXX .
+
+cfi:LLNXXX
+  a owl:Class ;
+  rdfs:label "Loan-lease, Environmental" ;
+  rdfs:subClassOf cfi:LLXXXX .
+
+cfi:LLPXXX
+  a owl:Class ;
+  rdfs:label "Loan-lease, Polypropylene products" ;
+  rdfs:subClassOf cfi:LLXXXX .
+
+cfi:LLSXXX
+  a owl:Class ;
+  rdfs:label "Loan-lease, Fertilizer" ;
+  rdfs:subClassOf cfi:LLXXXX .
+
+cfi:LLTXXX
+  a owl:Class ;
+  rdfs:label "Loan-lease, Paper" ;
+  rdfs:subClassOf cfi:LLXXXX .
+
+cfi:LLMXXX
+  a owl:Class ;
+  rdfs:label "Loan-lease, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:LLXXXX .
+
+cfi:LLXXXP
+  a owl:Class ;
+  rdfs:label "Loan-lease, Physical" ;
+  rdfs:subClassOf cfi:LLXXXX .
+
+cfi:LLXXXC
+  a owl:Class ;
+  rdfs:label "Loan-lease, Cash" ;
+  rdfs:subClassOf cfi:LLXXXX .
+
+cfi:LLXXXN
+  a owl:Class ;
+  rdfs:label "Loan-lease, Non-deliverable" ;
+  rdfs:subClassOf cfi:LLXXXX .
+
+cfi:LRGXXX
+  a owl:Class ;
+  rdfs:label "Repurchase agreements, General collateral" ;
+  rdfs:subClassOf cfi:LRXXXX .
+
+cfi:LRSXXX
+  a owl:Class ;
+  rdfs:label "Repurchase agreements, Specific security collateral" ;
+  rdfs:subClassOf cfi:LRXXXX .
+
+cfi:LRCXXX
+  a owl:Class ;
+  rdfs:label "Repurchase agreements, Cash collateral" ;
+  rdfs:subClassOf cfi:LRXXXX .
+
+cfi:LRXFXX
+  a owl:Class ;
+  rdfs:label "Repurchase agreements, Flexible" ;
+  rdfs:subClassOf cfi:LRXXXX .
+
+cfi:LRXNXX
+  a owl:Class ;
+  rdfs:label "Repurchase agreements, Overnight" ;
+  rdfs:subClassOf cfi:LRXXXX .
+
+cfi:LRXOXX
+  a owl:Class ;
+  rdfs:label "Repurchase agreements, Open" ;
+  rdfs:subClassOf cfi:LRXXXX .
+
+cfi:LRXTXX
+  a owl:Class ;
+  rdfs:label "Repurchase agreements, Term" ;
+  rdfs:subClassOf cfi:LRXXXX .
+
+cfi:LRXXXD
+  a owl:Class ;
+  rdfs:label "Repurchase agreements, Delivery versus payment" ;
+  rdfs:subClassOf cfi:LRXXXX .
+
+cfi:LRXXXH
+  a owl:Class ;
+  rdfs:label "Repurchase agreements, Hold-in-custody" ;
+  rdfs:subClassOf cfi:LRXXXX .
+
+cfi:LRXXXT
+  a owl:Class ;
+  rdfs:label "Repurchase agreements, Tri-party" ;
+  rdfs:subClassOf cfi:LRXXXX .
+
+cfi:LSCXXX
+  a owl:Class ;
+  rdfs:label "Securities lending, Cash collateral" ;
+  rdfs:subClassOf cfi:LSXXXX .
+
+cfi:LSGXXX
+  a owl:Class ;
+  rdfs:label "Securities lending, Government bonds" ;
+  rdfs:subClassOf cfi:LSXXXX .
+
+cfi:LSPXXX
+  a owl:Class ;
+  rdfs:label "Securities lending, Corporate bonds" ;
+  rdfs:subClassOf cfi:LSXXXX .
+
+cfi:LSTXXX
+  a owl:Class ;
+  rdfs:label "Securities lending, Convertible bonds" ;
+  rdfs:subClassOf cfi:LSXXXX .
+
+cfi:LSEXXX
+  a owl:Class ;
+  rdfs:label "Securities lending, Equity" ;
+  rdfs:subClassOf cfi:LSXXXX .
+
+cfi:LSLXXX
+  a owl:Class ;
+  rdfs:label "Securities lending, Letter of credit" ;
+  rdfs:subClassOf cfi:LSXXXX .
+
+cfi:LSDXXX
+  a owl:Class ;
+  rdfs:label "Securities lending, Certificate of deposit" ;
+  rdfs:subClassOf cfi:LSXXXX .
+
+cfi:LSWXXX
+  a owl:Class ;
+  rdfs:label "Securities lending, Warrants" ;
+  rdfs:subClassOf cfi:LSXXXX .
+
+cfi:LSKXXX
+  a owl:Class ;
+  rdfs:label "Securities lending, Money market instruments" ;
+  rdfs:subClassOf cfi:LSXXXX .
+
+cfi:LSMXXX
+  a owl:Class ;
+  rdfs:label "Securities lending, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:LSXXXX .
+
+cfi:LSXNXX
+  a owl:Class ;
+  rdfs:label "Securities lending, Overnight" ;
+  rdfs:subClassOf cfi:LSXXXX .
+
+cfi:LSXOXX
+  a owl:Class ;
+  rdfs:label "Securities lending, Open" ;
+  rdfs:subClassOf cfi:LSXXXX .
+
+cfi:LSXTXX
+  a owl:Class ;
+  rdfs:label "Securities lending, Term" ;
+  rdfs:subClassOf cfi:LSXXXX .
+
+cfi:LSXXXD
+  a owl:Class ;
+  rdfs:label "Securities lending, Delivery versus payment" ;
+  rdfs:subClassOf cfi:LSXXXX .
+
+cfi:LSXXXF
+  a owl:Class ;
+  rdfs:label "Securities lending, Free of payment" ;
+  rdfs:subClassOf cfi:LSXXXX .
+
+cfi:LSXXXH
+  a owl:Class ;
+  rdfs:label "Securities lending, Hold-in-custody" ;
+  rdfs:subClassOf cfi:LSXXXX .
+
+cfi:LSXXXT
+  a owl:Class ;
+  rdfs:label "Securities lending, Tri-party" ;
+  rdfs:subClassOf cfi:LSXXXX .
+
+cfi:TCNXXX
+  a owl:Class ;
+  rdfs:label "Currencies, National Currency" ;
+  rdfs:subClassOf cfi:TCXXXX .
+
+cfi:TCLXXX
+  a owl:Class ;
+  rdfs:label "Currencies, Legacy Currency" ;
+  rdfs:subClassOf cfi:TCXXXX .
+
+cfi:TCCXXX
+  a owl:Class ;
+  rdfs:label "Currencies, Bullion Coins" ;
+  rdfs:subClassOf cfi:TCXXXX .
+
+cfi:TCMXXX
+  a owl:Class ;
+  rdfs:label "Currencies, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:TCXXXX .
+
+cfi:TTEXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Extraction resources" ;
+  rdfs:subClassOf cfi:TTXXXX .
+
+cfi:TTAXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Agriculture" ;
+  rdfs:subClassOf cfi:TTXXXX .
+
+cfi:TTIXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Industrial products" ;
+  rdfs:subClassOf cfi:TTXXXX .
+
+cfi:TTSXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Services" ;
+  rdfs:subClassOf cfi:TTXXXX .
+
+cfi:TTNXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Environmental" ;
+  rdfs:subClassOf cfi:TTXXXX .
+
+cfi:TTPXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Polypropylene products" ;
+  rdfs:subClassOf cfi:TTXXXX .
+
+cfi:TTHXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Generated resources" ;
+  rdfs:subClassOf cfi:TTXXXX .
+
+cfi:TTMXXX
+  a owl:Class ;
+  rdfs:label "Commodities, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:TTXXXX .
+
+cfi:TRNXXX
+  a owl:Class ;
+  rdfs:label "Interest rates, Nominal" ;
+  rdfs:subClassOf cfi:TRXXXX .
+
+cfi:TRVXXX
+  a owl:Class ;
+  rdfs:label "Interest rates, Variable" ;
+  rdfs:subClassOf cfi:TRXXXX .
+
+cfi:TRFXXX
+  a owl:Class ;
+  rdfs:label "Interest rates, Fixed" ;
+  rdfs:subClassOf cfi:TRXXXX .
+
+cfi:TRRXXX
+  a owl:Class ;
+  rdfs:label "Interest rates, Real" ;
+  rdfs:subClassOf cfi:TRXXXX .
+
+cfi:TRMXXX
+  a owl:Class ;
+  rdfs:label "Interest rates, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:TRXXXX .
+
+cfi:TRXDXX
+  a owl:Class ;
+  rdfs:label "Interest rates, Daily" ;
+  rdfs:subClassOf cfi:TRXXXX .
+
+cfi:TRXWXX
+  a owl:Class ;
+  rdfs:label "Interest rates, Weekly" ;
+  rdfs:subClassOf cfi:TRXXXX .
+
+cfi:TRXMXX
+  a owl:Class ;
+  rdfs:label "Interest rates, Monthly" ;
+  rdfs:subClassOf cfi:TRXXXX .
+
+cfi:TRXQXX
+  a owl:Class ;
+  rdfs:label "Interest rates, Quarterly" ;
+  rdfs:subClassOf cfi:TRXXXX .
+
+cfi:TRXSXX
+  a owl:Class ;
+  rdfs:label "Interest rates, Semi-Anually" ;
+  rdfs:subClassOf cfi:TRXXXX .
+
+cfi:TRXAXX
+  a owl:Class ;
+  rdfs:label "Interest rates, Annually" ;
+  rdfs:subClassOf cfi:TRXXXX .
+
+cfi:TRXMXX
+  a owl:Class ;
+  rdfs:label "Interest rates, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:TRXXXX .
+
+cfi:TIEXXX
+  a owl:Class ;
+  rdfs:label "Indices, Equities" ;
+  rdfs:subClassOf cfi:TIXXXX .
+
+cfi:TIDXXX
+  a owl:Class ;
+  rdfs:label "Indices, Debt" ;
+  rdfs:subClassOf cfi:TIXXXX .
+
+cfi:TIFXXX
+  a owl:Class ;
+  rdfs:label "Indices, Collective investment vehicles" ;
+  rdfs:subClassOf cfi:TIXXXX .
+
+cfi:TIRXXX
+  a owl:Class ;
+  rdfs:label "Indices, Real estate" ;
+  rdfs:subClassOf cfi:TIXXXX .
+
+cfi:TITXXX
+  a owl:Class ;
+  rdfs:label "Indices, Commodities" ;
+  rdfs:subClassOf cfi:TIXXXX .
+
+cfi:TICXXX
+  a owl:Class ;
+  rdfs:label "Indices, Currencies" ;
+  rdfs:subClassOf cfi:TIXXXX .
+
+cfi:TIMXXX
+  a owl:Class ;
+  rdfs:label "Indices, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:TIXXXX .
+
+cfi:TIXPXX
+  a owl:Class ;
+  rdfs:label "Indices, Price weighted" ;
+  rdfs:subClassOf cfi:TIXXXX .
+
+cfi:TIXCXX
+  a owl:Class ;
+  rdfs:label "Indices, Capitalization weighted" ;
+  rdfs:subClassOf cfi:TIXXXX .
+
+cfi:TIXEXX
+  a owl:Class ;
+  rdfs:label "Indices, Equal weighted" ;
+  rdfs:subClassOf cfi:TIXXXX .
+
+cfi:TIXFXX
+  a owl:Class ;
+  rdfs:label "Indices, Modified market capitalization weighted" ;
+  rdfs:subClassOf cfi:TIXXXX .
+
+cfi:TIXMXX
+  a owl:Class ;
+  rdfs:label "Indices, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:TIXXXX .
+
+cfi:TIXXPX
+  a owl:Class ;
+  rdfs:label "Indices, Price return" ;
+  rdfs:subClassOf cfi:TIXXXX .
+
+cfi:TIXXNX
+  a owl:Class ;
+  rdfs:label "Indices, Net total return" ;
+  rdfs:subClassOf cfi:TIXXXX .
+
+cfi:TIXXGX
+  a owl:Class ;
+  rdfs:label "Indices, Gross total return" ;
+  rdfs:subClassOf cfi:TIXXXX .
+
+cfi:TIXXMX
+  a owl:Class ;
+  rdfs:label "Indices, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:TIXXXX .
+
+cfi:TBEXXX
+  a owl:Class ;
+  rdfs:label "Baskets, Equities" ;
+  rdfs:subClassOf cfi:TBXXXX .
+
+cfi:TBDXXX
+  a owl:Class ;
+  rdfs:label "Baskets, Debt" ;
+  rdfs:subClassOf cfi:TBXXXX .
+
+cfi:TBFXXX
+  a owl:Class ;
+  rdfs:label "Baskets, Collective investment vehicles" ;
+  rdfs:subClassOf cfi:TBXXXX .
+
+cfi:TBIXXX
+  a owl:Class ;
+  rdfs:label "Baskets, Indices" ;
+  rdfs:subClassOf cfi:TBXXXX .
+
+cfi:TBTXXX
+  a owl:Class ;
+  rdfs:label "Baskets, Commodities" ;
+  rdfs:subClassOf cfi:TBXXXX .
+
+cfi:TBCXXX
+  a owl:Class ;
+  rdfs:label "Baskets, Currencies" ;
+  rdfs:subClassOf cfi:TBXXXX .
+
+cfi:TBMXXX
+  a owl:Class ;
+  rdfs:label "Baskets, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:TBXXXX .
+
+cfi:TDSXXX
+  a owl:Class ;
+  rdfs:label "Stock dividends, Common/ordinary shares" ;
+  rdfs:subClassOf cfi:TDXXXX .
+
+cfi:TDPXXX
+  a owl:Class ;
+  rdfs:label "Stock dividends, Preferred/preference shares" ;
+  rdfs:subClassOf cfi:TDXXXX .
+
+cfi:TDCXXX
+  a owl:Class ;
+  rdfs:label "Stock dividends, Common/ordinary convertible shares" ;
+  rdfs:subClassOf cfi:TDXXXX .
+
+cfi:TDFXXX
+  a owl:Class ;
+  rdfs:label "Stock dividends, Preferred/preference convertible shares" ;
+  rdfs:subClassOf cfi:TDXXXX .
+
+cfi:TDLXXX
+  a owl:Class ;
+  rdfs:label "Stock dividends, Limited partnership units" ;
+  rdfs:subClassOf cfi:TDXXXX .
+
+cfi:TDKXXX
+  a owl:Class ;
+  rdfs:label "Stock dividends, Collective investment vehicles" ;
+  rdfs:subClassOf cfi:TDXXXX .
+
+cfi:TDMXXX
+  a owl:Class ;
+  rdfs:label "Stock dividends, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:TDXXXX .
+
+cfi:MCSXXX
+  a owl:Class ;
+  rdfs:label "Combined instruments, Combination of shares" ;
+  rdfs:subClassOf cfi:MCXXXX .
+
+cfi:MCBXXX
+  a owl:Class ;
+  rdfs:label "Combined instruments, Combination of bonds" ;
+  rdfs:subClassOf cfi:MCXXXX .
+
+cfi:MCHXXX
+  a owl:Class ;
+  rdfs:label "Combined instruments, Share and bond" ;
+  rdfs:subClassOf cfi:MCXXXX .
+
+cfi:MCAXXX
+  a owl:Class ;
+  rdfs:label "Combined instruments, Share and warrant" ;
+  rdfs:subClassOf cfi:MCXXXX .
+
+cfi:MCWXXX
+  a owl:Class ;
+  rdfs:label "Combined instruments, Warrant and warrant" ;
+  rdfs:subClassOf cfi:MCXXXX .
+
+cfi:MCUXXX
+  a owl:Class ;
+  rdfs:label "Combined instruments, Fund unit and other components" ;
+  rdfs:subClassOf cfi:MCXXXX .
+
+cfi:MCMXXX
+  a owl:Class ;
+  rdfs:label "Combined instruments, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:MCXXXX .
+
+cfi:MCXTXX
+  a owl:Class ;
+  rdfs:label "Combined instruments, Restrictions" ;
+  rdfs:subClassOf cfi:MCXXXX .
+
+cfi:MCXUXX
+  a owl:Class ;
+  rdfs:label "Combined instruments, Free" ;
+  rdfs:subClassOf cfi:MCXXXX .
+
+cfi:MCXXXB
+  a owl:Class ;
+  rdfs:label "Combined instruments, Bearer" ;
+  rdfs:subClassOf cfi:MCXXXX .
+
+cfi:MCXXXR
+  a owl:Class ;
+  rdfs:label "Combined instruments, Registered" ;
+  rdfs:subClassOf cfi:MCXXXX .
+
+cfi:MCXXXN
+  a owl:Class ;
+  rdfs:label "Combined instruments, Bearer/registered" ;
+  rdfs:subClassOf cfi:MCXXXX .
+
+cfi:MCXXXM
+  a owl:Class ;
+  rdfs:label "Combined instruments, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:MCXXXX .
+
+cfi:MMRXXX
+  a owl:Class ;
+  rdfs:label "Other assets, Real estate deeds" ;
+  rdfs:subClassOf cfi:MMXXXX .
+
+cfi:MMIXXX
+  a owl:Class ;
+  rdfs:label "Other assets, Insurance policies" ;
+  rdfs:subClassOf cfi:MMXXXX .
+
+cfi:MMEXXX
+  a owl:Class ;
+  rdfs:label "Other assets, Escrow receipts" ;
+  rdfs:subClassOf cfi:MMXXXX .
+
+cfi:MMTXXX
+  a owl:Class ;
+  rdfs:label "Other assets, Trade finance instruments" ;
+  rdfs:subClassOf cfi:MMXXXX .
+
+cfi:MMNXXX
+  a owl:Class ;
+  rdfs:label "Other assets, Carbon credit" ;
+  rdfs:subClassOf cfi:MMXXXX .
+
+cfi:MMPXXX
+  a owl:Class ;
+  rdfs:label "Other assets, Precious metals receipts" ;
+  rdfs:subClassOf cfi:MMXXXX .
+
+cfi:MMSXXX
+  a owl:Class ;
+  rdfs:label "Other assets, Other OTC derivative products" ;
+  rdfs:subClassOf cfi:MMXXXX .
+
+cfi:MMMXXX
+  a owl:Class ;
+  rdfs:label "Other assets, Others (miscellaneous)" ;
+  rdfs:subClassOf cfi:MMXXXX .
