@@ -1,0 +1,3 @@
+Usage: meld-cfi FILE...
+
+Helper script to create CFI class combinatorily.
