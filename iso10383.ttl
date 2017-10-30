@@ -349,6 +349,7 @@ mic:BBSF a figi-gii:PricingSource ;
    foaf:homepage <http://www.bloombergsef.com> ;
    dc:created "2014-07"^^xsd:gYearMonth ;
    foaf:name "BLOOMBERG SEF LLC" ;
+   time:timeZone <http://dbpedia.org/resource/America/New_York> ;
    gas:symbolOf <http://www.iso20022.org/10383/> .
 mic:BCDX a figi-gii:PricingSource ;
    gn:countryCode "US" ;
@@ -445,6 +446,7 @@ mic:BGCD a figi-gii:PricingSource ;
    foaf:homepage <http://www.bgcsef.com> ;
    dc:created "2015-03"^^xsd:gYearMonth ;
    foaf:name "BGC DERIVATIVE MARKETS L.P." ;
+   time:timeZone <http://dbpedia.org/resource/America/New_York> ;
    gas:symbolOf <http://www.iso20022.org/10383/> .
 mic:BGCF a figi-gii:PricingSource ;
    gn:countryCode "US" ;
@@ -673,6 +675,7 @@ mic:BRNX a figi-gii:PricingSource ;
    foaf:homepage <http://www.alliancebernstein.com> ;
    dc:created "2014-05"^^xsd:gYearMonth ;
    foaf:name "BERNSTEIN CROSS (BERN-X)" ;
+   time:timeZone <http://dbpedia.org/resource/Europe/London> ;
    gas:symbolOf <http://www.iso20022.org/10383/> .
 mic:BSEX a figi-gii:PricingSource ;
    gn:countryCode "AZ" ;
@@ -754,6 +757,7 @@ mic:BVUS a figi-gii:PricingSource ;
    foaf:homepage <http://www.mtsmarkets.com> ;
    dc:created "2014-07"^^xsd:gYearMonth ;
    foaf:name "BONDVISION US" ;
+   time:timeZone <http://dbpedia.org/resource/America/New_York> ;
    gas:symbolOf <http://www.iso20022.org/10383/> .
 mic:BYXD a figi-gii:PricingSource ;
    gn:countryCode "US" ;
@@ -761,6 +765,7 @@ mic:BYXD a figi-gii:PricingSource ;
    foaf:homepage <http://www.bats.com> ;
    dc:created "2015-02"^^xsd:gYearMonth ;
    foaf:name "BATS Y-EXCHANGE DARK" ;
+   time:timeZone <http://dbpedia.org/resource/America/New_York> ;
    gas:symbolOf <http://www.iso20022.org/10383/> .
 mic:BZXD a figi-gii:PricingSource ;
    gn:countryCode "US" ;
@@ -768,6 +773,7 @@ mic:BZXD a figi-gii:PricingSource ;
    foaf:homepage <http://www.bats.com> ;
    dc:created "2015-02"^^xsd:gYearMonth ;
    foaf:name "BATS Z-EXCHANGE DARK" ;
+   time:timeZone <http://dbpedia.org/resource/America/New_York> ;
    gas:symbolOf <http://www.iso20022.org/10383/> .
 mic:C2OX a figi-gii:PricingSource ;
    gn:countryCode "US" ;
@@ -1053,6 +1059,7 @@ mic:CHIS a figi-gii:PricingSource ;
    foaf:homepage <http://www.chi-x.jp> ;
    dc:created "2015-04"^^xsd:gYearMonth ;
    foaf:name "CHI-X JAPAN SELECT" ;
+   time:timeZone <http://dbpedia.org/resource/Asia/Tokyo> ;
    gas:symbolOf <http://www.iso20022.org/10383/> .
 mic:CHIV a figi-gii:PricingSource ;
    gn:countryCode "JP" ;
@@ -1146,12 +1153,14 @@ mic:CMET a figi-gii:PricingSource ;
    foaf:homepage <http://www.clear-markets.com> ;
    dc:created "2014-12"^^xsd:gYearMonth ;
    foaf:name "CLEAR MARKETS JAPAN, INC." ;
+   time:timeZone <http://dbpedia.org/resource/Asia/Tokyo> ;
    gas:symbolOf <http://www.iso20022.org/10383/> .
 mic:CMMT a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
    foaf:homepage <http://www.clear-markets.com> ;
    dc:created "2014-12"^^xsd:gYearMonth ;
    foaf:name "CLEAR MARKETS EUROPE LIMITED" ;
+   time:timeZone <http://dbpedia.org/resource/Europe/London> ;
    gas:symbolOf <http://www.iso20022.org/10383/> .
 mic:CMSF a figi-gii:PricingSource ;
    gn:countryCode "US" ;
@@ -1173,6 +1182,7 @@ mic:CORE a figi-gii:PricingSource ;
    foaf:homepage <http://www.atdesk.com> ;
    dc:created "2015-03"^^xsd:gYearMonth ;
    foaf:name "ATD - CITIGROUP AGENCY OPTION AND EQUITIES ROUTING ENGINE" ;
+   time:timeZone <http://dbpedia.org/resource/America/Toronto> ;
    gas:symbolOf <http://www.iso20022.org/10383/> .
 mic:COTC a figi-gii:PricingSource ;
    gn:countryCode "CA" ;
@@ -1246,6 +1256,7 @@ mic:CXAF a figi-gii:PricingSource ;
    foaf:homepage <http://www.chi-x.com.au> ;
    dc:created "2014-05"^^xsd:gYearMonth ;
    foaf:name "CHI-X AUSTRALIA MARKET PEG (FARPOINT) VENUE" ;
+   time:timeZone <http://dbpedia.org/resource/Australia/Sydney> ;
    gas:symbolOf <http://www.iso20022.org/10383/> .
 mic:CXAM a figi-gii:PricingSource ;
    gn:countryCode "AU" ;
@@ -1261,6 +1272,7 @@ mic:CXAN a figi-gii:PricingSource ;
    foaf:homepage <http://www.chi-x.com.au> ;
    dc:created "2014-05"^^xsd:gYearMonth ;
    foaf:name "CHI-X AUSTRALIA PRIMARY PEG (NEARPOINT) VENUE" ;
+   time:timeZone <http://dbpedia.org/resource/Australia/Sydney> ;
    gas:symbolOf <http://www.iso20022.org/10383/> .
 mic:CXAP a figi-gii:PricingSource ;
    gn:countryCode "AU" ;
@@ -1268,6 +1280,7 @@ mic:CXAP a figi-gii:PricingSource ;
    foaf:homepage <http://www.chi-x.com.au> ;
    dc:created "2014-05"^^xsd:gYearMonth ;
    foaf:name "CHI-X AUSTRALIA MID-POINT VENUE" ;
+   time:timeZone <http://dbpedia.org/resource/Australia/Sydney> ;
    gas:symbolOf <http://www.iso20022.org/10383/> .
 mic:CXAV a figi-gii:PricingSource ;
    gn:countryCode "AU" ;
@@ -1294,6 +1307,7 @@ mic:DBCR a figi-gii:PricingSource ;
    foaf:homepage <https://autobahn.db.com/microsite/html/equity.html> ;
    dc:created "2014-10"^^xsd:gYearMonth ;
    foaf:name "DEUTSCHE BANK - CENTRAL RISK BOOK" ;
+   time:timeZone <http://dbpedia.org/resource/Europe/London> ;
    gas:symbolOf <http://www.iso20022.org/10383/> .
 mic:DBCX a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
@@ -1301,6 +1315,7 @@ mic:DBCX a figi-gii:PricingSource ;
    foaf:homepage <https://autobahn.db.com/microsite/html/equity.html> ;
    dc:created "2014-10"^^xsd:gYearMonth ;
    foaf:name "DEUTSCHE BANK - CLOSE CROSS" ;
+   time:timeZone <http://dbpedia.org/resource/Europe/London> ;
    gas:symbolOf <http://www.iso20022.org/10383/> .
 mic:DBDC a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
@@ -1308,6 +1323,7 @@ mic:DBDC a figi-gii:PricingSource ;
    foaf:homepage <https://autobahn.db.com/microsite/html/equity.html> ;
    dc:created "2014-10"^^xsd:gYearMonth ;
    foaf:name "DEUTSCHE BANK - DIRECT CAPITAL ACCESS" ;
+   time:timeZone <http://dbpedia.org/resource/Europe/London> ;
    gas:symbolOf <http://www.iso20022.org/10383/> .
 mic:DBHK a figi-gii:PricingSource ;
    gn:countryCode "HK" ;
@@ -1321,6 +1337,7 @@ mic:DBIX a figi-gii:PricingSource ;
    foaf:homepage <https://autobahn.db.com/microsite/html/equity.html> ;
    dc:created "2014-10"^^xsd:gYearMonth ;
    foaf:name "DEUTSCHE BANK INTERNALISATION" ;
+   time:timeZone <http://dbpedia.org/resource/Europe/London> ;
    gas:symbolOf <http://www.iso20022.org/10383/> .
 mic:DBMO a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
@@ -1328,6 +1345,7 @@ mic:DBMO a figi-gii:PricingSource ;
    foaf:homepage <https://autobahn.db.com/microsite/html/equity.html> ;
    dc:created "2014-10"^^xsd:gYearMonth ;
    foaf:name "DEUTSCHE BANK - MANUAL OTC" ;
+   time:timeZone <http://dbpedia.org/resource/Europe/London> ;
    gas:symbolOf <http://www.iso20022.org/10383/> .
 mic:DBOX a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
@@ -1342,6 +1360,7 @@ mic:DBSE a figi-gii:PricingSource ;
    foaf:homepage <https://autobahn.db.com/microsite/html/equity.html> ;
    dc:created "2014-10"^^xsd:gYearMonth ;
    foaf:name "DEUTSCHE BANK - SUPERX EU" ;
+   time:timeZone <http://dbpedia.org/resource/Europe/London> ;
    gas:symbolOf <http://www.iso20022.org/10383/> .
 mic:DBSX a figi-gii:PricingSource ;
    gn:countryCode "US" ;
@@ -1447,6 +1466,7 @@ mic:DWSF a figi-gii:PricingSource ;
    foaf:homepage <http://www.tradeweb.com> ;
    dc:created "2014-07"^^xsd:gYearMonth ;
    foaf:name "DW SEF LLC" ;
+   time:timeZone <http://dbpedia.org/resource/America/New_York> ;
    gas:symbolOf <http://www.iso20022.org/10383/> .
 mic:EACM a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
@@ -2063,6 +2083,7 @@ mic:GRSE a figi-gii:PricingSource ;
    foaf:homepage <http://www.acbimpactmarkets.com> ;
    dc:created "2014-07"^^xsd:gYearMonth ;
    foaf:name "THE GREEN STOCK EXCHANGE - ACB IMPACT MARKETS" ;
+   time:timeZone <http://dbpedia.org/resource/Europe/London> ;
    gas:symbolOf <http://www.iso20022.org/10383/> .
 mic:GSCI a figi-gii:PricingSource ;
    gn:countryCode "GY" ;
@@ -2633,6 +2654,7 @@ mic:JEFX a figi-gii:PricingSource ;
    foaf:homepage <http://www.jefferies.com> ;
    dc:created "2014-07"^^xsd:gYearMonth ;
    foaf:name "JETX" ;
+   time:timeZone <http://dbpedia.org/resource/America/New_York> ;
    gas:symbolOf <http://www.iso20022.org/10383/> .
 mic:JPMX a figi-gii:PricingSource ;
    gn:countryCode "US" ;
