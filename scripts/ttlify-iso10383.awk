@@ -14,10 +14,12 @@ BEGIN {
 	print "@prefix figi-gii: <http://www.omg.org/spec/FIGI/GlobalInstrumentIdentifiers/> .";
 	print "@prefix owl: <http://www.w3.org/2002/07/owl#> .";
 	print "@prefix mic: <http://fadyart.com/markets#> .";
-	print "@prefix xsd: <http://www.w3.org/2001/XMLSchema#> ."
+	print "@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .";
+	print "@prefix gas: <http://schema.ga-group.nl/symbology#> .";
 	print "@prefix gn: <http://www.geonames.org/ontology#> .";
-	print "@prefix dbp-ont: <http://dbpedia.org/ontology/> .";
+	print "@prefix dbo: <http://dbpedia.org/ontology/> .";
 	print "@prefix dc: <http://purl.org/dc/elements/1.1/> .";
+	print "@prefix time: <http://www.w3.org/2006/time#> .";
 	print;
 
 	M["JANUARY"] = "01";
@@ -50,5 +52,9 @@ BEGIN {
 	if (M[crea[1]]) {
 		print "  ", "dc:created", "\"" crea[2] "-" M[crea[1]] "\"^^xsd:gYearMonth", ";";
 	}
-	print "  ", "foaf:name", "\"" ttlesc($6) "\"", ".";
+	print "  ", "foaf:name", "\"" ttlesc($6) "\"", ";";
+	if ($8) {
+		print "  ", "time:timeZone", "<http://dbpedia.org/resource/>", ";";
+	}
+	print "  ", "gas:symbolOf", "<http://www.iso20022.org/10383/>", ".";
 }
