@@ -4,7 +4,7 @@
 @prefix mic: <http://fadyart.com/markets#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix gn: <http://www.geonames.org/ontology#> .
-@prefix dbp-ont: <http://dbpedia.org/ontology/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 mic:360T a figi-gii:PricingSource ;
@@ -34,49 +34,49 @@ mic:AIXE a figi-gii:PricingSource ;
    foaf:name "AIXECUTE" .
 mic:ALDP a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XNYS ;
+   dbo:operatedBy mic:XNYS ;
    foaf:homepage <http://www.euronext.com/landing/equitiesop-21363-en.html> ;
    dc:created "2011-05"^^xsd:gYearMonth ;
    foaf:name "NYSE ALTERNEXT DARK" .
 mic:ALTX a figi-gii:PricingSource ;
    gn:countryCode "ZA" ;
-   dbp-ont:operatedBy mic:XJSE ;
+   dbo:operatedBy mic:XJSE ;
    foaf:homepage <http://www.jse.co.za/markets/altx.aspx> ;
    dc:created "2006-08"^^xsd:gYearMonth ;
    foaf:name "JSE ALTERNATE EXCHANGE" .
 mic:ALXA a figi-gii:PricingSource ;
    gn:countryCode "NL" ;
-   dbp-ont:operatedBy mic:XAMS ;
+   dbo:operatedBy mic:XAMS ;
    foaf:homepage <http://www.euronext.com> ;
    dc:created "2007-08"^^xsd:gYearMonth ;
    foaf:name "EURONEXT - ALTERNEXT AMSTERDAM" .
 mic:ALXB a figi-gii:PricingSource ;
    gn:countryCode "BE" ;
-   dbp-ont:operatedBy mic:XBRU ;
+   dbo:operatedBy mic:XBRU ;
    foaf:homepage <http://www.euronext.com> ;
    dc:created "2007-08"^^xsd:gYearMonth ;
    foaf:name "EURONEXT - ALTERNEXT BRUSSELS" .
 mic:ALXL a figi-gii:PricingSource ;
    gn:countryCode "PT" ;
-   dbp-ont:operatedBy mic:XLIS ;
+   dbo:operatedBy mic:XLIS ;
    foaf:homepage <http://www.euronext.com> ;
    dc:created "2011-05"^^xsd:gYearMonth ;
    foaf:name "EURONEXT - ALTERNEXT LISBON" .
 mic:ALXP a figi-gii:PricingSource ;
    gn:countryCode "FR" ;
-   dbp-ont:operatedBy mic:XPAR ;
+   dbo:operatedBy mic:XPAR ;
    foaf:homepage <http://www.euronext.com> ;
    dc:created "2007-08"^^xsd:gYearMonth ;
    foaf:name "EURONEXT - ALTERNEXT PARIS" .
 mic:AMTS a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:XMTS ;
+   dbo:operatedBy mic:XMTS ;
    foaf:homepage <http://www.mtsmarkets.com> ;
    dc:created "2011-02"^^xsd:gYearMonth ;
    foaf:name "MTS NETHERLANDS" .
 mic:AMXO a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XNYS ;
+   dbo:operatedBy mic:XNYS ;
    foaf:homepage <http://www.nyse.com> ;
    dc:created "2008-11"^^xsd:gYearMonth ;
    foaf:name "NYSE AMEX OPTIONS" .
@@ -97,19 +97,19 @@ mic:AQXE a figi-gii:PricingSource ;
    foaf:name "AQUIS EXCHANGE" .
 mic:ARCD a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XNYS ;
+   dbo:operatedBy mic:XNYS ;
    foaf:homepage <http://www.nyse.com> ;
    dc:created "2011-05"^^xsd:gYearMonth ;
    foaf:name "ARCA DARK" .
 mic:ARCO a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XNYS ;
+   dbo:operatedBy mic:XNYS ;
    foaf:homepage <http://www.nyse.com> ;
    dc:created "2009-10"^^xsd:gYearMonth ;
    foaf:name "NYSE ARCA OPTIONS" .
 mic:ARCX a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XNYS ;
+   dbo:operatedBy mic:XNYS ;
    foaf:homepage <http://www.nyse.com> ;
    dc:created "2006-09"^^xsd:gYearMonth ;
    foaf:name "NYSE ARCA" .
@@ -120,31 +120,31 @@ mic:ASEX a figi-gii:PricingSource ;
    foaf:name "ATHENS STOCK EXCHANGE" .
 mic:ASXB a figi-gii:PricingSource ;
    gn:countryCode "AU" ;
-   dbp-ont:operatedBy mic:XASX ;
+   dbo:operatedBy mic:XASX ;
    foaf:homepage <http://www.asx.com.au> ;
    dc:created "2012-10"^^xsd:gYearMonth ;
    foaf:name "ASX BOOKBUILD" .
 mic:ASXC a figi-gii:PricingSource ;
    gn:countryCode "AU" ;
-   dbp-ont:operatedBy mic:XASX ;
+   dbo:operatedBy mic:XASX ;
    foaf:homepage <http://www.asx.com.au/trading_services/asx-trade.htm> ;
    dc:created "2011-08"^^xsd:gYearMonth ;
    foaf:name "ASX - CENTER POINT" .
 mic:ASXP a figi-gii:PricingSource ;
    gn:countryCode "AU" ;
-   dbp-ont:operatedBy mic:XASX ;
+   dbo:operatedBy mic:XASX ;
    foaf:homepage <http://www.asx.com.au/trading_services/asx-trade.htm> ;
    dc:created "2011-08"^^xsd:gYearMonth ;
    foaf:name "ASX - PUREMATCH" .
 mic:ASXT a figi-gii:PricingSource ;
    gn:countryCode "AU" ;
-   dbp-ont:operatedBy mic:XASX ;
+   dbo:operatedBy mic:XASX ;
    foaf:homepage <http://www.asx.com.au> ;
    dc:created "2011-09"^^xsd:gYearMonth ;
    foaf:name "ASX TRADEMATCH" .
 mic:ASXV a figi-gii:PricingSource ;
    gn:countryCode "AU" ;
-   dbp-ont:operatedBy mic:XASX ;
+   dbo:operatedBy mic:XASX ;
    foaf:homepage <http://www.asx.com.au/trading_services/asx-trade.htm> ;
    dc:created "2011-08"^^xsd:gYearMonth ;
    foaf:name "ASX - VOLUMEMATCH" .
@@ -155,7 +155,7 @@ mic:ATDF a figi-gii:PricingSource ;
    foaf:name "AUTOMATED TRADING DESK FINANCIAL SERVICES, LLC" .
 mic:AUTO a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:DBOX ;
+   dbo:operatedBy mic:DBOX ;
    foaf:homepage <http://www.autobahnfx.db.com> ;
    dc:created "2012-10"^^xsd:gYearMonth ;
    foaf:name "AUTOBAHN FX" .
@@ -176,7 +176,7 @@ mic:BACE a figi-gii:PricingSource ;
    foaf:name "BOLSA DE CEREALES DE BUENOS AIRES" .
 mic:BAJM a figi-gii:PricingSource ;
    gn:countryCode "BB" ;
-   dbp-ont:operatedBy mic:XBAB ;
+   dbo:operatedBy mic:XBAB ;
    foaf:homepage <http://www.bse.com.bb> ;
    dc:created "2013-03"^^xsd:gYearMonth ;
    foaf:name "BARBADOS STOCK EXCHANGE - JUNIOR MARKET" .
@@ -197,13 +197,13 @@ mic:BAPX a figi-gii:PricingSource ;
    foaf:name "BALTPOOL" .
 mic:BARD a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:BARX ;
+   dbo:operatedBy mic:BARX ;
    foaf:homepage <http://www.barx.com/fx/index.html> ;
    dc:created "2011-05"^^xsd:gYearMonth ;
    foaf:name "BARCLAYS FX – TRADING" .
 mic:BARL a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:BARX ;
+   dbo:operatedBy mic:BARX ;
    foaf:homepage <http://www.barcap.com> ;
    dc:created "2013-03"^^xsd:gYearMonth ;
    foaf:name "BARCLAYS LIQUID MARKETS" .
@@ -214,25 +214,25 @@ mic:BARX a figi-gii:PricingSource ;
    foaf:name "BARCLAYS ATS" .
 mic:BATD a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:BCXE ;
+   dbo:operatedBy mic:BCXE ;
    foaf:homepage <http://www.batstrading.co.uk> ;
    dc:created "2013-01"^^xsd:gYearMonth ;
    foaf:name "BATS CHI-X EUROPE -BXE DARK ORDER BOOK" .
 mic:BATE a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:BCXE ;
+   dbo:operatedBy mic:BCXE ;
    foaf:homepage <http://www.batstrading.co.uk> ;
    dc:created "2008-11"^^xsd:gYearMonth ;
    foaf:name "BATS CHI-X EUROPE -BXE ORDER BOOKS" .
 mic:BATF a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:BCXE ;
+   dbo:operatedBy mic:BCXE ;
    foaf:homepage <http://www.batstrading.co.uk> ;
    dc:created "2013-04"^^xsd:gYearMonth ;
    foaf:name "BATS CHI-X EUROPE – BATS OFF-BOOK" .
 mic:BATO a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:BATS ;
+   dbo:operatedBy mic:BATS ;
    foaf:homepage <http://www.batstrading.com> ;
    dc:created "2009-11"^^xsd:gYearMonth ;
    foaf:name "BATS EXCHANGE OPTIONS MARKET" .
@@ -243,7 +243,7 @@ mic:BATS a figi-gii:PricingSource ;
    foaf:name "BATS EXCHANGE" .
 mic:BATY a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:BATS ;
+   dbo:operatedBy mic:BATS ;
    foaf:homepage <http://www.batstrading.com> ;
    dc:created "2009-11"^^xsd:gYearMonth ;
    foaf:name "BATS Y-EXCHANGE, INC." .
@@ -254,7 +254,7 @@ mic:BBSF a figi-gii:PricingSource ;
    foaf:name "BLOOMBERG SEF LLC" .
 mic:BCDX a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:BARX ;
+   dbo:operatedBy mic:BARX ;
    foaf:homepage <http://realizations.barclays.com/global-markets/equities> ;
    dc:created "2014-08"^^xsd:gYearMonth ;
    foaf:name "BARCLAYS DIRECT EX ATS" .
@@ -285,19 +285,19 @@ mic:BEEX a figi-gii:PricingSource ;
    foaf:name "BOND ELECTRONIC EXCHANGE" .
 mic:BERA a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XBER ;
+   dbo:operatedBy mic:XBER ;
    foaf:homepage <http://www.berlin-boerse.de> ;
    dc:created "2008-02"^^xsd:gYearMonth ;
    foaf:name "BOERSE BERLIN - REGULIERTER MARKT" .
 mic:BERB a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XBER ;
+   dbo:operatedBy mic:XBER ;
    foaf:homepage <http://www.berlin-boerse.de> ;
    dc:created "2008-02"^^xsd:gYearMonth ;
    foaf:name "BOERSE BERLIN - FREIVERKEHR" .
 mic:BERC a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XBER ;
+   dbo:operatedBy mic:XBER ;
    foaf:homepage <http://www.berlin-boerse.de> ;
    dc:created "2010-08"^^xsd:gYearMonth ;
    foaf:name "BOERSE BERLIN - BERLIN SECOND REGULATED MARKET" .
@@ -313,13 +313,13 @@ mic:BFEX a figi-gii:PricingSource ;
    foaf:name "BAHRAIN FINANCIAL EXCHANGE" .
 mic:BGCB a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:BGCI ;
+   dbo:operatedBy mic:BGCI ;
    foaf:homepage <http://www.bgcpartners.com> ;
    dc:created "2014-02"^^xsd:gYearMonth ;
    foaf:name "BGC BROKERS LP - TRAYPORT" .
 mic:BGCD a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:BGCF ;
+   dbo:operatedBy mic:BGCF ;
    foaf:homepage <http://www.bgcsef.com> ;
    dc:created "2015-03"^^xsd:gYearMonth ;
    foaf:name "BGC DERIVATIVE MARKETS L.P." .
@@ -340,7 +340,7 @@ mic:BIDS a figi-gii:PricingSource ;
    foaf:name "BIDS TRADING L.P." .
 mic:BLBF a figi-gii:PricingSource ;
    gn:countryCode "BA" ;
-   dbp-ont:operatedBy mic:XBLB ;
+   dbo:operatedBy mic:XBLB ;
    foaf:homepage <http://www.blberza.com> ;
    dc:created "2013-03"^^xsd:gYearMonth ;
    foaf:name "BANJA LUKA STOCK EXCHANGE - FREE MARKET" .
@@ -351,7 +351,7 @@ mic:BLEV a figi-gii:PricingSource ;
    foaf:name "BLOCK EVENT" .
 mic:BLNK a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:CHEV ;
+   dbo:operatedBy mic:CHEV ;
    foaf:homepage <http://www.cheuvreux.com> ;
    dc:created "2009-09"^^xsd:gYearMonth ;
    foaf:name "BLINK MTF" .
@@ -372,13 +372,13 @@ mic:BLTD a figi-gii:PricingSource ;
    foaf:name "BLOOMBERG TRADEBOOK LLC" .
 mic:BLTX a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:BALT ;
+   dbo:operatedBy mic:BALT ;
    foaf:homepage <http://www.balticexchange.com> ;
    dc:created "2013-07"^^xsd:gYearMonth ;
    foaf:name "BALTEX - FREIGHT DERIVATIVES MARKET" .
 mic:BMCL a figi-gii:PricingSource ;
    gn:countryCode "ES" ;
-   dbp-ont:operatedBy mic:BMEX ;
+   dbo:operatedBy mic:BMEX ;
    foaf:homepage <http://www.aiaf.es> ;
    dc:created "2013-10"^^xsd:gYearMonth ;
    foaf:name "BME CLEARING S.A." .
@@ -389,13 +389,13 @@ mic:BMEX a figi-gii:PricingSource ;
    foaf:name "BME - BOLSAS Y MERCADOS ESPANOLES" .
 mic:BMFA a figi-gii:PricingSource ;
    gn:countryCode "RO" ;
-   dbp-ont:operatedBy mic:BMFX ;
+   dbo:operatedBy mic:BMFX ;
    foaf:homepage <http://www.sibex.ro> ;
    dc:created "2010-10"^^xsd:gYearMonth ;
    foaf:name "BMFMS-ATS" .
 mic:BMFM a figi-gii:PricingSource ;
    gn:countryCode "RO" ;
-   dbp-ont:operatedBy mic:BMFX ;
+   dbo:operatedBy mic:BMFX ;
    foaf:homepage <http://www.sibex.ro> ;
    dc:created "2010-05"^^xsd:gYearMonth ;
    foaf:name "DERIVATIVES REGULATED MARKET - BMFMS" .
@@ -426,7 +426,7 @@ mic:BOAT a figi-gii:PricingSource ;
    foaf:name "CINNOBER BOAT" .
 mic:BOND a figi-gii:PricingSource ;
    gn:countryCode "IT" ;
-   dbp-ont:operatedBy mic:MTSC ;
+   dbo:operatedBy mic:MTSC ;
    foaf:homepage <http://www.bondvision.net> ;
    dc:created "2005-11"^^xsd:gYearMonth ;
    foaf:name "BONDVISION" .
@@ -437,31 +437,31 @@ mic:BOSC a figi-gii:PricingSource ;
    foaf:name "BONDSCAPE" .
 mic:BOSD a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XNAS ;
+   dbo:operatedBy mic:XNAS ;
    foaf:homepage <http://www.nasdaqomxtrader.com> ;
    dc:created "2012-04"^^xsd:gYearMonth ;
    foaf:name "NASDAQ OMX BX DARK" .
 mic:BOSP a figi-gii:PricingSource ;
    gn:countryCode "PL" ;
-   dbp-ont:operatedBy mic:XWAR ;
+   dbo:operatedBy mic:XWAR ;
    foaf:homepage <http://www.bondspot.pl> ;
    dc:created "2010-07"^^xsd:gYearMonth ;
    foaf:name "WARSAW STOCK EXCHANGE/BONDS/CATALYST/BONDSPOT/MTF" .
 mic:BOTC a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:BCXE ;
+   dbo:operatedBy mic:BCXE ;
    foaf:homepage <http://www.batstrading.co.uk> ;
    dc:created "2013-08"^^xsd:gYearMonth ;
    foaf:name "BATS CHI-X EUROPE -OFF EXCHANGE REPORTS" .
 mic:BOTE a figi-gii:PricingSource ;
    gn:countryCode "BW" ;
-   dbp-ont:operatedBy mic:XBOT ;
+   dbo:operatedBy mic:XBOT ;
    foaf:homepage <http://www.bse.co.bw> ;
    dc:created "2013-03"^^xsd:gYearMonth ;
    foaf:name "BOTSWANA STOCK EXCHANGE - EXCHANGE TRADED FUNDS (ETF)" .
 mic:BOTV a figi-gii:PricingSource ;
    gn:countryCode "BW" ;
-   dbp-ont:operatedBy mic:XBOT ;
+   dbo:operatedBy mic:XBOT ;
    foaf:homepage <http://www.bse.co.bw> ;
    dc:created "2013-03"^^xsd:gYearMonth ;
    foaf:name "BOTSWANA STOCK EXCHANGE - VENTURE CAPITAL" .
@@ -477,7 +477,7 @@ mic:BOVM a figi-gii:PricingSource ;
    foaf:name "BOLSA DE VALORES MINAS-ESPÍRITO SANTO-BRASÍLIA" .
 mic:BPOL a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:BLTD ;
+   dbo:operatedBy mic:BLTD ;
    foaf:homepage <http://www.bloomberg.com> ;
    dc:created "2012-12"^^xsd:gYearMonth ;
    foaf:name "BLOOMBERG BPOOL" .
@@ -497,7 +497,7 @@ mic:BSEX a figi-gii:PricingSource ;
    foaf:name "BAKU STOCK EXCHANGE" .
 mic:BSME a figi-gii:PricingSource ;
    gn:countryCode "IN" ;
-   dbp-ont:operatedBy mic:XBOM ;
+   dbo:operatedBy mic:XBOM ;
    foaf:homepage <http://www.bsesme.com> ;
    dc:created "2011-12"^^xsd:gYearMonth ;
    foaf:name "BSE SME" .
@@ -508,19 +508,19 @@ mic:BTEC a figi-gii:PricingSource ;
    foaf:name "ICAP ELECTRONIC BROKING (US)" .
 mic:BTEE a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:ICAP ;
+   dbo:operatedBy mic:ICAP ;
    foaf:homepage <http://www.icap.com> ;
    dc:created "2008-10"^^xsd:gYearMonth ;
    foaf:name "BROKERTEC" .
 mic:BURG a figi-gii:PricingSource ;
    gn:countryCode "NO" ;
-   dbp-ont:operatedBy mic:XOSL ;
+   dbo:operatedBy mic:XOSL ;
    foaf:homepage <http://www.oslobors.no> ;
    dc:created "2009-04"^^xsd:gYearMonth ;
    foaf:name "BURGUNDY NORDIC MTF" .
 mic:BURM a figi-gii:PricingSource ;
    gn:countryCode "NO" ;
-   dbp-ont:operatedBy mic:XOSL ;
+   dbo:operatedBy mic:XOSL ;
    foaf:homepage <http://www.oslobors.no> ;
    dc:created "2010-07"^^xsd:gYearMonth ;
    foaf:name "BURGUNDY REGULATED MARKET" .
@@ -536,7 +536,7 @@ mic:BVMF a figi-gii:PricingSource ;
    foaf:name "BM&FBOVESPA S.A. - BOLSA DE VALORES, MERCADORIAS E FUTUROS" .
 mic:BVUK a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:XMTS ;
+   dbo:operatedBy mic:XMTS ;
    foaf:homepage <http://www.mtsmarkets.com> ;
    dc:created "2014-07"^^xsd:gYearMonth ;
    foaf:name "BONDVISION UK" .
@@ -547,30 +547,30 @@ mic:BVUR a figi-gii:PricingSource ;
    foaf:name "BOLSA ELECTRONICA DE VALORES DEL URUGUAY" .
 mic:BVUS a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:MTUS ;
+   dbo:operatedBy mic:MTUS ;
    foaf:homepage <http://www.mtsmarkets.com> ;
    dc:created "2014-07"^^xsd:gYearMonth ;
    foaf:name "BONDVISION US" .
 mic:BYXD a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:BATS ;
+   dbo:operatedBy mic:BATS ;
    foaf:homepage <http://www.bats.com> ;
    dc:created "2015-02"^^xsd:gYearMonth ;
    foaf:name "BATS Y-EXCHANGE DARK" .
 mic:BZXD a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:BATS ;
+   dbo:operatedBy mic:BATS ;
    foaf:homepage <http://www.bats.com> ;
    dc:created "2015-02"^^xsd:gYearMonth ;
    foaf:name "BATS Z-EXCHANGE DARK" .
 mic:C2OX a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XCBO ;
+   dbo:operatedBy mic:XCBO ;
    dc:created "2009-05"^^xsd:gYearMonth ;
    foaf:name "C2 OPTIONS EXCHANGE INC." .
 mic:CAES a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:CRED ;
+   dbo:operatedBy mic:CRED ;
    foaf:homepage <http://www.credit-suisse.com> ;
    dc:created "2009-09"^^xsd:gYearMonth ;
    foaf:name "CREDIT SUISSE AES CROSSFINDER" .
@@ -586,7 +586,7 @@ mic:CATS a figi-gii:PricingSource ;
    foaf:name "CATS" .
 mic:CAVE a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:OTCM ;
+   dbo:operatedBy mic:OTCM ;
    foaf:homepage <http://www.otcmarkets.com> ;
    dc:created "2012-08"^^xsd:gYearMonth ;
    foaf:name "CAVEAT EMPTOR" .
@@ -597,13 +597,13 @@ mic:CAZE a figi-gii:PricingSource ;
    foaf:name "THE CAZENOVE MTF" .
 mic:CBSX a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XCBO ;
+   dbo:operatedBy mic:XCBO ;
    foaf:homepage <http://www.cbsx.com> ;
    dc:created "2008-07"^^xsd:gYearMonth ;
    foaf:name "CBOE STOCK EXCHANGE" .
 mic:CBTS a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XCME ;
+   dbo:operatedBy mic:XCME ;
    foaf:homepage <http://www.cmegroup.com> ;
    dc:created "2013-10"^^xsd:gYearMonth ;
    foaf:name "CME SWAPS MARKETS (CBOT)" .
@@ -624,7 +624,7 @@ mic:CCO2 a figi-gii:PricingSource ;
    foaf:name "CANTORCO2E.COM LIMITED" .
 mic:CDED a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:CDEL ;
+   dbo:operatedBy mic:CDEL ;
    foaf:homepage <http://www.citadelgroup.com> ;
    dc:created "2011-05"^^xsd:gYearMonth ;
    foaf:name "CITADEL DARK" .
@@ -635,7 +635,7 @@ mic:CDEL a figi-gii:PricingSource ;
    foaf:name "CITADEL SECURITIES ATS" .
 mic:CECS a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XCME ;
+   dbo:operatedBy mic:XCME ;
    foaf:homepage <http://www.cmegroup.com> ;
    dc:created "2013-10"^^xsd:gYearMonth ;
    foaf:name "CME SWAPS MARKETS (COMEX)" .
@@ -646,25 +646,25 @@ mic:CETI a figi-gii:PricingSource ;
    foaf:name "CETIP S.A. - MERCADOS ORGANIZADOS" .
 mic:CGCM a figi-gii:PricingSource ;
    gn:countryCode "IT" ;
-   dbp-ont:operatedBy mic:CGIT ;
+   dbo:operatedBy mic:CGIT ;
    foaf:homepage <http://www.ccg.it> ;
    dc:created "2013-06"^^xsd:gYearMonth ;
    foaf:name "CASSA DI COMPENSAZIONE E GARANZIA SPA - COLLATERALIZED MONEY MARKET GUARANTEE SERVICE" .
 mic:CGDB a figi-gii:PricingSource ;
    gn:countryCode "IT" ;
-   dbp-ont:operatedBy mic:CGIT ;
+   dbo:operatedBy mic:CGIT ;
    foaf:homepage <http://www.ccg.it> ;
    dc:created "2013-06"^^xsd:gYearMonth ;
    foaf:name "CASSA DI COMPENSAZIONE E GARANZIA SPA - BONDS CCP SERVICE" .
 mic:CGEB a figi-gii:PricingSource ;
    gn:countryCode "IT" ;
-   dbp-ont:operatedBy mic:CGIT ;
+   dbo:operatedBy mic:CGIT ;
    foaf:homepage <http://www.ccg.it> ;
    dc:created "2013-06"^^xsd:gYearMonth ;
    foaf:name "CASSA DI COMPENSAZIONE E GARANZIA SPA - EURO BONDS CCP SERVICE" .
 mic:CGGD a figi-gii:PricingSource ;
    gn:countryCode "IT" ;
-   dbp-ont:operatedBy mic:CGIT ;
+   dbo:operatedBy mic:CGIT ;
    foaf:homepage <http://www.ccg.it> ;
    dc:created "2013-06"^^xsd:gYearMonth ;
    foaf:name "CASSA DI COMPENSAZIONE E GARANZIA SPA - CCP AGRICULTURAL COMMODITY DERIVATIVES" .
@@ -695,7 +695,7 @@ mic:CGMI a figi-gii:PricingSource ;
    foaf:name "CITIGROUP GLOBAL MARKETS" .
 mic:CGMU a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:CGMI ;
+   dbo:operatedBy mic:CGMI ;
    foaf:homepage <http://www.citigroup.com> ;
    dc:created "2012-03"^^xsd:gYearMonth ;
    foaf:name "CITI MATCH" .
@@ -706,25 +706,25 @@ mic:CGMX a figi-gii:PricingSource ;
    foaf:name "CITI MEXICO RPI (RETAIL PRICE IMPROVEMENT)" .
 mic:CGND a figi-gii:PricingSource ;
    gn:countryCode "IT" ;
-   dbp-ont:operatedBy mic:CGIT ;
+   dbo:operatedBy mic:CGIT ;
    foaf:homepage <http://www.ccg.it> ;
    dc:created "2013-06"^^xsd:gYearMonth ;
    foaf:name "CASSA DI COMPENSAZIONE E GARANZIA SPA - CCP ENERGY DERIVATIVES" .
 mic:CGQD a figi-gii:PricingSource ;
    gn:countryCode "IT" ;
-   dbp-ont:operatedBy mic:CGIT ;
+   dbo:operatedBy mic:CGIT ;
    foaf:homepage <http://www.ccg.it> ;
    dc:created "2013-06"^^xsd:gYearMonth ;
    foaf:name "CASSA DI COMPENSAZIONE E GARANZIA SPA - CCP EQUITY DERIVATIVES" .
 mic:CGQT a figi-gii:PricingSource ;
    gn:countryCode "IT" ;
-   dbp-ont:operatedBy mic:CGIT ;
+   dbo:operatedBy mic:CGIT ;
    foaf:homepage <http://www.ccg.it> ;
    dc:created "2013-06"^^xsd:gYearMonth ;
    foaf:name "CASSA DI COMPENSAZIONE E GARANZIA SPA - EQUITY CCP SERVICE" .
 mic:CGTR a figi-gii:PricingSource ;
    gn:countryCode "IT" ;
-   dbp-ont:operatedBy mic:CGIT ;
+   dbo:operatedBy mic:CGIT ;
    foaf:homepage <http://www.ccg.it> ;
    dc:created "2013-06"^^xsd:gYearMonth ;
    foaf:name "CASSA DI COMPENSAZIONE E GARANZIA SPA - TRIPARTY REPO CCP SERVICE" .
@@ -745,7 +745,7 @@ mic:CHIC a figi-gii:PricingSource ;
    foaf:name "CHI-X CANADA ATS" .
 mic:CHID a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:BCXE ;
+   dbo:operatedBy mic:BCXE ;
    foaf:homepage <http://www.batstrading.co.uk> ;
    dc:created "2013-01"^^xsd:gYearMonth ;
    foaf:name "BATS CHI-X EUROPE - CXE DARK ORDER BOOK" .
@@ -756,37 +756,37 @@ mic:CHIJ a figi-gii:PricingSource ;
    foaf:name "CHI-X JAPAN" .
 mic:CHIO a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:BCXE ;
+   dbo:operatedBy mic:BCXE ;
    foaf:homepage <http://www.batstrading.co.uk> ;
    dc:created "2013-04"^^xsd:gYearMonth ;
    foaf:name "BATS CHI-X EUROPE – CXE OFF-BOOK" .
 mic:CHIS a figi-gii:PricingSource ;
    gn:countryCode "JP" ;
-   dbp-ont:operatedBy mic:CHIJ ;
+   dbo:operatedBy mic:CHIJ ;
    foaf:homepage <http://www.chi-x.jp> ;
    dc:created "2015-04"^^xsd:gYearMonth ;
    foaf:name "CHI-X JAPAN SELECT" .
 mic:CHIV a figi-gii:PricingSource ;
    gn:countryCode "JP" ;
-   dbp-ont:operatedBy mic:CHIJ ;
+   dbo:operatedBy mic:CHIJ ;
    foaf:homepage <http://www.chi-x.jp/> ;
    dc:created "2014-08"^^xsd:gYearMonth ;
    foaf:name "CHI-X JAPAN VWAP CROSSING" .
 mic:CHIX a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:BCXE ;
+   dbo:operatedBy mic:BCXE ;
    foaf:homepage <http://www.batstrading.co.uk> ;
    dc:created "2007-10"^^xsd:gYearMonth ;
    foaf:name "BATS CHI-X EUROPE -CXE ORDER BOOKS" .
 mic:CICX a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:CGMI ;
+   dbo:operatedBy mic:CGMI ;
    foaf:homepage <http://www.citigroup.com> ;
    dc:created "2012-02"^^xsd:gYearMonth ;
    foaf:name "CITI CROSS" .
 mic:CITD a figi-gii:PricingSource ;
    gn:countryCode "JP" ;
-   dbp-ont:operatedBy mic:CITX ;
+   dbo:operatedBy mic:CITX ;
    foaf:homepage <http://www.citivelocity.com> ;
    dc:created "2011-05"^^xsd:gYearMonth ;
    foaf:name "CITI DARK" .
@@ -807,13 +807,13 @@ mic:CLTD a figi-gii:PricingSource ;
    foaf:name "CLEARTRADE EXCHANGE" .
 mic:CMEC a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:CMEE ;
+   dbo:operatedBy mic:CMEE ;
    foaf:homepage <http://www.cmeclearingeurope.com> ;
    dc:created "2011-12"^^xsd:gYearMonth ;
    foaf:name "CME CLEARING EUROPE" .
 mic:CMED a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:CMEE ;
+   dbo:operatedBy mic:CMEE ;
    foaf:homepage <http://www.cmeeurope.com> ;
    dc:created "2013-01"^^xsd:gYearMonth ;
    foaf:name "CME EUROPE - DERIVATIVES" .
@@ -824,7 +824,7 @@ mic:CMEE a figi-gii:PricingSource ;
    foaf:name "CME  EUROPE" .
 mic:CMES a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XCME ;
+   dbo:operatedBy mic:XCME ;
    foaf:homepage <http://www.cmegroup.com> ;
    dc:created "2013-10"^^xsd:gYearMonth ;
    foaf:name "CME SWAPS MARKETS (CME)" .
@@ -850,7 +850,7 @@ mic:COAL a figi-gii:PricingSource ;
    foaf:name "LA COTE ALPHA" .
 mic:CORE a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:ATDF ;
+   dbo:operatedBy mic:ATDF ;
    foaf:homepage <http://www.atdesk.com> ;
    dc:created "2015-03"^^xsd:gYearMonth ;
    foaf:name "ATD - CITIGROUP AGENCY OPTION AND EQUITIES ROUTING ENGINE" .
@@ -866,7 +866,7 @@ mic:CRED a figi-gii:PricingSource ;
    foaf:name "CREDIT SUISSE (US)" .
 mic:CSCF a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:CSEU ;
+   dbo:operatedBy mic:CSEU ;
    foaf:homepage <http://www.credit-suisse.com> ;
    dc:created "2012-08"^^xsd:gYearMonth ;
    foaf:name "CREDIT SUISSE AES CROSSFINDER EUROPE" .
@@ -877,7 +877,7 @@ mic:CSEU a figi-gii:PricingSource ;
    foaf:name "CREDIT SUISSE (EUROPE)" .
 mic:CSLP a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:CRED ;
+   dbo:operatedBy mic:CRED ;
    foaf:homepage <http://www.credit-suisse.com> ;
    dc:created "2010-05"^^xsd:gYearMonth ;
    foaf:name "CREDIT SUISSE LIGHT POOL" .
@@ -888,67 +888,67 @@ mic:CSSX a figi-gii:PricingSource ;
    foaf:name "CHINA STAINLESS STEEL EXCHANGE" .
 mic:CSTO a figi-gii:PricingSource ;
    gn:countryCode "SE" ;
-   dbp-ont:operatedBy mic:XSTO ;
+   dbo:operatedBy mic:XSTO ;
    foaf:homepage <http://www.nasdaqomx.com/europeanclearing> ;
    dc:created "2014-11"^^xsd:gYearMonth ;
    foaf:name "NASDAQ CLEARING" .
 mic:CXAC a figi-gii:PricingSource ;
    gn:countryCode "AU" ;
-   dbp-ont:operatedBy mic:CHIA ;
+   dbo:operatedBy mic:CHIA ;
    foaf:homepage <http://www.chi-x.com.au> ;
    dc:created "2012-09"^^xsd:gYearMonth ;
    foaf:name "CHI-X MARKET AUSTRALIA - LIMIT VENUE" .
 mic:CXAF a figi-gii:PricingSource ;
    gn:countryCode "AU" ;
-   dbp-ont:operatedBy mic:CHIA ;
+   dbo:operatedBy mic:CHIA ;
    foaf:homepage <http://www.chi-x.com.au> ;
    dc:created "2014-05"^^xsd:gYearMonth ;
    foaf:name "CHI-X AUSTRALIA MARKET PEG (FARPOINT) VENUE" .
 mic:CXAM a figi-gii:PricingSource ;
    gn:countryCode "AU" ;
-   dbp-ont:operatedBy mic:CHIA ;
+   dbo:operatedBy mic:CHIA ;
    foaf:homepage <http://www.chi-x.com.au> ;
    dc:created "2013-09"^^xsd:gYearMonth ;
    foaf:name "CHI-X MOC" .
 mic:CXAN a figi-gii:PricingSource ;
    gn:countryCode "AU" ;
-   dbp-ont:operatedBy mic:CHIA ;
+   dbo:operatedBy mic:CHIA ;
    foaf:homepage <http://www.chi-x.com.au> ;
    dc:created "2014-05"^^xsd:gYearMonth ;
    foaf:name "CHI-X AUSTRALIA PRIMARY PEG (NEARPOINT) VENUE" .
 mic:CXAP a figi-gii:PricingSource ;
    gn:countryCode "AU" ;
-   dbp-ont:operatedBy mic:CHIA ;
+   dbo:operatedBy mic:CHIA ;
    foaf:homepage <http://www.chi-x.com.au> ;
    dc:created "2014-05"^^xsd:gYearMonth ;
    foaf:name "CHI-X AUSTRALIA MID-POINT VENUE" .
 mic:CXAV a figi-gii:PricingSource ;
    gn:countryCode "AU" ;
-   dbp-ont:operatedBy mic:CHIA ;
+   dbo:operatedBy mic:CHIA ;
    foaf:homepage <http://www.chi-x.com.au> ;
    dc:created "2013-09"^^xsd:gYearMonth ;
    foaf:name "CHI-X VWAP" .
 mic:CXRT a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:IFEU ;
+   dbo:operatedBy mic:IFEU ;
    foaf:homepage <http://www.creditex.com> ;
    dc:created "2007-09"^^xsd:gYearMonth ;
    foaf:name "CREDITEX REALTIME" .
 mic:DBCR a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:DBIX ;
+   dbo:operatedBy mic:DBIX ;
    foaf:homepage <https://autobahn.db.com/microsite/html/equity.html> ;
    dc:created "2014-10"^^xsd:gYearMonth ;
    foaf:name "DEUTSCHE BANK - CENTRAL RISK BOOK" .
 mic:DBCX a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:DBIX ;
+   dbo:operatedBy mic:DBIX ;
    foaf:homepage <https://autobahn.db.com/microsite/html/equity.html> ;
    dc:created "2014-10"^^xsd:gYearMonth ;
    foaf:name "DEUTSCHE BANK - CLOSE CROSS" .
 mic:DBDC a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:DBIX ;
+   dbo:operatedBy mic:DBIX ;
    foaf:homepage <https://autobahn.db.com/microsite/html/equity.html> ;
    dc:created "2014-10"^^xsd:gYearMonth ;
    foaf:name "DEUTSCHE BANK - DIRECT CAPITAL ACCESS" .
@@ -964,7 +964,7 @@ mic:DBIX a figi-gii:PricingSource ;
    foaf:name "DEUTSCHE BANK INTERNALISATION" .
 mic:DBMO a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:DBIX ;
+   dbo:operatedBy mic:DBIX ;
    foaf:homepage <https://autobahn.db.com/microsite/html/equity.html> ;
    dc:created "2014-10"^^xsd:gYearMonth ;
    foaf:name "DEUTSCHE BANK - MANUAL OTC" .
@@ -975,7 +975,7 @@ mic:DBOX a figi-gii:PricingSource ;
    foaf:name "DEUTSCHE BANK OFF EXCHANGE TRADING" .
 mic:DBSE a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:DBIX ;
+   dbo:operatedBy mic:DBIX ;
    foaf:homepage <https://autobahn.db.com/microsite/html/equity.html> ;
    dc:created "2014-10"^^xsd:gYearMonth ;
    foaf:name "DEUTSCHE BANK - SUPERX EU" .
@@ -1031,57 +1031,57 @@ mic:DUMX a figi-gii:PricingSource ;
    foaf:name "DUBAI MERCANTILE EXCHANGE" .
 mic:DUSA a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XDUS ;
+   dbo:operatedBy mic:XDUS ;
    dc:created "2008-02"^^xsd:gYearMonth ;
    foaf:name "BOERSE DUESSELDORF - REGULIERTER MARKT" .
 mic:DUSB a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XDUS ;
+   dbo:operatedBy mic:XDUS ;
    dc:created "2008-02"^^xsd:gYearMonth ;
    foaf:name "BOERSE DUESSELDORF - FREIVERKEHR" .
 mic:DUSC a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XDUS ;
+   dbo:operatedBy mic:XDUS ;
    dc:created "2008-08"^^xsd:gYearMonth ;
    foaf:name "BOERSE DUESSELDORF - QUOTRIX - REGULIERTER MARKT" .
 mic:DUSD a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XDUS ;
+   dbo:operatedBy mic:XDUS ;
    dc:created "2008-08"^^xsd:gYearMonth ;
    foaf:name "BOERSE DUESSELDORF - QUOTRIX MTF" .
 mic:DWSF a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:TRWB ;
+   dbo:operatedBy mic:TRWB ;
    foaf:homepage <http://www.tradeweb.com> ;
    dc:created "2014-07"^^xsd:gYearMonth ;
    foaf:name "DW SEF LLC" .
 mic:EACM a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:XMTS ;
+   dbo:operatedBy mic:XMTS ;
    foaf:homepage <http://www.mtsmarkets.com> ;
    dc:created "2013-07"^^xsd:gYearMonth ;
    foaf:name "MTS REPO - AGENCY CASH MANAGEMENT" .
 mic:ECAG a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XEUR ;
+   dbo:operatedBy mic:XEUR ;
    foaf:homepage <http://www.eurexclearing.com> ;
    dc:created "2005-11"^^xsd:gYearMonth ;
    foaf:name "EUREX CLEARING AG" .
 mic:EDDP a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:EDGE ;
+   dbo:operatedBy mic:EDGE ;
    foaf:homepage <http://www.directedge.com> ;
    dc:created "2011-05"^^xsd:gYearMonth ;
    foaf:name "DIRECT EDGE X DARK" .
 mic:EDGA a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:EDGE ;
+   dbo:operatedBy mic:EDGE ;
    foaf:homepage <http://www.directedge.com> ;
    dc:created "2010-05"^^xsd:gYearMonth ;
    foaf:name "EDGA EXCHANGE" .
 mic:EDGD a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:EDGE ;
+   dbo:operatedBy mic:EDGE ;
    foaf:homepage <http://www.directedge.com> ;
    dc:created "2011-05"^^xsd:gYearMonth ;
    foaf:name "DIRECT EDGE A DARK" .
@@ -1092,7 +1092,7 @@ mic:EDGE a figi-gii:PricingSource ;
    foaf:name "DIRECT EDGE" .
 mic:EDGX a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:EDGE ;
+   dbo:operatedBy mic:EDGE ;
    foaf:homepage <http://www.directedge.com> ;
    dc:created "2010-05"^^xsd:gYearMonth ;
    foaf:name "EDGX EXCHANGE" .
@@ -1103,7 +1103,7 @@ mic:EESE a figi-gii:PricingSource ;
    foaf:name "EAST EUROPEAN STOCK EXCHANGE" .
 mic:EMDR a figi-gii:PricingSource ;
    gn:countryCode "IT" ;
-   dbp-ont:operatedBy mic:EMID ;
+   dbo:operatedBy mic:EMID ;
    foaf:homepage <http://www.e-mid.it> ;
    dc:created "2008-06"^^xsd:gYearMonth ;
    foaf:name "E-MID - E-MIDER MARKET" .
@@ -1114,25 +1114,25 @@ mic:EMID a figi-gii:PricingSource ;
    foaf:name "E-MID" .
 mic:EMIR a figi-gii:PricingSource ;
    gn:countryCode "IT" ;
-   dbp-ont:operatedBy mic:EMID ;
+   dbo:operatedBy mic:EMID ;
    foaf:homepage <http://www.e-mid.it> ;
    dc:created "2011-11"^^xsd:gYearMonth ;
    foaf:name "E-MID REPO" .
 mic:EMTF a figi-gii:PricingSource ;
    gn:countryCode "LU" ;
-   dbp-ont:operatedBy mic:XLUX ;
+   dbo:operatedBy mic:XLUX ;
    foaf:homepage <http://www.bourse.lu> ;
    dc:created "2005-06"^^xsd:gYearMonth ;
    foaf:name "EURO MTF" .
 mic:EMTS a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:XMTS ;
+   dbo:operatedBy mic:XMTS ;
    foaf:homepage <http://www.euromts-ltd.com> ;
    dc:created "2005-06"^^xsd:gYearMonth ;
    foaf:name "EUROMTS" .
 mic:ENAX a figi-gii:PricingSource ;
    gn:countryCode "GR" ;
-   dbp-ont:operatedBy mic:ASEX ;
+   dbo:operatedBy mic:ASEX ;
    foaf:homepage <http://www.athex.gr> ;
    dc:created "2007-11"^^xsd:gYearMonth ;
    foaf:name "ATHENS EXCHANGE ALTERNATIVE MARKET" .
@@ -1143,19 +1143,19 @@ mic:ENCL a figi-gii:PricingSource ;
    foaf:name "ENCLEAR" .
 mic:ENSX a figi-gii:PricingSource ;
    gn:countryCode "SE" ;
-   dbp-ont:operatedBy mic:SEBX ;
+   dbo:operatedBy mic:SEBX ;
    foaf:homepage <http://www.seb.se> ;
    dc:created "2012-11"^^xsd:gYearMonth ;
    foaf:name "SEB ENSKILDA" .
 mic:ENXB a figi-gii:PricingSource ;
    gn:countryCode "BE" ;
-   dbp-ont:operatedBy mic:XBRU ;
+   dbo:operatedBy mic:XBRU ;
    foaf:homepage <http://www.euronext.com> ;
    dc:created "2008-06"^^xsd:gYearMonth ;
    foaf:name "EURONEXT - EASY NEXT" .
 mic:ENXL a figi-gii:PricingSource ;
    gn:countryCode "PT" ;
-   dbp-ont:operatedBy mic:XLIS ;
+   dbo:operatedBy mic:XLIS ;
    foaf:homepage <http://www.euronext.com> ;
    dc:created "2007-08"^^xsd:gYearMonth ;
    foaf:name "EURONEXT - EASYNEXT LISBON" .
@@ -1176,25 +1176,25 @@ mic:EQLD a figi-gii:PricingSource ;
    foaf:name "EQUILEND EUROPE LIMITED" .
 mic:EQTA a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XBER ;
+   dbo:operatedBy mic:XBER ;
    foaf:homepage <http://www.equiduct-trading.de> ;
    dc:created "2008-05"^^xsd:gYearMonth ;
    foaf:name "BOERSE BERLIN EQUIDUCT TRADING - REGULIERTER MARKT" .
 mic:EQTB a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XBER ;
+   dbo:operatedBy mic:XBER ;
    foaf:homepage <http://www.equiduct-trading.de> ;
    dc:created "2010-03"^^xsd:gYearMonth ;
    foaf:name "BOERSE BERLIN EQUIDUCT TRADING - BERLIN SECOND REGULATED MARKET" .
 mic:EQTC a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XBER ;
+   dbo:operatedBy mic:XBER ;
    foaf:homepage <http://www.equiduct-trading.de> ;
    dc:created "2010-08"^^xsd:gYearMonth ;
    foaf:name "BOERSE BERLIN EQUIDUCT TRADING - FREIVERKEHR" .
 mic:EQTD a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XBER ;
+   dbo:operatedBy mic:XBER ;
    foaf:homepage <http://www.equiduct-trading.de> ;
    dc:created "2011-01"^^xsd:gYearMonth ;
    foaf:name "BOERSE BERLIN EQUIDUCT TRADING - OTC" .
@@ -1205,13 +1205,13 @@ mic:ERIS a figi-gii:PricingSource ;
    foaf:name "ERIS EXCHANGE" .
 mic:ESPD a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XNAS ;
+   dbo:operatedBy mic:XNAS ;
    foaf:homepage <http://www.nasdaqomx.com> ;
    dc:created "2013-09"^^xsd:gYearMonth ;
    foaf:name "NASDAQ OMX ESPEED" .
 mic:ETFP a figi-gii:PricingSource ;
    gn:countryCode "IT" ;
-   dbp-ont:operatedBy mic:XMIL ;
+   dbo:operatedBy mic:XMIL ;
    foaf:homepage <http://www.borsaitaliana.it> ;
    dc:created "2007-09"^^xsd:gYearMonth ;
    foaf:name "ELECTRONIC OPEN-END FUNDS AND ETC MARKET" .
@@ -1227,7 +1227,7 @@ mic:ETSC a figi-gii:PricingSource ;
    foaf:name "ETS EURASIAN TRADING SYSTEM COMMODITY EXCHANGE" .
 mic:EUAX a figi-gii:PricingSource ;
    gn:countryCode "GR" ;
-   dbp-ont:operatedBy mic:ASEX ;
+   dbo:operatedBy mic:ASEX ;
    foaf:homepage <http://www.athex.gr/default_en.asp> ;
    dc:created "2011-06"^^xsd:gYearMonth ;
    foaf:name "ATHENS EXCHANGE EUAS MARKET" .
@@ -1238,25 +1238,25 @@ mic:EUCH a figi-gii:PricingSource ;
    foaf:name "EUREX ZURICH" .
 mic:EURM a figi-gii:PricingSource ;
    gn:countryCode "CH" ;
-   dbp-ont:operatedBy mic:EUCH ;
+   dbo:operatedBy mic:EUCH ;
    foaf:homepage <http://www.eurexrepo.com> ;
    dc:created "2012-07"^^xsd:gYearMonth ;
    foaf:name "EUREX REPO MARKET" .
 mic:EUSC a figi-gii:PricingSource ;
    gn:countryCode "CH" ;
-   dbp-ont:operatedBy mic:EUCH ;
+   dbo:operatedBy mic:EUCH ;
    foaf:homepage <http://www.eurexrepo.com> ;
    dc:created "2012-07"^^xsd:gYearMonth ;
    foaf:name "EUREX CH SECLEND MARKET" .
 mic:EUSP a figi-gii:PricingSource ;
    gn:countryCode "CH" ;
-   dbp-ont:operatedBy mic:EUCH ;
+   dbo:operatedBy mic:EUCH ;
    foaf:homepage <http://www.eurexrepo.com> ;
    dc:created "2012-07"^^xsd:gYearMonth ;
    foaf:name "EUREX OTC SPOT MARKET" .
 mic:EUWX a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XSTU ;
+   dbo:operatedBy mic:XSTU ;
    foaf:homepage <http://www.euwax.de> ;
    dc:created "2005-06"^^xsd:gYearMonth ;
    foaf:name "EUWAX" .
@@ -1282,25 +1282,25 @@ mic:FAST a figi-gii:PricingSource ;
    foaf:name "FASTMATCH" .
 mic:FCBT a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XCBT ;
+   dbo:operatedBy mic:XCBT ;
    foaf:homepage <http://www.cbot.com> ;
    dc:created "2007-02"^^xsd:gYearMonth ;
    foaf:name "CHICAGO BOARD OF TRADE (FLOOR)" .
 mic:FCME a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XCME ;
+   dbo:operatedBy mic:XCME ;
    foaf:homepage <http://www.cme.com> ;
    dc:created "2007-02"^^xsd:gYearMonth ;
    foaf:name "CHICAGO MERCANTILE EXCHANGE (FLOOR)" .
 mic:FINN a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:FINR ;
+   dbo:operatedBy mic:FINR ;
    foaf:homepage <http://www.finra.org> ;
    dc:created "2010-07"^^xsd:gYearMonth ;
    foaf:name "FINRA/NASDAQ TRF(TRADE REPORTING FACILITY)" .
 mic:FINO a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:FINR ;
+   dbo:operatedBy mic:FINR ;
    foaf:homepage <http://www.finra.org/> ;
    dc:created "2010-07"^^xsd:gYearMonth ;
    foaf:name "FINRA ORF (TRADE REPORTING FACILITY)" .
@@ -1311,7 +1311,7 @@ mic:FINR a figi-gii:PricingSource ;
    foaf:name "FINRA" .
 mic:FINY a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:FINR ;
+   dbo:operatedBy mic:FINR ;
    foaf:homepage <http://www.finra.org/industry/compliance/markettransparency/trf/participants/> ;
    dc:created "2010-07"^^xsd:gYearMonth ;
    foaf:name "FINRA/NYSE TRF (TRADE REPORTING FACILITY)" .
@@ -1327,49 +1327,49 @@ mic:FMTS a figi-gii:PricingSource ;
    foaf:name "MTS FRANCE SAS" .
 mic:FNEE a figi-gii:PricingSource ;
    gn:countryCode "EE" ;
-   dbp-ont:operatedBy mic:XTAL ;
+   dbo:operatedBy mic:XTAL ;
    foaf:homepage <http://www.nasdaqbaltic.com> ;
    dc:created "2009-11"^^xsd:gYearMonth ;
    foaf:name "FIRST NORTH ESTONIA" .
 mic:FNFI a figi-gii:PricingSource ;
    gn:countryCode "FI" ;
-   dbp-ont:operatedBy mic:XHEL ;
+   dbo:operatedBy mic:XHEL ;
    foaf:homepage <http://www.omxnordicexchange.com/firstnorth> ;
    dc:created "2008-03"^^xsd:gYearMonth ;
    foaf:name "FIRST NORTH FINLAND" .
 mic:FNLT a figi-gii:PricingSource ;
    gn:countryCode "LT" ;
-   dbp-ont:operatedBy mic:XLIT ;
+   dbo:operatedBy mic:XLIT ;
    foaf:homepage <http://www.nasdaqbaltic.com> ;
    dc:created "2009-10"^^xsd:gYearMonth ;
    foaf:name "FIRST NORTH LITHUANIA" .
 mic:FNLV a figi-gii:PricingSource ;
    gn:countryCode "LV" ;
-   dbp-ont:operatedBy mic:XRIS ;
+   dbo:operatedBy mic:XRIS ;
    foaf:homepage <http://www.nasdaqbaltic.com> ;
    dc:created "2008-03"^^xsd:gYearMonth ;
    foaf:name "FIRST NORTH LATVIA" .
 mic:FNSE a figi-gii:PricingSource ;
    gn:countryCode "SE" ;
-   dbp-ont:operatedBy mic:XSTO ;
+   dbo:operatedBy mic:XSTO ;
    foaf:homepage <http://nasdaqomxnordic.com/firstnorth> ;
    dc:created "2008-01"^^xsd:gYearMonth ;
    foaf:name "FIRST NORTH STOCKHOLM" .
 mic:FRAA a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XFRA ;
+   dbo:operatedBy mic:XFRA ;
    foaf:homepage <http://www.deutsche-boerse.com> ;
    dc:created "2008-03"^^xsd:gYearMonth ;
    foaf:name "BOERSE FRANKFURT - REGULIERTER MARKT" .
 mic:FRAB a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XFRA ;
+   dbo:operatedBy mic:XFRA ;
    foaf:homepage <http://www.deutsche-boerse.com> ;
    dc:created "2008-03"^^xsd:gYearMonth ;
    foaf:name "BOERSE FRANKFURT - FREIVERKEHR" .
 mic:FRAD a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XFRA ;
+   dbo:operatedBy mic:XFRA ;
    foaf:homepage <http://www.deutsche-boerse.com> ;
    dc:created "2011-05"^^xsd:gYearMonth ;
    foaf:name "DEUTSCHE BOERSE MID-POINT CROSS" .
@@ -1414,25 +1414,25 @@ mic:GFIC a figi-gii:PricingSource ;
    foaf:name "GFI CREDITMATCH" .
 mic:GFIF a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:GFIC ;
+   dbo:operatedBy mic:GFIC ;
    foaf:homepage <http://www.gfigroup.com> ;
    dc:created "2007-08"^^xsd:gYearMonth ;
    foaf:name "GFI FOREXMATCH" .
 mic:GFIN a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:GFIC ;
+   dbo:operatedBy mic:GFIC ;
    foaf:homepage <http://www.gfigroup.com> ;
    dc:created "2009-04"^^xsd:gYearMonth ;
    foaf:name "GFI ENERGYMATCH" .
 mic:GFIR a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:GFIC ;
+   dbo:operatedBy mic:GFIC ;
    foaf:homepage <http://www.gfigroup.com> ;
    dc:created "2010-09"^^xsd:gYearMonth ;
    foaf:name "GFI RATESMATCH" .
 mic:GLBX a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XCME ;
+   dbo:operatedBy mic:XCME ;
    foaf:homepage <http://www.cme.com> ;
    dc:created "2008-09"^^xsd:gYearMonth ;
    foaf:name "CME GLOBEX" .
@@ -1458,7 +1458,7 @@ mic:GMEX a figi-gii:PricingSource ;
    foaf:name "GREENMARKET EXCHANGE" .
 mic:GMNI a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XISX ;
+   dbo:operatedBy mic:XISX ;
    foaf:homepage <http://www.ise.com> ;
    dc:created "2013-05"^^xsd:gYearMonth ;
    foaf:name "ISE GEMINI EXCHANGE" .
@@ -1469,7 +1469,7 @@ mic:GMTF a figi-gii:PricingSource ;
    foaf:name "GALAXY" .
 mic:GMTS a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:XMTS ;
+   dbo:operatedBy mic:XMTS ;
    foaf:homepage <http://www.mtsgermany.com> ;
    dc:created "2011-02"^^xsd:gYearMonth ;
    foaf:name "MTS GERMANY" .
@@ -1510,13 +1510,13 @@ mic:GTCO a figi-gii:PricingSource ;
    foaf:name "KCG AMERICAS LLC" .
 mic:GXGF a figi-gii:PricingSource ;
    gn:countryCode "DK" ;
-   dbp-ont:operatedBy mic:GXGR ;
+   dbo:operatedBy mic:GXGR ;
    foaf:homepage <http://www.gxgmarkets.com> ;
    dc:created "2012-04"^^xsd:gYearMonth ;
    foaf:name "GXG MTF FIRST QUOTE" .
 mic:GXGM a figi-gii:PricingSource ;
    gn:countryCode "DK" ;
-   dbp-ont:operatedBy mic:GXGR ;
+   dbo:operatedBy mic:GXGR ;
    foaf:homepage <http://www.gxgmarkets.com> ;
    dc:created "2011-10"^^xsd:gYearMonth ;
    foaf:name "GXG MTF" .
@@ -1531,22 +1531,22 @@ mic:GXMA a figi-gii:PricingSource ;
    foaf:name "GX MARKETCENTER" .
 mic:HAMA a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XHAM ;
+   dbo:operatedBy mic:XHAM ;
    dc:created "2008-02"^^xsd:gYearMonth ;
    foaf:name "BOERSE HAMBURG - REGULIERTER MARKT" .
 mic:HAMB a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XHAM ;
+   dbo:operatedBy mic:XHAM ;
    dc:created "2008-02"^^xsd:gYearMonth ;
    foaf:name "BOERSE HAMBURG - FREIVERKEHR" .
 mic:HANA a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XHAN ;
+   dbo:operatedBy mic:XHAN ;
    dc:created "2008-02"^^xsd:gYearMonth ;
    foaf:name "BOERSE HANNOVER - REGULIERTER MARKT" .
 mic:HANB a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XHAN ;
+   dbo:operatedBy mic:XHAN ;
    dc:created "2008-02"^^xsd:gYearMonth ;
    foaf:name "BOERSE HANNOVER - FREIVERKEHR" .
 mic:HCHC a figi-gii:PricingSource ;
@@ -1571,7 +1571,7 @@ mic:HEMO a figi-gii:PricingSource ;
    foaf:name "LAGIE - OPERATOR OF THE ENERGY MARKET S.A." .
 mic:HMOD a figi-gii:PricingSource ;
    gn:countryCode "IT" ;
-   dbp-ont:operatedBy mic:HMTF ;
+   dbo:operatedBy mic:HMTF ;
    foaf:homepage <http://www.himtf.com> ;
    dc:created "2008-07"^^xsd:gYearMonth ;
    foaf:name "HI-MTF ORDER DRIVEN" .
@@ -1582,7 +1582,7 @@ mic:HMTF a figi-gii:PricingSource ;
    foaf:name "HI-MTF" .
 mic:HOTC a figi-gii:PricingSource ;
    gn:countryCode "GR" ;
-   dbp-ont:operatedBy mic:ASEX ;
+   dbo:operatedBy mic:ASEX ;
    foaf:homepage <http://www.ase.gr> ;
    dc:created "2008-08"^^xsd:gYearMonth ;
    foaf:name "HELLENIC EXCHANGE OTC MARKET" .
@@ -1613,7 +1613,7 @@ mic:HSXE a figi-gii:PricingSource ;
    foaf:name "HSBC-X UNITED KINGDOM" .
 mic:HUNG a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:XMTS ;
+   dbo:operatedBy mic:XMTS ;
    dc:created "2011-09"^^xsd:gYearMonth ;
    foaf:name "MTS HUNGARY" .
 mic:HUPX a figi-gii:PricingSource ;
@@ -1628,13 +1628,13 @@ mic:IBGH a figi-gii:PricingSource ;
    foaf:name "IBERIAN GAS HUB" .
 mic:IBLX a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XINS ;
+   dbo:operatedBy mic:XINS ;
    foaf:homepage <http://www.instinet.com> ;
    dc:created "2009-06"^^xsd:gYearMonth ;
    foaf:name "INSTINET BLX" .
 mic:ICAH a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:ICAP ;
+   dbo:operatedBy mic:ICAP ;
    foaf:homepage <http://www.icap.com> ;
    dc:created "2007-06"^^xsd:gYearMonth ;
    foaf:name "TRAYPORT" .
@@ -1650,7 +1650,7 @@ mic:ICAS a figi-gii:PricingSource ;
    foaf:name "ICAP ENERGY AS" .
 mic:ICBX a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XINS ;
+   dbo:operatedBy mic:XINS ;
    foaf:homepage <http://www.instinet.com> ;
    dc:created "2008-11"^^xsd:gYearMonth ;
    foaf:name "INSTINET CBX (US)" .
@@ -1666,37 +1666,37 @@ mic:ICEL a figi-gii:PricingSource ;
    foaf:name "ISLAND ECN LTD, THE" .
 mic:ICEN a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:ICAP ;
+   dbo:operatedBy mic:ICAP ;
    foaf:homepage <http://www.icapenergy.com> ;
    dc:created "2007-06"^^xsd:gYearMonth ;
    foaf:name "ICAP ENERGY" .
 mic:ICES a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:IFUS ;
+   dbo:operatedBy mic:IFUS ;
    foaf:homepage <http://www.theice.com> ;
    dc:created "2013-08"^^xsd:gYearMonth ;
    foaf:name "ICE SWAP TRADE LLC" .
 mic:ICRO a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XINS ;
+   dbo:operatedBy mic:XINS ;
    foaf:homepage <http://www.instinet.com> ;
    dc:created "2009-06"^^xsd:gYearMonth ;
    foaf:name "INSTINET VWAP CROSS" .
 mic:ICSE a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:ICAP ;
+   dbo:operatedBy mic:ICAP ;
    foaf:homepage <http://www.icap.com> ;
    dc:created "2007-06"^^xsd:gYearMonth ;
    foaf:name "ICAP SECURITIES" .
 mic:ICSU a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:ICAP ;
+   dbo:operatedBy mic:ICAP ;
    foaf:homepage <http://www.icap.com> ;
    dc:created "2014-07"^^xsd:gYearMonth ;
    foaf:name "ICAP SEF (US)  LLC." .
 mic:ICTQ a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:ICAP ;
+   dbo:operatedBy mic:ICAP ;
    foaf:homepage <http://www.icapenergy.com/eu> ;
    dc:created "2010-03"^^xsd:gYearMonth ;
    foaf:name "ICAP TRUEQUOTE" .
@@ -1707,7 +1707,7 @@ mic:ICXL a figi-gii:PricingSource ;
    foaf:name "INDIAN COMMODITY EXCHANGE LTD." .
 mic:IEPA a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:IFUS ;
+   dbo:operatedBy mic:IFUS ;
    foaf:homepage <http://www.theice.com> ;
    dc:created "2008-03"^^xsd:gYearMonth ;
    foaf:name "INTERCONTINENTAL EXCHANGE" .
@@ -1723,13 +1723,13 @@ mic:IFCA a figi-gii:PricingSource ;
    foaf:name "ICE FUTURES CANADA" .
 mic:IFED a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:IFUS ;
+   dbo:operatedBy mic:IFUS ;
    foaf:homepage <http://www.theice.com> ;
    dc:created "2012-08"^^xsd:gYearMonth ;
    foaf:name "ICE FUTURES U.S. ENERGY DIVISION" .
 mic:IFEN a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:IFEU ;
+   dbo:operatedBy mic:IFEU ;
    foaf:homepage <http://www.theice.com> ;
    dc:created "2013-12"^^xsd:gYearMonth ;
    foaf:name "ICE FUTURES EUROPE - OIL AND REFINED PRODUCTS DIVISION" .
@@ -1740,19 +1740,19 @@ mic:IFEU a figi-gii:PricingSource ;
    foaf:name "ICE FUTURES EUROPE" .
 mic:IFLL a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:IFEU ;
+   dbo:operatedBy mic:IFEU ;
    foaf:homepage <http://www.theice.com> ;
    dc:created "2013-12"^^xsd:gYearMonth ;
    foaf:name "ICE FUTURES EUROPE - FINANCIAL PRODUCTS DIVISION" .
 mic:IFLO a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:IFEU ;
+   dbo:operatedBy mic:IFEU ;
    foaf:homepage <http://www.theice.com> ;
    dc:created "2013-12"^^xsd:gYearMonth ;
    foaf:name "ICE FUTURES EUROPE - EQUITY PRODUCTS DIVISION" .
 mic:IFLX a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:IFEU ;
+   dbo:operatedBy mic:IFEU ;
    foaf:homepage <http://www.theice.com> ;
    dc:created "2013-12"^^xsd:gYearMonth ;
    foaf:name "ICE FUTURES EUROPE - AGRICULTURAL PRODUCTS DIVISION" .
@@ -1768,61 +1768,61 @@ mic:IFUS a figi-gii:PricingSource ;
    foaf:name "ICE FUTURES U.S." .
 mic:IFUT a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:IFEU ;
+   dbo:operatedBy mic:IFEU ;
    foaf:homepage <http://www.theice.com> ;
    dc:created "2013-12"^^xsd:gYearMonth ;
    foaf:name "ICE FUTURES EUROPE - EUROPEAN UTILITIES DIVISION" .
 mic:IIDX a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XINS ;
+   dbo:operatedBy mic:XINS ;
    foaf:homepage <http://www.instinet.com> ;
    dc:created "2009-06"^^xsd:gYearMonth ;
    foaf:name "INSTINET IDX" .
 mic:IMAG a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:IFUS ;
+   dbo:operatedBy mic:IFUS ;
    foaf:homepage <http://www.theice.com> ;
    dc:created "2011-06"^^xsd:gYearMonth ;
    foaf:name "ICE MARKETS AGRICULTURE" .
 mic:IMBD a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:IFUS ;
+   dbo:operatedBy mic:IFUS ;
    foaf:homepage <http://www.theice.com> ;
    dc:created "2011-06"^^xsd:gYearMonth ;
    foaf:name "ICE MARKETS BONDS" .
 mic:IMCC a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:IFUS ;
+   dbo:operatedBy mic:IFUS ;
    foaf:homepage <http://www.theice.com> ;
    dc:created "2013-08"^^xsd:gYearMonth ;
    foaf:name "CREDITEX SECURITIES CORPORATION" .
 mic:IMCG a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:IFUS ;
+   dbo:operatedBy mic:IFUS ;
    foaf:homepage <http://www.theice.com> ;
    dc:created "2013-08"^^xsd:gYearMonth ;
    foaf:name "CREDITEX GROUP INCORPORATED" .
 mic:IMCO a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:IFUS ;
+   dbo:operatedBy mic:IFUS ;
    foaf:homepage <http://www.theice.com> ;
    dc:created "2011-06"^^xsd:gYearMonth ;
    foaf:name "ICE MARKETS COMMODITIES" .
 mic:IMCR a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:IFUS ;
+   dbo:operatedBy mic:IFUS ;
    foaf:homepage <http://www.theice.com> ;
    dc:created "2011-06"^^xsd:gYearMonth ;
    foaf:name "ICE MARKETS CREDIT" .
 mic:IMEN a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:IFUS ;
+   dbo:operatedBy mic:IFUS ;
    foaf:homepage <http://www.theice.com> ;
    dc:created "2011-06"^^xsd:gYearMonth ;
    foaf:name "ICE MARKETS ENERGY" .
 mic:IMEQ a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:IFUS ;
+   dbo:operatedBy mic:IFUS ;
    foaf:homepage <http://www.theice.com> ;
    dc:created "2011-06"^^xsd:gYearMonth ;
    foaf:name "ICE MARKETS EQUITY" .
@@ -1833,19 +1833,19 @@ mic:IMEX a figi-gii:PricingSource ;
    foaf:name "IRAN MERCANTILE EXCHANGE" .
 mic:IMFX a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:IFUS ;
+   dbo:operatedBy mic:IFUS ;
    foaf:homepage <http://www.theice.com> ;
    dc:created "2011-05"^^xsd:gYearMonth ;
    foaf:name "ICE MARKETS FOREIGN EXCHANGE" .
 mic:IMIR a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:IFUS ;
+   dbo:operatedBy mic:IFUS ;
    foaf:homepage <http://www.theice.com> ;
    dc:created "2011-10"^^xsd:gYearMonth ;
    foaf:name "ICE MARKETS RATES" .
 mic:IMTS a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:XMTS ;
+   dbo:operatedBy mic:XMTS ;
    foaf:homepage <http://www.mtsireland.com> ;
    dc:created "2005-11"^^xsd:gYearMonth ;
    foaf:name "MTS IRELAND" .
@@ -1856,13 +1856,13 @@ mic:ISDA a figi-gii:PricingSource ;
    foaf:name "ISDAFIX" .
 mic:ISDX a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:ICAP ;
+   dbo:operatedBy mic:ICAP ;
    foaf:homepage <http://www.isdx.com> ;
    dc:created "2012-11"^^xsd:gYearMonth ;
    foaf:name "ICAP SECURITIES & DERIVATIVES EXCHANGE LIMITED" .
 mic:ISEC a figi-gii:PricingSource ;
    gn:countryCode "IS" ;
-   dbp-ont:operatedBy mic:XICE ;
+   dbo:operatedBy mic:XICE ;
    foaf:homepage <http://www.nasdaqomxnordic.com> ;
    dc:created "2010-05"^^xsd:gYearMonth ;
    foaf:name "FIRST NORTH ICELAND" .
@@ -1893,7 +1893,7 @@ mic:JADX a figi-gii:PricingSource ;
    foaf:name "JOINT ASIAN DERIVATIVES EXCHANGE" .
 mic:JASR a figi-gii:PricingSource ;
    gn:countryCode "JP" ;
-   dbp-ont:operatedBy mic:XIJP ;
+   dbo:operatedBy mic:XIJP ;
    foaf:homepage <http://www.instinet.com> ;
    dc:created "2007-09"^^xsd:gYearMonth ;
    foaf:name "JAPANCROSSING" .
@@ -1934,13 +1934,13 @@ mic:KLEU a figi-gii:PricingSource ;
    foaf:name "KNIGHT LINK EUROPE" .
 mic:KNCM a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:KNIG ;
+   dbo:operatedBy mic:KNIG ;
    foaf:homepage <http://www.knight.com> ;
    dc:created "2010-05"^^xsd:gYearMonth ;
    foaf:name "KNIGHT CAPITAL MARKETS LLC" .
 mic:KNEM a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:KNIG ;
+   dbo:operatedBy mic:KNIG ;
    foaf:homepage <http://www.knight.com> ;
    dc:created "2010-05"^^xsd:gYearMonth ;
    foaf:name "KNIGHT EQUITY MARKETS LP" .
@@ -1951,13 +1951,13 @@ mic:KNIG a figi-gii:PricingSource ;
    foaf:name "KNIGHT" .
 mic:KNLI a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:KNIG ;
+   dbo:operatedBy mic:KNIG ;
    foaf:homepage <http://www.knight.com> ;
    dc:created "2008-12"^^xsd:gYearMonth ;
    foaf:name "KNIGHT LINK" .
 mic:KNMX a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:KNIG ;
+   dbo:operatedBy mic:KNIG ;
    foaf:homepage <http://www.knight.com> ;
    dc:created "2008-12"^^xsd:gYearMonth ;
    foaf:name "KNIGHT MATCH ATS" .
@@ -1983,13 +1983,13 @@ mic:LICA a figi-gii:PricingSource ;
    foaf:name "LIQUIDNET CANADA ATS" .
 mic:LIQF a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:LIQU ;
+   dbo:operatedBy mic:LIQU ;
    foaf:homepage <http://www.liquidnet.com> ;
    dc:created "2014-06"^^xsd:gYearMonth ;
    foaf:name "LIQUIDNET EUROPE LIMITED" .
 mic:LIQH a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:LIQU ;
+   dbo:operatedBy mic:LIQU ;
    foaf:homepage <http://www.liquidnet.com> ;
    dc:created "2011-05"^^xsd:gYearMonth ;
    foaf:name "LIQUIDNET H20" .
@@ -2000,7 +2000,7 @@ mic:LIQU a figi-gii:PricingSource ;
    foaf:name "LIQUIDNET SYSTEMS" .
 mic:LIUH a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:LIUS ;
+   dbo:operatedBy mic:LIUS ;
    foaf:homepage <http://www.liquidnet.com> ;
    dc:created "2014-11"^^xsd:gYearMonth ;
    foaf:name "LIQUIDNET, INC. H2O ATS" .
@@ -2011,25 +2011,25 @@ mic:LIUS a figi-gii:PricingSource ;
    foaf:name "LIQUIDNET, INC." .
 mic:LMAD a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:LMAX ;
+   dbo:operatedBy mic:LMAX ;
    foaf:homepage <http://www.lmax.com> ;
    dc:created "2011-08"^^xsd:gYearMonth ;
    foaf:name "LMAX - DERIVATIVES" .
 mic:LMAE a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:LMAX ;
+   dbo:operatedBy mic:LMAX ;
    foaf:homepage <http://www.lmax.com> ;
    dc:created "2010-01"^^xsd:gYearMonth ;
    foaf:name "LMAX - EQUITIES" .
 mic:LMAF a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:LMAX ;
+   dbo:operatedBy mic:LMAX ;
    foaf:homepage <http://www.lmax.com> ;
    dc:created "2010-01"^^xsd:gYearMonth ;
    foaf:name "LMAX - FX" .
 mic:LMAO a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:LMAX ;
+   dbo:operatedBy mic:LMAX ;
    foaf:homepage <http://www.lmax.com> ;
    dc:created "2010-01"^^xsd:gYearMonth ;
    foaf:name "LMAX - INDICES/RATES/COMMODITIES" .
@@ -2055,7 +2055,7 @@ mic:LPPM a figi-gii:PricingSource ;
    foaf:name "LONDON PLATINUM AND PALLADIUM MARKET" .
 mic:LQFI a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:CGMI ;
+   dbo:operatedBy mic:CGMI ;
    foaf:homepage <http://www.citivelocity.com> ;
    dc:created "2014-09"^^xsd:gYearMonth ;
    foaf:name "CITI LIQUIFI" .
@@ -2066,13 +2066,13 @@ mic:LXJP a figi-gii:PricingSource ;
    foaf:name "BARCLAYS LX JAPAN" .
 mic:LYNX a figi-gii:PricingSource ;
    gn:countryCode "CA" ;
-   dbp-ont:operatedBy mic:OMGA ;
+   dbo:operatedBy mic:OMGA ;
    foaf:homepage <http://www.omegaats.com> ;
    dc:created "2012-11"^^xsd:gYearMonth ;
    foaf:name "LYNX ATS" .
 mic:MABX a figi-gii:PricingSource ;
    gn:countryCode "ES" ;
-   dbp-ont:operatedBy mic:BMEX ;
+   dbo:operatedBy mic:BMEX ;
    foaf:homepage <http://www.bolsasymercados.es> ;
    dc:created "2007-07"^^xsd:gYearMonth ;
    foaf:name "MERCADO ALTERNATIVO BURSATIL" .
@@ -2103,7 +2103,7 @@ mic:MAQX a figi-gii:PricingSource ;
    foaf:name "MACQUARIE INTERNAL MARKETS (AUSTRALIA)" .
 mic:MARF a figi-gii:PricingSource ;
    gn:countryCode "ES" ;
-   dbp-ont:operatedBy mic:BMEX ;
+   dbo:operatedBy mic:BMEX ;
    foaf:homepage <http://www.aiaf.es> ;
    dc:created "2013-07"^^xsd:gYearMonth ;
    foaf:name "MERCADO ALTERNATIVO DE RENTA FIJA" .
@@ -2114,7 +2114,7 @@ mic:MATN a figi-gii:PricingSource ;
    foaf:name "MATCH NOW" .
 mic:MCRY a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XISX ;
+   dbo:operatedBy mic:XISX ;
    foaf:homepage <http://www.ise.com> ;
    dc:created "2005-06"^^xsd:gYearMonth ;
    foaf:name "ISE MERCURY, LLC" .
@@ -2125,18 +2125,18 @@ mic:MCXX a figi-gii:PricingSource ;
    foaf:name "MCX STOCK EXCHANGE LTD" .
 mic:MCZK a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:XMTS ;
+   dbo:operatedBy mic:XMTS ;
    dc:created "2011-05"^^xsd:gYearMonth ;
    foaf:name "MTS CZECH REPUBLIC" .
 mic:MERF a figi-gii:PricingSource ;
    gn:countryCode "ES" ;
-   dbp-ont:operatedBy mic:BMEX ;
+   dbo:operatedBy mic:BMEX ;
    foaf:homepage <http://www.bmerf.es> ;
    dc:created "2012-08"^^xsd:gYearMonth ;
    foaf:name "MERCADO ELECTRONICO DE RENTA FIJA" .
 mic:MESQ a figi-gii:PricingSource ;
    gn:countryCode "MY" ;
-   dbp-ont:operatedBy mic:XKLS ;
+   dbo:operatedBy mic:XKLS ;
    foaf:homepage <http://www.bursamalaysia.com> ;
    dc:created "2010-05"^^xsd:gYearMonth ;
    foaf:name "ACE MARKET" .
@@ -2147,7 +2147,7 @@ mic:MFGL a figi-gii:PricingSource ;
    foaf:name "MF GLOBAL ENERGY MTF" .
 mic:MFOX a figi-gii:PricingSource ;
    gn:countryCode "PT" ;
-   dbp-ont:operatedBy mic:XLIS ;
+   dbo:operatedBy mic:XLIS ;
    foaf:homepage <http://www.euronext.com> ;
    dc:created "2007-11"^^xsd:gYearMonth ;
    foaf:name "EURONEXT - MERCADO DE FUTUROS E OPÇÕES" .
@@ -2158,7 +2158,7 @@ mic:MISX a figi-gii:PricingSource ;
    foaf:name "MOSCOW EXCHANGE" .
 mic:MIVX a figi-gii:PricingSource ;
    gn:countryCode "IT" ;
-   dbp-ont:operatedBy mic:XMIL ;
+   dbo:operatedBy mic:XMIL ;
    foaf:homepage <http://www.borsaitaliana.it> ;
    dc:created "2009-06"^^xsd:gYearMonth ;
    foaf:name "MARKET FOR INVESTMENT VEHICLES" .
@@ -2169,37 +2169,37 @@ mic:MIZX a figi-gii:PricingSource ;
    foaf:name "MIZUHO INTERNAL CROSSING" .
 mic:MLAX a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:MLXN ;
+   dbo:operatedBy mic:MLXN ;
    foaf:homepage <http://corp.bankofamerica.com/business/ci/trader-instinct> ;
    dc:created "2015-05"^^xsd:gYearMonth ;
    foaf:name "BANK OF AMERICA - MERRILL LYNCH AUCTION CROSS" .
 mic:MLCO a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:BAML ;
+   dbo:operatedBy mic:BAML ;
    foaf:homepage <http://corp.bankofamerica.com/business/ci/trader-instinct> ;
    dc:created "2015-04"^^xsd:gYearMonth ;
    foaf:name "BANK OF AMERICA - MERRILL LYNCH OTC" .
 mic:MLEU a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:MLXN ;
+   dbo:operatedBy mic:MLXN ;
    foaf:homepage <http://corp.bankofamerica.com/business/ci/trader-instinct> ;
    dc:created "2015-05"^^xsd:gYearMonth ;
    foaf:name "BANK OF AMERICA - MERRILL LYNCH OTC" .
 mic:MLVE a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:MLXN ;
+   dbo:operatedBy mic:MLXN ;
    foaf:homepage <http://corp.bankofamerica.com/business/ci/trader-instinct> ;
    dc:created "2015-05"^^xsd:gYearMonth ;
    foaf:name "BANK OF AMERICA - MERRILL LYNCH VWAP CROSS" .
 mic:MLVX a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:BAML ;
+   dbo:operatedBy mic:BAML ;
    foaf:homepage <http://corp.bankofamerica.com/business/ci/trader-instinct> ;
    dc:created "2015-02"^^xsd:gYearMonth ;
    foaf:name "BANK OF AMERICA - MERRILL LYNCH VWAP CROSS" .
 mic:MLXB a figi-gii:PricingSource ;
    gn:countryCode "BE" ;
-   dbp-ont:operatedBy mic:XBRU ;
+   dbo:operatedBy mic:XBRU ;
    foaf:homepage <http://www.euronext.com> ;
    dc:created "2007-08"^^xsd:gYearMonth ;
    foaf:name "EURONEXT - MARCHE LIBRE BRUSSELS" .
@@ -2210,13 +2210,13 @@ mic:MLXN a figi-gii:PricingSource ;
    foaf:name "BANK OF AMERICA - MERRILL LYNCH INSTINCT X" .
 mic:MOCX a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XINS ;
+   dbo:operatedBy mic:XINS ;
    foaf:homepage <http://www.instinet.com> ;
    dc:created "2015-02"^^xsd:gYearMonth ;
    foaf:name "MOC CROSS" .
 mic:MOTX a figi-gii:PricingSource ;
    gn:countryCode "IT" ;
-   dbp-ont:operatedBy mic:XMIL ;
+   dbo:operatedBy mic:XMIL ;
    foaf:homepage <http://www.borsaitaliana.it> ;
    dc:created "2007-09"^^xsd:gYearMonth ;
    foaf:name "ELECTRONIC BOND MARKET" .
@@ -2232,55 +2232,55 @@ mic:MSIP a figi-gii:PricingSource ;
    foaf:name "MORGAN STANLEY AND CO. INTERNATIONAL PLC" .
 mic:MSLP a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:MSCO ;
+   dbo:operatedBy mic:MSCO ;
    foaf:homepage <http://www.morganstanley.com> ;
    dc:created "2014-12"^^xsd:gYearMonth ;
    foaf:name "MORGAN STANLEY AUTOMATED LIQUIDITY PROVISION" .
 mic:MSPL a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:MSCO ;
+   dbo:operatedBy mic:MSCO ;
    foaf:homepage <http://www.morganstanley.com> ;
    dc:created "2010-03"^^xsd:gYearMonth ;
    foaf:name "MS POOL" .
 mic:MSRP a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:MSCO ;
+   dbo:operatedBy mic:MSCO ;
    foaf:homepage <http://www.morganstanley.com> ;
    dc:created "2012-02"^^xsd:gYearMonth ;
    foaf:name "MS RETAIL POOL" .
 mic:MSTX a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:MSCO ;
+   dbo:operatedBy mic:MSCO ;
    foaf:homepage <http://www.morganstanley.com> ;
    dc:created "2014-04"^^xsd:gYearMonth ;
    foaf:name "MS TRAJECTORY CROSS" .
 mic:MTAA a figi-gii:PricingSource ;
    gn:countryCode "IT" ;
-   dbp-ont:operatedBy mic:XMIL ;
+   dbo:operatedBy mic:XMIL ;
    foaf:homepage <http://www.borsaitaliana.it> ;
    dc:created "2007-09"^^xsd:gYearMonth ;
    foaf:name "ELECTRONIC SHARE MARKET" .
 mic:MTAH a figi-gii:PricingSource ;
    gn:countryCode "IT" ;
-   dbp-ont:operatedBy mic:XMIL ;
+   dbo:operatedBy mic:XMIL ;
    foaf:homepage <http://www.borsaitaliana.it> ;
    dc:created "2012-05"^^xsd:gYearMonth ;
    foaf:name "BORSA ITALIANA TRADING AFTER HOURS" .
 mic:MTCH a figi-gii:PricingSource ;
    gn:countryCode "FR" ;
-   dbp-ont:operatedBy mic:XPAR ;
+   dbo:operatedBy mic:XPAR ;
    foaf:homepage <http://www.euronext.com> ;
    dc:created "2010-11"^^xsd:gYearMonth ;
    foaf:name "BONDMATCH" .
 mic:MTSA a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:XMTS ;
+   dbo:operatedBy mic:XMTS ;
    foaf:homepage <http://www.mtsaustria.com> ;
    dc:created "2011-02"^^xsd:gYearMonth ;
    foaf:name "MTS AUSTRIA" .
 mic:MTSB a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:MTUS ;
+   dbo:operatedBy mic:MTUS ;
    foaf:homepage <http://www.mtsmarkets.com/products/mts-bonds-com> ;
    dc:created "2014-08"^^xsd:gYearMonth ;
    foaf:name "MTS BONDS.COM" .
@@ -2291,36 +2291,36 @@ mic:MTSC a figi-gii:PricingSource ;
    foaf:name "MTS S.P.A." .
 mic:MTSD a figi-gii:PricingSource ;
    gn:countryCode "BE" ;
-   dbp-ont:operatedBy mic:BMTS ;
+   dbo:operatedBy mic:BMTS ;
    foaf:homepage <http://www.mtsdenmark.com> ;
    dc:created "2005-11"^^xsd:gYearMonth ;
    foaf:name "MTS DENMARK" .
 mic:MTSF a figi-gii:PricingSource ;
    gn:countryCode "BE" ;
-   dbp-ont:operatedBy mic:BMTS ;
+   dbo:operatedBy mic:BMTS ;
    foaf:homepage <http://www.mtsfinland.com> ;
    dc:created "2005-11"^^xsd:gYearMonth ;
    foaf:name "MTS FINLAND" .
 mic:MTSG a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:XMTS ;
+   dbo:operatedBy mic:XMTS ;
    foaf:homepage <http://www.mtsgreece.com> ;
    dc:created "2011-02"^^xsd:gYearMonth ;
    foaf:name "MTS GREECE" .
 mic:MTSM a figi-gii:PricingSource ;
    gn:countryCode "IT" ;
-   dbp-ont:operatedBy mic:MTSC ;
+   dbo:operatedBy mic:MTSC ;
    foaf:homepage <http://www.mtsspa.it> ;
    dc:created "2008-01"^^xsd:gYearMonth ;
    foaf:name "MTS CORPORATE MARKET" .
 mic:MTSS a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:XMTS ;
+   dbo:operatedBy mic:XMTS ;
    dc:created "2007-10"^^xsd:gYearMonth ;
    foaf:name "MTS INTERDEALER SWAPS MARKET" .
 mic:MTSW a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:XMTS ;
+   dbo:operatedBy mic:XMTS ;
    foaf:homepage <http://www.mtsmarkets.com> ;
    dc:created "2014-07"^^xsd:gYearMonth ;
    foaf:name "MTS SWAP MARKET" .
@@ -2331,7 +2331,7 @@ mic:MTUS a figi-gii:PricingSource ;
    foaf:name "MTS US" .
 mic:MTXC a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:MTXM ;
+   dbo:operatedBy mic:MTXM ;
    foaf:homepage <http://www.marketaxess.com> ;
    dc:created "2014-02"^^xsd:gYearMonth ;
    foaf:name "MARKETAXESS CORPORATION SINGLE-NAME CDS CENTRAL LIMIT ORDER" .
@@ -2342,37 +2342,37 @@ mic:MTXM a figi-gii:PricingSource ;
    foaf:name "MARKETAXESS CORPORATION MID-X TRADING SYSTEM" .
 mic:MTXS a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:MTXM ;
+   dbo:operatedBy mic:MTXM ;
    foaf:homepage <http://www.marketaxess.com> ;
    dc:created "2014-07"^^xsd:gYearMonth ;
    foaf:name "MARKETAXESS SEF CORPORATION" .
 mic:MUNA a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XMUN ;
+   dbo:operatedBy mic:XMUN ;
    foaf:homepage <http://www.boerse-muenchen.de> ;
    dc:created "2008-02"^^xsd:gYearMonth ;
    foaf:name "BOERSE MUENCHEN - REGULIERTER MARKT" .
 mic:MUNB a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XMUN ;
+   dbo:operatedBy mic:XMUN ;
    foaf:homepage <http://www.boerse-muenchen.de> ;
    dc:created "2008-02"^^xsd:gYearMonth ;
    foaf:name "BOERSE MUENCHEN - FREIVERKEHR" .
 mic:MUNC a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XMUN ;
+   dbo:operatedBy mic:XMUN ;
    foaf:homepage <http://www.boerse-muenchen.de> ;
    dc:created "2014-05"^^xsd:gYearMonth ;
    foaf:name "BOERSE MUENCHEN - MARKET MAKER MUNICH - REGULIERTER MARKT" .
 mic:MUND a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XMUN ;
+   dbo:operatedBy mic:XMUN ;
    foaf:homepage <http://www.boerse-muenchen.de> ;
    dc:created "2014-05"^^xsd:gYearMonth ;
    foaf:name "BOERSE MUENCHEN - MARKET MAKER MUNICH - FREIVERKEHR MARKT" .
 mic:MVCX a figi-gii:PricingSource ;
    gn:countryCode "AR" ;
-   dbp-ont:operatedBy mic:XBCC ;
+   dbo:operatedBy mic:XBCC ;
    foaf:homepage <http://www.mervalcordoba.com.ar> ;
    dc:created "2011-01"^^xsd:gYearMonth ;
    foaf:name "MERCADO DE VALORES DE CORDOBA S.A." .
@@ -2398,13 +2398,13 @@ mic:NASB a figi-gii:PricingSource ;
    foaf:name "NASDAQ BALTIC" .
 mic:NASD a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XNAS ;
+   dbo:operatedBy mic:XNAS ;
    foaf:homepage <http://www.nasdaq.com> ;
    dc:created "2011-05"^^xsd:gYearMonth ;
    foaf:name "NSDQ DARK" .
 mic:NAVE a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:TRDE ;
+   dbo:operatedBy mic:TRDE ;
    foaf:homepage <http://www.tradition.com> ;
    dc:created "2012-03"^^xsd:gYearMonth ;
    foaf:name "NAVESIS-MTF" .
@@ -2430,7 +2430,7 @@ mic:NDEX a figi-gii:PricingSource ;
    foaf:name "ICE ENDEX DERIVATIVES" .
 mic:NDXS a figi-gii:PricingSource ;
    gn:countryCode "NL" ;
-   dbp-ont:operatedBy mic:NDEX ;
+   dbo:operatedBy mic:NDEX ;
    foaf:homepage <http://www.iceendex.com> ;
    dc:created "2014-02"^^xsd:gYearMonth ;
    foaf:name "ICE ENDEX - SPOT MARKET" .
@@ -2446,7 +2446,7 @@ mic:NEXO a figi-gii:PricingSource ;
    foaf:name "NOREXECO AS" .
 mic:NFSA a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:NFSC ;
+   dbo:operatedBy mic:NFSC ;
    foaf:homepage <http://www.capitalmarkets.fidelity.com> ;
    dc:created "2012-04"^^xsd:gYearMonth ;
    foaf:name "FIDELITY CROSSSTREAM" .
@@ -2457,7 +2457,7 @@ mic:NFSC a figi-gii:PricingSource ;
    foaf:name "NATIONAL FINANCIAL SERVICES, LLC" .
 mic:NFSD a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:NFSC ;
+   dbo:operatedBy mic:NFSC ;
    foaf:homepage <http://www.capitalmarkets.fidelity.com> ;
    dc:created "2011-05"^^xsd:gYearMonth ;
    foaf:name "FIDELITY DARK" .
@@ -2468,7 +2468,7 @@ mic:NGXC a figi-gii:PricingSource ;
    foaf:name "NATURAL GAS EXCHANGE" .
 mic:NIBR a figi-gii:PricingSource ;
    gn:countryCode "NO" ;
-   dbp-ont:operatedBy mic:XOSL ;
+   dbo:operatedBy mic:XOSL ;
    foaf:homepage <http://www.oslobors.no> ;
    dc:created "2013-07"^^xsd:gYearMonth ;
    foaf:name "NORWEGIAN INTER BANK OFFERED RATE" .
@@ -2499,7 +2499,7 @@ mic:NMRJ a figi-gii:PricingSource ;
    foaf:name "NOMURA SECURITIES CO LTD" .
 mic:NMTF a figi-gii:PricingSource ;
    gn:countryCode "SE" ;
-   dbp-ont:operatedBy mic:XNGM ;
+   dbo:operatedBy mic:XNGM ;
    foaf:homepage <http://www.nordicmtf.se> ;
    dc:created "2007-11"^^xsd:gYearMonth ;
    foaf:name "NORDIC MTF" .
@@ -2545,7 +2545,7 @@ mic:NSXB a figi-gii:PricingSource ;
    foaf:name "BENDIGO STOCK EXCHANGE LIMITED" .
 mic:NURD a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:NURO ;
+   dbo:operatedBy mic:NURO ;
    foaf:homepage <http://www.nasdaqomxeurope.com> ;
    dc:created "2011-05"^^xsd:gYearMonth ;
    foaf:name "NASDAQ EUROPE (NURO) DARK" .
@@ -2561,7 +2561,7 @@ mic:NXEU a figi-gii:PricingSource ;
    foaf:name "NX" .
 mic:NXJP a figi-gii:PricingSource ;
    gn:countryCode "JP" ;
-   dbp-ont:operatedBy mic:NMRJ ;
+   dbo:operatedBy mic:NMRJ ;
    foaf:homepage <http://www.nomura.com> ;
    dc:created "2014-02"^^xsd:gYearMonth ;
    foaf:name "NX JAPAN" .
@@ -2572,19 +2572,19 @@ mic:NXUS a figi-gii:PricingSource ;
    foaf:name "NX ATS - CROSSING PLATFORM" .
 mic:NXVW a figi-gii:PricingSource ;
    gn:countryCode "JP" ;
-   dbp-ont:operatedBy mic:NMRJ ;
+   dbo:operatedBy mic:NMRJ ;
    foaf:homepage <http://www.nomura.com> ;
    dc:created "2014-10"^^xsd:gYearMonth ;
    foaf:name "NX VWAP" .
 mic:NYFX a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:BNYC ;
+   dbo:operatedBy mic:BNYC ;
    foaf:homepage <http://www.convergex.com> ;
    dc:created "2010-10"^^xsd:gYearMonth ;
    foaf:name "MILLENNIUM" .
 mic:NYMS a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XCME ;
+   dbo:operatedBy mic:XCME ;
    foaf:homepage <http://www.cmegroup.com> ;
    dc:created "2013-10"^^xsd:gYearMonth ;
    foaf:name "CME SWAPS MARKETS (NYMEX)" .
@@ -2595,7 +2595,7 @@ mic:NYPC a figi-gii:PricingSource ;
    foaf:name "NEW YORK PORTFOLIO CLEARING" .
 mic:NYSD a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XNYS ;
+   dbo:operatedBy mic:XNYS ;
    foaf:homepage <http://www.nyse.com> ;
    dc:created "2011-05"^^xsd:gYearMonth ;
    foaf:name "NYSE DARK" .
@@ -2621,13 +2621,13 @@ mic:OMIC a figi-gii:PricingSource ;
    foaf:name "THE IBERIAN ENERGY CLEARING HOUSE" .
 mic:OMIP a figi-gii:PricingSource ;
    gn:countryCode "PT" ;
-   dbp-ont:operatedBy mic:XLIS ;
+   dbo:operatedBy mic:XLIS ;
    foaf:homepage <http://www.omip.pt> ;
    dc:created "2007-05"^^xsd:gYearMonth ;
    foaf:name "OPERADOR DE MERCADO IBERICO DE ENERGIA - PORTUGAL" .
 mic:OOTC a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:FINR ;
+   dbo:operatedBy mic:FINR ;
    foaf:homepage <http://www.otcbb.com> ;
    dc:created "2012-08"^^xsd:gYearMonth ;
    foaf:name "OTHER OTC" .
@@ -2648,7 +2648,7 @@ mic:OSLC a figi-gii:PricingSource ;
    foaf:name "OSLO CLEARING ASA" .
 mic:OTCB a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:OTCM ;
+   dbo:operatedBy mic:OTCM ;
    foaf:homepage <http://www.otcmarkets.com> ;
    dc:created "2010-05"^^xsd:gYearMonth ;
    foaf:name "OTCQB MARKETPLACE" .
@@ -2659,7 +2659,7 @@ mic:OTCM a figi-gii:PricingSource ;
    foaf:name "OTC MARKETS" .
 mic:OTCQ a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:OTCM ;
+   dbo:operatedBy mic:OTCM ;
    foaf:homepage <http://www.otcqx.com> ;
    dc:created "2008-08"^^xsd:gYearMonth ;
    foaf:name "OTCQX MARKETPLACE" .
@@ -2670,7 +2670,7 @@ mic:OTCX a figi-gii:PricingSource ;
    foaf:name "OTC EXCHANGE OF INDIA" .
 mic:PARX a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:TRDE ;
+   dbo:operatedBy mic:TRDE ;
    foaf:homepage <http://www.parfx.com> ;
    dc:created "2013-09"^^xsd:gYearMonth ;
    foaf:name "PARFX" .
@@ -2686,7 +2686,7 @@ mic:PDEX a figi-gii:PricingSource ;
    foaf:name "PHILIPPINE DEALING AND EXCHANGE CORP" .
 mic:PDQD a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:PDQX ;
+   dbo:operatedBy mic:PDQX ;
    foaf:homepage <http://www.pdqenterprises.com> ;
    dc:created "2011-05"^^xsd:gYearMonth ;
    foaf:name "PDQ ATS DARK" .
@@ -2702,7 +2702,7 @@ mic:PEEL a figi-gii:PricingSource ;
    foaf:name "PEEL HUNT LLP UK" .
 mic:PFTQ a figi-gii:PricingSource ;
    gn:countryCode "UA" ;
-   dbp-ont:operatedBy mic:PFTS ;
+   dbo:operatedBy mic:PFTS ;
    foaf:homepage <http://www.pfts.com> ;
    dc:created "2010-10"^^xsd:gYearMonth ;
    foaf:name "PFTS QUOTE DRIVEN" .
@@ -2718,25 +2718,25 @@ mic:PIEU a figi-gii:PricingSource ;
    foaf:name "ARITAS FINANCIAL LTD" .
 mic:PINC a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:OTCM ;
+   dbo:operatedBy mic:OTCM ;
    foaf:homepage <http://www.otcmarkets.com> ;
    dc:created "2012-05"^^xsd:gYearMonth ;
    foaf:name "OTC PINK CURRENT" .
 mic:PINI a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:OTCM ;
+   dbo:operatedBy mic:OTCM ;
    foaf:homepage <http://www.otcmarkets.com> ;
    dc:created "2012-05"^^xsd:gYearMonth ;
    foaf:name "OTC PINK NO INFORMATION" .
 mic:PINL a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:OTCM ;
+   dbo:operatedBy mic:OTCM ;
    foaf:homepage <http://www.otcmarkets.com> ;
    dc:created "2012-05"^^xsd:gYearMonth ;
    foaf:name "OTC PINK LIMITED" .
 mic:PINX a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:OTCM ;
+   dbo:operatedBy mic:OTCM ;
    foaf:homepage <http://www.otcmarkets.com> ;
    dc:created "2012-03"^^xsd:gYearMonth ;
    foaf:name "OTC PINK MARKETPLACE" .
@@ -2752,37 +2752,37 @@ mic:PIRM a figi-gii:PricingSource ;
    foaf:name "PIRUM" .
 mic:PLDX a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:LOTC ;
+   dbo:operatedBy mic:LOTC ;
    foaf:homepage <http://www.plus-dx.com> ;
    dc:created "2012-03"^^xsd:gYearMonth ;
    foaf:name "PLUS DERIVATIVES EXCHANGE" .
 mic:PLPD a figi-gii:PricingSource ;
    gn:countryCode "PL" ;
-   dbp-ont:operatedBy mic:XWAR ;
+   dbo:operatedBy mic:XWAR ;
    foaf:homepage <http://www.polpx.pl> ;
    dc:created "2015-05"^^xsd:gYearMonth ;
    foaf:name "WARSAW STOCK EXCHANGE/COMMODITIES/POLISH POWER EXCHANGE/COMMODITY DERIVATIVES" .
 mic:PLPX a figi-gii:PricingSource ;
    gn:countryCode "PL" ;
-   dbp-ont:operatedBy mic:XWAR ;
+   dbo:operatedBy mic:XWAR ;
    foaf:homepage <http://www.polpx.pl> ;
    dc:created "2007-07"^^xsd:gYearMonth ;
    foaf:name "WARSAW STOCK EXCHANGE/COMMODITIES/POLISH POWER EXCHANGE/ENERGY MARKET" .
 mic:PLUS a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XMUN ;
+   dbo:operatedBy mic:XMUN ;
    foaf:homepage <http://www.boerse-muenchen.de> ;
    dc:created "2009-04"^^xsd:gYearMonth ;
    foaf:name "BOERSE MUENCHEN - FREIVERKHER - PLUS - EUROPE" .
 mic:PORT a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:XMTS ;
+   dbo:operatedBy mic:XMTS ;
    foaf:homepage <http://www.mtsmarkets.com> ;
    dc:created "2014-07"^^xsd:gYearMonth ;
    foaf:name "MTS PORTUGAL" .
 mic:PRME a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:XMTS ;
+   dbo:operatedBy mic:XMTS ;
    foaf:homepage <http://www.mtsmarkets.com> ;
    dc:created "2011-10"^^xsd:gYearMonth ;
    foaf:name "MTS PRIME" .
@@ -2793,7 +2793,7 @@ mic:PRSE a figi-gii:PricingSource ;
    foaf:name "PRAGMA ATS" .
 mic:PSGM a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:OTCM ;
+   dbo:operatedBy mic:OTCM ;
    foaf:homepage <http://www.otcmarkets.com> ;
    dc:created "2012-03"^^xsd:gYearMonth ;
    foaf:name "OTC GREY MARKET" .
@@ -2804,7 +2804,7 @@ mic:PULX a figi-gii:PricingSource ;
    foaf:name "BLOCKCROSS ATS" .
 mic:PURE a figi-gii:PricingSource ;
    gn:countryCode "CA" ;
-   dbp-ont:operatedBy mic:XCNQ ;
+   dbo:operatedBy mic:XCNQ ;
    foaf:homepage <http://www.puretrading.ca> ;
    dc:created "2006-12"^^xsd:gYearMonth ;
    foaf:name "PURE TRADING" .
@@ -2830,13 +2830,13 @@ mic:RBSX a figi-gii:PricingSource ;
    foaf:name "RBS CROSS" .
 mic:RCBX a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XINS ;
+   dbo:operatedBy mic:XINS ;
    foaf:homepage <http://www.instinet.com> ;
    dc:created "2014-02"^^xsd:gYearMonth ;
    foaf:name "INSTINET RETAIL CBX" .
 mic:RICD a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:RICX ;
+   dbo:operatedBy mic:RICX ;
    foaf:homepage <http://www.rxats.com> ;
    dc:created "2011-05"^^xsd:gYearMonth ;
    foaf:name "RIVERCROSS DARK" .
@@ -2847,7 +2847,7 @@ mic:RICX a figi-gii:PricingSource ;
    foaf:name "RIVERCROSS" .
 mic:RMTS a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:XMTS ;
+   dbo:operatedBy mic:XMTS ;
    foaf:homepage <http://www.mtsisrael.com> ;
    dc:created "2007-08"^^xsd:gYearMonth ;
    foaf:name "MTS ISRAEL" .
@@ -2873,7 +2873,7 @@ mic:RPDX a figi-gii:PricingSource ;
    foaf:name "MOSCOW ENERGY EXCHANGE" .
 mic:RPWC a figi-gii:PricingSource ;
    gn:countryCode "PL" ;
-   dbp-ont:operatedBy mic:XWAR ;
+   dbo:operatedBy mic:XWAR ;
    foaf:homepage <http://www.bondspot.pl> ;
    dc:created "2011-04"^^xsd:gYearMonth ;
    foaf:name "WARSAW STOCK EXCHANGE/BONDS/CATALYST/BONDSPOT/REGULATED MARKET" .
@@ -2889,7 +2889,7 @@ mic:RTSL a figi-gii:PricingSource ;
    foaf:name "REUTERS TRANSACTION SERVICES LIMITED" .
 mic:RTSX a figi-gii:PricingSource ;
    gn:countryCode "RU" ;
-   dbp-ont:operatedBy mic:MISX ;
+   dbo:operatedBy mic:MISX ;
    foaf:homepage <http://www.micex.com> ;
    dc:created "2012-03"^^xsd:gYearMonth ;
    foaf:name "MOSCOW EXCHANGE-DERIVATIVES AND CLASSICA MARKET" .
@@ -2905,19 +2905,19 @@ mic:SBIJ a figi-gii:PricingSource ;
    foaf:name "SBI JAPANNEXT-J-MARKET" .
 mic:SBIU a figi-gii:PricingSource ;
    gn:countryCode "JP" ;
-   dbp-ont:operatedBy mic:SBIJ ;
+   dbo:operatedBy mic:SBIJ ;
    foaf:homepage <http://www.japannext.co.jp> ;
    dc:created "2015-01"^^xsd:gYearMonth ;
    foaf:name "SBI JAPANNEXT - U  - MARKET" .
 mic:SBIV a figi-gii:PricingSource ;
    gn:countryCode "JP" ;
-   dbp-ont:operatedBy mic:SBIJ ;
+   dbo:operatedBy mic:SBIJ ;
    foaf:homepage <http://www.japannext.co.jp> ;
    dc:created "2013-07"^^xsd:gYearMonth ;
    foaf:name "SBI JAPANNEXT - VWAP CROSSING" .
 mic:SBMF a figi-gii:PricingSource ;
    gn:countryCode "RO" ;
-   dbp-ont:operatedBy mic:BMFX ;
+   dbo:operatedBy mic:BMFX ;
    foaf:homepage <http://www.sibex.ro> ;
    dc:created "2010-02"^^xsd:gYearMonth ;
    foaf:name "SPOT REGULATED MARKET - BMFMS" .
@@ -2933,7 +2933,7 @@ mic:SECF a figi-gii:PricingSource ;
    foaf:name "SECFINEX" .
 mic:SEDX a figi-gii:PricingSource ;
    gn:countryCode "IT" ;
-   dbp-ont:operatedBy mic:XMIL ;
+   dbo:operatedBy mic:XMIL ;
    foaf:homepage <http://www.borsaitaliana.it> ;
    dc:created "2007-09"^^xsd:gYearMonth ;
    foaf:name "SECURITISED DERIVATIVES MARKET" .
@@ -2944,7 +2944,7 @@ mic:SELC a figi-gii:PricingSource ;
    foaf:name "SISTEMA ESPECIAL DE LIQUIDACAO E CUSTODIA DE TITULOS PUBLICOS" .
 mic:SEND a figi-gii:PricingSource ;
    gn:countryCode "ES" ;
-   dbp-ont:operatedBy mic:BMEX ;
+   dbo:operatedBy mic:BMEX ;
    foaf:homepage <http://www.aiaf.es> ;
    dc:created "2010-06"^^xsd:gYearMonth ;
    foaf:name "SEND - SISTEMA ELECTRONICO DE NEGOCIACION DE DEUDA" .
@@ -2970,7 +2970,7 @@ mic:SGMX a figi-gii:PricingSource ;
    foaf:name "SIGMA X MTF" .
 mic:SHAD a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:SHAW ;
+   dbo:operatedBy mic:SHAW ;
    foaf:homepage <http://www.deshaw.com> ;
    dc:created "2011-05"^^xsd:gYearMonth ;
    foaf:name "D.E. SHAW DARK" .
@@ -2986,7 +2986,7 @@ mic:SHAW a figi-gii:PricingSource ;
    foaf:name "D.E. SHAW" .
 mic:SHSC a figi-gii:PricingSource ;
    gn:countryCode "HK" ;
-   dbp-ont:operatedBy mic:XHKG ;
+   dbo:operatedBy mic:XHKG ;
    foaf:homepage <http://www.hkex.com.hk> ;
    dc:created "2014-08"^^xsd:gYearMonth ;
    foaf:name "STOCK EXCHANGE OF HONG KONG LIMITED - SHANGHAI - HONG KONG STOCK CONNECT" .
@@ -3022,7 +3022,7 @@ mic:SMEX a figi-gii:PricingSource ;
    foaf:name "SINGAPORE MERCANTILE EXCHANGE PTE LTD" .
 mic:SMTS a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:XMTS ;
+   dbo:operatedBy mic:XMTS ;
    foaf:homepage <http://www.mtsspain.com> ;
    dc:created "2011-02"^^xsd:gYearMonth ;
    foaf:name "MTS SPAIN" .
@@ -3053,7 +3053,7 @@ mic:SSEX a figi-gii:PricingSource ;
    foaf:name "SOCIAL STOCK EXCHANGE" .
 mic:SSOB a figi-gii:PricingSource ;
    gn:countryCode "IT" ;
-   dbp-ont:operatedBy mic:MTSC ;
+   dbo:operatedBy mic:MTSC ;
    foaf:homepage <http://www.bondvision.net> ;
    dc:created "2010-05"^^xsd:gYearMonth ;
    foaf:name "BOND VISION CORPORATE" .
@@ -3068,19 +3068,19 @@ mic:STOX a figi-gii:PricingSource ;
    foaf:name "STOXX LIMITED" .
 mic:STRT a figi-gii:PricingSource ;
    gn:countryCode "CZ" ;
-   dbp-ont:operatedBy mic:XPRA ;
+   dbo:operatedBy mic:XPRA ;
    foaf:homepage <http://www.pse.cz> ;
    dc:created "2014-03"^^xsd:gYearMonth ;
    foaf:name "PRAGUE STOCK EXCHANGE - START (MTF)" .
 mic:STUA a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XSTU ;
+   dbo:operatedBy mic:XSTU ;
    foaf:homepage <http://www.boerse-stuttgart.de> ;
    dc:created "2008-02"^^xsd:gYearMonth ;
    foaf:name "BOERSE STUTTGART - REGULIERTER MARKT" .
 mic:STUB a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XSTU ;
+   dbo:operatedBy mic:XSTU ;
    foaf:homepage <http://www.boerse-stuttgart.de> ;
    dc:created "2008-02"^^xsd:gYearMonth ;
    foaf:name "BOERSE STUTTGART - FREIVERKEHR" .
@@ -3091,31 +3091,31 @@ mic:SWAP a figi-gii:PricingSource ;
    foaf:name "SWAPSTREAM" .
 mic:TBEN a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:XTUP ;
+   dbo:operatedBy mic:XTUP ;
    foaf:homepage <http://www.tullettprebon.com> ;
    dc:created "2007-09"^^xsd:gYearMonth ;
    foaf:name "TULLETT PREBON PLC - TULLETT PREBON ENERGY" .
 mic:TBLA a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:XTUP ;
+   dbo:operatedBy mic:XTUP ;
    foaf:homepage <http://www.tullettprebon.com> ;
    dc:created "2008-06"^^xsd:gYearMonth ;
    foaf:name "TULLETT PREBON PLC - TP TRADEBLADE" .
 mic:TBSP a figi-gii:PricingSource ;
    gn:countryCode "PL" ;
-   dbp-ont:operatedBy mic:XWAR ;
+   dbo:operatedBy mic:XWAR ;
    foaf:homepage <http://www.bondspot.pl> ;
    dc:created "2011-07"^^xsd:gYearMonth ;
    foaf:name "WARSAW STOCK EXCHANGE/BONDS/BONDSPOT/TREASURY BOND MARKET" .
 mic:TCDS a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:TRDE ;
+   dbo:operatedBy mic:TRDE ;
    foaf:homepage <http://www.tradition.co.uk> ;
    dc:created "2007-08"^^xsd:gYearMonth ;
    foaf:name "TRADITION CDS" .
 mic:TCME a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:TRDE ;
+   dbo:operatedBy mic:TRDE ;
    foaf:homepage <http://www.tradition.com> ;
    dc:created "2012-11"^^xsd:gYearMonth ;
    foaf:name "TFS CME DIRECT" .
@@ -3136,7 +3136,7 @@ mic:TFSA a figi-gii:PricingSource ;
    foaf:name "TFS GREEN AUSTRALIAN GREEN MARKETS" .
 mic:TFSG a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:TRDE ;
+   dbo:operatedBy mic:TRDE ;
    foaf:homepage <http://www.tfsgreen.com> ;
    dc:created "2012-03"^^xsd:gYearMonth ;
    foaf:name "TRADITION ENERGY" .
@@ -3162,13 +3162,13 @@ mic:TMXS a figi-gii:PricingSource ;
    foaf:name "TMX SELECT" .
 mic:TNLA a figi-gii:PricingSource ;
    gn:countryCode "NL" ;
-   dbp-ont:operatedBy mic:XAMS ;
+   dbo:operatedBy mic:XAMS ;
    foaf:homepage <http://www.euronext.com> ;
    dc:created "2007-08"^^xsd:gYearMonth ;
    foaf:name "EURONEXT - TRADED BUT NOT LISTED AMSTERDAM" .
 mic:TNLB a figi-gii:PricingSource ;
    gn:countryCode "BE" ;
-   dbp-ont:operatedBy mic:XBRU ;
+   dbo:operatedBy mic:XBRU ;
    foaf:homepage <http://www.euronext.com> ;
    dc:created "2007-08"^^xsd:gYearMonth ;
    foaf:name "EURONEXT - TRADING FACILITY BRUSSELS" .
@@ -3179,7 +3179,7 @@ mic:TOCP a figi-gii:PricingSource ;
    foaf:name "TORA CROSSPOINT" .
 mic:TOMD a figi-gii:PricingSource ;
    gn:countryCode "NL" ;
-   dbp-ont:operatedBy mic:TOMX ;
+   dbo:operatedBy mic:TOMX ;
    foaf:homepage <http://www.tommtf.eu> ;
    dc:created "2011-06"^^xsd:gYearMonth ;
    foaf:name "TOM MTF DERIVATIVES MARKET" .
@@ -3190,19 +3190,19 @@ mic:TOMX a figi-gii:PricingSource ;
    foaf:name "TOM MTF CASH MARKETS" .
 mic:TPCD a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:XTUP ;
+   dbo:operatedBy mic:XTUP ;
    foaf:homepage <http://www.tullettprebon.com> ;
    dc:created "2008-06"^^xsd:gYearMonth ;
    foaf:name "TULLETT PREBON PLC - TP CREDITDEAL" .
 mic:TPEQ a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:XTUP ;
+   dbo:operatedBy mic:XTUP ;
    foaf:homepage <http://www.tullettprebon.com> ;
    dc:created "2012-11"^^xsd:gYearMonth ;
    foaf:name "TULLETT PREBON PLC - TP EQUITYTRADE" .
 mic:TPFD a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:XTUP ;
+   dbo:operatedBy mic:XTUP ;
    foaf:homepage <http://www.tullettprebon.com> ;
    dc:created "2012-04"^^xsd:gYearMonth ;
    foaf:name "TULLETT PREBON PLC - TP FORWARDDEAL" .
@@ -3213,19 +3213,19 @@ mic:TPIE a figi-gii:PricingSource ;
    foaf:name "THE PROPERTY INVESTMENT EXCHANGE" .
 mic:TPRE a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:XTUP ;
+   dbo:operatedBy mic:XTUP ;
    foaf:homepage <http://www.tullettprebon.com> ;
    dc:created "2008-06"^^xsd:gYearMonth ;
    foaf:name "TULLETT PREBON PLC - TP REPO" .
 mic:TPSD a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:XTUP ;
+   dbo:operatedBy mic:XTUP ;
    foaf:homepage <http://www.tullettprebon.com> ;
    dc:created "2011-04"^^xsd:gYearMonth ;
    foaf:name "TULLETT PREBON PLC - TP SWAPDEAL" .
 mic:TPSP a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:XTUP ;
+   dbo:operatedBy mic:XTUP ;
    foaf:homepage <http://www.tullettprebon.com> ;
    dc:created "2012-08"^^xsd:gYearMonth ;
    foaf:name "TULLETT PREBON PLC - TP SPOTDEAL" .
@@ -3241,7 +3241,7 @@ mic:TRDE a figi-gii:PricingSource ;
    foaf:name "TRADITION ELECTRONIC TRADING PLATFORM" .
 mic:TRDX a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:TRDE ;
+   dbo:operatedBy mic:TRDE ;
    foaf:homepage <http://www.tradition.com> ;
    dc:created "2012-03"^^xsd:gYearMonth ;
    foaf:name "TRAD-X" .
@@ -3257,7 +3257,7 @@ mic:TRPX a figi-gii:PricingSource ;
    foaf:name "TROP-X" .
 mic:TRQM a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:TRQX ;
+   dbo:operatedBy mic:TRQX ;
    foaf:homepage <http://www.tradeturquoise.com> ;
    dc:created "2011-05"^^xsd:gYearMonth ;
    foaf:name "TURQUOISE DARK" .
@@ -3268,13 +3268,13 @@ mic:TRQX a figi-gii:PricingSource ;
    foaf:name "TURQUOISE" .
 mic:TRU1 a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:TRUX ;
+   dbo:operatedBy mic:TRUX ;
    foaf:homepage <http://www.trueex.com> ;
    dc:created "2014-07"^^xsd:gYearMonth ;
    foaf:name "TRUEEX LLC - DESIGNATED CONTRACT MARKET (DMC)" .
 mic:TRU2 a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:TRUX ;
+   dbo:operatedBy mic:TRUX ;
    foaf:homepage <http://www.trueex.com> ;
    dc:created "2014-07"^^xsd:gYearMonth ;
    foaf:name "TRUEEX LLC - SEF (SWAP EXECUTION FACILITY)" .
@@ -3300,7 +3300,7 @@ mic:TSEF a figi-gii:PricingSource ;
    foaf:name "TRADITION SEF" .
 mic:TWSF a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:TRWB ;
+   dbo:operatedBy mic:TRWB ;
    foaf:homepage <http://www.tradeweb.com> ;
    dc:created "2014-07"^^xsd:gYearMonth ;
    foaf:name "TW SEF LLC" .
@@ -3311,13 +3311,13 @@ mic:UBSA a figi-gii:PricingSource ;
    foaf:name "UBS ATS" .
 mic:UBSC a figi-gii:PricingSource ;
    gn:countryCode "CH" ;
-   dbp-ont:operatedBy mic:UBSG ;
+   dbo:operatedBy mic:UBSG ;
    foaf:homepage <http://www.ubs.com> ;
    dc:created "2013-07"^^xsd:gYearMonth ;
    foaf:name "UBS PIN-FX" .
 mic:UBSF a figi-gii:PricingSource ;
    gn:countryCode "CH" ;
-   dbp-ont:operatedBy mic:UBSG ;
+   dbo:operatedBy mic:UBSG ;
    foaf:homepage <http://www.ubs.com> ;
    dc:created "2013-07"^^xsd:gYearMonth ;
    foaf:name "UBS FX" .
@@ -3328,7 +3328,7 @@ mic:UBSG a figi-gii:PricingSource ;
    foaf:name "UBS TRADING" .
 mic:UBSP a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:UBSA ;
+   dbo:operatedBy mic:UBSA ;
    foaf:homepage <http://www.ubs.com> ;
    dc:created "2012-03"^^xsd:gYearMonth ;
    foaf:name "UBS PIN (UBS PRICE IMPROVEMENT NETWORK)" .
@@ -3367,67 +3367,67 @@ mic:VMFX a figi-gii:PricingSource ;
    foaf:name "THE FAROESE SECURITIES MARKET" .
 mic:VMTS a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:XMTS ;
+   dbo:operatedBy mic:XMTS ;
    foaf:homepage <http://www.mtsslovenia.com> ;
    dc:created "2007-08"^^xsd:gYearMonth ;
    foaf:name "MTS SLOVENIA" .
 mic:VOLA a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:TRDE ;
+   dbo:operatedBy mic:TRDE ;
    foaf:homepage <http://www.tradition.com> ;
    dc:created "2012-06"^^xsd:gYearMonth ;
    foaf:name "TRADITION - VOLATIS" .
 mic:VPXB a figi-gii:PricingSource ;
    gn:countryCode "BE" ;
-   dbp-ont:operatedBy mic:XBRU ;
+   dbo:operatedBy mic:XBRU ;
    foaf:homepage <http://www.euronext.com> ;
    dc:created "2007-08"^^xsd:gYearMonth ;
    foaf:name "EURONEXT - VENTES PUBLIQUES BRUSSELS" .
 mic:VTEX a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:BNYC ;
+   dbo:operatedBy mic:BNYC ;
    foaf:homepage <http://www.bnyconvergex.com> ;
    dc:created "2009-03"^^xsd:gYearMonth ;
    foaf:name "VORTEX" .
 mic:WBAH a figi-gii:PricingSource ;
    gn:countryCode "AT" ;
-   dbp-ont:operatedBy mic:XWBO ;
+   dbo:operatedBy mic:XWBO ;
    foaf:homepage <http://www.wienerboerse.at> ;
    dc:created "2007-07"^^xsd:gYearMonth ;
    foaf:name "WIENER BOERSE AG AMTLICHER HANDEL (OFFICIAL MARKET)" .
 mic:WBCL a figi-gii:PricingSource ;
    gn:countryCode "PL" ;
-   dbp-ont:operatedBy mic:XWAR ;
+   dbo:operatedBy mic:XWAR ;
    foaf:homepage <http://www.gpwcatalyst.pl> ;
    dc:created "2013-04"^^xsd:gYearMonth ;
    foaf:name "WARSAW STOCK EXCHANGE/BONDS/CATALYST/LISTING" .
 mic:WBDM a figi-gii:PricingSource ;
    gn:countryCode "AT" ;
-   dbp-ont:operatedBy mic:XWBO ;
+   dbo:operatedBy mic:XWBO ;
    foaf:homepage <http://www.wienerboerse.at> ;
    dc:created "2007-07"^^xsd:gYearMonth ;
    foaf:name "WIENER BOERSE AG DRITTER MARKT (THIRD MARKET)" .
 mic:WBGF a figi-gii:PricingSource ;
    gn:countryCode "AT" ;
-   dbp-ont:operatedBy mic:XWBO ;
+   dbo:operatedBy mic:XWBO ;
    foaf:homepage <http://www.wienerboerse.at> ;
    dc:created "2007-07"^^xsd:gYearMonth ;
    foaf:name "WIENER BOERSE AG GEREGELTER FREIVERKEHR (SECOND REGULATED MARKET)" .
 mic:WBON a figi-gii:PricingSource ;
    gn:countryCode "PL" ;
-   dbp-ont:operatedBy mic:XWAR ;
+   dbo:operatedBy mic:XWAR ;
    foaf:homepage <http://www.gpwcatalyst.pl> ;
    dc:created "2012-05"^^xsd:gYearMonth ;
    foaf:name "WARSAW STOCK EXCHANGE/ BONDS/CATALYST/MAIN MARKET" .
 mic:WCLK a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:ICAP ;
+   dbo:operatedBy mic:ICAP ;
    foaf:homepage <http://www.icap.com> ;
    dc:created "2007-06"^^xsd:gYearMonth ;
    foaf:name "ICAP WCLK" .
 mic:WDER a figi-gii:PricingSource ;
    gn:countryCode "PL" ;
-   dbp-ont:operatedBy mic:XWAR ;
+   dbo:operatedBy mic:XWAR ;
    foaf:homepage <http://www.pochodne.gpw.pl> ;
    dc:created "2012-09"^^xsd:gYearMonth ;
    foaf:name "WARSAW STOCK EXCHANGE/FINANCIAL DERIVATIVES" .
@@ -3438,19 +3438,19 @@ mic:WELX a figi-gii:PricingSource ;
    foaf:name "WELLS FARGO LIQUIDITY CROSS ATS" .
 mic:WETP a figi-gii:PricingSource ;
    gn:countryCode "PL" ;
-   dbp-ont:operatedBy mic:XWAR ;
+   dbo:operatedBy mic:XWAR ;
    foaf:homepage <http://www.gpw.pl> ;
    dc:created "2012-05"^^xsd:gYearMonth ;
    foaf:name "WARSAW STOCK EXCHANGE/ ETPS" .
 mic:WGAS a figi-gii:PricingSource ;
    gn:countryCode "PL" ;
-   dbp-ont:operatedBy mic:XWAR ;
+   dbo:operatedBy mic:XWAR ;
    foaf:homepage <http://www.polpx.pl> ;
    dc:created "2012-05"^^xsd:gYearMonth ;
    foaf:name "WARSAW STOCK EXCHANGE/COMMODITIES/POLISH POWER EXCHANGE/GAS" .
 mic:WIND a figi-gii:PricingSource ;
    gn:countryCode "PL" ;
-   dbp-ont:operatedBy mic:XWAR ;
+   dbo:operatedBy mic:XWAR ;
    foaf:homepage <http://www.gpw.pl> ;
    dc:created "2012-05"^^xsd:gYearMonth ;
    foaf:name "WARSAW STOCK EXCHANGE/INDICES" .
@@ -3461,13 +3461,13 @@ mic:WINS a figi-gii:PricingSource ;
    foaf:name "WINTERFLOOD SECURITIES LIMITED" .
 mic:WMTF a figi-gii:PricingSource ;
    gn:countryCode "PL" ;
-   dbp-ont:operatedBy mic:XWAR ;
+   dbo:operatedBy mic:XWAR ;
    foaf:homepage <http://www.gpwcatalyst.pl> ;
    dc:created "2012-05"^^xsd:gYearMonth ;
    foaf:name "WARSAW STOCK EXCHANGE/BONDS/CATALYST/MTF" .
 mic:WQXL a figi-gii:PricingSource ;
    gn:countryCode "PT" ;
-   dbp-ont:operatedBy mic:XLIS ;
+   dbo:operatedBy mic:XLIS ;
    foaf:homepage <http://www.euronext.com> ;
    dc:created "2007-08"^^xsd:gYearMonth ;
    foaf:name "EURONEXT - MARKET WITHOUT QUOTATIONS LISBON" .
@@ -3478,13 +3478,13 @@ mic:WSAG a figi-gii:PricingSource ;
    foaf:name "WALL STREET ACCESS" .
 mic:XADE a figi-gii:PricingSource ;
    gn:countryCode "GR" ;
-   dbp-ont:operatedBy mic:ASEX ;
+   dbo:operatedBy mic:ASEX ;
    foaf:homepage <http://www.athex.gr> ;
    dc:created "2007-11"^^xsd:gYearMonth ;
    foaf:name "ATHENS EXCHANGE S.A. DERIVATIVES MARKET" .
 mic:XADF a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:FINR ;
+   dbo:operatedBy mic:FINR ;
    foaf:homepage <http://www.finra.org> ;
    dc:created "2013-01"^^xsd:gYearMonth ;
    foaf:name "FINRA ALTERNATIVE DISPLAY FACILITY (ADF)" .
@@ -3505,7 +3505,7 @@ mic:XAFX a figi-gii:PricingSource ;
    foaf:name "AFRICAN STOCK EXCHANGE" .
 mic:XAIM a figi-gii:PricingSource ;
    gn:countryCode "IT" ;
-   dbp-ont:operatedBy mic:XMIL ;
+   dbo:operatedBy mic:XMIL ;
    foaf:homepage <http://www.borsaitaliana.it> ;
    dc:created "2012-04"^^xsd:gYearMonth ;
    foaf:name "AIM ITALIA - MERCATO ALTERNATIVO DEL CAPITALE" .
@@ -3540,7 +3540,7 @@ mic:XARM a figi-gii:PricingSource ;
    foaf:name "NASDAQ OMX ARMENIA" .
 mic:XASE a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XNYS ;
+   dbo:operatedBy mic:XNYS ;
    foaf:homepage <http://www.nyse.com> ;
    dc:created "2009-05"^^xsd:gYearMonth ;
    foaf:name "NYSE MKT LLC" .
@@ -3551,13 +3551,13 @@ mic:XASX a figi-gii:PricingSource ;
    foaf:name "ASX - ALL MARKETS" .
 mic:XATH a figi-gii:PricingSource ;
    gn:countryCode "GR" ;
-   dbp-ont:operatedBy mic:ASEX ;
+   dbo:operatedBy mic:ASEX ;
    foaf:homepage <http://www.athex.gr> ;
    dc:created "2007-11"^^xsd:gYearMonth ;
    foaf:name "ATHENS EXCHANGE S.A. CASH MARKET" .
 mic:XATL a figi-gii:PricingSource ;
    gn:countryCode "IE" ;
-   dbp-ont:operatedBy mic:XDUB ;
+   dbo:operatedBy mic:XDUB ;
    foaf:homepage <http://www.ise.ie> ;
    dc:created "2015-01"^^xsd:gYearMonth ;
    foaf:name "ATLANTIC SECURITIES MARKET" .
@@ -3588,7 +3588,7 @@ mic:XBAN a figi-gii:PricingSource ;
    foaf:name "BANGALORE STOCK EXCHANGE LTD" .
 mic:XBAR a figi-gii:PricingSource ;
    gn:countryCode "ES" ;
-   dbp-ont:operatedBy mic:BMEX ;
+   dbo:operatedBy mic:BMEX ;
    foaf:homepage <http://www.borsabcn.es> ;
    dc:created "2011-06"^^xsd:gYearMonth ;
    foaf:name "BOLSA DE BARCELONA" .
@@ -3624,7 +3624,7 @@ mic:XBCV a figi-gii:PricingSource ;
    foaf:name "BOLSA CENTROAMERICANA DE VALORES S.A." .
 mic:XBCX a figi-gii:PricingSource ;
    gn:countryCode "AR" ;
-   dbp-ont:operatedBy mic:XBCM ;
+   dbo:operatedBy mic:XBCM ;
    foaf:homepage <http://www.mervalmza.com.ar> ;
    dc:created "2011-01"^^xsd:gYearMonth ;
    foaf:name "MERCADO DE VALORES DE MENDOZA S.A." .
@@ -3645,7 +3645,7 @@ mic:XBER a figi-gii:PricingSource ;
    foaf:name "BOERSE BERLIN" .
 mic:XBES a figi-gii:PricingSource ;
    gn:countryCode "ZA" ;
-   dbp-ont:operatedBy mic:XJSE ;
+   dbo:operatedBy mic:XJSE ;
    foaf:homepage <http://www.jse.co.za> ;
    dc:created "2011-03"^^xsd:gYearMonth ;
    foaf:name "JSE CASH BOND MARKET" .
@@ -3656,13 +3656,13 @@ mic:XBEY a figi-gii:PricingSource ;
    foaf:name "BOURSE DE BEYROUTH - BEIRUT STOCK EXCHANGE" .
 mic:XBIL a figi-gii:PricingSource ;
    gn:countryCode "ES" ;
-   dbp-ont:operatedBy mic:BMEX ;
+   dbo:operatedBy mic:BMEX ;
    foaf:homepage <http://www.bolsabilbao.es> ;
    dc:created "2005-06"^^xsd:gYearMonth ;
    foaf:name "BOLSA DE VALORES DE BILBAO" .
 mic:XBKF a figi-gii:PricingSource ;
    gn:countryCode "TH" ;
-   dbp-ont:operatedBy mic:XBKK ;
+   dbo:operatedBy mic:XBKK ;
    foaf:homepage <http://www.set.or.th> ;
    dc:created "2005-06"^^xsd:gYearMonth ;
    foaf:name "STOCK EXCHANGE OF THAILAND - FOREIGN BOARD" .
@@ -3703,7 +3703,7 @@ mic:XBOM a figi-gii:PricingSource ;
    foaf:name "BSE LTD" .
 mic:XBOS a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XNAS ;
+   dbo:operatedBy mic:XNAS ;
    foaf:homepage <http://www.nasdaqomxtrader.com> ;
    dc:created "2012-04"^^xsd:gYearMonth ;
    foaf:name "NASDAQ OMX BX" .
@@ -3724,7 +3724,7 @@ mic:XBRA a figi-gii:PricingSource ;
    foaf:name "BRATISLAVA STOCK EXCHANGE" .
 mic:XBRD a figi-gii:PricingSource ;
    gn:countryCode "BE" ;
-   dbp-ont:operatedBy mic:XBRU ;
+   dbo:operatedBy mic:XBRU ;
    foaf:homepage <http://www.euronext.com> ;
    dc:created "2007-11"^^xsd:gYearMonth ;
    foaf:name "EURONEXT - EURONEXT BRUSSELS - DERIVATIVES" .
@@ -3739,7 +3739,7 @@ mic:XBRN a figi-gii:PricingSource ;
    foaf:name "BX SWISS AG" .
 mic:XBRT a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XNAS ;
+   dbo:operatedBy mic:XNAS ;
    foaf:homepage <http://www.nasdaqtrader.com> ;
    dc:created "2005-06"^^xsd:gYearMonth ;
    foaf:name "BRUT ECN" .
@@ -3755,7 +3755,7 @@ mic:XBRV a figi-gii:PricingSource ;
    foaf:name "BOURSE REGIONALE DES VALEURS MOBILIERES" .
 mic:XBSD a figi-gii:PricingSource ;
    gn:countryCode "RO" ;
-   dbp-ont:operatedBy mic:XBSE ;
+   dbo:operatedBy mic:XBSE ;
    foaf:homepage <http://www.bvb.ro> ;
    dc:created "2008-01"^^xsd:gYearMonth ;
    foaf:name "DERIVATIVES REGULATED MARKET - BVB" .
@@ -3766,7 +3766,7 @@ mic:XBSE a figi-gii:PricingSource ;
    foaf:name "SPOT REGULATED MARKET - BVB" .
 mic:XBTR a figi-gii:PricingSource ;
    gn:countryCode "CH" ;
-   dbp-ont:operatedBy mic:XSWX ;
+   dbo:operatedBy mic:XSWX ;
    foaf:homepage <http://www.six-swiss-exchange.com> ;
    dc:created "2013-03"^^xsd:gYearMonth ;
    foaf:name "SIX SWISS BILATERAL TRADING PLATFORM FOR STRUCTURED OTC PRODUCTS" .
@@ -3801,7 +3801,7 @@ mic:XBVR a figi-gii:PricingSource ;
    foaf:name "BOLSA DE VALORES DE LA REPUBLICA DOMINICANA SA." .
 mic:XBXO a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XNAS ;
+   dbo:operatedBy mic:XNAS ;
    foaf:homepage <http://www.nasdaqomxtrader.com> ;
    dc:created "2012-04"^^xsd:gYearMonth ;
    foaf:name "NASDAQ OMX BX OPTIONS" .
@@ -3817,7 +3817,7 @@ mic:XCAL a figi-gii:PricingSource ;
    foaf:name "CALCUTTA STOCK EXCHANGE" .
 mic:XCAN a figi-gii:PricingSource ;
    gn:countryCode "RO" ;
-   dbp-ont:operatedBy mic:XBSE ;
+   dbo:operatedBy mic:XBSE ;
    foaf:homepage <http://www.bvb.ro> ;
    dc:created "2010-10"^^xsd:gYearMonth ;
    foaf:name "CAN-ATS" .
@@ -3833,7 +3833,7 @@ mic:XCAY a figi-gii:PricingSource ;
    foaf:name "CAYMAN ISLANDS STOCK EXCHANGE" .
 mic:XCBF a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XCBO ;
+   dbo:operatedBy mic:XCBO ;
    foaf:homepage <http://www.cfe.cboe.com> ;
    dc:created "2008-07"^^xsd:gYearMonth ;
    foaf:name "CBOE FUTURES EXCHANGE" .
@@ -3854,13 +3854,13 @@ mic:XCDE a figi-gii:PricingSource ;
    foaf:name "BAXTER FINANCIAL SERVICES" .
 mic:XCEC a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XNYM ;
+   dbo:operatedBy mic:XNYM ;
    foaf:homepage <http://www.nymex.com> ;
    dc:created "2005-06"^^xsd:gYearMonth ;
    foaf:name "COMMODITIES EXCHANGE CENTER" .
 mic:XCEG a figi-gii:PricingSource ;
    gn:countryCode "AT" ;
-   dbp-ont:operatedBy mic:XWBO ;
+   dbo:operatedBy mic:XWBO ;
    foaf:homepage <http://www.ceghex.com> ;
    dc:created "2011-04"^^xsd:gYearMonth ;
    foaf:name "WIENER BOERSE AG, CEGH GAS EXCHANGE" .
@@ -3949,13 +3949,13 @@ mic:XCUR a figi-gii:PricingSource ;
    foaf:name "CURRENEX" .
 mic:XCX2 a figi-gii:PricingSource ;
    gn:countryCode "CA" ;
-   dbp-ont:operatedBy mic:CHIC ;
+   dbo:operatedBy mic:CHIC ;
    foaf:homepage <http://www.chi-x.com/ca> ;
    dc:created "2012-12"^^xsd:gYearMonth ;
    foaf:name "CX2" .
 mic:XCYO a figi-gii:PricingSource ;
    gn:countryCode "CY" ;
-   dbp-ont:operatedBy mic:XCYS ;
+   dbo:operatedBy mic:XCYS ;
    foaf:homepage <http://www.cse.com.cy> ;
    dc:created "2009-10"^^xsd:gYearMonth ;
    foaf:name "CYPRUS STOCK EXCHANGE - OTC" .
@@ -3971,19 +3971,19 @@ mic:XDAR a figi-gii:PricingSource ;
    foaf:name "DAR ES  SALAAM STOCK EXCHANGE" .
 mic:XDBC a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XFRA ;
+   dbo:operatedBy mic:XFRA ;
    foaf:homepage <http://www.deutsche-boerse.com> ;
    dc:created "2011-03"^^xsd:gYearMonth ;
    foaf:name "DEUTSCHE BOERSE AG - CUSTOMIZED INDICES" .
 mic:XDBV a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XFRA ;
+   dbo:operatedBy mic:XFRA ;
    foaf:homepage <http://www.deutsche-boerse.com> ;
    dc:created "2011-03"^^xsd:gYearMonth ;
    foaf:name "DEUTSCHE BOERSE AG - VOLATILITY INDICES" .
 mic:XDBX a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XFRA ;
+   dbo:operatedBy mic:XFRA ;
    foaf:homepage <http://www.deutsche-boerse.com> ;
    dc:created "2011-03"^^xsd:gYearMonth ;
    foaf:name "DEUTSCHE BOERSE AG - INDICES" .
@@ -4012,7 +4012,7 @@ mic:XDHA a figi-gii:PricingSource ;
    foaf:name "DHAKA STOCK EXCHANGE LTD" .
 mic:XDMI a figi-gii:PricingSource ;
    gn:countryCode "IT" ;
-   dbp-ont:operatedBy mic:XMIL ;
+   dbo:operatedBy mic:XMIL ;
    foaf:homepage <http://www.borsaitaliana.it> ;
    dc:created "2005-06"^^xsd:gYearMonth ;
    foaf:name "ITALIAN DERIVATIVES MARKET" .
@@ -4022,7 +4022,7 @@ mic:XDPA a figi-gii:PricingSource ;
    foaf:name "CADE - MERCADO DE DEUDA PUBLICA ANOTADA" .
 mic:XDRF a figi-gii:PricingSource ;
    gn:countryCode "ES" ;
-   dbp-ont:operatedBy mic:BMEX ;
+   dbo:operatedBy mic:BMEX ;
    foaf:homepage <http://www.aiaf.es> ;
    dc:created "2005-06"^^xsd:gYearMonth ;
    foaf:name "AIAF - MERCADO DE RENTA FIJA" .
@@ -4033,7 +4033,7 @@ mic:XDSE a figi-gii:PricingSource ;
    foaf:name "DAMASCUS SECURITIES EXCHANGE" .
 mic:XDSM a figi-gii:PricingSource ;
    gn:countryCode "TR" ;
-   dbp-ont:operatedBy mic:XIST ;
+   dbo:operatedBy mic:XIST ;
    foaf:homepage <http://www.borsaistanbul.com> ;
    dc:created "2014-01"^^xsd:gYearMonth ;
    foaf:name "BORSA ISTANBUL - DEBT SECURITIES MARKET" .
@@ -4064,7 +4064,7 @@ mic:XECC a figi-gii:PricingSource ;
    foaf:name "EUROPEAN COMMODITY CLEARING AG" .
 mic:XECM a figi-gii:PricingSource ;
    gn:countryCode "CY" ;
-   dbp-ont:operatedBy mic:XCYS ;
+   dbo:operatedBy mic:XCYS ;
    foaf:homepage <http://www.cse.com.cy/en/default.asp> ;
    dc:created "2009-05"^^xsd:gYearMonth ;
    foaf:name "MTF - CYPRUS EXCHANGE" .
@@ -4095,67 +4095,67 @@ mic:XEMS a figi-gii:PricingSource ;
    foaf:name "EMS EXCHANGE" .
 mic:XEQT a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XBER ;
+   dbo:operatedBy mic:XBER ;
    foaf:homepage <http://www.equiduct-trading.de> ;
    dc:created "2008-05"^^xsd:gYearMonth ;
    foaf:name "BOERSE BERLIN EQUIDUCT TRADING" .
 mic:XEQY a figi-gii:PricingSource ;
    gn:countryCode "TR" ;
-   dbp-ont:operatedBy mic:XIST ;
+   dbo:operatedBy mic:XIST ;
    foaf:homepage <http://www.borsaistanbul.com> ;
    dc:created "2014-01"^^xsd:gYearMonth ;
    foaf:name "BORSA ISTANBUL - EQUITY MARKET" .
 mic:XERE a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XEUR ;
+   dbo:operatedBy mic:XEUR ;
    foaf:homepage <http://www.eurexrepo.com> ;
    dc:created "2014-04"^^xsd:gYearMonth ;
    foaf:name "EUREX REPO - FUNDING AND FINANCING PRODUCTS" .
 mic:XESM a figi-gii:PricingSource ;
    gn:countryCode "IE" ;
-   dbp-ont:operatedBy mic:XDUB ;
+   dbo:operatedBy mic:XDUB ;
    foaf:homepage <http://www.ise.ie> ;
    dc:created "2013-01"^^xsd:gYearMonth ;
    foaf:name "DUBLIN - IRISH STOCK EXCHANGE - ENTREPRISE SECURITIES MARKET (ESM)- ISE XETRA" .
 mic:XETA a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XFRA ;
+   dbo:operatedBy mic:XFRA ;
    foaf:homepage <http://www.deutsche-boerse.com> ;
    dc:created "2008-03"^^xsd:gYearMonth ;
    foaf:name "XETRA - REGULIERTER MARKT" .
 mic:XETB a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XFRA ;
+   dbo:operatedBy mic:XFRA ;
    foaf:homepage <http://www.deutsche-boerse.com> ;
    dc:created "2008-03"^^xsd:gYearMonth ;
    foaf:name "XETRA - FREIVERKEHR" .
 mic:XETR a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XFRA ;
+   dbo:operatedBy mic:XFRA ;
    foaf:homepage <http://www.deutsche-boerse.com> ;
    dc:created "2005-06"^^xsd:gYearMonth ;
    foaf:name "XETRA" .
 mic:XEUB a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XEUR ;
+   dbo:operatedBy mic:XEUR ;
    foaf:homepage <http://www.eurex-bonds.com> ;
    dc:created "2005-06"^^xsd:gYearMonth ;
    foaf:name "EUREX BONDS" .
 mic:XEUC a figi-gii:PricingSource ;
    gn:countryCode "NL" ;
-   dbp-ont:operatedBy mic:XAMS ;
+   dbo:operatedBy mic:XAMS ;
    foaf:homepage <http://www.euronext.com> ;
    dc:created "2005-06"^^xsd:gYearMonth ;
    foaf:name "EURONEXT COM, COMMODITIES FUTURES AND OPTIONS" .
 mic:XEUE a figi-gii:PricingSource ;
    gn:countryCode "NL" ;
-   dbp-ont:operatedBy mic:XAMS ;
+   dbo:operatedBy mic:XAMS ;
    foaf:homepage <http://www.euronext.com> ;
    dc:created "2005-06"^^xsd:gYearMonth ;
    foaf:name "EURONEXT EQF, EQUITIES AND INDICES DERIVATIVES" .
 mic:XEUI a figi-gii:PricingSource ;
    gn:countryCode "NL" ;
-   dbp-ont:operatedBy mic:XAMS ;
+   dbo:operatedBy mic:XAMS ;
    foaf:homepage <http://www.euronext.com> ;
    dc:created "2005-06"^^xsd:gYearMonth ;
    foaf:name "EURONEXT IRF, INTEREST RATE FUTURE AND OPTIONS" .
@@ -4166,7 +4166,7 @@ mic:XEUM a figi-gii:PricingSource ;
    foaf:name "EUREX REPO SECLEND MARKET" .
 mic:XEUP a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XEUR ;
+   dbo:operatedBy mic:XEUR ;
    foaf:homepage <http://www.eurexrepo.com> ;
    dc:created "2005-11"^^xsd:gYearMonth ;
    foaf:name "EUREX REPO GMBH" .
@@ -4177,7 +4177,7 @@ mic:XEUR a figi-gii:PricingSource ;
    foaf:name "EUREX DEUTSCHLAND" .
 mic:XEYE a figi-gii:PricingSource ;
    gn:countryCode "IE" ;
-   dbp-ont:operatedBy mic:XDUB ;
+   dbo:operatedBy mic:XDUB ;
    foaf:homepage <http://www.ise.ie> ;
    dc:created "2012-03"^^xsd:gYearMonth ;
    foaf:name "IRISH STOCK EXCHANGE - GEM - XETRA" .
@@ -4198,13 +4198,13 @@ mic:XFKA a figi-gii:PricingSource ;
    foaf:name "FUKUOKA STOCK EXCHANGE" .
 mic:XFND a figi-gii:PricingSource ;
    gn:countryCode "DK" ;
-   dbp-ont:operatedBy mic:XCSE ;
+   dbo:operatedBy mic:XCSE ;
    foaf:homepage <http://www.omxnordicexchange.com> ;
    dc:created "2007-11"^^xsd:gYearMonth ;
    foaf:name "FIRST NORTH DENMARK" .
 mic:XFNO a figi-gii:PricingSource ;
    gn:countryCode "TR" ;
-   dbp-ont:operatedBy mic:XIST ;
+   dbo:operatedBy mic:XIST ;
    foaf:homepage <http://www.borsaistanbul.com> ;
    dc:created "2014-01"^^xsd:gYearMonth ;
    foaf:name "BORSA ISTANBUL - FUTURES AND OPTIONS MARKET" .
@@ -4220,7 +4220,7 @@ mic:XGAS a figi-gii:PricingSource ;
    foaf:name "CENTRAL EASTERN EUROPEAN GAS EXCHANGE LTD" .
 mic:XGAT a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:TGAT ;
+   dbo:operatedBy mic:TGAT ;
    foaf:homepage <http://www.tradegate.de> ;
    dc:created "2010-05"^^xsd:gYearMonth ;
    foaf:name "TRADEGATE EXCHANGE - FREIVERKEHR" .
@@ -4231,19 +4231,19 @@ mic:XGCL a figi-gii:PricingSource ;
    foaf:name "GLOBAL COAL LIMITED" .
 mic:XGCX a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:GMEG ;
+   dbo:operatedBy mic:GMEG ;
    foaf:homepage <http://www.gmex-group.com> ;
    dc:created "2013-06"^^xsd:gYearMonth ;
    foaf:name "GLOBAL COMMODITIES EXCHANGE" .
 mic:XGDX a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:GMEG ;
+   dbo:operatedBy mic:GMEG ;
    foaf:homepage <http://www.gmex-group.com> ;
    dc:created "2013-06"^^xsd:gYearMonth ;
    foaf:name "GLOBAL DERIVATIVES EXCHANGE" .
 mic:XGEM a figi-gii:PricingSource ;
    gn:countryCode "HK" ;
-   dbp-ont:operatedBy mic:XHKG ;
+   dbo:operatedBy mic:XHKG ;
    foaf:homepage <http://www.hkgem.com> ;
    dc:created "2005-06"^^xsd:gYearMonth ;
    foaf:name "HONG KONG GROWTH ENTERPRISES MARKET" .
@@ -4264,7 +4264,7 @@ mic:XGMX a figi-gii:PricingSource ;
    foaf:name "GLOBALCLEAR MERCANTILE EXCHANGE" .
 mic:XGRM a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:TGAT ;
+   dbo:operatedBy mic:TGAT ;
    foaf:homepage <http://www.tradegate.de> ;
    dc:created "2010-05"^^xsd:gYearMonth ;
    foaf:name "TRADEGATE EXCHANGE - REGULIERTER MARKT" .
@@ -4275,7 +4275,7 @@ mic:XGSE a figi-gii:PricingSource ;
    foaf:name "GEORGIA STOCK EXCHANGE" .
 mic:XGSX a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:GMEG ;
+   dbo:operatedBy mic:GMEG ;
    foaf:homepage <http://www.gmex-group.com> ;
    dc:created "2013-06"^^xsd:gYearMonth ;
    foaf:name "GLOBAL SECURITIES EXCHANGE" .
@@ -4316,7 +4316,7 @@ mic:XHKG a figi-gii:PricingSource ;
    foaf:name "HONG KONG EXCHANGES AND CLEARING LTD" .
 mic:XHNX a figi-gii:PricingSource ;
    gn:countryCode "VN" ;
-   dbp-ont:operatedBy mic:HSTC ;
+   dbo:operatedBy mic:HSTC ;
    foaf:homepage <http://www.hnx.vn> ;
    dc:created "2009-07"^^xsd:gYearMonth ;
    foaf:name "HANOI STOCK EXCHANGE (UNLISTED PUBLIC COMPANY TRADING PLATFORM)" .
@@ -4327,7 +4327,7 @@ mic:XIBE a figi-gii:PricingSource ;
    foaf:name "BAKU INTERBANK CURRENCY EXCHANGE" .
 mic:XICB a figi-gii:PricingSource ;
    gn:countryCode "CH" ;
-   dbp-ont:operatedBy mic:XSWX ;
+   dbo:operatedBy mic:XSWX ;
    foaf:homepage <http://www.six-swiss-exchange.com> ;
    dc:created "2015-03"^^xsd:gYearMonth ;
    foaf:name "SIX SWISS EXCHANGE - CORPORATE BONDS TRADING PLATFORM" .
@@ -4368,13 +4368,13 @@ mic:XIMC a figi-gii:PricingSource ;
    foaf:name "MULTI COMMODITY EXCHANGE OF INDIA LTD." .
 mic:XIMM a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XCME ;
+   dbo:operatedBy mic:XCME ;
    foaf:homepage <http://www.cme.com> ;
    dc:created "2005-06"^^xsd:gYearMonth ;
    foaf:name "INTERNATIONAL MONETARY MARKET" .
 mic:XINE a figi-gii:PricingSource ;
    gn:countryCode "CN" ;
-   dbp-ont:operatedBy mic:XSGE ;
+   dbo:operatedBy mic:XSGE ;
    foaf:homepage <http://www.ine.cn> ;
    dc:created "2014-06"^^xsd:gYearMonth ;
    foaf:name "SHANGHAI INTERNATIONAL ENERGY EXCHANGE" .
@@ -4390,13 +4390,13 @@ mic:XINV a figi-gii:PricingSource ;
    foaf:name "INVESTRO" .
 mic:XIOM a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XCME ;
+   dbo:operatedBy mic:XCME ;
    foaf:homepage <http://www.cme.com> ;
    dc:created "2005-06"^^xsd:gYearMonth ;
    foaf:name "INDEX AND OPTIONS MARKET" .
 mic:XIPO a figi-gii:PricingSource ;
    gn:countryCode "GR" ;
-   dbp-ont:operatedBy mic:ASEX ;
+   dbo:operatedBy mic:ASEX ;
    foaf:homepage <http://www.ase.gr> ;
    dc:created "2014-06"^^xsd:gYearMonth ;
    foaf:name "HELEX ELECTRONIC BOOK BUILDING" .
@@ -4407,13 +4407,13 @@ mic:XIQS a figi-gii:PricingSource ;
    foaf:name "IRAQ STOCK EXCHANGE" .
 mic:XISA a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XISX ;
+   dbo:operatedBy mic:XISX ;
    foaf:homepage <http://www.ise.com> ;
    dc:created "2008-06"^^xsd:gYearMonth ;
    foaf:name "INTERNATIONAL SECURITIES EXCHANGE, LLC -  ALTERNATIVE MARKETS" .
 mic:XISE a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XISX ;
+   dbo:operatedBy mic:XISX ;
    foaf:homepage <http://www.ise.com> ;
    dc:created "2008-06"^^xsd:gYearMonth ;
    foaf:name "INTERNATIONAL SECURITIES EXCHANGE, LLC - EQUITIES" .
@@ -4439,7 +4439,7 @@ mic:XJAM a figi-gii:PricingSource ;
    foaf:name "JAMAICA STOCK EXCHANGE" .
 mic:XJAS a figi-gii:PricingSource ;
    gn:countryCode "JP" ;
-   dbp-ont:operatedBy mic:XJPX ;
+   dbo:operatedBy mic:XJPX ;
    foaf:homepage <http://www.tse.or.jp> ;
    dc:created "2010-10"^^xsd:gYearMonth ;
    foaf:name "TOKYO STOCK EXCHANGE JASDAQ" .
@@ -4474,7 +4474,7 @@ mic:XKAZ a figi-gii:PricingSource ;
    foaf:name "KAZAKHSTAN STOCK EXCHANGE" .
 mic:XKBT a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XCBT ;
+   dbo:operatedBy mic:XCBT ;
    foaf:homepage <http://www.kcbt.com> ;
    dc:created "2005-06"^^xsd:gYearMonth ;
    foaf:name "KANSAS CITY BOARD OF TRADE" .
@@ -4489,7 +4489,7 @@ mic:XKFB a figi-gii:PricingSource ;
    foaf:name "KOREA FREEBOARD MARKET" .
 mic:XKFE a figi-gii:PricingSource ;
    gn:countryCode "KR" ;
-   dbp-ont:operatedBy mic:XKRX ;
+   dbo:operatedBy mic:XKRX ;
    foaf:homepage <http://eng.krx.co.kr> ;
    dc:created "2008-07"^^xsd:gYearMonth ;
    foaf:name "KOREA EXCHANGE (FUTURES MARKET)" .
@@ -4524,7 +4524,7 @@ mic:XKON a figi-gii:PricingSource ;
    foaf:name "KOREA NEW EXCHANGE" .
 mic:XKOS a figi-gii:PricingSource ;
    gn:countryCode "KR" ;
-   dbp-ont:operatedBy mic:XKRX ;
+   dbo:operatedBy mic:XKRX ;
    foaf:homepage <http://eng.krx.co.kr> ;
    dc:created "2006-11"^^xsd:gYearMonth ;
    foaf:name "KOREA EXCHANGE (KOSDAQ)" .
@@ -4555,7 +4555,7 @@ mic:XLAO a figi-gii:PricingSource ;
    foaf:name "LAO SECURITIES EXCHANGE" .
 mic:XLAT a figi-gii:PricingSource ;
    gn:countryCode "ES" ;
-   dbp-ont:operatedBy mic:BMEX ;
+   dbo:operatedBy mic:BMEX ;
    foaf:homepage <http://www.latibex.com> ;
    dc:created "2005-06"^^xsd:gYearMonth ;
    foaf:name "LATIBEX" .
@@ -4576,7 +4576,7 @@ mic:XLDN a figi-gii:PricingSource ;
    foaf:name "EURONEXT - EURONEXT LONDON" .
 mic:XLDX a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:GMEG ;
+   dbo:operatedBy mic:GMEG ;
    foaf:homepage <http://www.gmex-group.com> ;
    dc:created "2013-06"^^xsd:gYearMonth ;
    foaf:name "LONDON DERIVATIVES EXCHANGE" .
@@ -4587,7 +4587,7 @@ mic:XLFX a figi-gii:PricingSource ;
    foaf:name "LABUAN INTERNATIONAL FINANCIAL EXCHANGE" .
 mic:XLIF a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:XLDN ;
+   dbo:operatedBy mic:XLDN ;
    foaf:homepage <http://www.euronext.com> ;
    dc:created "2005-06"^^xsd:gYearMonth ;
    foaf:name "EURONEXT LIFFE" .
@@ -4618,7 +4618,7 @@ mic:XLME a figi-gii:PricingSource ;
    foaf:name "LONDON METAL EXCHANGE" .
 mic:XLOD a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:XLON ;
+   dbo:operatedBy mic:XLON ;
    foaf:homepage <http://www.londonstockexchange.com> ;
    dc:created "2013-07"^^xsd:gYearMonth ;
    foaf:name "LONDON STOCK EXCHANGE - DERIVATIVES MARKET" .
@@ -4649,7 +4649,7 @@ mic:XMAB a figi-gii:PricingSource ;
    foaf:name "MERCADO ABIERTO ELECTRONICO S.A." .
 mic:XMAD a figi-gii:PricingSource ;
    gn:countryCode "ES" ;
-   dbp-ont:operatedBy mic:BMEX ;
+   dbo:operatedBy mic:BMEX ;
    foaf:homepage <http://www.bolsamadrid.es> ;
    dc:created "2005-06"^^xsd:gYearMonth ;
    foaf:name "BOLSA DE MADRID" .
@@ -4660,7 +4660,7 @@ mic:XMAE a figi-gii:PricingSource ;
    foaf:name "MACEDONIAN STOCK EXCHANGE" .
 mic:XMAI a figi-gii:PricingSource ;
    gn:countryCode "TH" ;
-   dbp-ont:operatedBy mic:XBKK ;
+   dbo:operatedBy mic:XBKK ;
    foaf:homepage <http://www.set.or.th> ;
    dc:created "2011-04"^^xsd:gYearMonth ;
    foaf:name "MARKET FOR ALTERNATIVE INVESTMENT" .
@@ -4676,7 +4676,7 @@ mic:XMAN a figi-gii:PricingSource ;
    foaf:name "BOLSA DE VALORES DE NICARAGUA" .
 mic:XMAT a figi-gii:PricingSource ;
    gn:countryCode "FR" ;
-   dbp-ont:operatedBy mic:XPAR ;
+   dbo:operatedBy mic:XPAR ;
    foaf:homepage <http://www.euronext.com> ;
    dc:created "2005-06"^^xsd:gYearMonth ;
    foaf:name "EURONEXT PARIS MATIF" .
@@ -4687,7 +4687,7 @@ mic:XMAU a figi-gii:PricingSource ;
    foaf:name "STOCK EXCHANGE OF MAURITIUS LTD" .
 mic:XMCE a figi-gii:PricingSource ;
    gn:countryCode "ES" ;
-   dbp-ont:operatedBy mic:BMEX ;
+   dbo:operatedBy mic:BMEX ;
    foaf:homepage <http://www.bolsasymercados.es> ;
    dc:created "2007-11"^^xsd:gYearMonth ;
    foaf:name "MERCADO CONTINUO ESPANOL - CONTINUOUS MARKET" .
@@ -4705,7 +4705,7 @@ mic:XMER a figi-gii:PricingSource ;
    foaf:name "MERCHANTS' EXCHANGE" .
 mic:XMEV a figi-gii:PricingSource ;
    gn:countryCode "AR" ;
-   dbp-ont:operatedBy mic:XBUE ;
+   dbo:operatedBy mic:XBUE ;
    foaf:homepage <http://www.merval.sba.com.ar> ;
    dc:created "2005-06"^^xsd:gYearMonth ;
    foaf:name "MERCADO DE VALORES DE BUENOS AIRES S.A." .
@@ -4731,7 +4731,7 @@ mic:XMIO a figi-gii:PricingSource ;
    foaf:name "MIAMI INTERNATIONAL SECURITIES EXCHANGE - OPTIONS" .
 mic:XMLI a figi-gii:PricingSource ;
    gn:countryCode "FR" ;
-   dbp-ont:operatedBy mic:XPAR ;
+   dbo:operatedBy mic:XPAR ;
    foaf:homepage <http://www.euronext.com> ;
    dc:created "2006-06"^^xsd:gYearMonth ;
    foaf:name "EURONEXT - MARCHE LIBRE PARIS" .
@@ -4762,7 +4762,7 @@ mic:XMOL a figi-gii:PricingSource ;
    foaf:name "MOLDOVA STOCK EXCHANGE" .
 mic:XMON a figi-gii:PricingSource ;
    gn:countryCode "FR" ;
-   dbp-ont:operatedBy mic:XPAR ;
+   dbo:operatedBy mic:XPAR ;
    foaf:homepage <http://www.euronext.com> ;
    dc:created "2005-06"^^xsd:gYearMonth ;
    foaf:name "EURONEXT PARIS MONEP" .
@@ -4773,25 +4773,25 @@ mic:XMOS a figi-gii:PricingSource ;
    foaf:name "MOSCOW STOCK EXCHANGE" .
 mic:XMOT a figi-gii:PricingSource ;
    gn:countryCode "IT" ;
-   dbp-ont:operatedBy mic:XMIL ;
+   dbo:operatedBy mic:XMIL ;
    foaf:homepage <http://www.borsaitaliana.it> ;
    dc:created "2009-07"^^xsd:gYearMonth ;
    foaf:name "EXTRAMOT" .
 mic:XMPW a figi-gii:PricingSource ;
    gn:countryCode "ES" ;
-   dbp-ont:operatedBy mic:BMEX ;
+   dbo:operatedBy mic:BMEX ;
    foaf:homepage <http://www.meff.com> ;
    dc:created "2014-06"^^xsd:gYearMonth ;
    foaf:name "MEFF POWER DERIVATIVES" .
 mic:XMRV a figi-gii:PricingSource ;
    gn:countryCode "ES" ;
-   dbp-ont:operatedBy mic:BMEX ;
+   dbo:operatedBy mic:BMEX ;
    foaf:homepage <http://www.meff.com> ;
    dc:created "2005-06"^^xsd:gYearMonth ;
    foaf:name "MEFF FINANCIAL DERIVATIVES" .
 mic:XMSM a figi-gii:PricingSource ;
    gn:countryCode "IE" ;
-   dbp-ont:operatedBy mic:XDUB ;
+   dbo:operatedBy mic:XDUB ;
    foaf:homepage <http://www.ise.ie> ;
    dc:created "2013-01"^^xsd:gYearMonth ;
    foaf:name "DUBLIN - IRISH STOCK EXCHANGE - MAIN SECURITIES MARKET (MSM)- ISE XETRA" .
@@ -4822,7 +4822,7 @@ mic:XMUS a figi-gii:PricingSource ;
    foaf:name "MUSCAT SECURITIES MARKET" .
 mic:XMVL a figi-gii:PricingSource ;
    gn:countryCode "AR" ;
-   dbp-ont:operatedBy mic:BCFS ;
+   dbo:operatedBy mic:BCFS ;
    foaf:homepage <http://www.mvl.com.ar> ;
    dc:created "2011-01"^^xsd:gYearMonth ;
    foaf:name "MERCADO DE VALORES DEL LITORAL S.A." .
@@ -4853,25 +4853,25 @@ mic:XNCD a figi-gii:PricingSource ;
    foaf:name "NATIONAL COMMODITY & DERIVATIVES EXCHANGE LTD" .
 mic:XNCM a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XNAS ;
+   dbo:operatedBy mic:XNAS ;
    foaf:homepage <http://www.nasdaq.com> ;
    dc:created "2008-02"^^xsd:gYearMonth ;
    foaf:name "NASDAQ CAPITAL MARKET" .
 mic:XNCO a figi-gii:PricingSource ;
    gn:countryCode "PL" ;
-   dbp-ont:operatedBy mic:XWAR ;
+   dbo:operatedBy mic:XWAR ;
    foaf:homepage <http://www.newconnect.pl> ;
    dc:created "2008-01"^^xsd:gYearMonth ;
    foaf:name "WARSAW STOCK EXCHANGE/ EQUITIES/NEW CONNECT-MTF" .
 mic:XNDQ a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XNAS ;
+   dbo:operatedBy mic:XNAS ;
    foaf:homepage <http://www.nasdaq.com> ;
    dc:created "2007-05"^^xsd:gYearMonth ;
    foaf:name "NASDAQ OPTIONS MARKET" .
 mic:XNDX a figi-gii:PricingSource ;
    gn:countryCode "SE" ;
-   dbp-ont:operatedBy mic:XNGM ;
+   dbo:operatedBy mic:XNGM ;
    foaf:homepage <http://www.ndx.se> ;
    dc:created "2008-03"^^xsd:gYearMonth ;
    foaf:name "NORDIC DERIVATIVES EXCHANGE" .
@@ -4887,7 +4887,7 @@ mic:XNEP a figi-gii:PricingSource ;
    foaf:name "NEPAL STOCK EXCHANGE" .
 mic:XNEW a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XFRA ;
+   dbo:operatedBy mic:XFRA ;
    foaf:homepage <http://www.newex.com> ;
    dc:created "2006-09"^^xsd:gYearMonth ;
    foaf:name "NEWEX" .
@@ -4903,13 +4903,13 @@ mic:XNGO a figi-gii:PricingSource ;
    foaf:name "NAGOYA STOCK EXCHANGE" .
 mic:XNGS a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XNAS ;
+   dbo:operatedBy mic:XNAS ;
    foaf:homepage <http://www.nasdaq.com> ;
    dc:created "2006-07"^^xsd:gYearMonth ;
    foaf:name "NASDAQ/NGS (GLOBAL SELECT MARKET)" .
 mic:XNIM a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XNAS ;
+   dbo:operatedBy mic:XNAS ;
    foaf:homepage <http://www.nasdaq.com> ;
    dc:created "2008-02"^^xsd:gYearMonth ;
    foaf:name "NASDAQ INTERMARKET" .
@@ -4920,25 +4920,25 @@ mic:XNKS a figi-gii:PricingSource ;
    foaf:name "CENTRAL JAPAN COMMODITIES EXCHANGE" .
 mic:XNLI a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XNYS ;
+   dbo:operatedBy mic:XNYS ;
    foaf:homepage <http://www.nyse.com> ;
    dc:created "2008-09"^^xsd:gYearMonth ;
    foaf:name "NYSE LIFFE" .
 mic:XNLX a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:NURO ;
+   dbo:operatedBy mic:NURO ;
    foaf:homepage <http://www.nlx.co.uk> ;
    dc:created "2012-11"^^xsd:gYearMonth ;
    foaf:name "NASDAQ OMX NLX" .
 mic:XNMR a figi-gii:PricingSource ;
    gn:countryCode "SE" ;
-   dbp-ont:operatedBy mic:XNGM ;
+   dbo:operatedBy mic:XNGM ;
    foaf:homepage <http://www.nordicmtf.se> ;
    dc:created "2008-04"^^xsd:gYearMonth ;
    foaf:name "NORDIC MTF REPORTING" .
 mic:XNMS a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XNAS ;
+   dbo:operatedBy mic:XNAS ;
    foaf:homepage <http://www.nasdaq.com> ;
    dc:created "2005-06"^^xsd:gYearMonth ;
    foaf:name "NASDAQ/NMS (GLOBAL MARKET)" .
@@ -4954,13 +4954,13 @@ mic:XNSE a figi-gii:PricingSource ;
    foaf:name "NATIONAL STOCK EXCHANGE OF INDIA" .
 mic:XNYE a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XNYM ;
+   dbo:operatedBy mic:XNYM ;
    foaf:homepage <http://www.nymex.com> ;
    dc:created "2008-05"^^xsd:gYearMonth ;
    foaf:name "NEW YORK MERCANTILE EXCHANGE - OTC MARKETS" .
 mic:XNYL a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XNYM ;
+   dbo:operatedBy mic:XNYM ;
    foaf:homepage <http://www.nymexonlchclearnet.com> ;
    dc:created "2008-05"^^xsd:gYearMonth ;
    foaf:name "NEW YORK MERCANTILE EXCHANGE - ENERGY MARKETS" .
@@ -4980,19 +4980,19 @@ mic:XNZE a figi-gii:PricingSource ;
    foaf:name "NEW ZEALAND EXCHANGE LTD" .
 mic:XOAD a figi-gii:PricingSource ;
    gn:countryCode "NO" ;
-   dbp-ont:operatedBy mic:XOSL ;
+   dbo:operatedBy mic:XOSL ;
    foaf:homepage <http://www.oslobors.no> ;
    dc:created "2015-04"^^xsd:gYearMonth ;
    foaf:name "OSLO AXESS NORTH SEA - DARK POOL" .
 mic:XOAM a figi-gii:PricingSource ;
    gn:countryCode "NO" ;
-   dbp-ont:operatedBy mic:XOSL ;
+   dbo:operatedBy mic:XOSL ;
    foaf:homepage <http://www.oslobors.no> ;
    dc:created "2007-11"^^xsd:gYearMonth ;
    foaf:name "NORDIC ALTERNATIVE BOND MARKET" .
 mic:XOAS a figi-gii:PricingSource ;
    gn:countryCode "NO" ;
-   dbp-ont:operatedBy mic:XOSL ;
+   dbo:operatedBy mic:XOSL ;
    foaf:homepage <http://www.oslobors.no> ;
    dc:created "2007-02"^^xsd:gYearMonth ;
    foaf:name "OSLO AXESS" .
@@ -5008,31 +5008,31 @@ mic:XODE a figi-gii:PricingSource ;
    foaf:name "ODESSA COMMODITY EXCHANGE" .
 mic:XOPV a figi-gii:PricingSource ;
    gn:countryCode "SE" ;
-   dbp-ont:operatedBy mic:XSTO ;
+   dbo:operatedBy mic:XSTO ;
    foaf:homepage <http://www.nasdaqomxnordic.com> ;
    dc:created "2007-11"^^xsd:gYearMonth ;
    foaf:name "OTC PUBLICATION VENUE" .
 mic:XOSC a figi-gii:PricingSource ;
    gn:countryCode "NO" ;
-   dbp-ont:operatedBy mic:XOSL ;
+   dbo:operatedBy mic:XOSL ;
    foaf:homepage <http://www.oslobors.no> ;
    dc:created "2013-05"^^xsd:gYearMonth ;
    foaf:name "OSLO CONNECT" .
 mic:XOSD a figi-gii:PricingSource ;
    gn:countryCode "NO" ;
-   dbp-ont:operatedBy mic:XOSL ;
+   dbo:operatedBy mic:XOSL ;
    foaf:homepage <http://www.oslobors.no> ;
    dc:created "2015-04"^^xsd:gYearMonth ;
    foaf:name "OSLO BORS NORTH SEA - DARK POOL" .
 mic:XOSE a figi-gii:PricingSource ;
    gn:countryCode "JP" ;
-   dbp-ont:operatedBy mic:XJPX ;
+   dbo:operatedBy mic:XJPX ;
    foaf:homepage <http://www.ose.or.jp> ;
    dc:created "2005-06"^^xsd:gYearMonth ;
    foaf:name "OSAKA EXCHANGE" .
 mic:XOSJ a figi-gii:PricingSource ;
    gn:countryCode "JP" ;
-   dbp-ont:operatedBy mic:XJPX ;
+   dbo:operatedBy mic:XJPX ;
    foaf:homepage <http://www.ose.or.jp> ;
    dc:created "2006-01"^^xsd:gYearMonth ;
    foaf:name "OSAKA EXCHANGE J-NET" .
@@ -5058,7 +5058,7 @@ mic:XPAR a figi-gii:PricingSource ;
    foaf:name "EURONEXT - EURONEXT PARIS" .
 mic:XPBT a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XNAS ;
+   dbo:operatedBy mic:XNAS ;
    foaf:homepage <http://www.nasdaqtrader.com> ;
    dc:created "2009-03"^^xsd:gYearMonth ;
    foaf:name "NASDAQ OMX FUTURES EXCHANGE" .
@@ -5069,13 +5069,13 @@ mic:XPET a figi-gii:PricingSource ;
    foaf:name "SAINT PETERSBURG EXCHANGE" .
 mic:XPHL a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XNAS ;
+   dbo:operatedBy mic:XNAS ;
    foaf:homepage <http://www.phlx.com> ;
    dc:created "2009-02"^^xsd:gYearMonth ;
    foaf:name "NASDAQ OMX PHLX" .
 mic:XPHO a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XNAS ;
+   dbo:operatedBy mic:XNAS ;
    foaf:homepage <http://www.phlx.com> ;
    dc:created "2005-06"^^xsd:gYearMonth ;
    foaf:name "PHILADELPHIA OPTIONS EXCHANGE" .
@@ -5086,7 +5086,7 @@ mic:XPHS a figi-gii:PricingSource ;
    foaf:name "PHILIPPINE STOCK EXCHANGE, INC." .
 mic:XPHX a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:PEEL ;
+   dbo:operatedBy mic:PEEL ;
    foaf:homepage <http://www.peelhunt.com> ;
    dc:created "2014-02"^^xsd:gYearMonth ;
    foaf:name "PEEL HUNT CROSSING" .
@@ -5097,7 +5097,7 @@ mic:XPIC a figi-gii:PricingSource ;
    foaf:name "SAINT-PETERSBURG CURRENCY EXCHANGE" .
 mic:XPMS a figi-gii:PricingSource ;
    gn:countryCode "TR" ;
-   dbp-ont:operatedBy mic:XIST ;
+   dbo:operatedBy mic:XIST ;
    foaf:homepage <http://www.borsaistanbul.com> ;
    dc:created "2014-01"^^xsd:gYearMonth ;
    foaf:name "BORSA ISTANBUL - PRECIOUS METALS AND DIAMONDS MARKETS" .
@@ -5108,13 +5108,13 @@ mic:XPOM a figi-gii:PricingSource ;
    foaf:name "PORT MORESBY STOCK EXCHANGE" .
 mic:XPOR a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XNAS ;
+   dbo:operatedBy mic:XNAS ;
    foaf:homepage <http://www.nasdaqportalmarket.com> ;
    dc:created "2007-10"^^xsd:gYearMonth ;
    foaf:name "PORTAL" .
 mic:XPOS a figi-gii:PricingSource ;
    gn:countryCode "IE" ;
-   dbp-ont:operatedBy mic:ITGI ;
+   dbo:operatedBy mic:ITGI ;
    foaf:homepage <http://www.itg.com> ;
    dc:created "2007-07"^^xsd:gYearMonth ;
    foaf:name "POSIT" .
@@ -5139,7 +5139,7 @@ mic:XPST a figi-gii:PricingSource ;
    foaf:name "POSIT - ASIA PACIFIC" .
 mic:XPSX a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:XNAS ;
+   dbo:operatedBy mic:XNAS ;
    foaf:homepage <http://www.nasdaqtrader.com> ;
    dc:created "2013-03"^^xsd:gYearMonth ;
    foaf:name "NASDAQ OMX PSX" .
@@ -5155,13 +5155,13 @@ mic:XPXE a figi-gii:PricingSource ;
    foaf:name "POWER EXCHANGE CENTRAL EUROPE" .
 mic:XQMH a figi-gii:PricingSource ;
    gn:countryCode "CH" ;
-   dbp-ont:operatedBy mic:XSWX ;
+   dbo:operatedBy mic:XSWX ;
    foaf:homepage <http://www.six-structured-products.com> ;
    dc:created "2007-10"^^xsd:gYearMonth ;
    foaf:name "SIX STRUCTURED PRODUCTS EXCHANGE" .
 mic:XQTX a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XDUS ;
+   dbo:operatedBy mic:XDUS ;
    foaf:homepage <http://www.boerse-duesseldorf.de> ;
    dc:created "2013-09"^^xsd:gYearMonth ;
    foaf:name "BOERSE DUESSELDORF - QUOTRIX" .
@@ -5172,7 +5172,7 @@ mic:XQUI a figi-gii:PricingSource ;
    foaf:name "BOLSA DE VALORES DE QUITO" .
 mic:XRAS a figi-gii:PricingSource ;
    gn:countryCode "RO" ;
-   dbp-ont:operatedBy mic:XBSE ;
+   dbo:operatedBy mic:XBSE ;
    foaf:homepage <http://www.bvb.ro> ;
    dc:created "2005-06"^^xsd:gYearMonth ;
    foaf:name "RASDAQ" .
@@ -5188,7 +5188,7 @@ mic:XRIS a figi-gii:PricingSource ;
    foaf:name "NASDAQ RIGA" .
 mic:XRMO a figi-gii:PricingSource ;
    gn:countryCode "CZ" ;
-   dbp-ont:operatedBy mic:XRMZ ;
+   dbo:operatedBy mic:XRMZ ;
    foaf:homepage <http://www.rmsystem.cz> ;
    dc:created "2010-05"^^xsd:gYearMonth ;
    foaf:name "RM-SYSTEM CZECH STOCK EXCHANGE (MTF)" .
@@ -5204,7 +5204,7 @@ mic:XROS a figi-gii:PricingSource ;
    foaf:name "BOLSA DE COMERCIO ROSARIO" .
 mic:XROX a figi-gii:PricingSource ;
    gn:countryCode "AR" ;
-   dbp-ont:operatedBy mic:XROS ;
+   dbo:operatedBy mic:XROS ;
    foaf:homepage <http://www.mervaros.com.ar> ;
    dc:created "2011-01"^^xsd:gYearMonth ;
    foaf:name "MERCADO DE VALORES DE ROSARIO S.A." .
@@ -5215,7 +5215,7 @@ mic:XRPM a figi-gii:PricingSource ;
    foaf:name "ROMANIAN POWER MARKET" .
 mic:XRSP a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:PEEL ;
+   dbo:operatedBy mic:PEEL ;
    foaf:homepage <http://www.peelhunt.com> ;
    dc:created "2014-02"^^xsd:gYearMonth ;
    foaf:name "PEEL HUNT RETAIL" .
@@ -5226,7 +5226,7 @@ mic:XRUS a figi-gii:PricingSource ;
    foaf:name "INTERNET DIRECT-ACCESS EXCHANGE" .
 mic:XSAF a figi-gii:PricingSource ;
    gn:countryCode "ZA" ;
-   dbp-ont:operatedBy mic:XJSE ;
+   dbo:operatedBy mic:XJSE ;
    foaf:homepage <http://www.safex.co.za> ;
    dc:created "2005-06"^^xsd:gYearMonth ;
    foaf:name "JSE EQUITY DERIVATIVES MARKET" .
@@ -5252,37 +5252,37 @@ mic:XSAU a figi-gii:PricingSource ;
    foaf:name "SAUDI STOCK EXCHANGE" .
 mic:XSBI a figi-gii:PricingSource ;
    gn:countryCode "JP" ;
-   dbp-ont:operatedBy mic:SBIJ ;
+   dbo:operatedBy mic:SBIJ ;
    foaf:homepage <http://www.japannext.co.jp> ;
    dc:created "2012-03"^^xsd:gYearMonth ;
    foaf:name "SBI JAPANNEXT - X - MARKET" .
 mic:XSC1 a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XSCO ;
+   dbo:operatedBy mic:XSCO ;
    foaf:homepage <http://www.zertifikateboerse.de> ;
    dc:created "2010-05"^^xsd:gYearMonth ;
    foaf:name "BOERSE FRANKFURT WARRANTS TECHNICAL 1" .
 mic:XSC2 a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XSCO ;
+   dbo:operatedBy mic:XSCO ;
    foaf:homepage <http://www.zertifikateboerse.de> ;
    dc:created "2010-05"^^xsd:gYearMonth ;
    foaf:name "BOERSE FRANKFURT WARRANTS TECHNICAL 2" .
 mic:XSC3 a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XSCO ;
+   dbo:operatedBy mic:XSCO ;
    foaf:homepage <http://www.zertifikateboerse.de> ;
    dc:created "2010-05"^^xsd:gYearMonth ;
    foaf:name "BOERSE FRANKFURT WARRANTS TECHNICAL 3" .
 mic:XSCA a figi-gii:PricingSource ;
    gn:countryCode "SG" ;
-   dbp-ont:operatedBy mic:XSES ;
+   dbo:operatedBy mic:XSES ;
    foaf:homepage <http://www.sgxcatalist.com> ;
    dc:created "2008-09"^^xsd:gYearMonth ;
    foaf:name "SINGAPORE CATALIST MARKET" .
 mic:XSCE a figi-gii:PricingSource ;
    gn:countryCode "SG" ;
-   dbp-ont:operatedBy mic:XSES ;
+   dbo:operatedBy mic:XSES ;
    foaf:homepage <http://www.sgx.com> ;
    dc:created "2005-06"^^xsd:gYearMonth ;
    foaf:name "SINGAPORE COMMODITY EXCHANGE" .
@@ -5293,13 +5293,13 @@ mic:XSCO a figi-gii:PricingSource ;
    foaf:name "BOERSE FRANKFURT WARRANTS TECHNICAL" .
 mic:XSCU a figi-gii:PricingSource ;
    gn:countryCode "CH" ;
-   dbp-ont:operatedBy mic:STOX ;
+   dbo:operatedBy mic:STOX ;
    foaf:homepage <http://www.stoxx.com> ;
    dc:created "2011-03"^^xsd:gYearMonth ;
    foaf:name "STOXX LIMITED - CUSTOMIZED INDICES" .
 mic:XSEC a figi-gii:PricingSource ;
    gn:countryCode "CN" ;
-   dbp-ont:operatedBy mic:XSHE ;
+   dbo:operatedBy mic:XSHE ;
    foaf:homepage <http://www.szse.cn> ;
    dc:created "2015-05"^^xsd:gYearMonth ;
    foaf:name "SHENZHEN STOCK EXCHANGE - SHENZHEN - HONG KONG STOCK CONNECT" .
@@ -5315,13 +5315,13 @@ mic:XSES a figi-gii:PricingSource ;
    foaf:name "SINGAPORE EXCHANGE" .
 mic:XSFA a figi-gii:PricingSource ;
    gn:countryCode "ZA" ;
-   dbp-ont:operatedBy mic:XJSE ;
+   dbo:operatedBy mic:XJSE ;
    foaf:homepage <http://www.safex.co.za> ;
    dc:created "2005-06"^^xsd:gYearMonth ;
    foaf:name "JSE COMMODITY DERIVATIVES MARKET" .
 mic:XSFE a figi-gii:PricingSource ;
    gn:countryCode "AU" ;
-   dbp-ont:operatedBy mic:XASX ;
+   dbo:operatedBy mic:XASX ;
    foaf:homepage <http://www.sfe.com.au> ;
    dc:created "2010-09"^^xsd:gYearMonth ;
    foaf:name "ASX - TRADE24" .
@@ -5357,7 +5357,7 @@ mic:XSIB a figi-gii:PricingSource ;
    foaf:name "SIBERIAN EXCHANGE" .
 mic:XSIM a figi-gii:PricingSource ;
    gn:countryCode "SG" ;
-   dbp-ont:operatedBy mic:XSES ;
+   dbo:operatedBy mic:XSES ;
    foaf:homepage <http://www.sgx.com> ;
    dc:created "2005-06"^^xsd:gYearMonth ;
    foaf:name "SINGAPORE EXCHANGE DERIVATIVES CLEARING LIMITED" .
@@ -5383,7 +5383,7 @@ mic:XSRM a figi-gii:PricingSource ;
    foaf:name "MERCADO DE FUTUROS DE ACEITE DE OLIVA, S.A." .
 mic:XSSC a figi-gii:PricingSource ;
    gn:countryCode "CN" ;
-   dbp-ont:operatedBy mic:XSHG ;
+   dbo:operatedBy mic:XSHG ;
    foaf:homepage <http://www.sse.com.cn> ;
    dc:created "2014-08"^^xsd:gYearMonth ;
    foaf:name "SHANGHAI STOCK EXCHANGE - SHANGHAI - HONG KONG STOCK CONNECT" .
@@ -5404,7 +5404,7 @@ mic:XSTE a figi-gii:PricingSource ;
    foaf:name "REPUBLICAN STOCK EXCHANGE" .
 mic:XSTM a figi-gii:PricingSource ;
    gn:countryCode "US" ;
-   dbp-ont:operatedBy mic:NFSC ;
+   dbo:operatedBy mic:NFSC ;
    foaf:homepage <http://www.capitalmarkets.fidelity.com> ;
    dc:created "2014-09"^^xsd:gYearMonth ;
    foaf:name "FIDELITY CROSSSTREAM ATS" .
@@ -5420,13 +5420,13 @@ mic:XSTU a figi-gii:PricingSource ;
    foaf:name "BOERSE STUTTGART" .
 mic:XSTV a figi-gii:PricingSource ;
    gn:countryCode "CH" ;
-   dbp-ont:operatedBy mic:STOX ;
+   dbo:operatedBy mic:STOX ;
    foaf:homepage <http://www.stoxx.com> ;
    dc:created "2011-03"^^xsd:gYearMonth ;
    foaf:name "STOXX LIMITED - VOLATILITY INDICES" .
 mic:XSTX a figi-gii:PricingSource ;
    gn:countryCode "CH" ;
-   dbp-ont:operatedBy mic:STOX ;
+   dbo:operatedBy mic:STOX ;
    foaf:homepage <http://www.stoxx.com> ;
    dc:created "2011-03"^^xsd:gYearMonth ;
    foaf:name "STOXX LIMITED - INDICES" .
@@ -5472,7 +5472,7 @@ mic:XTAL a figi-gii:PricingSource ;
    foaf:name "NASDAQ TALLINN" .
 mic:XTAM a figi-gii:PricingSource ;
    gn:countryCode "JP" ;
-   dbp-ont:operatedBy mic:XJPX ;
+   dbo:operatedBy mic:XJPX ;
    foaf:homepage <http://www.tse.or.jp> ;
    dc:created "2009-03"^^xsd:gYearMonth ;
    foaf:name "TOKYO STOCK EXCHANGE-TOKYO PRO MARKET" .
@@ -5492,25 +5492,25 @@ mic:XTIR a figi-gii:PricingSource ;
    foaf:name "TIRANA STOCK EXCHANGE" .
 mic:XTK1 a figi-gii:PricingSource ;
    gn:countryCode "JP" ;
-   dbp-ont:operatedBy mic:XJPX ;
+   dbo:operatedBy mic:XJPX ;
    foaf:homepage <http://www.tse.or.jp> ;
    dc:created "2006-01"^^xsd:gYearMonth ;
    foaf:name "TOKYO STOCK EXCHANGE - TOSTNET-1" .
 mic:XTK2 a figi-gii:PricingSource ;
    gn:countryCode "JP" ;
-   dbp-ont:operatedBy mic:XJPX ;
+   dbo:operatedBy mic:XJPX ;
    foaf:homepage <http://www.tse.or.jp> ;
    dc:created "2006-01"^^xsd:gYearMonth ;
    foaf:name "TOKYO STOCK EXCHANGE - TOSTNET-2" .
 mic:XTK3 a figi-gii:PricingSource ;
    gn:countryCode "JP" ;
-   dbp-ont:operatedBy mic:XJPX ;
+   dbo:operatedBy mic:XJPX ;
    foaf:homepage <http://www.tse.or.jp> ;
    dc:created "2011-07"^^xsd:gYearMonth ;
    foaf:name "TOKYO STOCK EXCHANGE - TOSTNET-3" .
 mic:XTKS a figi-gii:PricingSource ;
    gn:countryCode "JP" ;
-   dbp-ont:operatedBy mic:XJPX ;
+   dbo:operatedBy mic:XJPX ;
    foaf:homepage <http://www.tse.or.jp> ;
    dc:created "2005-06"^^xsd:gYearMonth ;
    foaf:name "TOKYO STOCK EXCHANGE" .
@@ -5521,13 +5521,13 @@ mic:XTKT a figi-gii:PricingSource ;
    foaf:name "TOKYO COMMODITY EXCHANGE" .
 mic:XTNX a figi-gii:PricingSource ;
    gn:countryCode "CA" ;
-   dbp-ont:operatedBy mic:XTSX ;
+   dbo:operatedBy mic:XTSX ;
    foaf:homepage <http://www.tsx.com/en/nex> ;
    dc:created "2005-06"^^xsd:gYearMonth ;
    foaf:name "TSX VENTURE EXCHANGE - NEX" .
 mic:XTPE a figi-gii:PricingSource ;
    gn:countryCode "GB" ;
-   dbp-ont:operatedBy mic:XTUP ;
+   dbo:operatedBy mic:XTUP ;
    foaf:homepage <http://www.tullettprebon.com> ;
    dc:created "2012-04"^^xsd:gYearMonth ;
    foaf:name "TULLETT PREBON PLC - TP ENERGYTRADE" .
@@ -5552,7 +5552,7 @@ mic:XTSX a figi-gii:PricingSource ;
    foaf:name "TSX VENTURE EXCHANGE" .
 mic:XTUC a figi-gii:PricingSource ;
    gn:countryCode "AR" ;
-   dbp-ont:operatedBy mic:XROS ;
+   dbo:operatedBy mic:XROS ;
    foaf:homepage <http://www.nbct.com.ar> ;
    dc:created "2007-11"^^xsd:gYearMonth ;
    foaf:name "NUEVA BOLSA DE COMERCIO DE TUCUMAN S.A." .
@@ -5602,7 +5602,7 @@ mic:XUSE a figi-gii:PricingSource ;
    foaf:name "UNITED STOCK EXCHANGE" .
 mic:XVAL a figi-gii:PricingSource ;
    gn:countryCode "ES" ;
-   dbp-ont:operatedBy mic:BMEX ;
+   dbo:operatedBy mic:BMEX ;
    foaf:homepage <http://www.bolsavalencia.es> ;
    dc:created "2005-06"^^xsd:gYearMonth ;
    foaf:name "BOLSA DE VALENCIA" .
@@ -5613,7 +5613,7 @@ mic:XVES a figi-gii:PricingSource ;
    foaf:name "VESTIMA" .
 mic:XVIE a figi-gii:PricingSource ;
    gn:countryCode "AT" ;
-   dbp-ont:operatedBy mic:XWBO ;
+   dbo:operatedBy mic:XWBO ;
    foaf:homepage <http://www.wienerborse.at> ;
    dc:created "2011-04"^^xsd:gYearMonth ;
    foaf:name "WIENER BOERSE AG, WERTPAPIERBOERSE (SECURITIES EXCHANGE)" .
@@ -5624,7 +5624,7 @@ mic:XVPA a figi-gii:PricingSource ;
    foaf:name "BOLSA DE VALORES Y PRODUCTOS DE ASUNCION SA" .
 mic:XVTX a figi-gii:PricingSource ;
    gn:countryCode "CH" ;
-   dbp-ont:operatedBy mic:XSWX ;
+   dbo:operatedBy mic:XSWX ;
    foaf:homepage <http://www.six-swiss-exchange.com> ;
    dc:created "2010-03"^^xsd:gYearMonth ;
    foaf:name "SIX SWISS EXCHANGE - BLUE CHIPS SEGMENT" .
@@ -5664,7 +5664,7 @@ mic:XZAG a figi-gii:PricingSource ;
    foaf:name "ZAGREB STOCK EXCHANGE" .
 mic:XZAM a figi-gii:PricingSource ;
    gn:countryCode "HR" ;
-   dbp-ont:operatedBy mic:XZAG ;
+   dbo:operatedBy mic:XZAG ;
    foaf:homepage <http://www.zse.hr> ;
    dc:created "2009-09"^^xsd:gYearMonth ;
    foaf:name "THE ZAGREB STOCK EXCHANGE MTF" .
@@ -5680,7 +5680,7 @@ mic:XZIM a figi-gii:PricingSource ;
    foaf:name "ZIMBABWE STOCK EXCHANGE" .
 mic:YLDX a figi-gii:PricingSource ;
    gn:countryCode "ZA" ;
-   dbp-ont:operatedBy mic:XJSE ;
+   dbo:operatedBy mic:XJSE ;
    foaf:homepage <http://www.yieldx.co.za> ;
    dc:created "2005-06"^^xsd:gYearMonth ;
    foaf:name "JSE INTEREST RATE DERIVATIVES MARKET" .
@@ -5691,7 +5691,7 @@ mic:ZKBX a figi-gii:PricingSource ;
    foaf:name "ZURCHER KANTONALBANK SECURITIES EXCHANGE" .
 mic:ZOBX a figi-gii:PricingSource ;
    gn:countryCode "DE" ;
-   dbp-ont:operatedBy mic:XBER ;
+   dbo:operatedBy mic:XBER ;
    foaf:homepage <http://www.boerse-berlin.de> ;
    dc:created "2005-06"^^xsd:gYearMonth ;
    foaf:name "ZOBEX" .
