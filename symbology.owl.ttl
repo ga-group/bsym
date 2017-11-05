@@ -165,6 +165,12 @@ gas:issuedBy
     rdfs:label "issued by" ;
     skos:definition "relates a security to its issuer" .
 
+gas:issuedIn
+    a owl:ObjectProperty ;
+    rdfs:domain figi-gii:Identifier ;
+    rdfs:label "issued by" ;
+    skos:definition "for notes and bonds relates a financial instrument (identified by its identifier) to the note or bond principal currency" .
+
 gas:listedAs
     a owl:ObjectProperty ;
     rdfs:domain figi-gii:FinancialInstrumentIdentifier ;
