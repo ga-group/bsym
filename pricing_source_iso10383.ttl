@@ -1,10 +1,14 @@
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix bps: <http://bsym.bloomberg.com/pricing_source/> .
 @prefix figi-gii: <http://www.omg.org/spec/FIGI/GlobalInstrumentIdentifiers/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix mic: <http://fadyart.com/markets#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
+bps:A0	a	figi-gii:PricingSource ;
+	skos:related	mic:SHAR .
+bps:AA	a	figi-gii:PricingSource ;
+	skos:related	mic:ENAX .
 bps:AB	a	figi-gii:PricingSource ;
 	skos:related	mic:XSAU .
 bps:ACE 	a	figi-gii:PricingSource ;
@@ -13,12 +17,16 @@ bps:AF	a	figi-gii:PricingSource ;
 	skos:related	mic:XBUE .
 bps:AFE	a	figi-gii:PricingSource ;
 	skos:related	mic:AFET .
+bps:AG	a	figi-gii:PricingSource ;
+	skos:related	mic:XALG .
 bps:AH	a	figi-gii:PricingSource ;
 	skos:related	mic:CHIA .
 bps:AIAF	a	figi-gii:PricingSource ;
 	skos:related	mic:XDRF .
 bps:AIAP	a	figi-gii:PricingSource ;
 	skos:related	mic:XDRF .
+bps:AL	a	figi-gii:PricingSource ;
+	skos:related	mic:XTIR .
 bps:AM	a	figi-gii:PricingSource ;
 	skos:related	mic:XBCX .
 bps:AMCE	a	figi-gii:PricingSource ;
@@ -31,6 +39,8 @@ bps:AMTS	a	figi-gii:PricingSource ;
 	skos:related	mic:AMTS .
 bps:AO	a	figi-gii:PricingSource ;
 	skos:related	mic:XNEC .
+bps:AP	a	figi-gii:PricingSource ;
+	skos:related	mic:XADE .
 bps:AQ	a	figi-gii:PricingSource ;
 	skos:related	mic:ASXP .
 bps:ARME	a	figi-gii:PricingSource ;
@@ -39,10 +49,16 @@ bps:ASE	a	figi-gii:PricingSource ;
 	skos:related	mic:ASEX .
 bps:AT	a	figi-gii:PricingSource ;
 	skos:related	mic:XASX .
+bps:AV	a	figi-gii:PricingSource ;
+	skos:related	mic:XWBO .
 bps:AXG	a	figi-gii:PricingSource ;
 	skos:related	mic:XSFE .
-bps:AY 	a	figi-gii:PricingSource ;
+bps:AY	a	figi-gii:PricingSource ;
 	skos:related	mic:XARM .
+bps:AZ	a	figi-gii:PricingSource ;
+	skos:related	mic:BSEX .
+bps:B3	a	figi-gii:PricingSource ;
+	skos:related	mic:BLOX .
 bps:BA	a	figi-gii:PricingSource ;
 	skos:related	mic:XBAB .
 bps:BAEC	a	figi-gii:PricingSource ;
@@ -83,6 +99,8 @@ bps:BLSE	a	figi-gii:PricingSource ;
 	skos:related	mic:XBLB .
 bps:BM	a	figi-gii:PricingSource ;
 	skos:related	mic:XBAA .
+bps:BQ	a	figi-gii:PricingSource ;
+	skos:related	mic:XEQT .
 bps:BS	a	figi-gii:PricingSource ;
 	skos:related	mic:BVMF .
 bps:BSE	a	figi-gii:PricingSource ;
@@ -99,8 +117,14 @@ bps:BVMT	a	figi-gii:PricingSource ;
 	skos:related	mic:XTUN .
 bps:BVPA	a	figi-gii:PricingSource ;
 	skos:related	mic:XPTY .
+bps:BW	a	figi-gii:PricingSource ;
+	skos:related	mic:XBRN .
 bps:BY	a	figi-gii:PricingSource ;
 	skos:related	mic:BURM .
+bps:C1	a	figi-gii:PricingSource ;
+	skos:related	mic:XSSC .
+bps:C2	a	figi-gii:PricingSource ;
+	skos:related	mic:XSEC .
 bps:CATL	a	figi-gii:PricingSource ;
 	skos:related	mic:BOSP ;
 	skos:related	mic:RPWC ;
@@ -111,6 +135,8 @@ bps:CBOE	a	figi-gii:PricingSource ;
 	skos:related	mic:XCBO .
 bps:CBT	a	figi-gii:PricingSource ;
 	skos:related	mic:XCBT .
+bps:CC	a	figi-gii:PricingSource ;
+	skos:related	mic:XSGO .
 bps:cCME	a	figi-gii:PricingSource ;
 	skos:related	mic:XCME .
 bps:cCMX	a	figi-gii:PricingSource ;
@@ -200,20 +226,30 @@ bps:CYBQ	a	figi-gii:PricingSource ;
 	skos:related	mic:XCFE .
 bps:DB	a	figi-gii:PricingSource ;
 	skos:related	mic:XDFM .
+bps:DC	a	figi-gii:PricingSource ;
+	skos:related	mic:XCSE .
 bps:DCE	a	figi-gii:PricingSource ;
 	skos:related	mic:XDCE .
+bps:DD	a	figi-gii:PricingSource ;
+	skos:related	mic:DKTC .
 bps:DDMN	a	figi-gii:PricingSource ;
 	skos:related	mic:XMIL .
 bps:DE	a	figi-gii:PricingSource ;
 	skos:related	mic:XDSX .
+bps:DF	a	figi-gii:PricingSource ;
+	skos:related	mic:FNDK .
 bps:DFM	a	figi-gii:PricingSource ;
 	skos:related	mic:XDFM .
 bps:DFX	a	figi-gii:PricingSource ;
 	skos:related	mic:DIFX .
+bps:DG	a	figi-gii:PricingSource ;
+	skos:related	mic:LYNX .
 bps:DGC	a	figi-gii:PricingSource ;
 	skos:related	mic:DGCX .
 bps:DH	a	figi-gii:PricingSource ;
 	skos:related	mic:XADS .
+bps:DK	a	figi-gii:PricingSource ;
+	skos:related	mic:XCXD .
 bps:DME	a	figi-gii:PricingSource ;
 	skos:related	mic:DUMX .
 bps:DMTS	a	figi-gii:PricingSource ;
@@ -227,13 +263,13 @@ bps:DU	a	figi-gii:PricingSource ;
 bps:DV	a	figi-gii:PricingSource ;
 	skos:related	mic:CHIC .
 bps:DX	a	figi-gii:PricingSource ;
-	skos:related	mic:TRQX .
+	skos:related	mic:TRQD .
 bps:eASX	a	figi-gii:PricingSource ;
 	skos:related	mic:XASX .
 bps:eAXG	a	figi-gii:PricingSource ;
 	skos:related	mic:XSFE .
 bps:EB	a	figi-gii:PricingSource ;
-	skos:related	mic:BCXE .
+	skos:related	mic:BATE .
 bps:eBMF	a	figi-gii:PricingSource ;
 	skos:related	mic:BVMF .
 bps:EC	a	figi-gii:PricingSource ;
@@ -268,6 +304,8 @@ bps:eKCB	a	figi-gii:PricingSource ;
 	skos:related	mic:XKBT .
 bps:eKFE	a	figi-gii:PricingSource ;
 	skos:related	mic:XKFE .
+bps:EL	a	figi-gii:PricingSource ;
+	skos:related	mic:XSVA .
 bps:ELX	a	figi-gii:PricingSource ;
 	skos:related	mic:XELX .
 bps:eMBA	a	figi-gii:PricingSource ;
@@ -286,6 +324,8 @@ bps:EREX	a	figi-gii:PricingSource ;
 	skos:related	mic:XEUB .
 bps:ERI	a	figi-gii:PricingSource ;
 	skos:related	mic:ERIS .
+bps:ES	a	figi-gii:PricingSource ;
+	skos:related	mic:NURD .
 bps:eSFE	a	figi-gii:PricingSource ;
 	skos:related	mic:XSFE .
 bps:eSGX	a	figi-gii:PricingSource ;
@@ -302,6 +342,8 @@ bps:EUX	a	figi-gii:PricingSource ;
 	skos:related	mic:XEUR .
 bps:EUZ	a	figi-gii:PricingSource ;
 	skos:related	mic:EUCH .
+bps:FF	a	figi-gii:PricingSource ;
+	skos:related	mic:FNFI .
 bps:FH	a	figi-gii:PricingSource ;
 	skos:related	mic:XHEL .
 bps:FMTS	a	figi-gii:PricingSource ;
@@ -315,7 +357,7 @@ bps:FS	a	figi-gii:PricingSource ;
 bps:FTX	a	figi-gii:PricingSource ;
 	skos:related	mic:XTAF .
 bps:GA	a	figi-gii:PricingSource ;
-	skos:related	mic:ASEX .
+	skos:related	mic:XATH .
 bps:GB	a	figi-gii:PricingSource ;
 	skos:related	mic:XBER .
 bps:GBT	a	figi-gii:PricingSource ;
@@ -354,6 +396,12 @@ bps:GW	a	figi-gii:PricingSource ;
 	skos:related	mic:EUWX .
 bps:GY	a	figi-gii:PricingSource ;
 	skos:related	mic:XETR .
+bps:GZ	a	figi-gii:PricingSource ;
+	skos:related	mic:MUND .
+bps:H1	a	figi-gii:PricingSource ;
+	skos:related	mic:SHSC .
+bps:H2	a	figi-gii:PricingSource ;
+	skos:related	mic:SZSC .
 bps:HAN	a	figi-gii:PricingSource ;
 	skos:related	mic:HSTC .
 bps:HANP	a	figi-gii:PricingSource ;
@@ -371,15 +419,20 @@ bps:HKG	a	figi-gii:PricingSource ;
 bps:HKM	a	figi-gii:PricingSource ;
 	skos:related	mic:HKME .
 bps:HM	a	figi-gii:PricingSource ;
-	foaf:name	"Hi-MTF" .
+	foaf:name	"Hi-MTF" ;
+	skos:related	mic:HMTF .
 bps:HMTF	a	figi-gii:PricingSource ;
 	skos:related	mic:HMTF .
 bps:HMTO	a	figi-gii:PricingSource ;
 	skos:related	mic:HMOD .
 bps:HMTS	a	figi-gii:PricingSource ;
 	skos:related	mic:MTSF .
+bps:HO	a	figi-gii:PricingSource ;
+	skos:related	mic:XBCV .
 bps:HSFX	a	figi-gii:PricingSource ;
 	skos:related	mic:HSFX .
+bps:IA	a	figi-gii:PricingSource ;
+	skos:related	mic:XBRV .
 bps:IB	a	figi-gii:PricingSource ;
 	skos:related	mic:XBOM .
 bps:IBOV	a	figi-gii:PricingSource ;
@@ -392,14 +445,20 @@ bps:ICX	a	figi-gii:PricingSource ;
 	skos:related	mic:ICDX .
 bps:ID	a	figi-gii:PricingSource ;
 	skos:related	mic:XDUB .
+bps:IE	a	figi-gii:PricingSource ;
+	skos:related	mic:XTEH .
+bps:IF	a	figi-gii:PricingSource ;
+	skos:related	mic:MTAH .
 bps:IF	a	figi-gii:PricingSource ;
 	skos:related	mic:XMIL .
 bps:IG	a	figi-gii:PricingSource ;
 	skos:related	mic:MCXX .
+bps:IH	a	figi-gii:PricingSource ;
+	skos:related	mic:XDES .
 bps:IJ	a	figi-gii:PricingSource ;
 	skos:related	mic:XIDX .
 bps:IM	a	figi-gii:PricingSource ;
-	skos:related	mic:XMIL .
+	skos:related	mic:MTAA .
 bps:IMKL	a	figi-gii:PricingSource ;
 	skos:related	mic:XDSM .
 bps:IMKS	a	figi-gii:PricingSource ;
@@ -423,13 +482,17 @@ bps:ISES	a	figi-gii:PricingSource ;
 bps:IT	a	figi-gii:PricingSource ;
 	skos:related	mic:XTAE .
 bps:IX	a	figi-gii:PricingSource ;
-	skos:related	mic:BCXE .
+	skos:related	mic:CHIX .
 bps:JA	a	figi-gii:PricingSource ;
 	skos:related	mic:XJAM .
+bps:JD	a	figi-gii:PricingSource ;
+	skos:related	mic:KABU .
 bps:JE	a	figi-gii:PricingSource ;
-	skos:related	mic:XSBI .
+	skos:related	mic:SBIJ .
 bps:JF	a	figi-gii:PricingSource ;
 	skos:related	mic:XFKA .
+bps:JG	a	figi-gii:PricingSource ;
+	skos:related	mic:XTAM .
 bps:JI	a	figi-gii:PricingSource ;
 	skos:related	mic:CHIJ .
 bps:JJ	a	figi-gii:PricingSource ;
@@ -452,6 +515,12 @@ bps:JT	a	figi-gii:PricingSource ;
 	skos:related	mic:XTKS .
 bps:JU	a	figi-gii:PricingSource ;
 	skos:related	mic:XSBI .
+bps:JW	a	figi-gii:PricingSource ;
+	skos:related	mic:SBIU .
+bps:K3	a	figi-gii:PricingSource ;
+	skos:related	mic:BLNK .
+bps:KA	a	figi-gii:PricingSource ;
+	skos:related	mic:XSAT .
 bps:KAZ1	a	figi-gii:PricingSource ;
 	skos:related	mic:XKAZ .
 bps:KAZ2	a	figi-gii:PricingSource ;
@@ -460,6 +529,8 @@ bps:KAZ3	a	figi-gii:PricingSource ;
 	skos:related	mic:XKAZ .
 bps:KAZA	a	figi-gii:PricingSource ;
 	skos:related	mic:XKAZ .
+bps:KB	a	figi-gii:PricingSource ;
+	skos:related	mic:XKSE .
 bps:KCB	a	figi-gii:PricingSource ;
 	skos:related	mic:XKBT .
 bps:KE	a	figi-gii:PricingSource ;
@@ -486,6 +557,8 @@ bps:KY	a	figi-gii:PricingSource ;
 	skos:related	mic:XCAY .
 bps:KZ	a	figi-gii:PricingSource ;
 	skos:related	mic:XKAZ .
+bps:L3	a	figi-gii:PricingSource ;
+	skos:related	mic:LIQU .
 bps:LB	a	figi-gii:PricingSource ;
 	skos:related	mic:XBEY .
 bps:LD	a	figi-gii:PricingSource ;
@@ -512,6 +585,8 @@ bps:LS	a	figi-gii:PricingSource ;
 	skos:related	mic:XLAO .
 bps:LX	a	figi-gii:PricingSource ;
 	skos:related	mic:XLUX .
+bps:LY	a	figi-gii:PricingSource ;
+	skos:related	mic:XLSM .
 bps:MACD	a	figi-gii:PricingSource ;
 	skos:related	mic:XMAE .
 bps:MACQ	a	figi-gii:PricingSource ;
@@ -578,6 +653,8 @@ bps:MO	a	figi-gii:PricingSource ;
 	skos:related	mic:XULA .
 bps:MP	a	figi-gii:PricingSource ;
 	skos:related	mic:XMAU .
+bps:MQ	a	figi-gii:PricingSource ;
+	skos:related	mic:MESQ .
 bps:MS	a	figi-gii:PricingSource ;
 	skos:related	mic:XMAE .
 bps:MSE	a	figi-gii:PricingSource ;
@@ -602,8 +679,10 @@ bps:MVMZ	a	figi-gii:PricingSource ;
 	skos:related	mic:XBCX .
 bps:MW	a	figi-gii:PricingSource ;
 	skos:related	mic:XMSW .
+bps:MX	a	figi-gii:PricingSource ;
+	skos:related	mic:MALX .
 bps:MZ	a	figi-gii:PricingSource ;
-	skos:related	mic:XMAP .	
+	skos:related	mic:XBVM .
 bps:N2X	a	figi-gii:PricingSource ;
 	skos:related	mic:N2EX .
 bps:NA	a	figi-gii:PricingSource ;
@@ -632,8 +711,12 @@ bps:NO	a	figi-gii:PricingSource ;
 	skos:related	mic:XOSL .
 bps:NPE	a	figi-gii:PricingSource ;
 	skos:related	mic:NORX .
+bps:NQ	a	figi-gii:PricingSource ;
+	skos:related	mic:NURO .
 bps:NR	a	figi-gii:PricingSource ;
 	skos:related	mic:XHFT .
+bps:NS	a	figi-gii:PricingSource ;
+	skos:related	mic:NOTC .
 bps:NSE	a	figi-gii:PricingSource ;
 	skos:related	mic:XNSE .
 bps:NW	a	figi-gii:PricingSource ;
@@ -666,10 +749,18 @@ bps:OU	a	figi-gii:PricingSource ;
 	skos:related	mic:PFTS .
 bps:PARG	a	figi-gii:PricingSource ;
 	skos:related	mic:XVPA .
+bps:PB	a	figi-gii:PricingSource ;
+	skos:related	mic:XPOM .
+bps:PD	a	figi-gii:PricingSource ;
+	skos:related	mic:WMTF .
 bps:PE	a	figi-gii:PricingSource ;
 	skos:related	mic:XLIM .
+bps:PF	a	figi-gii:PricingSource ;
+	skos:related	mic:APXL .
 bps:PFTS	a	figi-gii:PricingSource ;
 	skos:related	mic:PFTS .
+bps:PG	a	figi-gii:PricingSource ;
+	skos:related	mic:MUNB .
 bps:PK	a	figi-gii:PricingSource ;
 	skos:related	mic:XKAR .
 bps:PL	a	figi-gii:PricingSource ;
@@ -686,10 +777,12 @@ bps:PNMA	a	figi-gii:PricingSource ;
 	skos:related	mic:XPTY .
 bps:PNX	a	figi-gii:PricingSource ;
 	skos:related	mic:XPOW .
+bps:PO	a	figi-gii:PricingSource ;
+	skos:related	mic:XPOS .
 bps:PP	a	figi-gii:PricingSource ;
 	skos:related	mic:XPTY .
 bps:PQ	a	figi-gii:PricingSource ;
-	skos:related	mic:PINX .
+	skos:related	mic:OTCM .
 bps:PRG	a	figi-gii:PricingSource ;
 	skos:related	mic:XPRA .
 bps:PS	a	figi-gii:PricingSource ;
@@ -704,28 +797,44 @@ bps:PZ	a	figi-gii:PricingSource ;
 	skos:related	mic:ISDX .
 bps:QD	a	figi-gii:PricingSource ;
 	skos:related	mic:DSMD .
+bps:QF	a	figi-gii:PricingSource ;
+	skos:related	mic:NEOE .
 bps:QITO	a	figi-gii:PricingSource ;
 	skos:related	mic:XQUI .
 bps:QSE	a	figi-gii:PricingSource ;
 	skos:related	mic:DSMD .
+bps:QT	a	figi-gii:PricingSource ;
+	skos:related	mic:XQTX .
 bps:QU	a	figi-gii:PricingSource ;
 	skos:related	mic:PFTQ .
+bps:QX	a	figi-gii:PricingSource ;
+	skos:related	mic:AQXE .
+bps:RB	a	figi-gii:PricingSource ;
+	skos:related	mic:BCSE .
 bps:RC	a	figi-gii:PricingSource ;
-	skos:related	mic:XPRA .
+	skos:related	mic:XRMZ .
 bps:RE	a	figi-gii:PricingSource ;
-	skos:related	mic:XRAS .
+	skos:related	mic:XBSE .
 bps:RF	a	figi-gii:PricingSource ;
-	skos:related	mic:ISEC .
+	skos:related	mic:FNIS .
 bps:RFX	a	figi-gii:PricingSource ;
 	skos:related	mic:ROFX .
 bps:RQ	a	figi-gii:PricingSource ;
 	skos:related	mic:XRAS .
+bps:RR	a	figi-gii:PricingSource ;
+	skos:related	mic:RTSX .
+bps:RT	a	figi-gii:PricingSource ;
+	skos:related	mic:RUSX .
 bps:RW	a	figi-gii:PricingSource ;
-	skos:related	mic:RSEX .
+	skos:related	mic:ROTC .
+bps:RX	a	figi-gii:PricingSource ;
+	skos:related	mic:MISX .
 bps:RZ	a	figi-gii:PricingSource ;
-	skos:related	mic:XSIB .
+	skos:related	mic:BMFX .
 bps:S1	a	figi-gii:PricingSource ;
 	skos:related	mic:SGMX .
+bps:S2	a	figi-gii:PricingSource ;
+	skos:related	mic:XUBS .
 bps:SA	a	figi-gii:PricingSource ;
 	skos:related	mic:XVAL .
 bps:SAFC	a	figi-gii:PricingSource ;
@@ -789,9 +898,11 @@ bps:SP	a	figi-gii:PricingSource ;
 bps:SPX	a	figi-gii:PricingSource ;
 	skos:related	mic:SPIM .
 bps:SQ	a	figi-gii:PricingSource ;
-	skos:related	mic:XBAR .
+	skos:related	mic:XMCE .
 bps:SR	a	figi-gii:PricingSource ;
 	skos:related	mic:XBRN .
+bps:SS	a	figi-gii:PricingSource ;
+	skos:related	mic:XSTO .
 bps:SSEI	a	figi-gii:PricingSource ;
 	skos:related	mic:XIDX .
 bps:SSEY	a	figi-gii:PricingSource ;
@@ -806,8 +917,14 @@ bps:SWXC	a	figi-gii:PricingSource ;
 	skos:related	mic:XSWX .
 bps:SWXI	a	figi-gii:PricingSource ;
 	skos:related	mic:XSWX .
+bps:SX	a	figi-gii:PricingSource ;
+	skos:related	mic:XQMH .
 bps:SY	a	figi-gii:PricingSource ;
 	skos:related	mic:XDSE .
+bps:SZ	a	figi-gii:PricingSource ;
+	skos:related	mic:TRPX .
+bps:TA	a	figi-gii:PricingSource ;
+	skos:related	mic:XATS .
 bps:TADW	a	figi-gii:PricingSource ;
 	skos:related	mic:XSAU .
 bps:TB	a	figi-gii:PricingSource ;
@@ -823,13 +940,17 @@ bps:TFX	a	figi-gii:PricingSource ;
 bps:TG	a	figi-gii:PricingSource ;
 	skos:related	mic:OMGA .
 bps:TH	a	figi-gii:PricingSource ;
-	skos:related	mic:TGAT .
+	skos:related	mic:XGAT .
 bps:TI	a	figi-gii:PricingSource ;
 	skos:related	mic:XIST .
 bps:TJ	a	figi-gii:PricingSource ;
 	skos:related	mic:TMXS .
 bps:TK	a	figi-gii:PricingSource ;
-	skos:related	mic:LIQU .
+	skos:related	mic:LICA .
+bps:TL	a	figi-gii:PricingSource ;
+	skos:related	mic:GSXL .
+bps:TN	a	figi-gii:PricingSource ;
+	skos:related	mic:XATS .
 bps:TP	a	figi-gii:PricingSource ;
 	skos:related	mic:XTRN .
 bps:TQ	a	figi-gii:PricingSource ;
@@ -842,6 +963,8 @@ bps:TRDG	a	figi-gii:PricingSource ;
 	skos:related	mic:TGAT .
 bps:TSX	a	figi-gii:PricingSource ;
 	skos:related	mic:XTSE .
+bps:TT	a	figi-gii:PricingSource ;
+	skos:related	mic:XTAI .
 bps:TU	a	figi-gii:PricingSource ;
 	skos:related	mic:XTUN .
 bps:TV	a	figi-gii:PricingSource ;
@@ -850,20 +973,26 @@ bps:TW	a	figi-gii:PricingSource ;
 	skos:related	mic:XICX .
 bps:TX	a	figi-gii:PricingSource ;
 	skos:related	mic:CHIC .
+bps:TY	a	figi-gii:PricingSource ;
+	skos:related	mic:SIGX .
 bps:TZ	a	figi-gii:PricingSource ;
 	skos:related	mic:XDAR .
 bps:UA	a	figi-gii:PricingSource ;
 	skos:related	mic:XASE .
 bps:UB	a	figi-gii:PricingSource ;
 	skos:related	mic:XBOS .
+bps:UC	a	figi-gii:PricingSource ;
+	skos:related	mic:XCIS .
 bps:UD	a	figi-gii:PricingSource ;
-	skos:related	mic:FINR .
+	skos:related	mic:XADF .
 bps:UE	a	figi-gii:PricingSource ;
 	skos:related	mic:XNAS .
 bps:UF	a	figi-gii:PricingSource ;
 	skos:related	mic:BATS .
 bps:UG	a	figi-gii:PricingSource ;
 	skos:related	mic:XUGA .
+bps:UI	a	figi-gii:PricingSource ;
+	skos:related	mic:ICEL .
 bps:UK	a	figi-gii:PricingSource ;
 	skos:related	mic:UKEX .
 bps:UKR	a	figi-gii:PricingSource ;
@@ -871,7 +1000,7 @@ bps:UKR	a	figi-gii:PricingSource ;
 bps:UKRN	a	figi-gii:PricingSource ;
 	skos:related	mic:UKEX .
 bps:UL	a	figi-gii:PricingSource ;
-	skos:related	mic:XISX .
+	skos:related	mic:XISE .
 bps:UM	a	figi-gii:PricingSource ;
 	skos:related	mic:XCHI .
 bps:UM	a	figi-gii:PricingSource ;
@@ -879,11 +1008,11 @@ bps:UM	a	figi-gii:PricingSource ;
 bps:UN	a	figi-gii:PricingSource ;
 	skos:related	mic:XNYS .
 bps:UO	a	figi-gii:PricingSource ;
-	skos:related	mic:XCBO .
+	skos:related	mic:CBSX .
 bps:UP	a	figi-gii:PricingSource ;
 	skos:related	mic:ARCX .
 bps:UQ	a	figi-gii:PricingSource ;
-	skos:related	mic:XNAS .
+	skos:related	mic:XNMS .
 bps:UR	a	figi-gii:PricingSource ;
 	skos:related	mic:XNCM .
 bps:USE	a	figi-gii:PricingSource ;
@@ -892,6 +1021,8 @@ bps:UT	a	figi-gii:PricingSource ;
 	skos:related	mic:XNIM .
 bps:UU	a	figi-gii:PricingSource ;
 	skos:related	mic:XOTC .
+bps:UV	a	figi-gii:PricingSource ;
+	skos:related	mic:OOTC .
 bps:UW	a	figi-gii:PricingSource ;
 	skos:related	mic:XNGS .
 bps:UX	a	figi-gii:PricingSource ;
@@ -902,6 +1033,8 @@ bps:UZ	a	figi-gii:PricingSource ;
 	skos:related	mic:PFTS .
 bps:VB	a	figi-gii:PricingSource ;
 	skos:related	mic:XBOL .
+bps:VF	a	figi-gii:PricingSource ;
+	skos:related	mic:IEXG .
 bps:VFIX	a	figi-gii:PricingSource ;
 	skos:related	mic:TFSV .
 bps:VH	a	figi-gii:PricingSource ;
@@ -928,6 +1061,18 @@ bps:WDM	a	figi-gii:PricingSource ;
 	skos:related	mic:XNSE .
 bps:WSE	a	figi-gii:PricingSource ;
 	skos:related	mic:XWAR .
+bps:XB	a	figi-gii:PricingSource ;
+	skos:related	mic:BOAT .
+bps:XE	a	figi-gii:PricingSource ;
+	skos:related	mic:XSMP .
+bps:XO	a	figi-gii:PricingSource ;
+	skos:related	mic:XOPV .
+bps:XT	a	figi-gii:PricingSource ;
+	skos:related	mic:HOTC .
+bps:XV	a	figi-gii:PricingSource ;
+	skos:related	mic:BOTC .
+bps:YC	a	figi-gii:PricingSource ;
+	skos:related	mic:XECM .
 bps:ZA	a	figi-gii:PricingSource ;
 	skos:related	mic:XZAG .
 bps:ZCE	a	figi-gii:PricingSource ;
@@ -938,3 +1083,5 @@ bps:ZL	a	figi-gii:PricingSource ;
 	skos:related	mic:XLUS .
 bps:ZSEH	a	figi-gii:PricingSource ;
 	skos:related	mic:XZAG .
+bps:ZU	a	figi-gii:PricingSource ;
+	skos:related	mic:XSTE .
