@@ -2517,6 +2517,10 @@ BEGIN {
 	comp = "";
 	shcl = "";
 
+	if (figi == "N.A." || figi == " ") {
+		next;
+	}
+
 	if ($7 != tick " " mkts && length($7) > length(tick)) {
 		## maybe that's the better tick?
 		tick = $7;
@@ -2537,7 +2541,7 @@ BEGIN {
 	}
 
 	if ($2 < 0) {
-		print "bsym:" $4, "gas:listedTill", "\"" date "\"^^xsd:date .";
+		print "bsym:" figi, "gas:listedTill", "\"" date "\"^^xsd:date .";
 		next;
 	}
 	## otherwise
