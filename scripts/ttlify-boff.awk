@@ -34,7 +34,7 @@ BEGIN {
 		ARGC = 2;
 	}
 
-	print "@prefix bsym: <http://openfigi.com/id/> .";
+	print "@prefix figi: <http://openfigi.com/id/> .";
 	print "@prefix bps: <http://bsym.bloomberg.com/pricing_source/> .";
 	print;
 
@@ -2541,23 +2541,23 @@ BEGIN {
 	}
 
 	if ($2 < 0) {
-		print "bsym:" figi, "gas:listedTill", "\"" date "\"^^xsd:date .";
+		print "figi:" figi, "gas:listedTill", "\"" date "\"^^xsd:date .";
 		next;
 	}
 	## otherwise
 	if (0) {
 	} else if (figi == shcl) {
-		print "bsym:" figi, "a", "figi-gii:ShareClassGlobalIdentifier ;";
+		print "figi:" figi, "a", "figi-gii:ShareClassGlobalIdentifier ;";
 	} else if (figi == comp) {
-		print "bsym:" figi, "a", "figi-gii:CompositeGlobalIdentifier ;";
+		print "figi:" figi, "a", "figi-gii:CompositeGlobalIdentifier ;";
 		if (shcl) {
-			print "", "gas:componentOf", "bsym:" shcl " ;";
+			print "", "gas:componentOf", "figi:" shcl " ;";
 		}
 	} else {
-		print "bsym:" figi, "a", "figi-gii:GlobalIdentifier ;";
+		print "figi:" figi, "a", "figi-gii:GlobalIdentifier ;";
 
 		if (comp) {
-			print "", "gas:componentOf", "bsym:" comp " ;";
+			print "", "gas:componentOf", "figi:" comp " ;";
 		}
 	}
 	print "", "gas:sector", "figi-gii:" mstbl[mkts] " ;";
@@ -2574,11 +2574,11 @@ BEGIN {
 	}
 	print "", "gas:symbolOf", "<http://openfigi.com/> .";
 	if (shcl && figi != shcl) {
-		print "bsym:" shcl, "a", "figi-gii:ShareClassGlobalIdentifier ;";
+		print "figi:" shcl, "a", "figi-gii:ShareClassGlobalIdentifier ;";
 		print "", "gas:symbolOf", "<http://openfigi.com/> .";
 	}
 	if (comp && figi != comp) {
-		print "bsym:" comp, "a", "figi-gii:CompositeGlobalIdentifier ;";
+		print "figi:" comp, "a", "figi-gii:CompositeGlobalIdentifier ;";
 		print "", "gas:symbolOf", "<http://openfigi.com/> .";
 	}
 }
