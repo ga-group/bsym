@@ -3,7 +3,8 @@
 WD="/data/data-source/bloom-boff"
 NOW=`dconv now`
 
-for i in "${WD}/download-nobackup"/*dif*; do
+for i in "${WD}/download-nobackup"/*dif.20*; do
+	echo "FILE=${i}"
 	bsdcat "${i}"
 	rm -f -- "${i}"
 done \

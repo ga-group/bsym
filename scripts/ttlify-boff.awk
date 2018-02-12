@@ -2498,6 +2498,10 @@ BEGIN {
 	mon["Nov"] = 11;
 	mon["Dec"] = 12;
 }
+/FILE=/ {
+	split($0, a, "=");
+	print "@prefix FILE: <http://data.ga-group.nl/" a[2] "> ."
+}
 /TIMESTARTED=/ {
 	if (!DATE) {
 		d = gensub(/^TIMESTARTED=... (...) (..) ..:..:.. ... (....)$/, "\\3-\\1-\\2", "g");
