@@ -2500,7 +2500,7 @@ BEGIN {
 }
 /FILE=/ {
 	split($0, a, "=");
-	print "@prefix FILE: <http://data.ga-group.nl/" a[2] "> ."
+	print "@prefix FILE: <http://data.ga-group.nl/data-source/bloom-boff/" a[2] "> ."
 }
 /TIMESTARTED=/ {
 	if (!DATE) {
