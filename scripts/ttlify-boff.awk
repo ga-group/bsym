@@ -1,4 +1,4 @@
-#!/usr/bin/awk -f
+#!/usr/bin/gawk -f
 
 function ttlesc(str)
 {
@@ -33,6 +33,8 @@ BEGIN {
 		ARGV[1] = "-";
 		ARGC = 2;
 	}
+
+	dcmd = "stdbuf -oL -eL -i0 date -f - +%FT%TZ"
 
 	print "@prefix figi: <http://openfigi.com/id/> .";
 	print "@prefix bps: <http://bsym.bloomberg.com/pricing_source/> .";
@@ -2510,6 +2512,9 @@ BEGIN {
 	} else {
 		date = DATE;
 	}
+	print substr($0, 13) |& dcmd
+	dcmd |& getline tiso
+	print "@prefix TIME: <" tiso "> ."
 }
 (NF >= 11 && $10 && $11 && $4) {
 	figi = $4;
@@ -2585,4 +2590,7 @@ BEGIN {
 		print "figi:" comp, "a", "figi-gii:CompositeGlobalIdentifier ;";
 		print "", "gas:symbolOf", "<http://openfigi.com/> .";
 	}
+}
+END {
+	close(dcmd)
 }

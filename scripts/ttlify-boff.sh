@@ -10,6 +10,6 @@ for i in "${WD}/download-nobackup"/*dif.20*; do
 done \
 	| tee >(xz -c > "${WD}/archive/raw_${NOW}.xz") \
 	| "${WD}/scripts/ttlify-boff.awk" --diff \
-	| tee >(gzip -c > "${WD}/tmp/ttl.d_${NOW}.ttl.gz")
+	| tee >(gzip -9 -c > "${WD}/tmp/ttl.d_${NOW}.data.ttl.gz") \
 	| metarap /home/freundt/devel/milf/prov/ttlify-boff.prov.ttl \
 	| gzip -9 -c > "${WD}/tmp/ttl.d_${NOW}.prov.ttl.gz"
