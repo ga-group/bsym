@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-WD="/data/data-source/bloom-boff"
+WD=`dirname "${0}"`/..
 NOW=`dconv now`
 
 for i in "${WD}/download-nobackup"/*dif.20*; do
