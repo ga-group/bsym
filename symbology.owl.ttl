@@ -182,7 +182,7 @@ gas:listedIn
     a owl:ObjectProperty ;
     rdfs:domain figi-gii:FinancialInstrumentIdentifier ;
     rdfs:label "listed in" ;
-    skos:definition "relates a financial instrument (identified by its identifier) to its currency (or other fungible units)" .
+    skos:definition "relates a financial instrument (identified by its identifier) to its currency (or other fungible units).  This field is closely related to Bloomberg's QUOTED_CRNCY (PR467) and Reuters' tr-fin:isQuotedIn." .
 
 gas:listedOn
     a owl:ObjectProperty ;
