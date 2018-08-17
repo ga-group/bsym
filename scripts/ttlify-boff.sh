@@ -11,5 +11,5 @@ done \
 	| tee >(xz -c > "${WD}/archive/raw_${NOW}.xz") \
 	| "${WD}/scripts/ttlify-boff.awk" --diff \
 	| tee >(gzip -9 -c > "${WD}/tmp/ttl.d_${NOW}.data.ttl.gz") \
-	| ttl-fold /home/freundt/devel/milf/prov/ttlify-boff.prov.ttl \
+	| ttl-fold --omit-empty /home/freundt/devel/milf/prov/ttlify-boff.prov.ttl \
 	| gzip -9 -c > "${WD}/tmp/ttl.d_${NOW}.prov.ttl.gz"
