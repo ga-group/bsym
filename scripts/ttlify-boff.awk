@@ -16,7 +16,7 @@ BEGIN {
 	REAL_ARGC = ARGC;
 	for (i = 0; i < ARGC; i++) {
 		if (ARGV[i] == "--help") {
-			print "Usage: ttlify-new.awk [--since DATE] [--till DATE] FILE...";
+			print "Usage: ttlify-boff.awk [--since DATE] [--till DATE] FILE...";
 			exit(0);
 		} else if (ARGV[i] == "--date") {
 			DATE = ARGV[i + 1];
