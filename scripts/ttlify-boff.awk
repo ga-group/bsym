@@ -2552,6 +2552,7 @@ BEGIN {
 	print substr($0, 13) |& dcmd
 	dcmd |& getline tiso
 	print "@prefix TIME: <" tiso "> ."
+	print "@prefix DATE: <" date "> ."
 }
 (NF >= 11 && $10 && $11 && $4) {
 	figi = $4;
@@ -2587,10 +2588,16 @@ BEGIN {
 	}
 
 	if ($2 < 0) {
-		print "figi:" figi, "gas:listedTill", "\"" date "\"^^xsd:date .";
+		print "@prefix FROM: <> ."
+		print "@prefix TILL: <" date "> ."
+		print "figi:" figi, "gas:listedAs", "\"" ttlesc(tick) "\" ;";
+		print "", "foaf:name", "\"" ttlesc(name) "\" ;";
+		print "", "gas:listedTill", "\"" date "\"^^xsd:date .";
 		next;
 	}
 	## otherwise
+	print "@prefix FROM: <" date "> ."
+	print "@prefix TILL: <> ."
 	if (0) {
 	} else if (figi == shcl) {
 		print "figi:" figi, "a", "figi-gii:ShareClassGlobalIdentifier ;";
