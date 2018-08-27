@@ -1,0 +1,26 @@
+SPARQL
+DEFINE input:inference <http://schema.ga-group.nl/symbology#>
+DEFINE input:same-as "yes"
+PREFIX gas: <http://schema.ga-group.nl/symbology#>
+PREFIX figi: <http://openfigi.com/id/>
+PREFIX bps: <http://bsym.bloomberg.com/pricing_source/>
+PREFIX figi-gii: <http://www.omg.org/spec/FIGI/GlobalInstrumentIdentifiers/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?figi ?gics ?cfigi ?cgics WHERE {
+	?figi gas:componentOf ?cfigi .
+	?figi gas:classifiedAs ?gics .
+	?cfigi gas:classifiedAs ?cgics .
+	## only GICSes
+	?gics gas:symbolOf <http://www.msci.com/> .
+	?cgics gas:symbolOf <http://www.msci.com/> .
+	## only get that sub-industry
+	FILTER EXISTS { ?gics skos:definition ?x }
+	FILTER EXISTS { ?cgics skos:definition ?x }
+	## only inconsistent ones
+	FILTER (?gics != ?cgics)
+	## make sure they are not just reclassifications
+	FILTER NOT EXISTS { ?cfigi gas:classifiedAs ?gics }
+	FILTER NOT EXISTS { ?figi gas:classifiedAs ?cgics }
+};
