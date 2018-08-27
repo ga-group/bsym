@@ -7,8 +7,10 @@ PREFIX bps: <http://bsym.bloomberg.com/pricing_source/>
 PREFIX figi-gii: <http://www.omg.org/spec/FIGI/GlobalInstrumentIdentifiers/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
 
-SELECT ?figi ?gics ?cfigi ?cgics WHERE {
+SELECT ?figi ?gics ?prov ?cfigi ?cgics ?cprov WHERE {
 	?figi gas:componentOf ?cfigi .
 	?figi gas:classifiedAs ?gics .
 	?cfigi gas:classifiedAs ?cgics .
@@ -23,4 +25,13 @@ SELECT ?figi ?gics ?cfigi ?cgics WHERE {
 	## make sure they are not just reclassifications
 	FILTER NOT EXISTS { ?cfigi gas:classifiedAs ?gics }
 	FILTER NOT EXISTS { ?figi gas:classifiedAs ?cgics }
+	## check provenance
+	OPTIONAL {
+		?prov rdf:subject ?figi ; rdf:object ?gics
+	}
+	OPTIONAL {
+		?cprov rdf:subject ?cfigi ; rdf:object ?cgics
+	}
+	FILTER NOT EXISTS { ?prov prov:wasInvalidatedBy ?inv }
+	FILTER NOT EXISTS { ?cprov prov:wasInvalidatedBy ?cinv }
 };
