@@ -10,6 +10,12 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 
+-- GICS (or any industry classification) actually lives at the issuer level
+-- however common data sources, more often than not, present industry data
+-- alongside issues (shares, bonds, etc.)
+-- This snippet detects GICS assignments in constituents of a composite
+-- where the constituent is classified differently.
+
 SELECT ?figi ?gics ?prov ?cfigi ?cgics ?cprov WHERE {
 	?figi gas:componentOf ?cfigi .
 	?figi gas:classifiedAs ?gics .
