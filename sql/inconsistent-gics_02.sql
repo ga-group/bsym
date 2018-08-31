@@ -1,6 +1,5 @@
 SPARQL
 DEFINE input:inference <http://schema.ga-group.nl/symbology#>
-DEFINE input:same-as "yes"
 PREFIX gas: <http://schema.ga-group.nl/symbology#>
 PREFIX figi: <http://openfigi.com/id/>
 PREFIX bps: <http://bsym.bloomberg.com/pricing_source/>
@@ -17,8 +16,8 @@ PREFIX prov: <http://www.w3.org/ns/prov#>
 -- where the issue is classified differently.
 
 SELECT ?figi ?gics ?prov ?issr ?igics ?iprov WHERE {
-	?figi gas:issuedBy ?issr .
-	?figi gas:classifiedAs ?gics .
+	?figi gas:componentOf*/gas:issuedBy ?issr .
+	?figi gas:componentOf*/gas:classifiedAs ?gics .
 	?issr gas:classifiedAs ?igics .
 	## only GICSes
 	?gics gas:symbolOf <http://www.msci.com/> .
