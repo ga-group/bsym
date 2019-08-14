@@ -10,3 +10,4 @@ yuck
 nquads-explode
 meld-cfi
 *.tar.*
+.rsync-filter
