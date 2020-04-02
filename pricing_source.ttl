@@ -234,6 +234,9 @@ bps:ARME	a	figi-gii:PricingSource ;
 bps:ASE	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Ase> ;
 	foaf:name	"Athens Stock Exchange" .
+bps:ASP	a	figi-gii:PricingSource ;
+	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Asp> ;
+	foaf:name	"Asia Pacific Exchange" .
 bps:ASX	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Asx> ;
 	foaf:name	"ASX Australian Securities Exchange Pit Session" .
@@ -369,6 +372,9 @@ bps:BBVP	a	figi-gii:PricingSource ;
 bps:BBVU	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Bbvu> ;
 	foaf:name	"BBVA Uruguay Bonds" .
+bps:BBX	a	figi-gii:PricingSource ;
+	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Bbx> ;
+	foaf:name	"Bombay Stock Exchange" .
 bps:BBYF	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Bbyf> ;
 	foaf:name	"Bloomberg JP Yen Bonds Fixing Price" .
@@ -1530,6 +1536,9 @@ bps:CONO	a	figi-gii:PricingSource ;
 bps:COOP	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Coop> ;
 	foaf:name	"ChinaBond Other-Place-Traded Bonds Recommended Valuation Prices" .
+bps:COP	a	figi-gii:PricingSource ;
+	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Cop> ;
+	foaf:name	"OMX Nordic Exchange Copenhagen" .
 bps:COPE	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Cope> ;
 	foaf:name	"NASDAQ OMX Copenhagen" .
@@ -2214,6 +2223,9 @@ bps:eNYL	a	figi-gii:PricingSource ;
 bps:eNYM	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Enym> ;
 	foaf:name	"New York Mercantile Exchange Electronic Session" .
+bps:EOE	a	figi-gii:PricingSource ;
+	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Eoe> ;
+	foaf:name	"Euronext Derivatives Amsterdam" .
 bps:EOP	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Eop> ;
 	foaf:name	"NYSE LIFFE Paris   Derivatives" .
@@ -2472,6 +2484,9 @@ bps:FMSW	a	figi-gii:PricingSource ;
 bps:FMTS	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Fmts> ;
 	foaf:name	"MTS France" .
+bps:FNX	a	figi-gii:PricingSource ;
+	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Fnx> ;
+	foaf:name	"ICE Futures US Currencies" .
 bps:FP	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Fp> ;
 	foaf:name	"NYSE Euronext Paris" .
@@ -2991,6 +3006,9 @@ bps:ICEB	a	figi-gii:PricingSource ;
 bps:ICEX	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Icex> ;
 	foaf:name	"NASDAQ OMX Iceland" .
+bps:ICF	a	figi-gii:PricingSource ;
+	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Icf> ;
+	foaf:name	"ICE Futures Europe - Financials" .
 bps:ICFX	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Icfx> ;
 	foaf:name	"ICAP Global FX" .
@@ -3045,6 +3063,9 @@ bps:IF	a	figi-gii:PricingSource ;
 bps:IFCB	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Ifcb> ;
 	foaf:name	"ING Fiduciary Depos" .
+bps:IFE	a	figi-gii:PricingSource ;
+	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Ife> ;
+	foaf:name	"ICE Futures US Energy Division" .
 bps:IFEX	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Ifex> ;
 	foaf:name	"IFEX International Floating Rate Note Exchange/ Tass Wertpapierhandelsbank" .
@@ -3114,6 +3135,9 @@ bps:INDS	a	figi-gii:PricingSource ;
 bps:INDU	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Indu> ;
 	foaf:name	"Industrial and Commercial Bank of China" .
+bps:INE	a	figi-gii:PricingSource ;
+	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Ine> ;
+	foaf:name	"Shanghai International Energy Exchange" .
 bps:INGC	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Ingc> ;
 	foaf:name	"ING Corporate Bonds" .
@@ -3177,6 +3201,12 @@ bps:ISEL	a	figi-gii:PricingSource ;
 bps:ISES	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Ises> ;
 	foaf:name	"Istanbul Stock Exchange Fixed Income Small Market" .
+bps:ISF	a	figi-gii:PricingSource ;
+	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Isf> ;
+	foaf:name	"ICE Futures Europe S2F" .
+bps:ISG	a	figi-gii:PricingSource ;
+	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Isg> ;
+	foaf:name	"ICE Futures Singapore" .
 bps:ISL0	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Isl0> ;
 	foaf:name	"Istanbul Stock Exchange Fixed Income Large Market T0" .
@@ -3204,6 +3234,9 @@ bps:ISS0	a	figi-gii:PricingSource ;
 bps:ISS1	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Iss1> ;
 	foaf:name	"Istanbul Stock Exchange Small Market T1" .
+bps:IST	a	figi-gii:PricingSource ;
+	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Ist> ;
+	foaf:name	"Borsa Istanbul" .
 bps:ISW0	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Isw0> ;
 	foaf:name	"Istanbul Stock Exchange - Wholesale T+0 Large" .
@@ -3645,6 +3678,9 @@ bps:LR	a	figi-gii:PricingSource ;
 bps:LS	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Ls> ;
 	foaf:name	"Laos Securities Exchange" .
+bps:LSE	a	figi-gii:PricingSource ;
+	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Lse> ;
+	foaf:name	"LSE Derivatives Market" .
 bps:LTFX	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Ltfx> ;
 	foaf:name	"Lloyds FX Volatilities" .
@@ -3732,6 +3768,9 @@ bps:MCT	a	figi-gii:PricingSource ;
 bps:MCX	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Mcx> ;
 	foaf:name	"MICEX Moscow Interbank Currency Exchange Derivatives" .
+bps:MDE	a	figi-gii:PricingSource ;
+	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Mde> ;
+	foaf:name	"Bursa Malaysia" .
 bps:MDX	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Mdx> ;
 	foaf:name	"Mercado Mexicano de Derivados" .
@@ -3801,6 +3840,9 @@ bps:MICY	a	figi-gii:PricingSource ;
 bps:MICZ	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Micz> ;
 	foaf:name	"MICEX Moscow Interbank Currency Exchange Composite Government Bonds Yield" .
+bps:MIL	a	figi-gii:PricingSource ;
+	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Mil> ;
+	foaf:name	"Borsa Italiana (IDEM)" .
 bps:MIRB	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Mirb> ;
 	foaf:name	"Mirabaud Finanzas" .
@@ -4374,6 +4416,9 @@ bps:NYBK	a	figi-gii:PricingSource ;
 bps:NYBM	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Nybm> ;
 	foaf:name	"NYSE BondMatch" .
+bps:NYF	a	figi-gii:PricingSource ;
+	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Nyf> ;
+	foaf:name	"ICE Futures US Indices" .
 bps:NYKR	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Nykr> ;
 	foaf:name	"Nykredit Bank" .
@@ -4392,6 +4437,9 @@ bps:NZNG	a	figi-gii:PricingSource ;
 bps:NZX	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Nzx> ;
 	foaf:name	"New Zealand Stock Exchange Derivatives" .
+bps:OBX	a	figi-gii:PricingSource ;
+	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Obx> ;
+	foaf:name	"Oslo Stock Exchange" .
 bps:OC	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Oc> ;
 	foaf:name	"OneChicago" .
@@ -4518,6 +4566,9 @@ bps:PL	a	figi-gii:PricingSource ;
 bps:PLUS	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Plus> ;
 	foaf:name	"PLUS Stock Exchange Plc" .
+bps:PLX	a	figi-gii:PricingSource ;
+	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Plx> ;
+	foaf:name	"Polish Power Exchange" .
 bps:PM	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Pm> ;
 	foaf:name	"Philippine Stock Exchange" .
@@ -4899,6 +4950,9 @@ bps:SA	a	figi-gii:PricingSource ;
 bps:SACM	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Sacm> ;
 	foaf:name	"South African Capital Market Brokers" .
+bps:SAF	a	figi-gii:PricingSource ;
+	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Saf> ;
+	foaf:name	"South African Futures Exchange" .
 bps:SAFC	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Safc> ;
 	foaf:name	"South African Futures Exchange" .
@@ -4920,6 +4974,9 @@ bps:SASE	a	figi-gii:PricingSource ;
 bps:SB	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Sb> ;
 	foaf:name	"Barcelona Stock Exchange" .
+bps:SBA	a	figi-gii:PricingSource ;
+	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Sba> ;
+	foaf:name	"Bolsas y Mercados Argentinos" .
 bps:SBAF	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Sbaf> ;
 	foaf:name	"Standard Chartered Bank South Africa" .
