@@ -95,6 +95,12 @@ gas:clearedOn
     rdfs:range figi-gii:Code ;
     skos:definition "relates a financial instrument to an exchange, a pricing source, or a data provider; in contrast to the original place of listing (listedOn) or the actual places of trading (tradedOn) this property captures the clearing place" .
 
+gas:settledIn
+    a owl:ObjectProperty ;
+    rdfs:domain figi-gii:FinancialInstrumentIdentifier ;
+    rdfs:label "settled in" ;
+    skos:definition "relates a financial instrument (identified by its identifier) to its currency (or other fungible units); in contrast to the currency on the original place of listing (listedIn) or used for trading (tradedIn) or used for clearing (clearedIn) this property captures the settlement currency" .
+
 gas:componentOf
     a owl:IrreflexiveProperty, owl:ObjectProperty ;
     rdfs:domain figi-gii:GlobalIdentifier ;
