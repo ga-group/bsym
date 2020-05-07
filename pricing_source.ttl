@@ -90,6 +90,9 @@ bps:AD	a	figi-gii:PricingSource ;
 bps:ADCP	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Adcp> ;
 	foaf:name	"Adamant Capital Partners" .
+bps:ADE	a	figi-gii:PricingSource ;
+	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Ade> ;
+	foaf:name	"Athens Derivative Exchange" .
 bps:AEFX	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Aefx> ;
 	foaf:name	"Credit Suisse European Rates" .
@@ -486,6 +489,9 @@ bps:BDLB	a	figi-gii:PricingSource ;
 bps:BDOP	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Bdop> ;
 	foaf:name	"BDO Banco De Oro" .
+bps:BDP	a	figi-gii:PricingSource ;
+	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Bdp> ;
+	foaf:name	"Euronext Derivatives Lisbon" .
 bps:BEIR	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Beir> ;
 	foaf:name	"Beirut Stock Exchange" .
@@ -507,6 +513,8 @@ bps:BFIS	a	figi-gii:PricingSource ;
 bps:BFIX	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Bfix> ;
 	foaf:name	"Bloomberg Fixing" .
+bps:BFO	a	figi-gii:PricingSource ;
+	foaf:name	"Euronext Derivatives Brussels" .
 bps:BFUA	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Bfua> ;
 	foaf:name	"Bank Forum" .
@@ -519,6 +527,8 @@ bps:BFX	a	figi-gii:PricingSource ;
 bps:BG	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Bg> ;
 	foaf:name	"Botswana Stock Exchange and Botswana Composite" .
+bps:BGC	a	figi-gii:PricingSource ;
+	foaf:name	"India Intl Exchange IFSC" .
 bps:BGCA	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Bgca> ;
 	foaf:name	"BGC Partners Asia" .
@@ -3801,6 +3811,8 @@ bps:ME	a	figi-gii:PricingSource ;
 bps:MEDB	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Medb> ;
 	foaf:name	"Mediobanca" .
+bps:MET	a	figi-gii:PricingSource ;
+	foaf:name	"ICE Futures US Metals" .
 bps:MFA	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Mfa> ;
 	foaf:name	"Mercado de Futuros del Aceite de Oliva" .
@@ -4260,6 +4272,8 @@ bps:NFXL	a	figi-gii:PricingSource ;
 bps:NG	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Ng> ;
 	foaf:name	"Nordic Growth Market" .
+bps:NGC	a	figi-gii:PricingSource ;
+	foaf:name	"NSE IFSC" .
 bps:NGIB	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Ngib> ;
 	foaf:name	"NYSE Global Index Feed" .
