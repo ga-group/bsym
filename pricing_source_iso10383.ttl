@@ -491,6 +491,8 @@ bps:JE	a	figi-gii:PricingSource ;
 	skos:related	mic:SBIJ .
 bps:JF	a	figi-gii:PricingSource ;
 	skos:related	mic:XFKA .
+bps:JFX	a	figi-gii:PricingSource ;
+	skos:related	mic:XBBJ .
 bps:JG	a	figi-gii:PricingSource ;
 	skos:related	mic:XTAM .
 bps:JI	a	figi-gii:PricingSource ;

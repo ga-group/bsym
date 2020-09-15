@@ -4413,6 +4413,10 @@ bps:JF	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Jf> ;
 	rdfs:label	"JF" ;
 	foaf:name	"Fukuoka Stock Exchange" .
+bps:JFX	a	figi-gii:PricingSource ;
+	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Jfx> ;
+	rdfs:label	"JFX" ;
+	foaf:name	"Jakarta Futures Exchange" .
 bps:JG	a	figi-gii:PricingSource ;
 	owl:sameAs	<http://www.omg.org/spec/FIGI/PricingSources/Jg> ;
 	rdfs:label	"JG" ;
