@@ -12,3 +12,4 @@ meld-cfi
 *.tar.*
 .rsync-filter
 .RData*
+list*
