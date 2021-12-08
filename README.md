@@ -18,26 +18,26 @@ Downloads
 fimp
 ----
 
-- [Financial Instruments Mappings as of 2021-11-07, 3754 MB unpacked, 102.5 MB packed](https://yadi.sk/d/2InbHsASDIQfwA)
-- [Financial Instruments Mappings diff between 2021-10-03 and 2021-10-03](https://yadi.sk/d/oZiO3ptHOjHSeg)
+- [Financial Instruments Mappings as of 2021-12-05, 3754 MB unpacked, 102.5 MB packed](https://yadi.sk/d/ubnSiEBCVT7p8w)
+- [Financial Instruments Mappings diff between 2021-11-07 and 2021-12-05](https://yadi.sk/d/LpG_BuEXXdoXaA)
 
 fird
 ----
 
-- [Financial Instruments Reference as of 2021-11-07, 1146870 MB unpacked, 28804 MB packed](https://yadi.sk/d/6NbMK5V0sHvICg)
-- [Financial Instruments Reference diff between 2021-10-03 and 2021-11-07](https://yadi.sk/d/A5BG7VIHQLY5zQ)
+- [Financial Instruments Reference as of 2021-12-05, 1156230 MB unpacked, 29047 MB packed](https://yadi.sk/d/DpUaeOc3UAM6wg)
+- [Financial Instruments Reference diff between 2021-11-07 and 2021-12-05](https://yadi.sk/d/5oYxsuS_ceaqDA)
 
 lemp
 ----
 
-- [Legal Entities Mappings as of 2021-11-07, 9.025 MB unpacked, 0.660 MB packed](https://yadi.sk/d/A9qqbM566-t4Ig)
-- [Legal Entities Mappings diff between 2021-10-03 and 2021-11-07](https://yadi.sk/d/yd2aUGOm0rDgEQ)
+- [Legal Entities Mappings as of 2021-12-05, 9.025 MB unpacked, 0.660 MB packed](https://yadi.sk/d/6xH3WS3GpEPjYA)
+- [Legal Entities Mappings diff between 2021-11-07 and 2021-12-05](https://yadi.sk/d/w-n9BOXwmZDYOw)
 
 lerd
 ----
 
-- [Legal Entities Reference as of 2021-11-07, 7914 MB unpacked, 355.6 MB packed](https://yadi.sk/d/TuZsp2-qs_fRWw)
-- [Legal Entities Reference diff between 2021-10-03 and 2021-11-07](https://yadi.sk/d/rB_RBoZx0rgtpw)
+- [Legal Entities Reference as of 2021-12-05, 8054 MB unpacked, 361.3 MB packed](https://yadi.sk/d/zBkUXtm_iz2X-A)
+- [Legal Entities Reference diff between 2021-11-07 and 2021-12-05](https://yadi.sk/d/FGe7g01kVvfsBw)
 
 prov
 ----
