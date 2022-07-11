@@ -41,7 +41,7 @@ lerd
 
 prov
 ----
-- [Provenance diff between 2022-04-03 and 2022-06-05, 60949 MB unpacked, 2980 MB packed](https://yadi.sk/d/5lAkLmGHtGVtpw)
+- [Provenance diff between 2022-06-05 and 2022-07-03, 29777 MB unpacked, 1448 MB packed](https://yadi.sk/d/TLdxiNmmGkWkQA)
 
 
   [1]: http://openfigi.com/
