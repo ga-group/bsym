@@ -18,31 +18,30 @@ Downloads
 fimp
 ----
 
-- [Financial Instruments Mappings as of 2022-07-03, 3754 MB unpacked, 102.5 MB packed](https://yadi.sk/d/Y9Dl8t7xpF9Huw)
-- [Financial Instruments Mappings diff between 2022-06-05 and 2022-07-03](https://yadi.sk/d/f5meY4DojluBOg)
+- [Financial Instruments Mappings as of 2022-08-07, 3754 MB unpacked, 102.5 MB packed](https://gagroupnl-my.sharepoint.com/:u:/g/personal/sebastian_freundt_ga-group_nl/EQ4ai0jyXO5BqdcEel0FTIUBfrRdBZZFIOVGGYLTO5JzKQ)
+- [Financial Instruments Mappings diff between 2022-07-03 and 2022-08-07](https://gagroupnl-my.sharepoint.com/:u:/g/personal/sebastian_freundt_ga-group_nl/EYJU-idaLMBNgyYJopO-jZsBpn2s-K3O5PdZN-1ConlIKw)
 
 fird
 ----
 
-- [Financial Instruments Reference as of 2022-07-03, 1234050 MB unpacked, 31034 MB packed](https://yadi.sk/d/OcyWyWWWU4wn9A)
-- [Financial Instruments Reference diff between 2022-06-05 and 2022-07-03](https://yadi.sk/d/LMpjUycCxhtNBw)
+- [Financial Instruments Reference as of 2022-08-07, 1245170 MB unpacked, 31348 MB packed](https://gagroupnl-my.sharepoint.com/:u:/g/personal/sebastian_freundt_ga-group_nl/EcmT6Q6h_MJCpz5WuvBHrnIBUcxDblbbYGsXDrAghKbHdg)
+- [Financial Instruments Reference diff between 2022-07-03 and 2022-08-07](https://gagroupnl-my.sharepoint.com/:u:/g/personal/sebastian_freundt_ga-group_nl/EYTeGQ6WBINAgDbsr77DljsBY1fgWO8crmtvOHpfDHlJuw)
 
 lemp
 ----
 
-- [Legal Entities Mappings as of 2022-07-03, 9.025 MB unpacked, 0.660 MB packed](https://yadi.sk/d/0wdtzfAG2rO5lQ)
-- [Legal Entities Mappings diff between 2022-06-05 and 2022-07-03](https://yadi.sk/d/ogKWwv0Rw5MXKw)
+- [Legal Entities Mappings as of 2022-08-07, 9.025 MB unpacked, 0.660 MB packed](https://gagroupnl-my.sharepoint.com/:u:/g/personal/sebastian_freundt_ga-group_nl/EXVPwTSg7LlEtrNFrSnTAtUBZS2QNtgJPiVEt1g9JGeF9A)
+- [Legal Entities Mappings diff between 2022-07-03 and 2022-08-07](https://gagroupnl-my.sharepoint.com/:u:/g/personal/sebastian_freundt_ga-group_nl/ERoqutYwf29Cp_8g2NiQFNwB0FCwitEItcLEtrT8_hRbSA)
 
 lerd
 ----
 
-- [Legal Entities Reference as of 2022-07-03, 8835 MB unpacked, 396.0 MB packed](https://yadi.sk/d/CquP9tJBdRERpg)
-- [Legal Entities Reference diff between 2022-06-05 and 2022-07-03](https://yadi.sk/d/97db1e1Nj9HG9g)
+- [Legal Entities Reference as of 2022-08-07, 8912 MB unpacked, 400.0 MB packed](https://gagroupnl-my.sharepoint.com/:u:/g/personal/sebastian_freundt_ga-group_nl/Ebu0NGlPHKhEuC-uCz2rUiIBBWfkQqFnOVunl1QvOD51kQ)
+- [Legal Entities Reference diff between 2022-07-03 and 2022-08-07](https://gagroupnl-my.sharepoint.com/:u:/g/personal/sebastian_freundt_ga-group_nl/ET_0C9VNb01Gq_knPqVRN0EBiso0HO2c439uEMqbQy9vJQ)
 
 prov
 ----
-- [Provenance diff between 2022-06-05 and 2022-07-03, 29777 MB unpacked, 1448 MB packed](https://yadi.sk/d/TLdxiNmmGkWkQA)
-
+- [Provenance diff between 2022-07-03 and 2022-08-07, 29777 MB unpacked, 1448 MB packed](https://gagroupnl-my.sharepoint.com/personal/sebastian_freundt_ga-group_nl/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fsebastian%5Ffreundt%5Fga%2Dgroup%5Fnl%2FDocuments%2Fpublic%2Fbsym%2Fdata%2Ega%2Dgroup%2Enl%5Fprov%5F2022%2D07%2D05%5F2022%2D08%2D07%2Enq%2Ediff%2Egz&parent=%2Fpersonal%2Fsebastian%5Ffreundt%5Fga%2Dgroup%5Fnl%2FDocuments%2Fpublic%2Fbsym)
 
   [1]: http://openfigi.com/
   [2]: http://opensource.org/licenses/BSD-3-Clause
