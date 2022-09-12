@@ -41,7 +41,7 @@ lerd
 
 prov
 ----
-- [Provenance diff between 2022-07-03 and 2022-08-07, 33122 MB unpacked, 1573 MB packed](https://gagroupnl-my.sharepoint.com/:u:/g/personal/sebastian_freundt_ga-group_nl/EelCDx1s8FdFtlICtv1vojIBX0RkI4mhUUiCN733DGPAwQ)
+- [Provenance diff between 2022-08-07 and 2022-09-04, 27622 MB unpacked, 1305 MB packed](https://gagroupnl-my.sharepoint.com/:u:/g/personal/sebastian_freundt_ga-group_nl/EXrUX_xpf15Es6ibyKfVt0sBM7KuoOUXVNOnP5HSAq_I8g?e=CvAfaA)
 
   [1]: http://openfigi.com/
   [2]: http://opensource.org/licenses/BSD-3-Clause
